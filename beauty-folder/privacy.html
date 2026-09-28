@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BeautyFolder（酷彩文件夹）的隐私政策，说明文件夹图标处理、本地设置和外部服务。">
+    <title>BeautyFolder 隐私政策 / Privacy Policy</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-primary: #1d1d1f;
+            --text-secondary: rgba(0, 0, 0, 0.75);
+            --border-color: rgba(0, 0, 0, 0.12);
+            --link-color: #0066cc;
+            --notice-bg: rgba(0, 102, 204, 0.06);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --text-primary: #f5f5f7;
+                --text-secondary: rgba(255, 255, 255, 0.78);
+                --border-color: rgba(255, 255, 255, 0.15);
+                --link-color: #2997ff;
+                --notice-bg: rgba(41, 151, 255, 0.1);
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            max-width: 780px;
+            margin: 40px auto;
+            padding: 0 24px 36px;
+        }
+
+        h1 { font-size: 25px; line-height: 1.35; margin: 0 0 8px; }
+        h2 { font-size: 18px; margin: 30px 0 12px; }
+        h3 { font-size: 15px; margin: 18px 0 6px; }
+        p, li { font-size: 14px; color: var(--text-secondary); }
+        p { margin: 0 0 10px; }
+        ul { padding-left: 22px; margin: 8px 0 12px; }
+        li { margin: 0 0 6px; }
+        a { color: var(--link-color); }
+        hr { border: 0; border-top: 1px solid var(--border-color); margin: 20px 0; }
+        .effective-date { font-size: 13px; font-weight: 650; color: var(--text-primary); }
+        .lead { font-size: 14px; line-height: 1.85; }
+        .language-switch { display: flex; gap: 16px; margin: 0 0 22px; font-size: 13px; }
+        .language-switch a { text-decoration: none; }
+        .language-section { scroll-margin-top: 20px; }
+        .notice { padding: 13px 15px; background: var(--notice-bg); border-radius: 10px; }
+        .footer-note { border-top: 1px solid var(--border-color); margin-top: 34px; padding-top: 16px; font-size: 12px; text-align: center; color: var(--text-secondary); }
+
+        @media (max-width: 520px) {
+            body { margin: 26px auto; padding: 0 18px 28px; }
+            h1 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="language-switch" aria-label="Language">
+        <a href="#chinese">简体中文</a>
+        <a href="#english">English</a>
+    </nav>
+
+    <main>
+        <section class="language-section" id="chinese" lang="zh-Hans">
+            <h1>BeautyFolder（酷彩文件夹）隐私政策</h1>
+            <div class="effective-date">生效日期：2026 年 9 月 28 日</div>
+            <hr>
+            <p class="lead">BeautyFolder 是一款 macOS 文件夹图标美化工具。本政策说明应用在您使用文件夹图标、自定义图片、颜色设置、邮件反馈、社区二维码和评分功能时如何处理信息。</p>
+            <p class="notice"><strong>简要说明：</strong>文件夹和图片处理都在您的 Mac 本地完成。应用不要求注册，也不会把所选文件夹路径、文件夹内容或导入图片上传给开发者。应用仅将您自定义的颜色值和评分提示版本标记保存在本机偏好设置中。</p>
+
+            <h2>1. 应用会处理哪些信息</h2>
+            <p>BeautyFolder 不要求您创建账户或登录，也没有开发者运营的用户数据服务器。为实现文件夹图标功能，应用会在本机临时处理您主动拖入或通过 macOS 文件选择器选中的文件夹 URL、路径及目录状态，并读取或更新该文件夹的 Finder 图标资源和相关元数据。</p>
+            <p>如果您选择导入自定义图片，应用会在本机读取该图片并用于生成文件夹图标。图片不会上传，原始图片也不会被应用修改。应用不会递归扫描所选文件夹，不会读取其中其他文档或文件的内容，也不会把所选路径或图片发送给开发者。</p>
+
+            <h2>2. 文件夹图标操作与文件权限</h2>
+            <p>应用使用 macOS App Sandbox。它仅在您拖入文件夹或通过系统文件选择器授权后访问相应项目，并在相关操作期间使用系统提供的受限访问权限；应用不会保存持久化的文件夹访问书签。</p>
+            <p>设置或还原图标需要修改目标文件夹自身的 Finder 图标资源和 Finder 元数据。为使 Finder 刷新显示，应用还可能更新该文件夹的修改时间，并在目录内短暂创建后删除一个刷新标记文件。这些操作针对您选中的文件夹；应用不会有意读取、修改或删除该文件夹内其他文件的内容。系统权限、文件所有权和存储设备状态仍可能影响操作结果。</p>
+
+            <h2>3. 本机保存的设置</h2>
+            <p>如果您自定义颜色，应用会通过 macOS 的应用偏好设置在本机保存颜色的十六进制值，以便下次使用时恢复颜色选择。应用也会在本机保存一个评分提示版本标记，用于避免同一版本重复请求显示系统评分提示。应用不会将这些设置同步到云端或发送给开发者；所选文件夹路径和导入图片不会作为应用历史记录持久保存。</p>
+
+            <h2>4. 日志与诊断信息</h2>
+            <p>应用不会向开发者发送使用分析、崩溃报告或诊断日志。不过，在图标操作失败等情况下，应用生成的本机系统日志可能包含相关文件夹路径或错误信息。这些日志由 macOS 在您的设备上管理，BeautyFolder 不会上传它们。</p>
+
+            <h2>5. 邮件、社区二维码与 Apple 服务</h2>
+            <ul>
+                <li><strong>邮件反馈：</strong>当您选择发送反馈时，应用会打开您 Mac 上可用的邮件服务，并预填收件地址 <a href="mailto:beauty_folder@126.com">beauty_folder@126.com</a> 和邮件主题。只有您在邮件服务中发送后，开发者才会收到您提供的邮箱地址、邮件内容及您选择添加的附件，以答复和处理反馈。应用不会自动附加所选文件夹、图片或诊断日志。邮件服务提供商也会按照其隐私规则处理邮件。</li>
+                <li><strong>QQ 社群二维码：</strong>应用设置页面展示一个可选的 QQ 群二维码。扫描并加入社群是您主动进行的应用外操作；腾讯/QQ 可能根据其隐私规则处理您的账号信息及社群互动信息。</li>
+                <li><strong>评分与 App Store：</strong>成功应用图标后，应用可能调用 Apple StoreKit 请求显示系统评分提示；Apple 决定是否展示提示并处理相应的 App Store 互动。您也可以主动选择评分入口，届时会打开 Mac App Store。Apple 服务适用 Apple 自己的<a href="https://www.apple.com/legal/privacy/">隐私政策</a>。</li>
+            </ul>
+
+            <h2>6. 网络与第三方组件</h2>
+            <p>BeautyFolder 的文件夹美化功能可离线使用。应用本身没有账户、云同步、广告、跟踪或分析功能，也没有用于收集个人信息的第三方 SDK。发送邮件、扫描 QQ 社群二维码或打开 Apple 评分入口时，相关信息由您选择使用的外部服务处理。</p>
+
+            <h2>7. 信息保留与您的选择</h2>
+            <p>文件夹路径和导入图片只为当前操作在本机临时处理。自定义颜色值和评分提示版本标记保留在本机应用偏好设置中，直到您修改或清除本机应用数据。应用没有可供开发者查询的云端账户或文件副本。您可以通过应用修改自定义颜色。如果您主动发送邮件，开发者会为答复和处理反馈保留所收到的信息，并在不再需要处理该请求或履行适用法律义务后删除；您可以通过邮件联系我们，申请查阅、更正或删除我们收到的信息。您的邮件服务提供商可能根据其规则保留另一份副本。</p>
+
+            <h2>8. 儿童隐私</h2>
+            <p>BeautyFolder 是面向一般用户的 macOS 工具，不以 13 岁以下儿童为目标用户。应用没有账户功能，也不会有意收集儿童的个人信息。</p>
+
+            <h2>9. 政策更新</h2>
+            <p>如果应用功能或信息处理方式发生变化，我们会更新本政策并在此页面公布新的生效日期。</p>
+
+            <h2>10. 联系我们</h2>
+            <p>如对本隐私政策或个人信息处理有疑问，请联系：</p>
+            <p>电子邮件：<a href="mailto:beauty_folder@126.com">beauty_folder@126.com</a></p>
+        </section>
+
+        <hr>
+
+        <section class="language-section" id="english" lang="en">
+            <h1>BeautyFolder Privacy Policy</h1>
+            <div class="effective-date">Effective Date: September 28, 2026</div>
+            <hr>
+            <p class="lead">BeautyFolder is a macOS utility for customizing Finder folder icons. This policy explains how the App handles information when you use folder styling, custom images, color settings, email feedback, the community QR code, and rating features.</p>
+            <p class="notice"><strong>In brief:</strong> Folder and image processing takes place on your Mac. The App does not require an account and does not upload selected folder paths, folder contents, or imported images to the developer. It stores only your custom color values and a review-prompt version marker in local app preferences.</p>
+
+            <h2>1. Information the App Processes</h2>
+            <p>BeautyFolder does not require an account or sign-in and has no developer-operated user-data server. To provide its folder-icon features, the App temporarily processes the URLs, paths, and directory status of folders that you choose by dragging them into the App or selecting them in the macOS file picker. It reads or updates Finder icon resources and related metadata for those folders.</p>
+            <p>If you choose to import a custom image, the App reads that image locally to create a folder icon. The image is not uploaded, and the original image is not modified. The App does not recursively scan selected folders, read the contents of other documents or files within them, or send selected paths or images to the developer.</p>
+
+            <h2>2. Folder Operations and File Access</h2>
+            <p>The App uses the macOS App Sandbox. It accesses only items that you drag into the App or authorize through the system file picker, using the access granted by macOS for the relevant operation. The App does not save persistent folder-access bookmarks.</p>
+            <p>Applying or restoring an icon requires changing the selected folder's own Finder icon resource and Finder metadata. To help Finder refresh its display, the App may also update the folder's modification date and briefly create and remove a refresh marker file inside that directory. These operations target the folder you selected; the App does not intentionally read, modify, or delete the contents of other files in that folder. System permissions, file ownership, and storage conditions may affect the result.</p>
+
+            <h2>3. Local Settings</h2>
+            <p>If you customize colors, the App stores their hexadecimal values in macOS app preferences on your Mac so that your color choices are available later. The App also stores a local review-prompt version marker to avoid requesting the system review prompt more than once for the same version. These settings are not synced to the cloud or sent to the developer. Selected folder paths and imported images are not persistently saved as App history.</p>
+
+            <h2>4. Logs and Diagnostics</h2>
+            <p>The App does not send usage analytics, crash reports, or diagnostic logs to the developer. However, local system log entries generated during errors, such as a failed icon operation, may include the relevant folder path or error details. macOS manages these logs on your device, and BeautyFolder does not upload them.</p>
+
+            <h2>5. Email, Community QR Code, and Apple Services</h2>
+            <ul>
+                <li><strong>Email feedback:</strong> If you choose to send feedback, the App opens an available mail service on your Mac and pre-fills the recipient address <a href="mailto:beauty_folder@126.com">beauty_folder@126.com</a> and a subject line. The developer receives your email address, message, and any attachments you choose to send only after you send the email, and uses them to respond to and handle your feedback. The App does not automatically attach selected folders, images, or diagnostic logs. Your email provider also handles the message under its own privacy practices.</li>
+                <li><strong>QQ community QR code:</strong> The App displays an optional QR code for a QQ group. Scanning it and joining the group are actions you take outside the App. Tencent/QQ may process your account and community-interaction information under its own privacy practices.</li>
+                <li><strong>Ratings and the App Store:</strong> After a successful icon application, the App may ask Apple StoreKit to display the system review prompt. Apple decides whether to show the prompt and handles the related App Store interaction. You may also choose the rating link, which opens the Mac App Store. Apple services are subject to Apple's own <a href="https://www.apple.com/legal/privacy/">Privacy Policy</a>.</li>
+            </ul>
+
+            <h2>6. Network and Third-Party Components</h2>
+            <p>BeautyFolder's folder-styling features work offline. The App has no account, cloud-sync, advertising, tracking, or analytics features, and it does not include a third-party SDK for collecting personal information. When you send email, scan the QQ community QR code, or open an Apple rating destination, the external service you choose handles the information involved.</p>
+
+            <h2>7. Retention and Your Choices</h2>
+            <p>Folder paths and imported images are processed locally for the current operation. Custom color values and the review-prompt version marker remain in local app preferences until you change them or clear local App data. The App has no cloud account or file copy that the developer can look up. You can change custom colors in the App. If you send an email, the developer retains the information received to respond to and handle your feedback, then deletes it when it is no longer needed for that request or applicable legal obligations. You may email us to request access to, correction of, or deletion of information we received. Your email provider may retain a separate copy under its own practices.</p>
+
+            <h2>8. Children's Privacy</h2>
+            <p>BeautyFolder is a general-purpose macOS utility and is not directed to children under 13. The App has no account feature and does not knowingly collect personal information from children.</p>
+
+            <h2>9. Changes to This Policy</h2>
+            <p>If the App's features or data practices change, we will update this policy and publish the new effective date on this page.</p>
+
+            <h2>10. Contact</h2>
+            <p>If you have questions about this policy or the handling of personal information, contact:</p>
+            <p>Email: <a href="mailto:beauty_folder@126.com">beauty_folder@126.com</a></p>
+        </section>
+    </main>
+
+    <div class="footer-note">BeautyFolder · Privacy Policy / 隐私政策</div>
+</body>
+</html>
