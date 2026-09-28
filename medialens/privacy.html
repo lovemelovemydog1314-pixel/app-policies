@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaLens Privacy Policy</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-primary: #1d1d1f;
+            --text-secondary: rgba(0, 0, 0, 0.75);
+            --border-color: rgba(0, 0, 0, 0.12);
+            --link-color: #0066cc;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --text-primary: #f5f5f7;
+                --text-secondary: rgba(255, 255, 255, 0.75);
+                --border-color: rgba(255, 255, 255, 0.15);
+                --link-color: #2997ff;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            max-width: 780px;
+            margin: 40px auto;
+            padding: 0 24px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .effective-date {
+            font-size: 13.5px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 18px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid var(--border-color);
+            margin: 18px 0;
+        }
+
+        .lead-text {
+            font-size: 13.5px;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        h2 {
+            font-size: 17px;
+            font-weight: 700;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .section-block {
+            margin-bottom: 18px;
+        }
+
+        h3 {
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: var(--text-primary);
+        }
+
+        p {
+            font-size: 13.5px;
+            margin: 0 0 8px 0;
+            color: var(--text-secondary);
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 6px 0;
+        }
+
+        ul li {
+            font-size: 13.5px;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--link-color);
+        }
+
+        .email-link {
+            font-family: ui-monospace, Menlo, Monaco, "SF Pro Text", Consolas, monospace;
+            font-size: 13.5px;
+            font-weight: 500;
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        .footer-note {
+            margin-top: 36px;
+            padding-top: 16px;
+            font-size: 12.5px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>MediaLens Privacy Policy</h1>
+
+    <div class="effective-date">
+        Effective Date: September 28, 2026
+    </div>
+
+    <hr>
+
+    <p class="lead-text">
+        MediaLens is a macOS app for inspecting local media files and checking them against media delivery quality rules. This Privacy Policy explains what information the App processes, what it keeps on your Mac, and what happens when you export or share a report.
+    </p>
+
+    <h2>1. Information MediaLens Processes</h2>
+    <div class="section-block">
+        <p>
+            MediaLens processes files and folders that you choose in the macOS file picker or drag into the App. For folder scans, it looks for supported media and manifest files within the selected folder. Analysis is performed locally on your Mac. Depending on the file and report, the App may read or derive:
+        </p>
+        <ul>
+            <li>File names, local paths, file sizes, and modification dates;</li>
+            <li>Container, duration, video, audio, subtitle, language, color, and other technical metadata, including metadata embedded in media files;</li>
+            <li>Quality assurance results, rule evidence, parser information, and error details;</li>
+            <li>A SHA-256 hash of a media file when available; and</li>
+            <li>Text and stream references in a local HLS or DASH manifest that you select.</li>
+        </ul>
+        <p>
+            MediaLens does not modify your original media files. It does not upload media files, manifests, or analysis results to the developer or a developer-operated server. Manifest URLs are treated as text for local analysis; MediaLens does not fetch the referenced streams.
+        </p>
+    </div>
+
+    <h2>2. Local History, Cache, and Preferences</h2>
+    <div class="section-block">
+        <p>
+            To make recent work easier to reopen, MediaLens keeps up to 20 recent file records and 20 recent folder records on your Mac. A record can contain a file or folder name and path, the time it was opened or scanned, selected summary fields, and a macOS security-scoped bookmark that lets the App request access again. macOS may also show opened files in its own recent-items interface.
+        </p>
+        <p>
+            MediaLens saves local scan-cache entries in its Application Support data. A cache entry contains a file fingerprint (path, size, and modification time) and the corresponding analysis report so the App can reuse a prior result. The cache does not contain a copy of the original media file. The App also stores preferences, the selected QA preset, and any custom QA presets you import.
+        </p>
+        <p>
+            You can clear recent file and folder records using the App's recent-history controls. The current version does not provide a separate control to clear the scan cache or imported custom presets. Those items remain in MediaLens' local app data until you remove that data from your Mac. Because MediaLens does not send these records to the developer, there is no server copy to request deletion of.
+        </p>
+        <p>
+            To remove all MediaLens local data in a sandboxed installation, quit the App and delete its container folder at <code>~/Library/Containers/com.muzi.medialens</code>. This also removes saved history, bookmarks, preferences, and custom presets. For an installation that is not sandboxed, the scan cache is in <code>~/Library/Application Support/MediaLens/ScanCache</code>.
+        </p>
+    </div>
+
+    <h2>3. Reports and Sharing</h2>
+    <div class="section-block">
+        <p>
+            When you choose to export a report, MediaLens writes it to the location you select. Reports can include file names and paths, technical metadata, hashes, scan status, QA findings, timestamps, and preset or parser details. Batch report export offers path redaction; without redaction, a report may reveal local folder names or your macOS account name through its file paths. Review a report before sharing it.
+        </p>
+        <p>
+            If you choose a copy command, MediaLens places the selected summary or SHA-256 value on the macOS clipboard. Other apps may be able to access clipboard contents under macOS behavior. When you drag an HTML report from the App, MediaLens creates a temporary HTML file in macOS temporary storage; it may remain there until you or macOS removes it.
+        </p>
+        <p>
+            If you send, upload, or otherwise share an exported or dragged report, the recipient and any service you use to share it will receive the information contained in that report. That sharing is under your control.
+        </p>
+    </div>
+
+    <h2>4. Network, Analytics, and Diagnostics</h2>
+    <div class="section-block">
+        <p>
+            MediaLens has no account, advertising, tracking, analytics, or cloud-sync feature. The App does not send usage data or diagnostic reports to the developer. macOS and Apple services may process information under Apple's own terms and privacy practices when you use system features, download the App, or use the App Store. See <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a> for details.
+        </p>
+        <p>
+            If you contact support, any information or attachments you choose to include will be sent through your email provider and received by the support address below. MediaLens does not send an email on your behalf without your action.
+        </p>
+    </div>
+
+    <h2>5. File Access and Security</h2>
+    <div class="section-block">
+        <p>
+            MediaLens uses the macOS file picker and user-selected file access to read the media or folders you choose. The App's sandbox permissions allow it to save reports to a destination you select and to keep its own local history, preferences, and scan cache. Access to selected files remains subject to macOS permissions and your choices.
+        </p>
+    </div>
+
+    <h2>6. Children's Privacy</h2>
+    <div class="section-block">
+        <p>
+            MediaLens is a desktop utility and does not knowingly collect personal information from children. The App has no account or online profile feature.
+        </p>
+    </div>
+
+    <h2>7. Changes to This Policy</h2>
+    <div class="section-block">
+        <p>
+            We may update this Privacy Policy when the App or its data practices change. The updated version and effective date will be published on this page.
+        </p>
+    </div>
+
+    <h2>8. Contact</h2>
+    <div class="section-block">
+        <p>If you have questions about this Privacy Policy, contact:</p>
+        <p>Email: <a class="email-link" href="mailto:zipmaster_support@126.com">zipmaster_support@126.com</a></p>
+    </div>
+
+    <div class="footer-note">
+        MediaLens 1.0 · Local media inspection and QA for macOS
+    </div>
+</body>
+</html>
