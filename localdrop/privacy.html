@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalDrop Server - 隐私政策 (Privacy Policy)</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: rgba(22, 27, 34, 0.85);
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --border: #30363d;
+      --primary: #f05a30;
+      --accent: #ff8c42;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f6f8fa;
+        --card-bg: rgba(255, 255, 255, 0.9);
+        --text: #1f2328;
+        --text-muted: #656d76;
+        --border: #d0d7de;
+        --primary: #e64a19;
+        --accent: #f05a30;
+      }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    h1 {
+      font-size: 2rem;
+      margin-top: 0;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 32px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    p, li {
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+    .highlight-box {
+      background: rgba(240, 90, 48, 0.08);
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 20px 0;
+    }
+    .lang-section {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 2px dashed var(--border);
+    }
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section lang="zh-CN">
+      <h1>LocalDrop Server 隐私政策</h1>
+      <p><strong>生效日期：2026 年 10 月 1 日</strong></p>
+      <p>本政策适用于 macOS 版 LocalDrop Server。应用在 Mac 上运行 HTTP 与传统 FTP 文件服务，以下说明应用在本机保存和处理的信息。GitHub Pages 上的宣传或支持网页由 GitHub 托管，其网页请求处理适用 GitHub 的相关政策。</p>
+      <p>本政策由 LocalDrop Team（LocalDrop Server 的维护者）发布。</p>
+
+      <h2>1. 应用在本机处理的信息</h2>
+      <ul>
+        <li><strong>设置和账户资料：</strong>应用在 Mac 本机保存服务端口、Bonjour 广播名称、传输限制、账户名、权限设置、共享文件夹名称和路径，以及 macOS 安全书签。密码保存在 macOS 钥匙串中。应用没有用于收集这些资料的云端后端，不会将其发送到 LocalDrop 服务器。</li>
+        <li><strong>文件和目录：</strong>应用只访问用户通过 macOS 文件选择器明确选取的共享目录。用户启动服务后，局域网客户端可以根据账户权限浏览、下载或上传文件；文件由 Mac 直接提供，不经过 LocalDrop 云端中转。</li>
+        <li><strong>活动和传输记录：</strong>应用运行期间会在内存中显示近期活动和传输状态，其中可能出现文件名或操作错误信息。应用不会上传这些列表，退出应用后不保留。</li>
+      </ul>
+
+      <h2>2. 局域网传输和剪贴板</h2>
+      <p>HTTP 和传统 FTP 不加密传输内容或登录凭据。能够观察同一网络流量的人可能看到这些信息。请只在可信网络使用，不要把服务端口映射到公网。用户主动选择“复制登录信息”时，用户名、密码和连接地址会写入 macOS 剪贴板，之后由 macOS 和其他有权访问剪贴板的应用管理。</p>
+      <p>应用使用 Bonjour 在本地网络公布服务，以便设备发现；这不会把共享目录或密码发送到云端。</p>
+
+      <h2>3. 本地诊断、导出和备份</h2>
+      <ul>
+        <li><strong>诊断事件：</strong>本地事件记录默认开启，可在“设置”中关闭或清空。记录只保存在当前运行进程的内存中，最多 100 条；退出应用后会消失。事件可能包括操作类别和时间、传输协议、方向、文件大小区间，以及意外退出后检测到的 macOS 版本。应用会在本机偏好设置中保存一个服务运行标记，以便下次启动判断是否异常退出。应用不会把这些事件发送给开发者或分析服务。</li>
+        <li><strong>诊断报告：</strong>用户主动复制报告时，报告可能包含 macOS 版本、网络接口和状态、掩码后的本地 IPv4 地址、Bonjour 名称、共享文件夹名称及完整路径、账户名和权限、诊断结果。发送前请检查并删除不希望分享的内容。</li>
+        <li><strong>事件导出：</strong>用户主动导出的诊断事件 JSON 可能包含事件名称、类别、时间、协议、传输方向、文件大小区间和意外退出时的系统版本。导出文件由用户自行保存、分享和删除。</li>
+        <li><strong>配置备份：</strong>用户主动创建的备份包含服务器设置、共享文件夹名称和路径、账户名、权限和诊断开关状态；不包含账户密码或安全书签。备份可能透露本机目录结构，请妥善保管。</li>
+      </ul>
+      <p>诊断开关的选择保存在本机设置中。关闭诊断记录会清除当前内存事件；用户也可使用“清空”。用户已复制或导出的资料不受应用后续清理操作影响。</p>
+
+      <h2>4. 购买和第三方处理</h2>
+      <p>Pro 购买和恢复通过 Apple StoreKit 处理。Apple 会按其隐私政策处理购买和交易信息；LocalDrop 不接收支付卡号。除 Apple 提供的购买服务、macOS 钥匙串以及用户主动连接的局域网设备外，应用不会向开发者服务器或第三方分析服务发送上述应用数据。</p>
+
+      <h2>5. 保存期限和删除</h2>
+      <p>本地设置、账户资料和共享目录信息会保留在 Mac 上，直到用户在应用中更改或移除它们，或删除应用相关的本机数据。密码会在用户更改或删除账户时从钥匙串中更新或移除。钥匙串项目可能在卸载应用后仍然存在；如需清除，可在“钥匙串访问”中查找服务 <code>com.muzi.localdrop</code> 并删除相应项目。</p>
+      <p>诊断事件和活动/传输列表只在应用运行期间保存在内存中。用户创建的备份、手动复制的报告和剪贴板内容由用户自行管理。LocalDrop 没有可供开发者检索或删除的云端用户资料。</p>
+
+      <h2>6. 儿童和政策变更</h2>
+      <p>LocalDrop Server 不提供在线用户注册或面向儿童的服务。如果应用的数据处理方式发生变化，我们会更新公开政策并修改本页的生效日期。</p>
+
+      <h2>7. 联系方式</h2>
+      <p>隐私问题或请求请联系 <a href="mailto:support@localdrop.app">support@localdrop.app</a>，或通过 <a href="https://github.com/lovemelovemydog1314-pixel/LocalDrop/issues">GitHub Issues</a> 联系维护者。请勿在公开问题中提交密码、私人文件或未经脱敏的诊断报告。</p>
+    </section>
+
+    <section class="lang-section" lang="en">
+      <h1>LocalDrop Server Privacy Policy</h1>
+      <p><strong>Effective date: October 1, 2026</strong></p>
+      <p>This policy applies to LocalDrop Server for macOS. The app runs HTTP and traditional FTP file services on your Mac and describes information it stores and processes locally. The marketing and support pages on GitHub Pages are hosted by GitHub; GitHub's policies apply to requests made to those webpages.</p>
+      <p>This policy is published by LocalDrop Team, the maintainer of LocalDrop Server.</p>
+
+      <h2>1. Information handled on your Mac</h2>
+      <ul>
+        <li><strong>Settings and account details:</strong> The app stores server ports, Bonjour name, transfer limits, account names and permissions, shared-folder names and paths, and macOS security-scoped bookmarks on your Mac. Passwords are stored in macOS Keychain. The app has no cloud backend for collecting this information and does not send it to a LocalDrop server.</li>
+        <li><strong>Files and folders:</strong> The app accesses folders you explicitly select using the macOS file picker. When you start the server, LAN clients can browse, download, or upload files according to the account permissions you configure. Your Mac serves the files directly; LocalDrop does not relay them through a cloud service.</li>
+        <li><strong>Activity and transfer history:</strong> While the app is running, its interface keeps recent activity and transfer status in memory. Entries may include file names or operation error details. The app does not upload these lists, and they are not retained after the app exits.</li>
+      </ul>
+
+      <h2>2. LAN transfers and the clipboard</h2>
+      <p>HTTP and traditional FTP do not encrypt file contents or login credentials. Others able to observe the same network traffic may see them. Use these protocols only on a trusted network and do not forward the server ports to the public internet. If you choose “Copy Credentials,” usernames, passwords, and connection addresses are placed on the macOS clipboard, which is then managed by macOS and other apps with clipboard access.</p>
+      <p>The app uses Bonjour to announce its services on the local network. This does not send shared-folder details or passwords to the cloud.</p>
+
+      <h2>3. Local diagnostics, exports, and backups</h2>
+      <ul>
+        <li><strong>Diagnostic events:</strong> Local event recording is on by default. You can turn it off or clear events in Settings. Events stay in the running process's memory, are limited to 100 entries, and disappear when the app exits. They may include action categories and times, transfer protocol and direction, file-size ranges, and the macOS version detected after an unexpected exit. A local preference flag records that the server was running so the app can detect an unexpected exit the next time it launches. The app does not send these events to the developer or an analytics service.</li>
+        <li><strong>Diagnostic report:</strong> If you choose to copy a report, it may include your macOS version, network interface and status, a masked local IPv4 address, Bonjour name, shared-folder names and full paths, account names and permissions, and diagnostic results. Review it and remove anything you do not want to share before sending it.</li>
+        <li><strong>Event export:</strong> A diagnostic events JSON file you choose to export may contain event names, categories, timestamps, protocol, transfer direction, file-size ranges, and the system version after an unexpected exit. You control where the exported file is saved, shared, and deleted.</li>
+        <li><strong>Configuration backup:</strong> A backup you choose to create contains server settings, shared-folder names and paths, account names, permissions, and the diagnostics setting. It does not contain account passwords or security-scoped bookmarks. Because it may reveal your local folder structure, store it carefully.</li>
+      </ul>
+      <p>The diagnostics preference is stored in local settings. Turning diagnostics off clears the current in-memory events; you can also use the Clear control. Copies and exports you have already made are not affected by the app's later cleanup.</p>
+
+      <h2>4. Purchases and third-party processing</h2>
+      <p>Pro purchases and restoration use Apple StoreKit. Apple processes purchase and transaction information under its privacy policy; LocalDrop does not receive payment-card numbers. Apart from Apple's purchase services, macOS Keychain, and LAN devices you choose to connect, the app does not send the app information described above to developer-operated servers or third-party analytics services.</p>
+
+      <h2>5. Retention and deletion</h2>
+      <p>Local settings, account details, and shared-folder information remain on your Mac until you change or remove them in the app or delete the app's local data. Passwords are updated or removed from Keychain when you change or delete an account. macOS Keychain items may remain after you uninstall the app; to remove them, use Keychain Access to find and delete the relevant <code>com.muzi.localdrop</code> items.</p>
+      <p>Diagnostic events and activity/transfer lists exist only in memory while the app runs. You manage backups, copied reports, and clipboard contents that you create. LocalDrop has no cloud user records for the developer to retrieve or delete.</p>
+
+      <h2>6. Children and policy changes</h2>
+      <p>LocalDrop Server does not provide online user registration or a service directed to children. If the app's data practices change, we will update the public policy and the effective date on this page.</p>
+
+      <h2>7. Contact</h2>
+      <p>For privacy questions or requests, contact <a href="mailto:support@localdrop.app">support@localdrop.app</a> or the maintainers through <a href="https://github.com/lovemelovemydog1314-pixel/LocalDrop/issues">GitHub Issues</a>. Do not include passwords, private files, or unredacted diagnostic reports in public issues.</p>
+    </section>
+
+    <div class="footer">
+      <p>© 2026 LocalDrop Team. <a href="https://lovemelovemydog1314-pixel.github.io/LocalDrop/support.html">技术支持与反馈 (Support)</a></p>
+    </div>
+  </div>
+</body>
+</html>
