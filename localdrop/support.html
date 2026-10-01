@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalDrop Server - 技术支持与帮助 (Support & FAQ)</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: rgba(22, 27, 34, 0.85);
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --border: #30363d;
+      --primary: #f05a30;
+      --accent: #ff8c42;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f6f8fa;
+        --card-bg: rgba(255, 255, 255, 0.9);
+        --text: #1f2328;
+        --text-muted: #656d76;
+        --border: #d0d7de;
+        --primary: #e64a19;
+        --accent: #f05a30;
+      }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    h1 {
+      font-size: 2rem;
+      margin-top: 0;
+      color: var(--primary);
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 28px;
+      color: var(--accent);
+    }
+    .faq-item {
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-q {
+      font-weight: 600;
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+    .faq-a {
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+    .contact-card {
+      background: rgba(240, 90, 48, 0.08);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 12px;
+      margin: 30px 0;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>技术支持与常见问题 (Support & FAQ)</h1>
+    <p>感谢您使用 LocalDrop Server。如果您在使用过程中遇到任何问题，请查阅以下常见问题，或直接与我们的技术支持团队取得联系。</p>
+
+    <div class="contact-card">
+      <h3 style="margin-top: 0; color: var(--primary);">联系我们 (Contact Support)</h3>
+      <p>• <strong>GitHub Issues 提交</strong>：<a href="https://github.com/lovemelovemydog1314-pixel/LocalDrop/issues" target="_blank">提交 Bug 报告或需求建议</a></p>
+      <p>• <strong>官方支持邮箱</strong>：<code>zipmaster_support@126.com</code>（通常在 1 个工作日内回复）</p>
+      <p>• <strong>隐私政策文档</strong>：<a href="privacy.html">点击阅读完整隐私政策</a></p>
+    </div>
+
+    <h2>常见问题解答 (FAQ)</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">Q1: 手机或平板无法打开 Mac 上显示的网页地址？</div>
+      <div class="faq-a">
+        1. 确保手机和 Mac 处于<strong>同一个局域网（同一 Wi-Fi）</strong>下；<br>
+        2. 检查路由器是否开启了“AP 隔离（Client Isolation）”；若开启，请在路由器后台关闭该选项；<br>
+        3. 打开 LocalDrop Server 应用内的“网络诊断”面板，点击一键诊断确认端口（8080/2121）未被其他程序占用。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Q2: 如何在网页端上传整个文件夹或大文件？</div>
+      <div class="faq-a">
+        在支持现代浏览器的设备上（如桌面 Chrome/Safari 或最新移动浏览器），直接将文件或目录拖拽至浏览器窗口的拖放虚线区域，即可自动完成分片秒传；大文件支持断点续传。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Q3: Pro 终身版内购购买后更换电脑如何恢复？</div>
+      <div class="faq-a">
+        打开 LocalDrop Server 偏好设置或 Pro 解锁窗口，点击“恢复购买（Restore Purchases）”，系统将自动同步并校验您的 Mac App Store 收据，无需再次付费。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Q4: 重启电脑后，之前添加的共享文件夹需要重新选择吗？</div>
+      <div class="faq-a">
+        不需要。应用基于 macOS 苹果官方沙盒安全书签（Security-Scoped Bookmarks）机制，重启应用或系统后会自动静默恢复所选目录的读写访问权限。
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>© 2026 LocalDrop Team. All rights reserved. | <a href="index.html">返回首页</a></p>
+    </div>
+  </div>
+</body>
+</html>

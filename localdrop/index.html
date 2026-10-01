@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalDrop Server - 局域网极速文件互传 (Fast LAN File Drop)</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: rgba(23, 29, 44, 0.7);
+      --text: #f0f6fc;
+      --text-muted: #94a3b8;
+      --border: rgba(255, 255, 255, 0.1);
+      --primary: #f05a30;
+      --primary-glow: rgba(240, 90, 48, 0.35);
+      --accent: #ff8c42;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      background-image: radial-gradient(circle at 50% 0%, rgba(240, 90, 48, 0.15) 0%, transparent 60%);
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 48px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .logo img {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--text);
+    }
+    .hero {
+      text-align: center;
+      max-width: 860px;
+      margin: 60px auto 40px;
+      padding: 0 20px;
+    }
+    .hero-badge {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 30px;
+      background: rgba(240, 90, 48, 0.15);
+      color: var(--accent);
+      border: 1px solid rgba(240, 90, 48, 0.3);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -1.5px;
+      margin: 0 0 24px;
+      background: linear-gradient(135deg, #ffffff 40%, #ff8c42 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin: 0 auto 36px;
+      max-width: 680px;
+    }
+    .hero-cta {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      color: #fff;
+      box-shadow: 0 8px 24px var(--primary-glow);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px var(--primary-glow);
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.12);
+      transform: translateY(-2px);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 24px;
+      backdrop-filter: blur(20px);
+    }
+    .card-icon {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+    .card h3 {
+      font-size: 1.25rem;
+      margin: 0 0 12px;
+    }
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin: 0;
+    }
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    .footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin: 0 12px;
+    }
+    .footer a:hover {
+      color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <span>🚀 LocalDrop Server</span>
+    </div>
+    <div class="nav-links">
+      <a href="#features">功能特性</a>
+      <a href="support.html">常见问题</a>
+      <a href="privacy.html">隐私政策</a>
+      <a href="https://github.com/lovemelovemydog1314-pixel/LocalDrop" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="hero-badge">macOS 局域网高速传输中心 · 原生体验</div>
+    <h1>让任意设备与您的 Mac<br>在局域网内极速互传</h1>
+    <p>无需公网、不限速度、零文件云端留存。任何手机、平板或电脑打开浏览器即可与您的 Mac 实现千兆极速文件互传与在线流媒体播放。</p>
+    <div class="hero-cta">
+      <a href="https://github.com/lovemelovemydog1314-pixel/LocalDrop/releases" class="btn btn-primary">立即下载 macOS 版</a>
+      <a href="privacy.html" class="btn btn-secondary">了解隐私保护</a>
+    </div>
+  </div>
+
+  <div id="features" class="grid">
+    <div class="card">
+      <div class="card-icon">⚡️</div>
+      <h3>零客户端依赖</h3>
+      <p>接收方或发送方设备（iPhone、Android、Windows）无需安装任何第三方 App，打开手机自带 Safari 或 Chrome 浏览器即可拖拽秒传。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🛡️</div>
+      <h3>零云端隐私承诺</h3>
+      <p>所有数据流动完全限定在局域网 Wi-Fi 内部，不经过任何外部服务器中继，保护您的绝对隐私与商业机密。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📁</div>
+      <h3>多目录虚拟文件系统 (Pro)</h3>
+      <p>支持将照片、下载、电影、工作文档等多个独立物理文件夹自由挂载，各目录完全沙盒隔离，互不干扰。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">👥</div>
+      <h3>4 级细粒度权限管控 (Pro)</h3>
+      <p>可为家庭成员或团队伙伴创建独立账号，分别授予「只读」、「上传」、「修改」、「删除」精确权限，密码硬件 Keychain 加密。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🎬</div>
+      <h3>双协议 & 断点续传</h3>
+      <p>内置轻量级 HTTP Web 服务器与高吞吐 FTP 服务，完整支持 RFC 7233 Range 分块请求与音视频流媒体即点即播。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🩺</div>
+      <h3>一键自动化诊断</h3>
+      <p>内置智能网络诊断引擎，自动检测端口占用与 AP 局域网隔离，提供自动脱敏的诊断报告与一键修复排障建议。</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2026 LocalDrop Team. All rights reserved. | <a href="privacy.html">隐私政策</a> | <a href="support.html">技术支持</a> | <a href="https://github.com/lovemelovemydog1314-pixel/LocalDrop">GitHub 仓库</a></p>
+  </div>
+</body>
+</html>
