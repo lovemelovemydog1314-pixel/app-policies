@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CaffeineAI 隐私政策。应用仅在本机处理规则所需信息，并说明本机存储、权限、保留期限与导出方式。">
+    <meta name="color-scheme" content="light dark">
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <title>CaffeineAI 隐私政策 | Privacy Policy</title>
+    <style>
+        :root {
+            --accent: #A85711;
+            --accent-soft: rgba(168, 87, 17, 0.12);
+            --button-text: #FFFFFF;
+            --bg: #F5F6F7;
+            --card-bg: #FFFFFF;
+            --text-primary: #1C1C1E;
+            --text-secondary: #62666D;
+            --border: rgba(0, 0, 0, 0.09);
+            --shadow: 0 10px 32px rgba(28, 34, 42, 0.06);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --accent: #E99A49;
+                --accent-soft: rgba(233, 154, 73, 0.16);
+                --button-text: #191919;
+                --bg: #141416;
+                --card-bg: #1F1F23;
+                --text-primary: #F4F1EC;
+                --text-secondary: #B0ADB4;
+                --border: rgba(255, 255, 255, 0.09);
+                --shadow: 0 10px 34px rgba(0, 0, 0, 0.24);
+            }
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+                "PingFang SC", "Helvetica Neue", sans-serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            padding: 18px 0;
+            border-bottom: 1px solid var(--border);
+            background: color-mix(in srgb, var(--bg) 88%, transparent);
+            backdrop-filter: blur(20px);
+        }
+
+        .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+        .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--text-primary); text-decoration: none; font-size: 18px; font-weight: 750; letter-spacing: -0.02em; margin-right: auto; }
+        .brand img { display: block; border-radius: 9px; box-shadow: 0 3px 10px rgba(0,0,0,.12); }
+        .nav-links { display: flex; align-items: center; gap: 22px; }
+        .nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 14px; font-weight: 550; }
+        .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--accent); }
+
+        main { padding: 48px 0 72px; }
+        .content-card {
+            padding: 44px;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .eyebrow {
+            margin-bottom: 8px;
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        h1 { margin-bottom: 8px; font-size: clamp(28px, 5vw, 36px); font-weight: 800; letter-spacing: -0.03em; line-height: 1.2; }
+        .policy-section[hidden] { display: none; }
+        .policy-section > p:first-of-type { margin-top: 12px; color: var(--text-secondary); font-size: 14px; }
+        h2 {
+            margin: 32px 0 14px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-primary);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.35;
+        }
+        p { margin: 0 0 16px; color: var(--text-secondary); font-size: 15px; }
+        .language-picker { margin: 28px 0 30px; }
+        .language-picker-label { display: block; margin-bottom: 10px; color: var(--text-secondary); font-size: 13px; font-weight: 600; }
+        .lang-switch { display: flex; flex-wrap: wrap; gap: 8px; }
+        .lang-btn {
+            appearance: none;
+            border: 1px solid var(--border);
+            border-radius: 9px;
+            padding: 7px 12px;
+            background: var(--bg);
+            color: var(--text-primary);
+            font: inherit;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        .lang-btn:hover { border-color: var(--accent); }
+        .lang-btn:focus-visible { outline: 3px solid var(--accent-soft); outline-offset: 2px; }
+        .lang-btn.active { border-color: var(--accent); background: var(--accent); color: var(--button-text); }
+        footer { border-top: 1px solid var(--border); padding: 22px 0 28px; color: var(--text-secondary); font-size: 13px; }
+        .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 18px; }
+        .footer-nav { display: flex; flex-wrap: wrap; gap: 18px; }
+        .footer-nav a { color: inherit; text-decoration: none; }
+        .footer-nav a:hover { color: var(--accent); }
+
+        @media (max-width: 600px) {
+            .container { padding: 0 16px; }
+            header { padding: 14px 0; }
+            .nav-inner { flex-wrap: wrap; padding: 10px 0; }
+            .nav-links { gap: 14px; }
+            .brand { margin-right: auto; }
+            main { padding: 28px 0 48px; }
+            .content-card { padding: 26px 20px; border-radius: 16px; }
+            .language-picker { margin: 22px 0 24px; }
+            .lang-btn { padding: 7px 10px; }
+            .nav-links { order: 3; width: 100%; }
+            .footer-inner { align-items: flex-start; flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container nav-inner">
+        <a class="brand" href="index.html" aria-label="CaffeineAI">
+            <img src="assets/icon.png" width="38" height="38" alt="">
+            <span>CaffeineAI</span>
+        </a>
+        <nav class="nav-links" id="site-navigation" aria-label="网站导航">
+            <a href="privacy.html" aria-current="page" data-nav="privacy">隐私政策</a>
+            <a href="support.html" data-nav="support">技术支持</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <div class="content-card">
+        <p class="eyebrow">CaffeineAI · <span id="eyebrow-label">隐私政策</span></p>
+        <div class="language-picker">
+            <span class="language-picker-label" id="language-label">选择语言</span>
+            <nav class="lang-switch" aria-labelledby="language-label">
+                <button class="lang-btn" type="button" data-language="en" aria-pressed="false">English</button>
+                <button class="lang-btn active" type="button" data-language="zh-Hans" aria-pressed="true">简体中文</button>
+                <button class="lang-btn" type="button" data-language="zh-Hant" aria-pressed="false">繁體中文</button>
+                <button class="lang-btn" type="button" data-language="ja" aria-pressed="false">日本語</button>
+                <button class="lang-btn" type="button" data-language="ko" aria-pressed="false">한국어</button>
+                <button class="lang-btn" type="button" data-language="fr" aria-pressed="false">Français</button>
+                <button class="lang-btn" type="button" data-language="de" aria-pressed="false">Deutsch</button>
+                <button class="lang-btn" type="button" data-language="es" aria-pressed="false">Español</button>
+            </nav>
+        </div>
+
+    <section class="policy-section" data-language="en" lang="en" hidden>
+        <h1>CaffeineAI Privacy Policy</h1>
+        <p>Last updated: October 13, 2026</p>
+        <h2>Data used on this Mac</h2>
+        <p>CaffeineAI does not create accounts, show ads, use analytics, or send data to a developer server.</p>
+        <p>Only when an enabled rule needs a signal, CaffeineAI reads the relevant value on this Mac: the foreground or running app&#x27;s bundle identifier; CPU and network counters; mounted volume names; network tunnel interface status; whether an audio device is in use; connected Bluetooth device names; the selected Wi-Fi network name; or whether a calendar event is active. Battery and thermal status are also used locally for safety rules. These values are used to evaluate your rules and are not uploaded. CaffeineAI does not read location coordinates. Calendar rules check whether an event is active; event titles and details are not saved.</p>
+        <h2>Permissions and controls</h2>
+        <p>Wi-Fi name rules require Location Services permission because macOS gates access to the network name. Calendar rules require Calendar access. Bluetooth rules read connected device names only while enabled. Turn off a rule in CaffeineAI or revoke its permission in System Settings at any time. A denied or unavailable signal does not count as a rule match.</p>
+        <h2>Information stored locally</h2>
+        <p>Your preferences and rules are stored in CaffeineAI&#x27;s app container. If history is enabled, CaffeineAI stores up to 2,000 local events for no more than seven days. An event may include its timestamp, category, details, and rule or session identifiers; events about the frontmost app include its name and bundle identifier. Diagnostics show up to 100 recent events in memory and are cleared when the app quits. If you enable disk keep-alive, CaffeineAI stores the path and security-scoped bookmark for the file you select and reads one byte at your chosen interval. It never changes that file. Active sessions and power assertion identifiers are not restored after a restart.</p>
+        <h2>Retention and deletion</h2>
+        <p>Decision history expires after seven days; you can turn it off or clear it in Automation settings. Diagnostics are cleared when the app quits. Use Reset Settings in About to remove saved preferences and rules. Turn off disk keep-alive or remove its selected file to delete its bookmark. Files you export remain at the location you chose and can be deleted there.</p>
+        <h2>Exports</h2>
+        <p>Configuration exports contain settings and rules, but exclude the selected file path, its security-scoped bookmark, and active sessions. Diagnostic text is exported only after you choose Save and a destination. CaffeineAI does not transmit exported files.</p>
+        <h2>Sharing and contact</h2>
+        <p>CaffeineAI has no third-party analytics or advertising SDKs and does not share information with a developer service or other third parties. For privacy questions, contact the developer using the support contact on the CaffeineAI App Store product page.</p>
+    </section>
+    <section class="policy-section" data-language="zh-Hans" lang="zh-Hans">
+        <h1>CaffeineAI 隐私政策</h1>
+        <p>更新日期：2026年10月13日</p>
+        <h2>本机数据的使用</h2>
+        <p>CaffeineAI 不创建账户、不显示广告、不使用分析工具，也不会向开发者服务器发送数据。</p>
+        <p>只有启用的规则需要某项信号时，CaffeineAI 才会在这台 Mac 上读取相关信息：当前前台或正在运行的应用标识、CPU 与网络流量计数、已挂载卷名称、网络隧道接口状态、音频设备是否正在使用、已连接蓝牙设备名称、所选 Wi-Fi 网络名称，以及当前是否有日历事件。电量和热状态也仅在本机用于安全规则。这些信息只用于判断规则是否匹配，不会上传。CaffeineAI 不读取位置坐标。日历规则只检查事件是否正在发生，不保存标题或详情。</p>
+        <h2>权限与控制</h2>
+        <p>macOS 通过定位服务权限控制 Wi-Fi 网络名称的读取，因此 Wi-Fi 名称规则需要定位权限。日历规则需要日历访问权限。启用蓝牙规则后，应用只在规则运行时读取已连接设备名称。你可以随时在 CaffeineAI 中关闭规则，或在“系统设置”中撤销相应权限。权限被拒绝或信号不可用时，不会被视为规则匹配。</p>
+        <h2>本机保存的信息</h2>
+        <p>偏好设置和规则保存在 CaffeineAI 的应用容器中。启用历史记录后，CaffeineAI 最多在本机保留 2,000 条事件，最长七天。事件可能包含时间、类别、详情及规则或会话标识；前台应用变更事件会包含该应用的名称和 Bundle ID。诊断页在内存中显示最近 100 条事件，并在应用退出时清除。启用磁盘保活后，CaffeineAI 会保存你所选文件的路径和安全书签，并按所选间隔读取一个字节；不会修改文件。应用重启后不会恢复活动会话或电源断言标识。</p>
+        <h2>保留与删除</h2>
+        <p>决策历史在七天后过期；你可以在“自动化”设置中关闭或清除历史。诊断记录在应用退出时清除。在“关于”中使用“重置设置”可删除已保存的偏好和规则。关闭磁盘保活或移除所选文件可删除对应书签。导出的文件保存在你选择的位置，可在那里自行删除。</p>
+        <h2>导出</h2>
+        <p>配置导出包含设置和规则，但不包含所选文件路径、安全书签或活动会话。只有在你选择“保存”并指定位置后，诊断文本才会导出。CaffeineAI 不会传输导出的文件。</p>
+        <h2>数据共享与联系</h2>
+        <p>CaffeineAI 不含第三方分析或广告 SDK，也不会向开发者服务或其他第三方共享信息。如有隐私问题，请通过 CaffeineAI App Store 产品页面上的支持联系方式联系开发者。</p>
+    </section>
+    <section class="policy-section" data-language="zh-Hant" lang="zh-Hant" hidden>
+        <h1>CaffeineAI 隱私權政策</h1>
+        <p>更新日期：2026 年 10 月 13 日</p>
+        <h2>在此 Mac 上使用的資料</h2>
+        <p>CaffeineAI 不建立帳戶、不顯示廣告、不使用分析工具，也不會將資料傳送至開發者伺服器。</p>
+        <p>只有在已啟用的規則需要某項訊號時，CaffeineAI 才會在這部 Mac 上讀取相關資訊：目前前景或正在執行的 App 識別碼、CPU 與網路流量計數、已掛載卷宗名稱、網路通道介面狀態、音訊裝置是否正在使用、已連線藍牙裝置名稱、所選 Wi-Fi 網路名稱，以及目前是否有日曆行程。電池與熱狀態也只會在本機用於安全規則。這些資訊僅用來判斷規則是否符合，不會上傳。CaffeineAI 不讀取位置座標。日曆規則只檢查行程是否正在進行，不會儲存標題或詳細資料。</p>
+        <h2>權限與控制</h2>
+        <p>macOS 透過「定位服務」權限控管 Wi-Fi 網路名稱的存取，因此 Wi-Fi 名稱規則需要定位權限。日曆規則需要日曆存取權限。藍牙規則啟用時，App 只會在規則執行期間讀取已連線裝置名稱。你可以隨時在 CaffeineAI 中關閉規則，或在「系統設定」中撤銷相應權限。遭拒或無法取得的訊號不會被視為符合規則。</p>
+        <h2>儲存在本機的資訊</h2>
+        <p>偏好設定與規則會儲存在 CaffeineAI 的 App 容器中。啟用歷史記錄後，CaffeineAI 最多會在本機保留 2,000 筆事件，最長七天。事件可能包含時間、類別、詳細資料及規則或工作階段識別碼；前景 App 變更事件會包含該 App 的名稱和 Bundle ID。診斷頁會在記憶體中顯示最近 100 筆事件，並於 App 結束時清除。啟用磁碟保活後，CaffeineAI 會儲存你所選檔案的路徑與安全書籤，並依照所選間隔讀取一個位元組；不會修改檔案。重新啟動後不會恢復進行中的工作階段或電源斷言識別碼。</p>
+        <h2>保留與刪除</h2>
+        <p>決策歷史會在七天後過期；你可以在「自動化」設定中關閉或清除歷史。診斷記錄會在 App 結束時清除。在「關於」中使用「重置設定」可刪除已儲存的偏好與規則。關閉磁碟保活或移除所選檔案即可刪除其書籤。匯出的檔案會保留在你選擇的位置，可由你自行刪除。</p>
+        <h2>匯出</h2>
+        <p>設定匯出包含偏好與規則，但不包含所選檔案路徑、安全書籤或進行中的工作階段。只有在你選擇「儲存」並指定位置後，診斷文字才會匯出。CaffeineAI 不會傳送匯出的檔案。</p>
+        <h2>資料分享與聯絡</h2>
+        <p>CaffeineAI 不含第三方分析或廣告 SDK，也不會將資訊分享給開發者服務或其他第三方。如有隱私問題，請透過 CaffeineAI App Store 產品頁面上的支援聯絡方式聯絡開發者。</p>
+    </section>
+    <section class="policy-section" data-language="ja" lang="ja" hidden>
+        <h1>CaffeineAI プライバシーポリシー</h1>
+        <p>最終更新日：2026年10月13日</p>
+        <h2>この Mac で使用するデータ</h2>
+        <p>CaffeineAI はアカウントを作成せず、広告や分析機能を使用せず、開発者のサーバーにデータを送信しません。</p>
+        <p>有効なルールで信号が必要な場合に限り、この Mac 上で関連情報を読み取ります。対象は、前面または実行中のアプリのバンドル ID、CPU とネットワークのカウンター、マウント中のボリューム名、ネットワークトンネルのインターフェイス状態、オーディオデバイスの使用状態、接続中の Bluetooth デバイス名、選択した Wi-Fi ネットワーク名、カレンダーイベントが現在発生しているかどうかです。バッテリーと熱の状態もローカルの安全ルールに使用します。これらの情報はルールの判定にのみ使われ、アップロードされません。位置座標を読み取りません。カレンダールールはイベントが現在有効かどうかだけを確認し、タイトルや詳細を保存しません。</p>
+        <h2>権限と設定</h2>
+        <p>macOS ではネットワーク名へのアクセスに位置情報サービスの許可が必要なため、Wi-Fi 名のルールには位置情報の許可が必要です。カレンダールールにはカレンダーへのアクセス許可が必要です。Bluetooth ルールは有効な間だけ接続中のデバイス名を読み取ります。CaffeineAI でルールを無効にするか、システム設定でいつでも許可を取り消せます。拒否された信号や取得できない信号は、ルール一致として扱いません。</p>
+        <h2>Mac に保存される情報</h2>
+        <p>設定とルールは CaffeineAI のアプリコンテナに保存されます。履歴を有効にすると、CaffeineAI は最大 2,000 件のイベントを最長 7 日間ローカルに保存します。各イベントには日時、分類、詳細、ルールまたはセッション ID が含まれる場合があります。前面アプリの変更イベントにはアプリ名とバンドル ID が含まれます。診断には直近 100 件のイベントがメモリ内に表示され、アプリ終了時に消去されます。ディスクのスリープ防止を有効にすると、選択したファイルのパスとセキュリティスコープブックマークを保存し、設定した間隔で 1 バイトだけ読み取ります。ファイルは変更しません。再起動後に進行中のセッションや電源アサーション ID は復元されません。</p>
+        <h2>保存期間と削除</h2>
+        <p>判断履歴は 7 日後に期限切れとなり、「自動化」設定から無効化または消去できます。診断情報はアプリ終了時に消去されます。「情報」画面の「設定をリセット」から保存済みの設定とルールを削除できます。ディスクのスリープ防止を無効にするか選択ファイルを解除すると、そのブックマークも削除されます。エクスポートしたファイルは選択した場所に残り、その場所で削除できます。</p>
+        <h2>エクスポート</h2>
+        <p>設定のエクスポートには設定とルールが含まれますが、選択したファイルのパス、安全なブックマーク、進行中のセッションは含まれません。診断テキストは「保存」を選び保存先を指定した場合にのみエクスポートされます。CaffeineAI がエクスポートファイルを送信することはありません。</p>
+        <h2>共有と問い合わせ</h2>
+        <p>CaffeineAI には第三者の分析・広告 SDK はなく、開発者のサービスやその他の第三者と情報を共有しません。プライバシーに関する質問は、CaffeineAI の App Store 製品ページに記載されたサポート窓口から開発者にお問い合わせください。</p>
+    </section>
+    <section class="policy-section" data-language="ko" lang="ko" hidden>
+        <h1>CaffeineAI 개인정보 처리방침</h1>
+        <p>최종 업데이트: 2026년 10월 13일</p>
+        <h2>이 Mac에서 사용하는 데이터</h2>
+        <p>CaffeineAI는 계정을 만들지 않고 광고나 분석 기능을 사용하지 않으며 개발자 서버로 데이터를 보내지 않습니다.</p>
+        <p>활성화된 규칙에 신호가 필요한 경우에만 이 Mac에서 관련 정보를 읽습니다. 대상 정보는 전면 또는 실행 중인 앱의 번들 ID, CPU 및 네트워크 카운터, 마운트된 볼륨 이름, 네트워크 터널 인터페이스 상태, 오디오 기기 사용 여부, 연결된 Bluetooth 기기 이름, 선택한 Wi-Fi 네트워크 이름, 현재 캘린더 이벤트가 있는지 여부입니다. 배터리와 발열 상태도 로컬 안전 규칙에만 사용됩니다. 이 정보는 규칙을 평가하는 데만 사용되며 업로드되지 않습니다. 위치 좌표를 읽지 않습니다. 캘린더 규칙은 현재 이벤트가 있는지만 확인하고 제목이나 세부 정보는 저장하지 않습니다.</p>
+        <h2>권한과 제어</h2>
+        <p>macOS가 네트워크 이름 접근을 위치 서비스 권한으로 제어하므로 Wi-Fi 이름 규칙에는 위치 권한이 필요합니다. 캘린더 규칙에는 캘린더 접근 권한이 필요합니다. Bluetooth 규칙은 활성화된 동안에만 연결된 기기 이름을 읽습니다. CaffeineAI에서 규칙을 끄거나 시스템 설정에서 권한을 언제든지 철회할 수 있습니다. 거부되었거나 사용할 수 없는 신호는 규칙 일치로 처리되지 않습니다.</p>
+        <h2>Mac에 저장되는 정보</h2>
+        <p>환경설정과 규칙은 CaffeineAI 앱 컨테이너에 저장됩니다. 기록을 활성화하면 CaffeineAI는 최대 2,000개의 이벤트를 7일 동안 로컬에 보관합니다. 각 이벤트에는 시각, 범주, 세부 정보, 규칙 또는 세션 식별자가 포함될 수 있습니다. 전면 앱 변경 이벤트에는 앱 이름과 번들 ID가 포함됩니다. 진단 화면은 최근 이벤트 최대 100개를 메모리에 표시하며 앱을 종료하면 지워집니다. 디스크 유지 기능을 켜면 선택한 파일의 경로와 보안 범위 책갈피를 저장하고 설정한 간격마다 1바이트를 읽습니다. 파일을 변경하지 않습니다. 앱을 다시 시작한 뒤에는 진행 중인 세션이나 전원 어설션 식별자를 복원하지 않습니다.</p>
+        <h2>보관 기간과 삭제</h2>
+        <p>결정 기록은 7일 후 만료되며 자동화 설정에서 끄거나 지울 수 있습니다. 진단 정보는 앱 종료 시 지워집니다. 정보 화면의 설정 초기화를 사용하면 저장된 환경설정과 규칙을 삭제할 수 있습니다. 디스크 유지 기능을 끄거나 선택한 파일을 제거하면 해당 책갈피도 삭제됩니다. 내보낸 파일은 선택한 위치에 남으며 해당 위치에서 직접 삭제할 수 있습니다.</p>
+        <h2>내보내기</h2>
+        <p>구성 내보내기에는 환경설정과 규칙이 포함되지만 선택한 파일 경로, 보안 책갈피, 진행 중인 세션은 포함되지 않습니다. 진단 텍스트는 사용자가 저장을 선택하고 위치를 지정한 경우에만 내보냅니다. CaffeineAI는 내보낸 파일을 전송하지 않습니다.</p>
+        <h2>공유 및 문의</h2>
+        <p>CaffeineAI에는 타사 분석 또는 광고 SDK가 없으며 개발자 서비스나 다른 타사와 정보를 공유하지 않습니다. 개인정보 관련 문의는 CaffeineAI App Store 제품 페이지에 표시된 지원 연락처로 개발자에게 문의해 주세요.</p>
+    </section>
+    <section class="policy-section" data-language="fr" lang="fr" hidden>
+        <h1>Politique de confidentialité de CaffeineAI</h1>
+        <p>Dernière mise à jour : 13 octobre 2026</p>
+        <h2>Données utilisées sur ce Mac</h2>
+        <p>CaffeineAI ne crée pas de compte, n’affiche pas de publicité, n’utilise pas d’outils d’analyse et n’envoie aucune donnée à un serveur du développeur.</p>
+        <p>CaffeineAI ne lit une information sur ce Mac que lorsqu’une règle activée en a besoin : l’identifiant de bundle de l’app au premier plan ou en cours d’exécution, les compteurs du processeur et du réseau, les noms des volumes montés, l’état d’une interface de tunnel réseau, l’utilisation d’un appareil audio, le nom des appareils Bluetooth connectés, le nom du réseau Wi-Fi choisi ou la présence d’un événement de calendrier en cours. L’état de la batterie et la pression thermique servent également aux règles de sécurité locales. Ces informations servent uniquement à évaluer vos règles et ne sont pas envoyées. CaffeineAI ne lit pas les coordonnées de localisation. Les règles de calendrier vérifient uniquement si un événement est en cours ; son titre et ses détails ne sont pas enregistrés.</p>
+        <h2>Autorisations et contrôles</h2>
+        <p>macOS exige l’autorisation des services de localisation pour accéder au nom du réseau Wi-Fi. Les règles de calendrier nécessitent l’accès au calendrier. Les règles Bluetooth ne lisent le nom des appareils connectés que lorsqu’elles sont activées. Vous pouvez désactiver une règle dans CaffeineAI ou révoquer son autorisation dans Réglages Système. Un signal refusé ou indisponible ne déclenche pas une règle.</p>
+        <h2>Informations conservées sur le Mac</h2>
+        <p>Les préférences et les règles sont enregistrées dans le conteneur de l’app CaffeineAI. Si l’historique est activé, CaffeineAI conserve jusqu’à 2 000 événements locaux pendant sept jours au maximum. Chaque événement peut inclure sa date, sa catégorie, ses détails et les identifiants de règle ou de session ; les changements d’app au premier plan incluent son nom et son identifiant de bundle. Le diagnostic affiche jusqu’à 100 événements récents en mémoire et les efface lorsque l’app quitte. Si vous activez le maintien du disque, CaffeineAI conserve le chemin et le signet sécurisé du fichier choisi et en lit un octet à l’intervalle défini. Le fichier n’est jamais modifié. Les sessions actives et les identifiants d’assertion d’alimentation ne sont pas restaurés après un redémarrage.</p>
+        <h2>Conservation et suppression</h2>
+        <p>L’historique des décisions expire après sept jours ; vous pouvez le désactiver ou l’effacer dans les réglages Automatisation. Les diagnostics sont effacés à la fermeture de l’app. Utilisez Réinitialiser les réglages dans À propos pour supprimer les préférences et les règles enregistrées. Désactivez le maintien du disque ou retirez le fichier choisi pour supprimer son signet. Les fichiers exportés restent à l’emplacement choisi et vous pouvez les supprimer à cet endroit.</p>
+        <h2>Exports</h2>
+        <p>L’export de configuration contient les réglages et les règles, mais exclut le chemin du fichier choisi, son signet sécurisé et les sessions actives. Le texte de diagnostic n’est exporté qu’après votre choix d’enregistrement et de destination. CaffeineAI ne transmet pas les fichiers exportés.</p>
+        <h2>Partage et contact</h2>
+        <p>CaffeineAI n’intègre aucun SDK tiers d’analyse ou de publicité et ne partage pas d’informations avec un service du développeur ni avec d’autres tiers. Pour toute question relative à la confidentialité, contactez le développeur via les coordonnées d’assistance de la fiche CaffeineAI sur l’App Store.</p>
+    </section>
+    <section class="policy-section" data-language="de" lang="de" hidden>
+        <h1>Datenschutzerklärung von CaffeineAI</h1>
+        <p>Zuletzt aktualisiert: 13. Oktober 2026</p>
+        <h2>Auf diesem Mac verwendete Daten</h2>
+        <p>CaffeineAI erstellt keine Konten, zeigt keine Werbung an, verwendet keine Analysedienste und sendet keine Daten an einen Server des Entwicklers.</p>
+        <p>CaffeineAI liest auf diesem Mac nur dann ein benötigtes Signal, wenn eine aktivierte Regel es erfordert: die Bundle-ID der aktiven oder laufenden App, CPU- und Netzwerkzähler, Namen eingebundener Volumes, den Status einer Netzwerktunnel-Schnittstelle, ob ein Audiogerät verwendet wird, Namen verbundener Bluetooth-Geräte, den Namen des ausgewählten WLANs oder ob gerade ein Kalenderereignis stattfindet. Batterie- und Wärmestatus werden außerdem lokal für Sicherheitsregeln verwendet. Diese Werte dienen ausschließlich der Auswertung deiner Regeln und werden nicht hochgeladen. CaffeineAI liest keine Standortkoordinaten. Kalenderregeln prüfen nur, ob gerade ein Ereignis stattfindet; Titel und Details werden nicht gespeichert.</p>
+        <h2>Berechtigungen und Kontrolle</h2>
+        <p>macOS verlangt die Berechtigung für Ortungsdienste, damit der WLAN-Name gelesen werden kann. Kalenderregeln benötigen Kalenderzugriff. Bluetooth-Regeln lesen Namen verbundener Geräte nur, solange sie aktiviert sind. Du kannst eine Regel jederzeit in CaffeineAI ausschalten oder die Berechtigung in den Systemeinstellungen widerrufen. Abgelehnte oder nicht verfügbare Signale gelten nicht als Treffer.</p>
+        <h2>Lokal gespeicherte Informationen</h2>
+        <p>Einstellungen und Regeln werden im App-Container von CaffeineAI gespeichert. Wenn der Verlauf aktiviert ist, speichert CaffeineAI bis zu 2.000 lokale Ereignisse für höchstens sieben Tage. Ein Ereignis kann Zeitpunkt, Kategorie, Details und Regel- oder Sitzungskennungen enthalten; Ereignisse zu Änderungen der aktiven App enthalten deren Namen und Bundle-ID. Die Diagnoseansicht hält bis zu 100 aktuelle Ereignisse nur im Arbeitsspeicher und löscht sie beim Beenden der App. Wenn du den Festplatten-Wachhalter aktivierst, speichert CaffeineAI den Pfad und das Sicherheitslesezeichen der ausgewählten Datei und liest im gewählten Intervall ein Byte. Die Datei wird nicht verändert. Aktive Sitzungen und Kennungen von Energiezusicherungen werden nach einem Neustart nicht wiederhergestellt.</p>
+        <h2>Aufbewahrung und Löschung</h2>
+        <p>Der Entscheidungsverlauf läuft nach sieben Tagen ab und kann in den Einstellungen unter Automatisierung ausgeschaltet oder gelöscht werden. Diagnosedaten werden beim Beenden der App gelöscht. Mit Einstellungen zurücksetzen unter Info entfernst du gespeicherte Einstellungen und Regeln. Schalte den Festplatten-Wachhalter aus oder entferne die ausgewählte Datei, um das Lesezeichen zu löschen. Exportierte Dateien verbleiben am gewählten Speicherort und können dort gelöscht werden.</p>
+        <h2>Exporte</h2>
+        <p>Ein Konfigurationsexport enthält Einstellungen und Regeln, aber weder den Pfad der ausgewählten Datei noch ihr Sicherheitslesezeichen oder aktive Sitzungen. Diagnosetext wird erst exportiert, wenn du Speichern auswählst und einen Speicherort angibst. CaffeineAI überträgt keine exportierten Dateien.</p>
+        <h2>Weitergabe und Kontakt</h2>
+        <p>CaffeineAI enthält keine Analyse- oder Werbe-SDKs von Drittanbietern und gibt keine Informationen an einen Entwicklerservice oder andere Dritte weiter. Bei Fragen zum Datenschutz erreichst du den Entwickler über die Support-Kontaktdaten auf der CaffeineAI-Produktseite im App Store.</p>
+    </section>
+    <section class="policy-section" data-language="es" lang="es" hidden>
+        <h1>Política de privacidad de CaffeineAI</h1>
+        <p>Última actualización: 13 de octubre de 2026</p>
+        <h2>Datos utilizados en este Mac</h2>
+        <p>CaffeineAI no crea cuentas, no muestra anuncios, no usa herramientas de análisis ni envía datos a un servidor del desarrollador.</p>
+        <p>Solo cuando una regla activa necesita una señal, CaffeineAI lee el dato correspondiente en este Mac: el identificador de paquete de la app en primer plano o en ejecución; los contadores de CPU y red; los nombres de los volúmenes montados; el estado de una interfaz de túnel de red; si se está usando un dispositivo de audio; los nombres de los dispositivos Bluetooth conectados; el nombre de la red Wi-Fi seleccionada; o si hay un evento de calendario activo. El estado de batería y temperatura también se usa localmente para las reglas de seguridad. Estos datos solo sirven para evaluar tus reglas y no se envían. CaffeineAI no lee coordenadas de ubicación. Las reglas de calendario solo comprueban si hay un evento activo; no guardan su título ni sus detalles.</p>
+        <h2>Permisos y controles</h2>
+        <p>macOS exige permiso de Localización para acceder al nombre de la red Wi-Fi. Las reglas de calendario requieren acceso al calendario. Las reglas de Bluetooth solo leen los nombres de dispositivos conectados mientras están activas. Puedes desactivar una regla en CaffeineAI o revocar su permiso en Ajustes del Sistema cuando quieras. Una señal denegada o no disponible no cuenta como coincidencia.</p>
+        <h2>Información guardada localmente</h2>
+        <p>Las preferencias y reglas se guardan en el contenedor de la app CaffeineAI. Si activas el historial, CaffeineAI guarda hasta 2.000 eventos locales durante un máximo de siete días. Cada evento puede incluir fecha, categoría, detalles e identificadores de regla o sesión; los eventos sobre cambios de la app en primer plano incluyen su nombre y su identificador de paquete. Diagnósticos muestra hasta 100 eventos recientes en memoria y los borra al cerrar la app. Si activas el mantenimiento del disco, CaffeineAI guarda la ruta y el marcador de seguridad del archivo que eliges y lee un byte con el intervalo seleccionado. Nunca modifica el archivo. Las sesiones activas y los identificadores de aserción de energía no se restauran tras reiniciar.</p>
+        <h2>Conservación y eliminación</h2>
+        <p>El historial de decisiones caduca a los siete días; puedes desactivarlo o borrarlo en los ajustes de Automatización. Los diagnósticos se borran al cerrar la app. Usa Restablecer ajustes en Acerca de para eliminar las preferencias y reglas guardadas. Desactiva el mantenimiento del disco o quita el archivo seleccionado para borrar su marcador. Los archivos exportados permanecen en la ubicación que elijas y puedes borrarlos allí.</p>
+        <h2>Exportaciones</h2>
+        <p>La exportación de configuración incluye ajustes y reglas, pero excluye la ruta del archivo seleccionado, su marcador de seguridad y las sesiones activas. El texto de diagnóstico solo se exporta cuando eliges Guardar y seleccionas un destino. CaffeineAI no transmite los archivos exportados.</p>
+        <h2>Compartición y contacto</h2>
+        <p>CaffeineAI no incluye SDK de análisis ni publicidad de terceros y no comparte información con un servicio del desarrollador ni con terceros. Para consultas sobre privacidad, contacta con el desarrollador mediante los datos de soporte de la ficha de CaffeineAI en el App Store.</p>
+    </section>
+    </div>
+</main>
+
+<footer>
+    <div class="container footer-inner">
+        <span>CaffeineAI · <span id="footer-label">隐私政策</span></span>
+        <nav class="footer-nav" id="footer-navigation" aria-label="页脚导航">
+            <a href="index.html" data-nav="home">首页</a>
+            <a href="support.html" data-nav="support">技术支持</a>
+        </nav>
+    </div>
+</footer>
+
+<script>
+    (() => {
+        const buttons = [...document.querySelectorAll(".lang-btn")];
+        const sections = [...document.querySelectorAll(".policy-section")];
+        const titles = {
+            "en": "CaffeineAI Privacy Policy",
+            "zh-Hans": "CaffeineAI 隐私政策",
+            "zh-Hant": "CaffeineAI 隱私權政策",
+            "ja": "CaffeineAI プライバシーポリシー",
+            "ko": "CaffeineAI 개인정보 처리방침",
+            "fr": "Politique de confidentialité de CaffeineAI",
+            "de": "Datenschutzerklärung von CaffeineAI",
+            "es": "Política de privacidad de CaffeineAI"
+        };
+        const languageLabels = {
+            "en": "Language",
+            "zh-Hans": "选择语言",
+            "zh-Hant": "選擇語言",
+            "ja": "言語を選択",
+            "ko": "언어 선택",
+            "fr": "Choisir la langue",
+            "de": "Sprache wählen",
+            "es": "Elegir idioma"
+        };
+        const footerLabels = {
+            "en": "Privacy Policy",
+            "zh-Hans": "隐私政策",
+            "zh-Hant": "隱私權政策",
+            "ja": "プライバシーポリシー",
+            "ko": "개인정보 처리방침",
+            "fr": "Politique de confidentialité",
+            "de": "Datenschutzerklärung",
+            "es": "Política de privacidad"
+        };
+        const navigationLabels = {
+            "en": { home: "Home", privacy: "Privacy", support: "Support", site: "Site navigation", footer: "Footer navigation" },
+            "zh-Hans": { home: "首页", privacy: "隐私政策", support: "技术支持", site: "网站导航", footer: "页脚导航" },
+            "zh-Hant": { home: "首頁", privacy: "隱私權政策", support: "技術支援", site: "網站導覽", footer: "頁尾導覽" },
+            "ja": { home: "ホーム", privacy: "プライバシー", support: "サポート", site: "サイトナビゲーション", footer: "フッターナビゲーション" },
+            "ko": { home: "홈", privacy: "개인정보 처리방침", support: "지원", site: "사이트 탐색", footer: "바닥글 탐색" },
+            "fr": { home: "Accueil", privacy: "Confidentialité", support: "Assistance", site: "Navigation du site", footer: "Navigation de pied de page" },
+            "de": { home: "Startseite", privacy: "Datenschutz", support: "Support", site: "Seitennavigation", footer: "Fußnavigation" },
+            "es": { home: "Inicio", privacy: "Privacidad", support: "Soporte", site: "Navegación del sitio", footer: "Navegación del pie" }
+        };
+
+        function preferredLanguage() {
+            const supported = new Set(buttons.map(button => button.dataset.language));
+            for (const raw of navigator.languages || [navigator.language || ""]) {
+                const normalized = raw.toLowerCase();
+                if (normalized.startsWith("zh-hant") || normalized === "zh-tw" || normalized === "zh-hk" || normalized === "zh-mo") return "zh-Hant";
+                if (normalized.startsWith("zh")) return "zh-Hans";
+                const exact = [...supported].find(language => language.toLowerCase() === normalized);
+                if (exact) return exact;
+                const base = normalized.split("-")[0];
+                const match = [...supported].find(language => language.toLowerCase() === base);
+                if (match) return match;
+            }
+            return "zh-Hans";
+        }
+
+        function selectLanguage(language) {
+            sections.forEach(section => { section.hidden = section.dataset.language !== language; });
+            buttons.forEach(button => {
+                const selected = button.dataset.language === language;
+                button.classList.toggle("active", selected);
+                button.setAttribute("aria-pressed", String(selected));
+            });
+            document.documentElement.lang = language;
+            document.title = titles[language] || titles["en"];
+            document.getElementById("language-label").textContent = languageLabels[language] || languageLabels["en"];
+            document.getElementById("footer-label").textContent = footerLabels[language] || footerLabels["en"];
+            document.getElementById("eyebrow-label").textContent = footerLabels[language] || footerLabels["en"];
+            document.getElementById("site-navigation").setAttribute("aria-label", (navigationLabels[language] || navigationLabels["en"]).site);
+            document.getElementById("footer-navigation").setAttribute("aria-label", (navigationLabels[language] || navigationLabels["en"]).footer);
+            document.querySelectorAll("[data-nav]").forEach(link => {
+                const key = link.dataset.nav;
+                link.textContent = (navigationLabels[language] || navigationLabels["en"])[key];
+            });
+        }
+
+        buttons.forEach(button => button.addEventListener("click", () => selectLanguage(button.dataset.language)));
+        selectLanguage(preferredLanguage());
+    })();
+</script>
+</body>
+</html>
