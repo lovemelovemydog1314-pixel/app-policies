@@ -97,7 +97,7 @@
   render(current);
   document.addEventListener('change',e=>{ if(!e.target.matches('[data-lang]'))return; const controlId=e.target.id; current=e.target.value; stored('app-policies-language',current); const u=new URL(location.href);u.searchParams.set('lang',current);history.replaceState(null,'',u);render(current);document.getElementById(controlId)?.focus({preventScroll:true}); });
   document.addEventListener('click',async e=>{
-    const theme=e.target.closest('[data-theme]');
+    const theme=e.target.closest('button[data-theme]');
     if(theme){const value=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=value;stored('app-policies-theme',value);themeButtons(current);return;}
     const copy=e.target.closest('[data-copy]'); if(copy){const status=document.querySelector('.copy-status');try{await navigator.clipboard.writeText(email);status.textContent=L[current].copied;}catch{status.textContent=email;}return;}
   });
