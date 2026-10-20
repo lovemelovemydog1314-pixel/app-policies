@@ -1,57 +1,39 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="zh-Hans" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="WaveDeck 使用设备音频近距离发送兼容时码，帮助电波表完成时间校准。">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="六种标准时码、NTP 时间参考与本地手表方案，让兼容的电波表对时更有准备。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="WaveDeck | 电波表近场对时">
+  <meta property="og:description" content="六种标准时码、NTP 时间参考与本地手表方案，让兼容的电波表对时更有准备。">
   <title>WaveDeck | 电波表近场对时</title>
-  <link rel="icon" type="image/png" href="assets/icon.png">
-  <link rel="stylesheet" href="assets/site.css">
+  <link rel="icon" type="image/webp" href="assets/icon.webp">
+  <link rel="stylesheet" href="assets/site.css?v=20261020">
+  <script>try { var theme = localStorage.getItem('wavedeck-theme'); if (theme === 'light' || theme === 'dark') { document.documentElement.dataset.theme = theme; document.querySelector('meta[name="theme-color"]').content = theme === 'light' ? '#f4f7fb' : '#0b1220'; } } catch (e) {}</script>
+  <script defer src="assets/locales.js?v=20261020"></script>
+  <script defer src="assets/policy.js?v=20261020"></script>
+  <script defer src="assets/site.js?v=20261020"></script>
 </head>
-<body style="--accent:#815014">
-  <div class="page-shell">
-    <header class="site-header">
-      <a class="brand" href="index.html"><img src="assets/icon.png" alt=""><span>WaveDeck</span></a>
-      <nav class="site-nav" aria-label="主导航">
-        <a href="index.html" aria-current="page">产品首页</a>
-        <a href="privacy.html">隐私政策</a>
-        <a href="support.html">技术支持</a>
-      </nav>
-    </header>
-    <main>
-      <section class="hero" aria-labelledby="page-title">
-        <div class="hero-copy">
-          <p class="eyebrow">A closer time-signal workflow</p>
-          <h1 id="page-title">让电波表对时更清楚、更有准备。</h1>
-          <p class="lede">WaveDeck 使用 iPhone、iPad 或 Mac 的音频输出近距离发送兼容时码，帮助电波表完成时间校准，并保存不同手表的设置方案。</p>
-          <div class="actions">
-            <a class="button" href="support.html">查看使用帮助</a>
-            <a class="text-link" href="privacy.html">隐私政策与声明</a>
-          </div>
-        </div>
-        <figure class="hero-art">
-          <img src="assets/icon.png" alt="WaveDeck 应用图标">
-          <figcaption>近场音频时码工具</figcaption>
-        </figure>
-      </section>
-      <section class="content-section" aria-labelledby="features-title">
-        <p class="eyebrow">Prepare, transmit, review</p>
-        <h2 class="section-heading" id="features-title">每次尝试，都能按手表与环境准备。</h2>
-        <div class="feature-list">
-          <article class="feature"><span class="feature-number">01</span><div><h3>六种标准时码</h3><p>支持 BPC、JJY40、JJY60、WWVB、MSF 和 DCF77，按手表档案选择合适的设置。</p></div></article>
-          <article class="feature"><span class="feature-number">02</span><div><h3>设备音频近场输出</h3><p>可使用扬声器贴合或有线耳机线圈等输出路径。WaveDeck 发送的是音频信号方案，不是无线电发射器。</p></div></article>
-          <article class="feature"><span class="feature-number">03</span><div><h3>保存方案与结果</h3><p>使用 NTP 时间参考，查看同步状态和环境提示，并记录发射历史以便复用已确认的设置。</p></div></article>
-        </div>
-      </section>
-      <section class="privacy-note" aria-labelledby="privacy-title">
-        <h2 id="privacy-title">结果取决于使用环境</h2>
-        <p>对时效果会受手表型号、音频设备和摆放方式影响。WaveDeck 不保证每次都能成功，也不代表与手表品牌或授时台运营方存在官方合作。请阅读<a href="privacy.html">隐私政策与免责声明</a>。</p>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <span>© 2026 WaveDeck</span>
-      <nav class="footer-links" aria-label="页脚导航"><a href="index.html">首页</a><a href="privacy.html">隐私政策</a><a href="support.html">技术支持</a></nav>
-    </footer>
-  </div>
+<body data-page="index">
+<a class="skip-link" href="#main-content">跳到主要内容</a><div class="page-shell"><header class="site-header"><a class="brand" href="index.html?lang=zh-Hans"><img src="assets/icon.webp" alt="" width="40" height="40"><span>WaveDeck</span></a><nav class="site-nav" aria-label="主导航"><a href="index.html?lang=zh-Hans" aria-current="page">产品首页</a><a href="privacy.html?lang=zh-Hans">隐私政策</a><a href="support.html?lang=zh-Hans">技术支持</a></nav><div class="header-actions"><label class="language-control" hidden><span class="sr-only">语言</span><select id="language-select" data-language-select aria-label="语言"><option value="zh-Hans" lang="zh-Hans" selected>简体中文</option><option value="zh-Hant" lang="zh-Hant">繁體中文</option><option value="en" lang="en">English</option><option value="ja" lang="ja">日本語</option><option value="ko" lang="ko">한국어</option><option value="de" lang="de">Deutsch</option><option value="fr" lang="fr">Français</option><option value="es" lang="es">Español</option></select></label><button class="theme-toggle" type="button" hidden></button></div></header><main id="main-content" tabindex="-1"><section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy"><p class="eyebrow">iPhone、iPad 与 Mac 上的对时工具</p><h1 id="page-title"><span class="headline-phrase">让电波表对时，</span><span class="headline-phrase">更有把握。</span></h1><p class="lede">六种标准时码，搭配设备音频输出，为你的爱表找到合适的近场对时方案。</p><div class="actions"><a class="button" href="https://apps.apple.com/app/id6810270280" target="_blank" rel="noopener noreferrer">在 App Store 查看 <span aria-hidden="true">↗</span></a><a class="text-link" href="support.html?lang=zh-Hans">了解如何使用 <span aria-hidden="true">→</span></a></div></div>
+      <figure class="app-preview hero-preview">
+      <a class="screenshot-link" href="assets/screenshots/zh/1.overview.webp" data-preview aria-label="放大查看截图: WaveDeck 对时控制台"><img src="assets/screenshots/zh/1.overview.webp" alt="WaveDeck 对时控制台" width="1800" height="1125" fetchpriority="high" decoding="async"></a>
+      <figcaption><span>WaveDeck 对时控制台</span><span>应用界面预览</span></figcaption>
+    </figure>
+    </section>
+    <section class="station-section" aria-labelledby="stations-title"><h2 id="stations-title">六种标准时码，按你的手表选择。</h2><dl class="stations"><div><dt>BPC</dt><dd>中国</dd></div><div><dt>JJY40</dt><dd>日本</dd></div><div><dt>JJY60</dt><dd>日本</dd></div><div><dt>WWVB</dt><dd>美国</dd></div><div><dt>MSF</dt><dd>英国</dd></div><div><dt>DCF77</dt><dd>德国</dd></div></dl></section>
+    <section class="content-section" aria-labelledby="features-title"><div class="section-heading"><h2 id="features-title">为不同的表，留住合适的设置。</h2><p>从型号匹配到发射记录，每一次尝试都有迹可循。</p></div><div class="feature-layout"><div class="feature-list"><article class="feature"><span class="feature-index" aria-hidden="true">01</span><div><h3>先找到你的表款</h3><p>手动搜索，或拍摄、选择表背照片，在设备本地识别型号与机芯文字。匹配结果由你核对。</p></div></article><article class="feature"><span class="feature-index" aria-hidden="true">02</span><div><h3>按设备选择输出</h3><p>使用设备扬声器或有线耳机线圈。先检查音频路径、摆位与环境，再开始发射。</p></div></article><article class="feature"><span class="feature-index" aria-hidden="true">03</span><div><h3>看清时间参考</h3><p>通过网络时间服务获取参考时间，查看同步状态、网络延迟与本地时钟偏差。</p></div></article><article class="feature"><span class="feature-index" aria-hidden="true">04</span><div><h3>复用确认有效的方案</h3><p>在本地保存手表设置和发射历史，结合已确认的接收结果获取下一步建议。</p></div></article></div><figure class="app-preview">
+      <a class="screenshot-link" href="assets/screenshots/zh/3.watches.webp" data-preview aria-label="放大查看截图: WaveDeck 手表方案与型号选择界面"><img src="assets/screenshots/zh/3.watches.webp" alt="WaveDeck 手表方案与型号选择界面" width="1800" height="1125" loading="lazy" decoding="async"></a>
+      <figcaption><span>WaveDeck 手表方案与型号选择界面</span><span>应用界面预览</span></figcaption>
+    </figure></div></section>
+    <section class="content-section" aria-labelledby="start-title"><div class="section-heading"><h2 id="start-title">从这三件事开始。</h2><p>先准备好设置，再把接收结果交给手表确认。</p></div><div class="guide-layout"><figure class="app-preview">
+      <a class="screenshot-link" href="assets/screenshots/zh/4.guide.webp" data-preview aria-label="放大查看截图: WaveDeck 近场对时摆放指南"><img src="assets/screenshots/zh/4.guide.webp" alt="WaveDeck 近场对时摆放指南" width="1800" height="1125" loading="lazy" decoding="async"></a>
+      <figcaption><span>WaveDeck 近场对时摆放指南</span><span>应用界面预览</span></figcaption>
+    </figure><ol class="steps "><li><span class="step-index" aria-hidden="true">1</span><div><h3>匹配手表与时码</h3><p>核对手表型号、授时台及城市码，并让手表进入手动接收模式。</p></div></li><li><span class="step-index" aria-hidden="true">2</span><div><h3>同步时间并摆放设备</h3><p>刷新时间参考，将手表天线靠近扬声器或有线耳机线圈，保持位置稳定。</p></div></li><li><span class="step-index" aria-hidden="true">3</span><div><h3>确认结果并保存</h3><p>等待接收完成，以手表上的结果为准；记录本次设置，便于下次复用。</p></div></li></ol></div></section>
+    <section class="privacy-note" aria-labelledby="privacy-title"><div><h2 id="privacy-title">设置留在本地，网络访问说清楚。</h2><p>无需账号。手表方案、发射历史和照片识别在设备上处理；网络校时会连接第三方时间服务。</p></div><a class="text-link" href="privacy.html?lang=zh-Hans">阅读隐私政策与声明 <span aria-hidden="true">→</span></a></section>
+    <aside class="limits"><h2>为兼容的电波表提供辅助</h2><p>WaveDeck 使用设备音频进行近场耦合。结果受表款、设备和摆放环境影响，不保证每次成功，也不代表与手表品牌或授时台存在官方合作。</p></aside></main><footer class="site-footer"><div><a class="footer-brand" href="index.html?lang=zh-Hans">WaveDeck</a><p>为每一次对时，做好准备。</p><small>© 2026 WaveDeck</small></div><div class="footer-tools"><nav class="footer-links" aria-label="页脚导航"><a href="index.html?lang=zh-Hans" aria-current="page">产品首页</a><a href="privacy.html?lang=zh-Hans">隐私政策</a><a href="support.html?lang=zh-Hans">技术支持</a></nav><div class="footer-actions"><label class="language-control" hidden><span class="sr-only">语言</span><select id="footer-language-select" data-language-select aria-label="语言"><option value="zh-Hans" lang="zh-Hans" selected>简体中文</option><option value="zh-Hant" lang="zh-Hant">繁體中文</option><option value="en" lang="en">English</option><option value="ja" lang="ja">日本語</option><option value="ko" lang="ko">한국어</option><option value="de" lang="de">Deutsch</option><option value="fr" lang="fr">Français</option><option value="es" lang="es">Español</option></select></label><button class="theme-toggle" type="button" hidden></button></div></div></footer></div><dialog class="image-dialog" aria-label="应用界面预览"><button class="dialog-close" type="button">关闭预览 <span aria-hidden="true">×</span></button><img alt="" width="1800" height="1125"></dialog>
 </body>
 </html>
