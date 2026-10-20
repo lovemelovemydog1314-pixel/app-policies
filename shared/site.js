@@ -91,7 +91,7 @@
     themeButtons(lang);
   }
   function stored(key,value) { try { if(value===undefined)return localStorage.getItem(key); localStorage.setItem(key,value); } catch {} return null; }
-  function themeButtons(lang) { document.querySelectorAll('[data-theme]').forEach(b=>{const dark=document.documentElement.dataset.theme==='dark'; b.textContent=dark?L[lang].theme[0]:L[lang].theme[1]; b.setAttribute('aria-label',dark?L[lang].theme[0]:L[lang].theme[1]); b.title=dark?L[lang].theme[0]:L[lang].theme[1];}); }
+  function themeButtons(lang) { document.querySelectorAll('button[data-theme]').forEach(b=>{const dark=document.documentElement.dataset.theme==='dark'; b.textContent=dark?L[lang].theme[0]:L[lang].theme[1]; b.setAttribute('aria-label',dark?L[lang].theme[0]:L[lang].theme[1]); b.title=dark?L[lang].theme[0]:L[lang].theme[1];}); }
   let current=chosenLanguage();
   const storedTheme=stored('app-policies-theme'); document.documentElement.dataset.theme=storedTheme==='light'?'light':'dark';
   render(current);
