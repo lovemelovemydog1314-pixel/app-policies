@@ -24,11 +24,11 @@ for (const [i, page] of api.pages.entries()) {
   <meta property="og:description" content="${c.description[i]}">
   <title>${c.meta[i]}</title>
   <link rel="icon" type="image/webp" href="assets/icon.webp">
-  <link rel="stylesheet" href="assets/site.css?v=20261020">
+  <link rel="stylesheet" href="assets/site.css?v=20261020b">
   <script>try { var theme = localStorage.getItem('wavedeck-theme'); if (theme === 'light' || theme === 'dark') { document.documentElement.dataset.theme = theme; document.querySelector('meta[name="theme-color"]').content = theme === 'light' ? '#f4f7fb' : '#0b1220'; } } catch (e) {}</script>
-  <script defer src="assets/locales.js?v=20261020"></script>
-  <script defer src="assets/policy.js?v=20261020"></script>
-  <script defer src="assets/site.js?v=20261020"></script>
+  <script defer src="assets/locales.js?v=20261020b"></script>
+  <script defer src="assets/policy.js?v=20261020b"></script>
+  <script defer src="assets/site.js?v=20261020b"></script>
 </head>
 <body data-page="${page}">
 ${api.render(page, 'zh-Hans')}

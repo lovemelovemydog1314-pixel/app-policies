@@ -131,8 +131,6 @@ p { color: var(--muted); }
 .email-link { display: block; font: .9rem/1.8 ui-monospace, Menlo, monospace; overflow-wrap: anywhere; }
 .copy-email { margin-top: 12px; padding: 0; min-height: 38px; color: var(--accent); border: 0; background: transparent; font-size: .84rem; text-decoration: underline; text-underline-offset: 4px; }
 .copy-status { display: block; min-height: 1.6em; font-size: .8rem; color: var(--muted); }
-.community { margin-top: 14px; padding-top: 18px; border-top: 1px solid var(--line); }
-.community span { color: var(--ink); font-family: ui-monospace, Menlo, monospace; margin-left: 8px; }
 .steps-horizontal { grid-template-columns: repeat(3, 1fr); gap: 36px; }
 .support-hero + .content-section { border-block: 1px solid var(--line); }
 .faq-section { display: grid; grid-template-columns: .72fr 1.28fr; gap: 70px; padding: 76px 0; }

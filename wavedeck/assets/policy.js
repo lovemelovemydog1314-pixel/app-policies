@@ -10,7 +10,6 @@ window.WAVEDECK_POLICY = {
     "additionalHeading": "三、附加聲明",
     "additionalBody": "WaveDeck 是獨立開發的時間工具，與 Apple Inc.、卡西歐（CASIO）、西鐵城（CITIZEN）、精工（SEIKO）或其他手錶及硬體廠商沒有隸屬或商業合作關係。文中提及的品牌及電波制式名稱（BPC、JJY、WWVB、MSF、DCF77 等）均為各自權利人的註冊商標，僅用於客觀說明技術相容性。",
     "feedbackEmailLabel": "問題回報電子郵件：",
-    "qqGroupLabel": "QQ 交流群組：",
     "privacySections": [
       {
         "id": "collection",
@@ -91,7 +90,6 @@ window.WAVEDECK_POLICY = {
     "additionalHeading": "III. 追加のお知らせ",
     "additionalBody": "WaveDeck は独立して開発された時刻ツールであり、Apple Inc.、カシオ (CASIO)、シチズン (CITIZEN)、セイコー (SEIKO) などの時計・ハードウェアメーカーとの系列関係や商業提携はありません。記載されているブランド名と電波方式名（BPC、JJY、WWVB、MSF、DCF77 など）は各権利者の登録商標であり、技術的な互換性を客観的に説明する目的でのみ使用しています。",
     "feedbackEmailLabel": "お問い合わせメール：",
-    "qqGroupLabel": "QQ グループ：",
     "privacySections": [
       {
         "id": "collection",
@@ -172,7 +170,6 @@ window.WAVEDECK_POLICY = {
     "additionalHeading": "III. Ergänzender Hinweis",
     "additionalBody": "WaveDeck ist ein unabhängig entwickeltes Zeitwerkzeug und steht in keiner Verbindung oder geschäftlichen Partnerschaft mit Apple Inc., Casio, Citizen, Seiko oder anderen Uhren- und Hardwareherstellern. Alle genannten Marken und Funkzeitformate (BPC, JJY, WWVB, MSF, DCF77 usw.) sind eingetragene Marken ihrer jeweiligen Inhaber und werden ausschließlich zur sachlichen Beschreibung der technischen Kompatibilität genannt.",
     "feedbackEmailLabel": "Support-E-Mail:",
-    "qqGroupLabel": "QQ-Gruppe:",
     "privacySections": [
       {
         "id": "collection",
@@ -253,7 +250,6 @@ window.WAVEDECK_POLICY = {
     "additionalHeading": "III. Mention complémentaire",
     "additionalBody": "WaveDeck est un outil horaire développé de manière indépendante, sans affiliation ni partenariat commercial avec Apple Inc., Casio, Citizen, Seiko ou d’autres fabricants de montres et de matériel. Les marques et formats radio cités (BPC, JJY, WWVB, MSF, DCF77, etc.) sont des marques déposées de leurs propriétaires respectifs et ne sont mentionnés qu’à titre descriptif pour expliquer la compatibilité technique.",
     "feedbackEmailLabel": "E-mail d’assistance :",
-    "qqGroupLabel": "Groupe QQ :",
     "privacySections": [
       {
         "id": "collection",
@@ -334,7 +330,6 @@ window.WAVEDECK_POLICY = {
     "additionalHeading": "III. 추가 안내",
     "additionalBody": "WaveDeck은 독립적으로 개발된 시간 도구이며 Apple Inc., 카시오(CASIO), 시티즌(CITIZEN), 세이코(SEIKO) 등 시계 또는 하드웨어 제조사와 제휴하거나 상업적 관계를 맺고 있지 않습니다. 언급된 브랜드와 전파 형식(BPC, JJY, WWVB, MSF, DCF77 등)은 각 권리자의 등록 상표이며 기술 호환성을 객관적으로 설명하기 위해서만 사용됩니다.",
     "feedbackEmailLabel": "문의 이메일:",
-    "qqGroupLabel": "QQ 그룹:",
     "privacySections": [
       {
         "id": "collection",
@@ -415,7 +410,6 @@ window.WAVEDECK_POLICY = {
     "additionalHeading": "III. Aviso adicional",
     "additionalBody": "WaveDeck es una herramienta horaria desarrollada de forma independiente y no está afiliada ni mantiene acuerdos comerciales con Apple Inc., Casio, Citizen, Seiko u otros fabricantes de relojes o hardware. Las marcas y los formatos horarios de radio mencionados (BPC, JJY, WWVB, MSF, DCF77, etc.) son marcas registradas de sus respectivos titulares y se citan únicamente para describir objetivamente la compatibilidad técnica.",
     "feedbackEmailLabel": "Correo de soporte:",
-    "qqGroupLabel": "Grupo QQ:",
     "privacySections": [
       {
         "id": "collection",
@@ -565,7 +559,6 @@ window.WAVEDECK_POLICY = {
     "additionalHeading": "三、附加声明",
     "additionalBody": "WaveDeck 是一款独立开发的时间工具软件，与 Apple Inc.、卡西欧（CASIO）、西铁城（CITIZEN）、精工（SEIKO）等手表或硬件厂商无任何隶属或商业合作关系。所有提及的品牌与电波制式名称（BPC、JJY、WWVB、MSF、DCF77 等）均为其各自商标持有人的注册商标，仅用于技术兼容性客观描述。",
     "feedbackEmailLabel": "问题反馈邮箱：",
-    "qqGroupLabel": "QQ 交流群："
   },
   "en": {
     "title": "WaveDeck Privacy Policy & Disclaimer",
@@ -646,6 +639,5 @@ window.WAVEDECK_POLICY = {
     "additionalHeading": "III. Additional Notice",
     "additionalBody": "WaveDeck is an independently developed utility with no affiliation, partnership, or endorsement from Apple Inc., Casio, Citizen, Seiko, or other watch manufacturers. All mentioned brand names and radio station formats (BPC, JJY, WWVB, MSF, DCF77, etc.) are registered trademarks of their respective owners, cited strictly for descriptive technical compatibility.",
     "feedbackEmailLabel": "Feedback email:",
-    "qqGroupLabel": "QQ community group:"
   }
 };
