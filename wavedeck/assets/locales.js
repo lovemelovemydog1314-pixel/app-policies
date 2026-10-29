@@ -1,6 +1,14 @@
 /* All visible website copy. Policy paragraphs live in policy.js. */
 window.WAVEDECK_LOCALES = {
   'zh-Hans': {
+    allApps: "Todas las apps", 
+    allApps: "Toutes les apps", 
+    allApps: "Alle Apps", 
+    allApps: "모든 앱", 
+    allApps: "すべてのアプリ", 
+    allApps: "All Apps", 
+    allApps: "全部 App", 
+    allApps: "全部应用", 
     stationNotice: "WaveDeck 与任何政府授时机构或授时台运营方没有隶属关系，也未获其授权或背书。时码及授时台名称仅用于描述公开格式的技术兼容性。",
     nav: ['产品首页', '隐私政策', '技术支持'], navLabel: '主导航', footerLabel: '页脚导航', skip: '跳到主要内容', language: '语言', light: '浅色', dark: '深色', lightLabel: '切换至浅色外观', darkLabel: '切换至深色外观',
     download: '在 App Store 查看', mail: '发送支持邮件', copy: '复制邮箱', copied: '邮箱已复制', copyError: '请手动复制下方邮箱', close: '关闭预览', zoom: '放大查看截图', screenshotNote: '应用界面预览', englishNote: '此截图展示英文界面', footer: '为每一次对时，做好准备。',
