@@ -87,10 +87,6 @@
         </div>
         <div class="footer-right">
           ${nav(lang, true)}
-          <div class="footer-controls">
-            ${languageSelect(lang, 'bottom')}
-            <button class="theme" type="button" data-theme aria-label="${escape(c.theme[0])}"></button>
-          </div>
         </div>
       </footer>
     `;

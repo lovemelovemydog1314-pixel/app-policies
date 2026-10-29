@@ -64,15 +64,6 @@ const html = (app, page) => {
       </div>
       <div class="footer-right">
         <nav class="footer-nav" aria-label="页尾导航">${menu}</nav>
-        <div class="footer-controls">
-          <label class="language">
-            <span class="sr-only">语言</span>
-            <select aria-label="语言" data-lang id="bottom-language">
-              ${locales.map(k=>`<option value="${k}" lang="${k}"${k==='zh-Hans'?' selected':''}>${languages[k].name}</option>`).join('')}
-            </select>
-          </label>
-          <button class="theme" type="button" data-theme>浅色</button>
-        </div>
       </div>
     </footer>
   `;

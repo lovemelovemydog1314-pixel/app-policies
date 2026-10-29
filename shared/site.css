@@ -1045,9 +1045,7 @@ p {
 }
 
 .footer-controls {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+  display: none !important;
 }
 
 /* ==========================================================================
