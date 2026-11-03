@@ -190,6 +190,23 @@ body[data-app="zipmaster"] {
   --tint-border: rgba(180, 83, 9, 0.18);
 }
 
+body[data-app="couple"] {
+  --accent: #fb7185;
+  --accent-glow: rgba(251, 113, 133, 0.32);
+  --accent-subtle: rgba(251, 113, 133, 0.12);
+  --on-accent: #3d0615;
+  --tint: rgba(251, 113, 133, 0.08);
+  --tint-border: rgba(251, 113, 133, 0.24);
+}
+:root[data-theme="light"] body[data-app="couple"] {
+  --accent: #e11d48;
+  --accent-glow: rgba(225, 29, 72, 0.18);
+  --accent-subtle: rgba(225, 29, 72, 0.08);
+  --on-accent: #ffffff;
+  --tint: rgba(225, 29, 72, 0.06);
+  --tint-border: rgba(225, 29, 72, 0.18);
+}
+
 /* ==========================================================================
    Base & Resets
    ========================================================================== */

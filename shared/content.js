@@ -59,6 +59,81 @@
       features:[['创建与解开归档','Create and extract archives','Créer et extraire','Archive erstellen und entpacken','Crear y extraer archivos','압축 파일 생성 및 해제','作成・展開','建立與解開封存檔'],['SHA-256 清单校验','SHA-256 manifest checks','Vérification SHA-256','SHA-256-Prüfung','Verificación SHA-256','SHA-256 목록 검사','SHA-256 検証','SHA-256 清單校驗'],['批量完整性测试','Batch integrity tests','Tests d’intégrité groupés','Integritätstests im Stapel','Pruebas por lotes','일괄 무결성 검사','一括整合性テスト','批次完整性測試']],
       facts:{en:['Archive creation, extraction, browsing, and hash verification are performed locally on your Mac. The app accesses files only within the scope authorized by macOS.','An archive password is used only for the current task and is not uploaded or shared by the app. Temporary processing files are used only as needed for the operation.','The app does not include analytics, advertising, tracking, or cloud-storage SDKs. Diagnostic information is shared only if you choose to contact support and include it.','A SHA-256 match confirms that content matches the listed hash; it does not prove who sent the file. Keep backups of important data before archive operations.'], zh:['归档创建、解压、浏览和哈希校验都在 Mac 本机完成。应用仅在 macOS 授权范围内访问文件。','归档密码只用于当前任务，应用不会上传或共享密码。临时处理文件仅在操作所需时使用。','应用不含分析、广告、追踪或云存储 SDK。只有你主动联系支持并附上诊断信息时，相关信息才会被分享。','SHA-256 匹配表示文件内容与清单哈希一致，不证明发送者身份。处理重要数据前请保留备份。']},
       faq:[['校验成功能证明发送者身份吗？','不能。它只说明文件内容与清单中的 SHA-256 值一致。'],['加密归档密码会被保存吗？','密码仅用于当前任务，不会发送给开发者。请勿通过邮件发送密码。'],['归档文件会上传吗？','不会。文件处理在本机完成。']]
+    },
+    'couple': {
+      name:'Couple', platform:'iOS',
+      tagline:{'zh-Hans':'两个人的小家，一起认真记录。','zh-Hant':'兩個人的小家，一起認真記錄。',en:'A private home for the everyday things you share.',ja:'ふたりの暮らしを、大切にていねいに記録。',ko:'둘만의 소중한 일상을 함께 기록하세요.',de:'Ein gemeinsames Zuhause für die Dinge, die ihr teilt.',fr:'Un foyer privé pour tout ce que vous partagez à deux.',es:'Un espacio íntimo para compartir el día a día en pareja.'},
+      description:{'zh-Hans':'Couple 把账本、愿望、纪念日与日常资料放在一起，私密陪伴两人的共同生活。','zh-Hant':'Couple 將共同帳本、願望、紀念日與日常資料放在一起，私密陪伴兩人的共同生活。',en:'Couple for iPhone brings shared expenses, wishes, anniversaries, tasks, moods, and family records together.',ja:'家計簿・願い事・記念日・暮らしの記録をひとつにまとめ、ふたりの生活に寄り添います。',ko:'공동 가계부, 위시리스트, 기념일, 일상 기록을 안전하게 함께 관리하세요.',de:'Couple bringt gemeinsame Ausgaben, Wünsche, Jahrestage, Aufgaben und Dokumente sicher zusammen.',fr:'Couple réunit dépenses partagées, souhaits, anniversaires, humeurs et documents du foyer.',es:'Couple reúne gastos compartidos, deseos, aniversarios, tareas y recuerdos en pareja.'},
+      features:[
+        ['一起记账，慢慢攒钱','Shared Expenses & Savings','Comptabilité partagée','Gemeinsam sparen','Gastos compartidos','공동 가계부 & 저축','ふたりで家計簿・貯金','一起記帳，慢慢存錢'],
+        ['记住彼此的小事','Remember Every Little Moment','Petits moments précieux','Kleine Momente festhalten','Momentos especiales','소중한 순간 기록','ふたりの思い出を記録','記住彼此的小事'],
+        ['整理家庭重要资料','Organize Household Documents','Documents du foyer','Familienunterlagen ordnen','Documentos del hogar','가정 중요 자료 정리','家庭の重要書類を整理','整理家庭重要資料'],
+        ['由你选择如何分享','Private iCloud Sharing','Partage privé iCloud','Private iCloud-Freigabe','Control total de privacidad','안전한 iCloud 공유','安心の iCloud プライベート共有','由你選擇如何分享']
+      ],
+      featuresDetail:[
+        {
+          title:{'zh-Hans':'一起记账，慢慢攒钱','zh-Hant':'一起記帳，慢慢存錢',en:'Shared Expenses & Budgets',ja:'ふたりで家計簿・予算',ko:'공동 가계부 및 예산',de:'Gemeinsame Finanzen',fr:'Comptabilité et budgets',es:'Finanzas y presupuestos'},
+          desc:{'zh-Hans':'管理共同收支、预算、资产与储蓄目标，也能导出账本和年度回顾。','zh-Hant':'管理共同收支、預算、資產與儲蓄目標，也能匯出帳本和年度回顧。',en:'Manage shared expenses, budgets, assets, and savings goals with export and annual reviews.',ja:'共同の収支・予算・貯金目標を管理し、年間レポートの出力にも対応。',ko:'공동 수입·지출, 예산, 자산 및 저축 목표를 관리하고 리포트를 내보내세요.',de:'Gemeinsame Ausgaben, Budgets und Sparziele verwalten mit Jahresrückblick.',fr:'Gérez dépenses, budgets et épargne avec exports et bilans annuels.',es:'Gestiona gastos, presupuestos y metas de ahorro con resúmenes anuales.'}
+        },
+        {
+          title:{'zh-Hans':'记住彼此的小事','zh-Hant':'記住彼此的小事',en:'Remember Every Little Detail',ja:'ふたりの小さな約束',ko:'둘만의 소소한 약속',de:'Kleine Momente festhalten',fr:'Chaque petit moment compte',es:'Los pequeños momentos'},
+          desc:{'zh-Hans':'纪念日、愿望、共同待办与每日心情，让重要的日子和约定有处可放。','zh-Hant':'紀念日、願望、共同待辦與每日心情，讓重要的日子和約定有處可放。',en:'Anniversaries, wishlists, shared to-dos, and daily mood check-ins keep you connected.',ja:'記念日、願い事、共有ToDo、日々の気分を優しく記録。',ko:'기념일, 위시리스트, 공동 할 일, 기분 기록으로 일상을 더 가깝게.',de:'Jahrestage, Wünsche, To-dos und tägliche Stimmungen an einem Ort.',fr:'Anniversaires, vœux, tâches partagées et humeurs du jour.',es:'Aniversarios, listas de deseos, tareas compartidas y estados de ánimo.'}
+        },
+        {
+          title:{'zh-Hans':'整理家庭重要资料','zh-Hant':'整理家庭重要資料',en:'Organize Household Records',ja:'暮らしの大切な情報',ko:'가정 중요 정보 정리',de:'Familienunterlagen ordnen',fr:'Documents importants du foyer',es:'Documentos clave del hogar'},
+          desc:{'zh-Hans':'收好证件、旅行资料、保险与紧急信息；在保存和分享前仔细检查敏感内容。','zh-Hant':'收好證件、旅行資料、保險與緊急資訊；在保存和分享前仔細檢查敏感內容。',en:'Store IDs, travel plans, insurance, and emergency contacts with local encryption.',ja:'身分証、旅行計画、保険、緊急連絡先を端末内暗号化で安全に保管。',ko:'신분증, 여행 일정, 보험, 비상 연락처를 로컬 암호화로 안전하게 보관하세요.',de:'Ausweise, Reisepläne, Versicherungen und Notfallkontakte lokal verschlüsselt sichern.',fr:'Conservez pièces d’identité, voyages, assurances et contacts d’urgence.',es:'Guarda documentos, planes de viaje, seguros y contactos de emergencia.'}
+        },
+        {
+          title:{'zh-Hans':'由你选择如何分享','zh-Hant':'由你選擇如何分享',en:'You Choose How to Share',ja:'安心のプライベート共有',ko:'원하는 방식으로 안전하게',de:'Freigabe unter deiner Kontrolle',fr:'Vous maîtrisez vos partages',es:'Tú decides qué compartir'},
+          desc:{'zh-Hans':'通过 iCloud 连接共同小家，按需开启位置与提醒，在设置中管理数据与删除。','zh-Hant':'透過 iCloud 連接共同小家，按需開啟位置與提醒，在設定中管理資料與刪除。',en:'Connect via private iCloud, enable location optionally, and manage or erase data anytime.',ja:'iCloud 共有でつながり、位置情報や通知は必要な時だけオンにできます。',ko:'iCloud로 연결하고 위치 공유는 필요할 때만 켜고 끌 수 있습니다.',de:'Verbindung über iCloud, optionale Standortfreigabe und jederzeit löschbare Daten.',fr:'Connexion via iCloud privé, localisation optionnelle et suppression complète à tout moment.',es:'Conéctate mediante iCloud privado, con ubicación opcional y borrado cuando quieras.'}
+        }
+      ],
+      factStrip:{
+        'zh-Hans':['端侧与私有 iCloud','无自建数据服务器','无广告与商业追踪'],
+        'zh-Hant':['端側與私有 iCloud','無自建資料伺服器','無廣告與商業追蹤'],
+        en:['On-Device & Private iCloud','No Developer Server','No Ads or Tracking'],
+        ja:['端末内 & プライベート iCloud','独自サーバーなし','広告・追跡なし'],
+        ko:['기기 내 & 개인 iCloud','자체 서버 없음','광고 및 추적 없음'],
+        de:['Lokal & Private iCloud','Keine Entwickler-Server','Keine Werbung/Tracking'],
+        fr:['En local & iCloud privé','Aucun serveur tiers','Sans pub ni suivi'],
+        es:['Local y privado en iCloud','Sin servidores propios','Sin anuncios ni rastreo']
+      },
+      privacySummary:{
+        'zh-Hans':'Couple 不设独立账户系统，不运营自建数据服务器。你的小家数据通过 Apple CloudKit 私密同步与备份，始终由你掌控。',
+        'zh-Hant':'Couple 不設獨立帳號系統，不營運自建資料伺服器。你的小家資料透過 Apple CloudKit 私密同步與備份，始終由你掌控。',
+        en:'Couple operates no custom user database or tracking backend. Household records sync and back up privately via Apple CloudKit under your full control.',
+        ja:'Couple は独自のアカウントシステムやサーバーを持っていません。小家のデータは Apple CloudKit を通じてプライベートに同期・保護されます。',
+        ko:'Couple은 별도의 계정 시스템이나 자체 서버를 운영하지 않습니다. 데이터는 Apple CloudKit을 통해 안전하게 동기화되고 백업됩니다.',
+        de:'Couple betreibt keine eigenen Benutzerkonten oder Server. Haushaltsdaten synchronisieren sich privat über Apple CloudKit.',
+        fr:'Couple n’exploite aucun serveur d’utilisateurs ni compte tiers. Les données du foyer sont synchronisées en privé via Apple CloudKit.',
+        es:'Couple no dispone de cuentas externas ni servidores propios. Los datos se sincronizan de forma privada a través de Apple CloudKit.'
+      },
+      customFaq:{
+        'zh-Hans':[
+          {q:'如何连接两个人的小家？',a:'两台 iPhone 需登录各自 Apple 账户并开启 Couple 的 iCloud。创建者在绑定页分享专属二维码图片，对方使用相机扫描或从相册选择图片即可完成端对端安全绑定。'},
+          {q:'为什么同步、备份或位置暂时没有更新？',a:'请先检查网络、Apple 账户和 iCloud 云盘状态，再在 App 内下拉刷新。定位受系统权限与省电机制限制，非实时紧急定位，仅供伴侣报平安。'},
+          {q:'如何彻底删除数据？',a:'在 App 内打开“我们 → 隐私与安全 → 删除数据”，按提示确认即可删除小家、CloudKit 共享记录、个人 iCloud 备份与本机所有数据。'},
+          {q:'敏感证件号码与扫描件怎样保护？',a:'单独填写的完整证件号码在本机使用 AES-GCM 高强度加密，密钥安全保存在设备钥匙串中，不随常规备份泄漏。'}
+        ],
+        'zh-Hant':[
+          {q:'如何連接兩個人的小家？',a:'兩台 iPhone 需登入各自 Apple 帳號並開啟 Couple 的 iCloud。創建者在綁定頁分享專屬二維碼圖片，對方使用相機掃描或從相簿選擇圖片即可完成安全綁定。'},
+          {q:'為什麼同步、備份或位置暫時沒有更新？',a:'請先檢查網路、Apple 帳號和 iCloud 雲碟狀態，再於 App 內下拉重新整理。定位受系統權限與省電機制限制，非即時緊急定位。'},
+          {q:'如何徹底刪除資料？',a:'在 App 內開啟「我們 → 隱私與安全 → 刪除資料」，依提示確認即可刪除小家、CloudKit 共享紀錄、個人 iCloud 備份與本機所有資料。'},
+          {q:'敏感證件號碼與掃描檔如何保護？',a:'單獨填寫的完整證件號碼在本機使用 AES-GCM 高強度加密，金鑰安全保存在裝置鑰匙圈中，不隨常規備份外洩。'}
+        ],
+        en:[
+          {q:'How do partners connect the household?',a:'Both iPhones sign in to their Apple Accounts with Couple iCloud enabled. The creator shares a private QR image; the partner scans or selects it from Photos to link securely via CloudKit.'},
+          {q:'Why is sync, backup, or location delayed?',a:'Check your internet connection, Apple Account, and iCloud Drive, then pull down to refresh. Location depends on iOS battery and permission policies and is not intended for emergency dispatch.'},
+          {q:'How do I permanently delete data?',a:'Go to We → Privacy & Security → Delete Data. Follow the prompts to remove the shared household, CloudKit records, personal iCloud backups, and all local files.'},
+          {q:'How are sensitive document numbers protected?',a:'Full document numbers are encrypted on-device using AES-GCM with keys stored in the iOS Keychain, shielded from ordinary backup extraction.'}
+        ]
+      },
+      faq:[
+        ['如何连接两个人的小家？','两台 iPhone 需登录各自 Apple 账户并开启 Couple 的 iCloud。创建者在绑定页分享专属二维码图片，对方使用相机扫描或从相册选择图片即可完成端对端安全绑定。'],
+        ['为什么同步、备份或位置暂时没有更新？','请先检查网络、Apple 账户和 iCloud 云盘状态，再在 App 内下拉刷新。定位受系统权限与省电机制限制，非实时紧急定位，仅供伴侣报平安。'],
+        ['如何彻底删除数据？','在 App 内打开“我们 → 隐私与安全 → 删除数据”，按提示确认即可删除小家、CloudKit 共享记录、个人 iCloud 备份与本机所有数据。'],
+        ['敏感证件号码与扫描件怎样保护？','单独填写的完整证件号码在本机使用 AES-GCM 高强度加密，密钥安全保存在设备钥匙串中，不随常规备份泄漏。']
+      ]
     }
   };
   const cloudAccountLabel = {
@@ -103,6 +178,29 @@
       title:['归档处理与文件校验','Archive processing and file checks','Archives et vérification','Archivverarbeitung und Dateiprüfung','Archivos y verificación','압축 파일 처리 및 검증','アーカイブ処理と検証','封存檔處理與檔案校驗'],
       body:['创建、浏览、解压和校验都在本机进行。应用仅在 macOS 授权范围内访问你选择的文件。','Creation, browsing, extraction, and verification run locally. The app accesses selected files only within macOS authorization.','Création, navigation, extraction et vérification sont locales. L’app accède aux fichiers dans le cadre des autorisations macOS.','Erstellen, Durchsuchen, Entpacken und Prüfen erfolgen lokal und nur mit macOS-Berechtigung.','Crear, explorar, extraer y verificar se hace localmente y dentro de los permisos de macOS.','생성, 탐색, 압축 해제 및 검증은 로컬에서 수행되며 macOS 권한 범위 내에서만 파일에 접근합니다.','作成、閲覧、展開、検証はローカルで行われ、macOS の許可範囲内でのみアクセスします。','建立、瀏覽、解壓和校驗都在本機進行，只在 macOS 授權範圍內存取檔案。'],
       local:['归档密码只用于当前任务，不会上传或共享。SHA-256 匹配表示内容与清单值一致，不验证发送者身份。','Archive passwords are used only for the current task and are not uploaded or shared. A SHA-256 match confirms content, not sender identity.','Le mot de passe ne sert qu’à la tâche en cours. Une correspondance SHA-256 confirme le contenu, pas l’identité de l’expéditeur.','Archivpasswörter gelten nur für den aktuellen Vorgang. Ein SHA-256-Treffer bestätigt den Inhalt, nicht die Absenderidentität.','La contraseña se usa solo en la tarea actual. SHA-256 confirma el contenido, no la identidad del remitente.','압축 암호는 현재 작업에만 사용됩니다. SHA-256 일치는 내용을 확인할 뿐 발신자 신원을 증명하지 않습니다.','パスワードは現在の処理にのみ使用します。SHA-256 の一致は内容を確認しますが、送信者は証明しません。','封存檔密碼只用於目前任務，不會上傳或共享。SHA-256 相符代表內容一致，不驗證傳送者身分。']
+    },
+    'couple': {
+      title:['家庭资料与生活记录','Household and Family Records','Données du foyer','Haushaltsdaten','Datos del hogar','가정 및 생활 기록','暮らしと家庭の記録','家庭資料與生活記錄'],
+      body:[
+        '资产账本、愿望、纪念日、待办与心情记录仅用于小家日常管理与统计。家庭资料（证件、医疗、紧急联系人）仅在主动添加时在设备端处理。',
+        'Expenses, budgets, wishlists, anniversaries, tasks, and moods support shared household management. Sensitive family records are handled on-device.',
+        'Les dépenses, budgets, souhaits, anniversaires et humeurs soutiennent la vie du foyer. Les dossiers de famille sont traités en local.',
+        'Ausgaben, Budgets, Jahrestage und Notizen dienen der gemeinsamen Haushaltsführung. Sensible Dokumente verbleiben auf dem Gerät.',
+        'Los gastos, presupuestos, aniversarios y notas facilitan la vida en pareja. Los documentos familiares se procesan localmente.',
+        '지출, 예산, 기념일, 할 일 및 기분 기록은 가정 관리를 위해 사용됩니다. 민감한 가족 자료는 기기 내에서 처리됩니다.',
+        '家計簿、記念日、ToDo、気分の記録は暮らしの管理のために使用されます。大切な家庭資料は端末内で安全に処理されます。',
+        '資產帳本、願望、紀念日、待辦與心情記錄僅用於小家日常管理與統計。家庭資料（證件、醫療、緊急聯絡人）僅在主動新增時於裝置端處理。'
+      ],
+      local:[
+        '数据保存在本机及个人私有 iCloud。完整证件号码在本机使用 AES-GCM 加密，密钥存放在设备钥匙串中，生物识别由 iOS 系统验证。',
+        'Records are stored on-device and in private iCloud. Full document numbers are encrypted on-device via AES-GCM with Keychain keys; Face ID is validated by iOS.',
+        'Les données restent sur l’appareil et dans votre iCloud privé. Les numéros sensibles sont chiffrés en local (AES-GCM) ; Face ID est géré par iOS.',
+        'Daten verbleiben lokal und in der privaten iCloud. Vollständige Nummern werden per AES-GCM verschlüsselt; Face ID wird über iOS ausgeführt.',
+        'Los datos se guardan en el dispositivo y en iCloud privado. Los números confidenciales se cifran con AES-GCM; Face ID lo gestiona iOS.',
+        '데이터는 기기와 개인 iCloud에 보관됩니다. 중요 번호는 AES-GCM으로 로컬 암호화되며 생체 인증은 iOS가 처리합니다.',
+        'データは端末内および個人 iCloud に保管されます。重要番号は AES-GCM で端末暗号化され、生体認証は iOS が安全に処理します。',
+        '資料保存在本機及個人私有 iCloud。完整證件號碼在本機使用 AES-GCM 加密，金鑰存放於裝置鑰匙圈中，生物辨識由 iOS 系統驗證。'
+      ]
     }
   };
   const beautyFolderMetadata = [

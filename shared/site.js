@@ -94,7 +94,20 @@
 
   function home(lang) {
     const c = L[lang], tagline = langValue(product.tagline, lang), desc = langValue(product.description, lang);
-    const features = product.features.map((arr, i) => `
+    const platformName = product.platform === 'iOS' ? 'iPhone · iOS 18+' : 'macOS';
+    const features = product.featuresDetail ? product.featuresDetail.map((f, i) => {
+      const title = f.title[lang] || f.title.en || f.title['zh-Hans'];
+      const desc = f.desc[lang] || f.desc.en || f.desc['zh-Hans'];
+      return `
+        <article class="feature reveal">
+          <span class="feature-mark" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span>
+          <div>
+            <h3>${escape(title)}</h3>
+            <p>${escape(desc)}</p>
+          </div>
+        </article>
+      `;
+    }).join('') : product.features.map((arr, i) => `
       <article class="feature reveal">
         <span class="feature-mark" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span>
         <div>
@@ -103,13 +116,21 @@
         </div>
       </article>
     `).join('');
-    const chips = [c.locally, c.noAccount, c.noTracking];
+    const chips = product.factStrip
+      ? (product.factStrip[lang] || product.factStrip.en || product.factStrip['zh-Hans'])
+      : [c.locally, c.noAccount, c.noTracking];
+    const privacySummary = product.privacySummary
+      ? (product.privacySummary[lang] || product.privacySummary.en || product.privacySummary['zh-Hans'])
+      : c.privacySummary;
+    const contactText = product.platform === 'iOS'
+      ? (lang.startsWith('zh') ? '请把问题、应用版本和 iOS 版本发给我们。' : 'Tell us what happened and include the app and iOS versions.')
+      : c.contactText;
 
     return `
       <main id="main" class="wrap home">
         <section class="hero reveal">
           <div class="hero-copy">
-            <span class="product-tag">${escape(product.name)} macOS</span>
+            <span class="product-tag">${escape(product.name)} ${platformName}</span>
             <h1>${escape(tagline)}</h1>
             <p class="intro">${escape(desc)}</p>
             <div class="hero-actions">
@@ -120,7 +141,7 @@
           <div class="hero-art">
             <div class="art-caption">
               <span>${escape(product.name)}</span>
-              <span>macOS</span>
+              <span>${platformName}</span>
             </div>
             <img src="assets/icon.png" width="220" height="220" alt="${escape(product.name)} ${escape(c.homeLabel)}" fetchpriority="high">
             <div class="art-caption art-bottom">
@@ -145,7 +166,7 @@
           <div class="callout-symbol" aria-hidden="true"></div>
           <div>
             <p class="callout-label">${escape(c.privacy)}</p>
-            <h2>${escape(c.privacySummary)}</h2>
+            <h2>${escape(privacySummary)}</h2>
             <a href="${route('privacy', lang)}">${escape(c.privacyLink)} <span aria-hidden="true">→</span></a>
           </div>
         </section>
@@ -153,7 +174,7 @@
         <section class="contact-row reveal">
           <div>
             <h2>${escape(c.question)}</h2>
-            <p>${escape(c.contactText)}</p>
+            <p>${escape(contactText)}</p>
           </div>
           <a class="contact-link" href="mailto:${email}">${escape(email)} <span aria-hidden="true">↗</span></a>
         </section>
@@ -169,6 +190,8 @@
       ? ({ 'zh-Hans': 'LocalDrop 会按你的设置向局域网客户端提供共享内容。HTTP 和 FTP 不加密；仅在证书配置后使用 HTTPS。不要向公网开放服务。', 'zh-Hant': 'LocalDrop 依設定向區域網路用戶端提供共享內容。HTTP 和 FTP 不加密；僅在設定憑證後使用 HTTPS。請勿對公網開放服務。', en: 'LocalDrop serves shared content to LAN clients according to your settings. HTTP and FTP are unencrypted; use HTTPS only after configuring a certificate. Do not expose the service to the public internet.', ja: '設定に従い LAN クライアントへ共有します。HTTP と FTP は暗号化されません。証明書を設定して HTTPS を使い、インターネットには公開しないでください。', ko: '설정에 따라 LAN 클라이언트에 공유합니다. HTTP와 FTP는 암호화되지 않습니다. 인증서를 설정한 뒤 HTTPS를 사용하고 인터넷에 공개하지 마세요.', de: 'Freigegebene Inhalte werden gemäß deinen Einstellungen an LAN-Clients übertragen. HTTP und FTP sind unverschlüsselt. Nutze HTTPS mit Zertifikat und veröffentliche den Dienst nicht im Internet.', fr: 'Le contenu est transmis aux clients du réseau local selon vos réglages. HTTP et FTP ne sont pas chiffrés. Configurez un certificat pour HTTPS et n’exposez pas le service à Internet.', es: 'El contenido se comparte con clientes LAN según tu configuración. HTTP y FTP no están cifrados. Configura un certificado para HTTPS y no expongas el servicio a Internet.' })[lang]
       : app === 'caffeineai'
       ? ({ 'zh-Hans': '读取 Wi‑Fi 名称需要 macOS 定位服务权限（不读取坐标）；日历规则需日历权限。拒绝或无法取得信号时不会匹配。应用不含第三方分析或广告 SDK。', 'zh-Hant': '讀取 Wi‑Fi 名稱需要 macOS 定位服務權限（不讀取座標）；行事曆規則需要行事曆權限。拒絕或無法取得訊號時不會符合規則。App 不含第三方分析或廣告 SDK。', en: 'Wi-Fi name rules require macOS Location Services permission, but do not read coordinates; calendar rules require Calendar permission. A denied or unavailable signal is not a match. The app has no third-party analytics or advertising SDKs.', ja: 'Wi-Fi 名のルールには macOS の位置情報権限（座標は読み取りません）、カレンダーのルールにはカレンダー権限が必要です。拒否または取得不可の信号は一致しません。', ko: 'Wi-Fi 이름 규칙에는 macOS 위치 서비스 권한(좌표는 읽지 않음), 캘린더 규칙에는 캘린더 권한이 필요합니다. 권한이 거부되거나 신호를 사용할 수 없으면 규칙이 일치하지 않습니다.', de: 'WLAN-Namen erfordern macOS-Ortungsdienste (ohne Koordinaten); Kalenderregeln benötigen Kalenderzugriff. Abgelehnte oder nicht verfügbare Signale gelten nicht als Treffer.', fr: 'Les règles Wi-Fi nécessitent les services de localisation macOS (sans lire les coordonnées) ; les règles de calendrier demandent l’accès au calendrier. Un signal refusé ou indisponible ne correspond pas.', es: 'Las reglas de Wi-Fi requieren Localización de macOS (sin leer coordenadas); las de calendario requieren acceso al calendario. Una señal denegada o no disponible no coincide.' })[lang]
+      : app === 'couple'
+      ? ({ 'zh-Hans': '小家通过 Apple CloudKit 共享空间在两台设备间私密同步。无自建服务器、无第三方统计或广告追踪 SDK。位置共享默认关闭，仅在主动开启后向伴侣展示最近位置。', 'zh-Hant': '小家透過 Apple CloudKit 共享空間在兩台裝置間私密同步。無自建伺服器、無第三方統計或廣告追蹤 SDK。位置共享預設關閉，僅在主動開啟後向伴侶展示最近位置。', en: 'Households sync privately between partners via Apple CloudKit sharing. No custom backend, no ads, and no tracking SDKs. Location sharing is off by default and shared only with your partner when enabled.', ja: 'ふたりの共有は Apple CloudKit を通じてプライベートに同期されます。独自サーバーや追跡 SDK はありません。位置情報の共有は初期状態で無効です。', ko: '가정 데이터는 Apple CloudKit을 통해 두 기기 간 안전하게 동기화됩니다. 자체 서버나 추적 SDK는 없습니다. 위치 공유는 기본적으로 꺼져 있습니다.', de: 'Die Synchronisation erfolgt privat über Apple CloudKit. Kein eigener Server, keine Werbe- oder Tracking-SDKs. Standortfreigabe ist standardmäßig deaktiviert.', fr: 'Le foyer se synchronise en toute intimité via Apple CloudKit. Aucun serveur tiers ni traqueur. Le partage de localisation est désactivé par défaut.', es: 'El hogar se sincroniza en privado mediante Apple CloudKit. Sin servidores propios ni rastreadores. La ubicación compartida está desactivada por defecto.' })[lang]
       : ({ 'zh-Hans': '应用不提供开发者运营的云同步或广告跟踪服务。系统功能及第三方服务仅在你主动使用时参与。', 'zh-Hant': 'App 不提供開發者營運的雲端同步或廣告追蹤服務。系統功能及第三方服務僅在你主動使用時參與。', en: 'The app does not provide developer-operated cloud sync, advertising, or tracking. System features and third-party services are involved only when you choose to use them.', ja: '開発者が運営するクラウド同期、広告、追跡はありません。システム機能や第三者サービスはお客様が利用した場合にのみ関与します。', ko: '개발자 운영 클라우드 동기화, 광고 또는 추적 기능이 없습니다. 시스템 기능과 제3자 서비스는 사용자가 선택한 경우에만 관여합니다.', de: 'Es gibt keine vom Entwickler betriebene Cloud-Synchronisierung, Werbung oder Nachverfolgung. System- und Drittanbieterdienste werden nur bei deiner Nutzung eingebunden.', fr: 'Aucune synchronisation cloud, publicité ou suivi géré par le développeur. Les services système et tiers n’interviennent que si vous les utilisez.', es: 'No hay sincronización en la nube, publicidad ni seguimiento gestionados por el desarrollador. Los servicios del sistema y de terceros solo intervienen si decides usarlos.' })[lang];
     const retention = ({ 'zh-Hans': '你可以在应用提供的设置中清除相关历史或缓存；本机数据也可随卸载应用或移除其数据而删除。邮件支持内容仅在你主动发送后由支持团队收到。', 'zh-Hant': '你可在 App 提供的設定中清除相關歷史或快取；解除安裝 App 或移除其資料也可刪除本機資料。支援郵件僅在你主動寄出後由支援團隊收到。', en: 'Use the controls provided by the app to clear available history or cache. Local app data can also be removed by deleting the app and its data. Support receives email only after you send it.', ja: 'アプリ内の設定から履歴やキャッシュを削除できます。アプリとそのデータを削除することでもローカルデータを消去できます。サポートメールは送信後にのみ届きます。', ko: '앱에서 제공하는 설정으로 기록이나 캐시를 지울 수 있습니다. 앱과 데이터를 삭제해도 로컬 데이터가 제거됩니다. 지원팀은 사용자가 이메일을 보낸 후에만 내용을 받습니다.', de: 'Verfügbare Verläufe und Caches kannst du in den App-Einstellungen löschen. Lokale Daten lassen sich auch durch Löschen der App-Daten entfernen. Support erhält E-Mails erst nach deinem Versand.', fr: 'Vous pouvez supprimer l’historique ou le cache dans les réglages de l’app. Les données locales peuvent aussi être supprimées avec celles de l’app. L’assistance ne reçoit votre e-mail qu’après son envoi.', es: 'Puedes borrar el historial o la caché desde los ajustes de la app. También puedes eliminar los datos locales al borrar la app y sus datos. Soporte recibe el correo solo después de que lo envíes.' })[lang];
     const sections = [body, local, net, retention], topics = c.privacyTopics;
@@ -196,7 +219,7 @@
           <span class="summary-dot" aria-hidden="true"></span>
           <div>
             <p>${escape(c.privacy)}</p>
-            <h2>${escape(c.privacySummary)}</h2>
+            <h2>${escape(product.privacySummary ? (product.privacySummary[lang] || product.privacySummary.en || product.privacySummary['zh-Hans']) : c.privacySummary)}</h2>
           </div>
         </section>
 
@@ -229,9 +252,29 @@
     const c = L[lang];
     const answers = {
       upload: T[app].body[lang === 'zh-Hans' ? 0 : lang === 'zh-Hant' ? 7 : ({ en: 1, fr: 2, de: 3, es: 4, ko: 5, ja: 6 }[lang] || 1)],
-      contact: ({ 'zh-Hans': '请邮件说明应用和 macOS 版本、操作步骤及完整错误提示；不要附上密码或私人文件。', 'zh-Hant': '請以電子郵件說明 App 和 macOS 版本、操作步驟及完整錯誤提示；請勿附上密碼或私人檔案。', en: 'Email the app and macOS versions, steps you took, and the full error message. Do not include passwords or private files.', ja: 'アプリと macOS のバージョン、操作手順、エラー全文をメールでお知らせください。パスワードや個人ファイルは添付しないでください。', ko: '앱과 macOS 버전, 진행 단계 및 전체 오류 메시지를 이메일로 보내 주세요. 비밀번호나 개인 파일은 첨부하지 마세요.', de: 'Nenne per E-Mail App- und macOS-Version, Schritte und die vollständige Fehlermeldung. Sende keine Passwörter oder privaten Dateien.', fr: 'Indiquez par e-mail les versions, les étapes et le message d’erreur complet. N’envoyez ni mot de passe ni fichier privé.', es: 'Indica por correo las versiones, los pasos y el mensaje de error completo. No envíes contraseñas ni archivos privados.' })[lang]
+      contact: product.platform === 'iOS'
+        ? (lang.startsWith('zh') ? '请以邮件说明 App 和 iOS 版本、操作步骤及完整错误提示；不要附上密码或私密文件。' : 'Email the app and iOS versions, steps you took, and the full error message. Do not include passwords or private files.')
+        : ({ 'zh-Hans': '请邮件说明应用和 macOS 版本、操作步骤及完整错误提示；不要附上密码或私人文件。', 'zh-Hant': '請以電子郵件說明 App 和 macOS 版本、操作步驟及完整錯誤提示；請勿附上密碼或私人檔案。', en: 'Email the app and macOS versions, steps you took, and the full error message. Do not include passwords or private files.', ja: 'アプリと macOS のバージョン、操作手順、エラー全文をメールでお知らせください。パスワードや個人ファイルは添付しないでください。', ko: '앱과 macOS 버전, 진행 단계 및 전체 오류 메시지를 이메일로 보내 주세요. 비밀번호나 개인 파일은 첨부하지 마세요.', de: 'Nenne per E-Mail App- und macOS-Version, Schritte und die vollständige Fehlermeldung. Sende keine Passwörter oder privaten Dateien.', fr: 'Indiquez par e-mail les versions, les étapes et le message d’erreur complet. N’envoyez ni mot de passe ni fichier privé.', es: 'Indica por correo las versiones, los pasos y el mensaje de error completo. No envíes contraseñas ni archivos privados.' })[lang]
     };
-    const qa = [c.faqItems[0], answers.upload, c.faqItems[1], answers.contact, c.faqItems[2], c.privacySummary];
+    const qa = [c.faqItems[0], answers.upload, c.faqItems[1], answers.contact, c.faqItems[2], product.privacySummary ? (product.privacySummary[lang] || product.privacySummary.en || product.privacySummary['zh-Hans']) : c.privacySummary];
+    const contactPrompt = product.platform === 'iOS'
+      ? (lang.startsWith('zh') ? '请把问题、应用版本和 iOS 版本发给我们。' : 'Tell us what happened and include the app and iOS versions.')
+      : c.contactText;
+    const subject = encodeURIComponent(product.name + (lang.startsWith('zh') ? ' 支持请求' : ' Support Request'));
+
+    const faqMarkup = product.customFaq
+      ? (product.customFaq[lang] || product.customFaq.en || product.customFaq['zh-Hans']).map(item => `
+          <details class="reveal">
+            <summary>${escape(item.q)}</summary>
+            <p>${escape(item.a)}</p>
+          </details>
+        `).join('')
+      : [0, 2, 4].map(i => `
+          <details class="reveal">
+            <summary>${escape(qa[i])}</summary>
+            <p>${escape(qa[i + 1])}</p>
+          </details>
+        `).join('');
 
     return `
       <main id="main" class="wrap support-page">
@@ -242,8 +285,8 @@
           </div>
           <aside class="contact-card">
             <p>${escape(c.contactTitle)}</p>
-            <h2>${escape(c.contactText)}</h2>
-            <a class="button" href="mailto:${email}?subject=${encodeURIComponent(c.emailSubject)}">${escape(c.mail)} <span aria-hidden="true">↗</span></a>
+            <h2>${escape(contactPrompt)}</h2>
+            <a class="button" href="mailto:${email}?subject=${subject}">${escape(c.mail)} <span aria-hidden="true">↗</span></a>
             <a class="email-plain" href="mailto:${email}">${email}</a>
             <button class="copy" type="button" data-copy>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
@@ -259,19 +302,14 @@
             <p>${escape(c.supportLead)}</p>
           </div>
           <div class="faq-list">
-            ${[0, 2, 4].map(i => `
-              <details class="reveal">
-                <summary>${escape(qa[i])}</summary>
-                <p>${escape(qa[i + 1])}</p>
-              </details>
-            `).join('')}
+            ${faqMarkup}
           </div>
         </section>
 
         <section class="support-bottom reveal">
           <div>
             <h2>${escape(c.privacy)}</h2>
-            <p>${escape(c.privacySummary)}</p>
+            <p>${escape(product.privacySummary ? (product.privacySummary[lang] || product.privacySummary.en || product.privacySummary['zh-Hans']) : c.privacySummary)}</p>
           </div>
           <a href="${route('privacy', lang)}">${escape(c.privacyLink)} <span aria-hidden="true">→</span></a>
         </section>

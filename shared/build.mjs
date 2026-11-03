@@ -54,11 +54,12 @@ const html = (app, page) => {
     </header>
   `;
 
+  const footerNote = p.platform === 'iOS' ? '让两个人的小家，更有温度与安全感。' : '为 Mac 用户打造的实用工具。';
   const footer = `
     <footer class="footer wrap">
       <div>
         <a class="footer-brand" href="index.html">${esc(p.name)}</a>
-        <p>为 Mac 用户打造的实用工具。</p>
+        <p>${esc(footerNote)}</p>
         <a class="email-plain" href="mailto:zipmaster_support@126.com">zipmaster_support@126.com</a>
         <small>© 2026 ${esc(p.name)} · <a href="../index.html" style="color:inherit;text-decoration:underline">全部应用</a></small>
       </div>
@@ -70,11 +71,33 @@ const html = (app, page) => {
 
   let main;
   if (page === 'index') {
+    const platformTag = p.platform === 'iOS' ? 'iPhone · iOS 18+' : 'macOS';
+    const chips = p.factStrip ? p.factStrip['zh-Hans'] : ['在本机处理', '无开发者云账户', '无广告与跟踪'];
+    const privacySummaryZh = p.privacySummary ? p.privacySummary['zh-Hans'] : '应用主要在你的 Mac 上运行。除非你主动使用邮件、系统功能或网络共享功能，应用不会把文件内容发送给开发者。';
+    const contactPrompt = p.platform === 'iOS' ? '请把问题、应用版本和 iOS 版本发给我们。' : '请把问题、应用版本和 macOS 版本发给我们。';
+    const featuresHtml = p.featuresDetail ? p.featuresDetail.map((f, i) => `
+      <article class="feature reveal">
+        <span class="feature-mark">${String(i+1).padStart(2, '0')}</span>
+        <div>
+          <h3>${esc(f.title['zh-Hans'])}</h3>
+          <p>${esc(f.desc['zh-Hans'])}</p>
+        </div>
+      </article>
+    `).join('') : p.features.map((f, i) => `
+      <article class="feature reveal">
+        <span class="feature-mark">${String(i+1).padStart(2, '0')}</span>
+        <div>
+          <h3>${esc(f[0])}</h3>
+          <p>${esc(f[0])}</p>
+        </div>
+      </article>
+    `).join('');
+
     main = `
       <main id="main" class="wrap home">
         <section class="hero reveal">
           <div class="hero-copy">
-            <span class="product-tag">${esc(p.name)} macOS</span>
+            <span class="product-tag">${esc(p.name)} ${platformTag}</span>
             <h1>${esc(p.tagline['zh-Hans'])}</h1>
             <p class="intro">${esc(description)}</p>
             <div class="hero-actions">
@@ -85,7 +108,7 @@ const html = (app, page) => {
           <div class="hero-art">
             <div class="art-caption">
               <span>${esc(p.name)}</span>
-              <span>macOS</span>
+              <span>${platformTag}</span>
             </div>
             <img src="assets/icon.png" width="220" height="220" alt="${esc(p.name)} 产品图标" fetchpriority="high">
             <div class="art-caption art-bottom">
@@ -95,9 +118,9 @@ const html = (app, page) => {
         </section>
         
         <section class="fact-strip reveal">
-          <div><span>在本机处理</span></div>
-          <div><span>无开发者云账户</span></div>
-          <div><span>无广告与跟踪</span></div>
+          <div><span>${esc(chips[0])}</span></div>
+          <div><span>${esc(chips[1])}</span></div>
+          <div><span>${esc(chips[2])}</span></div>
         </section>
 
         <section class="features-section reveal">
@@ -106,7 +129,15 @@ const html = (app, page) => {
             <p>${esc(description)}</p>
           </div>
           <div class="feature-list">
-            ${p.features.map((f, i) => `
+            ${p.featuresDetail ? p.featuresDetail.map((f, i) => `
+              <article class="feature reveal">
+                <span class="feature-mark">${String(i+1).padStart(2, '0')}</span>
+                <div>
+                  <h3>${esc(f.title['zh-Hans'])}</h3>
+                  <p>${esc(f.desc['zh-Hans'])}</p>
+                </div>
+              </article>
+            `).join('') : p.features.map((f, i) => `
               <article class="feature reveal">
                 <span class="feature-mark">${String(i+1).padStart(2, '0')}</span>
                 <div>
@@ -122,7 +153,7 @@ const html = (app, page) => {
           <div class="callout-symbol" aria-hidden="true"></div>
           <div>
             <p class="callout-label">隐私摘要</p>
-            <h2>应用主要在你的 Mac 上运行。除非你主动使用邮件、系统功能或网络共享功能，应用不会把文件内容发送给开发者。</h2>
+            <h2>${esc(privacySummaryZh)}</h2>
             <a href="privacy.html">阅读隐私政策 →</a>
           </div>
         </section>
@@ -130,7 +161,7 @@ const html = (app, page) => {
         <section class="contact-row reveal">
           <div>
             <h2>需要帮助？</h2>
-            <p>请把问题、应用版本和 macOS 版本发给我们。</p>
+            <p>${esc(contactPrompt)}</p>
           </div>
           <a class="contact-link" href="mailto:zipmaster_support@126.com">zipmaster_support@126.com ↗</a>
         </section>
@@ -138,15 +169,21 @@ const html = (app, page) => {
     `;
   } else if (page === 'privacy') {
     const t = productText[app], idx = 0;
+    const netDisclosure = app === 'localdrop'
+      ? 'LocalDrop 会按你的设置向局域网客户端提供共享内容。HTTP 和 FTP 不加密；仅在证书配置后使用 HTTPS。不要向公网开放服务。'
+      : app === 'couple'
+      ? '小家通过 Apple CloudKit 共享空间在两台设备间私密同步。无自建服务器、无第三方统计或广告追踪 SDK。位置共享默认关闭，仅在主动开启后向伴侣展示最近位置。'
+      : '应用不提供开发者运营的云同步或广告跟踪服务。系统功能及第三方服务仅在你主动使用时参与。';
     const sections = [
       ['应用处理的信息', t.body[idx]],
       ['本机保存与权限', t.local[idx]],
-      ['网络与第三方服务', app === 'localdrop' ? 'LocalDrop 会按你的设置向局域网客户端提供共享内容。HTTP 和 FTP 不加密；仅在证书配置后使用 HTTPS。不要向公网开放服务。' : '应用不提供开发者运营的云同步或广告跟踪服务。系统功能及第三方服务仅在你主动使用时参与。'],
+      ['网络与第三方服务', netDisclosure],
       ['保留、删除与联系', '你可以在应用提供的设置中清除相关历史或缓存；本机数据也可随卸载应用或移除其数据而删除。邮件支持内容仅在你主动发送后由支持团队收到。']
     ];
-    const archived = privacySource[app], archiveLang = archived['zh-Hans'] ? 'zh-Hans' : archived.en ? 'en' : Object.keys(archived)[0];
+    const archived = privacySource[app] || {}, archiveLang = archived['zh-Hans'] ? 'zh-Hans' : archived.en ? 'en' : Object.keys(archived)[0];
     const sourceTitle = archiveLang === 'zh-Hans' ? '展开详细条款 · 简体中文' : archiveLang === 'zh-Hant' ? '展开详细条款 · 繁體中文' : '展开详细条款 · English';
     const archiveBody = (archived[archiveLang] || []).map(item => `<p>${esc(item.text)}</p>`).join('');
+    const privacySummaryZh = p.privacySummary ? p.privacySummary['zh-Hans'] : '应用主要在你的 Mac 上运行。除非你主动使用邮件、系统功能或网络共享功能，应用不会把文件内容发送给开发者。';
     
     main = `
       <main id="main" class="wrap privacy-page">
@@ -160,7 +197,7 @@ const html = (app, page) => {
           <span class="summary-dot" aria-hidden="true"></span>
           <div>
             <p>隐私摘要</p>
-            <h2>应用主要在你的 Mac 上运行。除非你主动使用邮件、系统功能或网络共享功能，应用不会把文件内容发送给开发者。</h2>
+            <h2>${esc(privacySummaryZh)}</h2>
           </div>
         </section>
 
@@ -188,6 +225,14 @@ const html = (app, page) => {
       </main>
     `;
   } else {
+    const contactPrompt = p.platform === 'iOS' ? '请把问题、应用版本和 iOS 版本发给我们。' : '请把问题、应用版本和 macOS 版本发给我们。';
+    const privacySummaryZh = p.privacySummary ? p.privacySummary['zh-Hans'] : '应用主要在你的 Mac 上运行。除非你主动使用邮件、系统功能或网络共享功能，应用不会把文件内容发送给开发者。';
+    const faqList = p.customFaq ? p.customFaq['zh-Hans'] : [
+      { q: '应用会把我的文件上传吗？', a: productText[app].body[0] },
+      { q: '如何联系支持？', a: '请邮件说明应用和 ' + (p.platform === 'iOS' ? 'iOS' : 'macOS') + ' 版本、操作步骤及完整错误提示；不要附上密码或私人文件。' },
+      { q: '我可以在哪里了解数据处理？', a: '应用主要在本机处理。详细信息请查看隐私政策。' }
+    ];
+
     main = `
       <main id="main" class="wrap support-page">
         <section class="support-hero reveal">
@@ -197,7 +242,7 @@ const html = (app, page) => {
           </div>
           <aside class="contact-card">
             <p>需要帮助？</p>
-            <h2>请把问题、应用版本和 macOS 版本发给我们。</h2>
+            <h2>${esc(contactPrompt)}</h2>
             <a class="button" href="mailto:zipmaster_support@126.com?subject=${encodeURIComponent(p.name+' 支持请求')}">发送邮件 ↗</a>
             <a class="email-plain" href="mailto:zipmaster_support@126.com">zipmaster_support@126.com</a>
             <button class="copy" type="button" data-copy>复制邮箱</button>
@@ -211,7 +256,11 @@ const html = (app, page) => {
             <p>以下信息可以帮助你快速排查。</p>
           </div>
           <div class="faq-list">
-            <details class="reveal">
+            ${p.customFaq ? p.customFaq['zh-Hans'].map(item => `<details class="reveal">
+                <summary>${esc(item.q)}</summary>
+                <p>${esc(item.a)}</p>
+              </details>
+            `).join('') : `<details class="reveal">
               <summary>应用会把我的文件上传吗？</summary>
               <p>${esc(productText[app].body[0])}</p>
             </details>
@@ -222,7 +271,7 @@ const html = (app, page) => {
             <details class="reveal">
               <summary>我可以在哪里了解数据处理？</summary>
               <p>应用主要在本机处理。详细信息请查看隐私政策。</p>
-            </details>
+            </details>`}
           </div>
         </section>
 
