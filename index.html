@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="zh-Hans" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d14">
+  <meta name="description" content="专注 macOS 原生体验，为纯粹与隐私而生。8 款精心雕琢的 Mac 实用工具，全本地运算、零数据上传、无广告无追踪。">
+  <meta property="og:title" content="Mac 独立精选 · 专注 macOS 原生体验">
+  <meta property="og:description" content="8 款精心打磨的 Mac 原生工具。纯本地运行，保护隐私，拒绝臃肿。">
+  <title>Mac 独立精选 · 专注 macOS 原生体验</title>
+  <link rel="stylesheet" href="shared/site.css?v=20261029">
+  <link rel="stylesheet" href="shared/hub.css?v=20261029">
+  <script defer src="shared/hub.js?v=20261029"></script>
+</head>
+<body data-page="hub">
+  <a class="skip" href="#apps">跳到应用列表</a>
+
+  <!-- Header -->
+  <header class="header wrap">
+    <div class="brand-group">
+      <a class="brand" href="index.html">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent)">
+          <rect width="18" height="18" x="3" y="3" rx="4"/>
+          <path d="M3 9h18"/>
+          <path d="M9 21V9"/>
+        </svg>
+        <span>Mac 独立精选</span>
+      </a>
+    </div>
+    <nav class="main-nav" aria-label="快捷跳转">
+      <a href="#apps">全部应用</a>
+      <a href="#manifesto">设计哲学</a>
+      <a href="#contact">支持</a>
+    </nav>
+    <div class="tools">
+      <label class="language">
+        <span class="sr-only">语言</span>
+        <select aria-label="语言" id="top-lang-select">
+          <option value="zh-Hans" selected>简体中文</option>
+          <option value="zh-Hant">繁體中文</option>
+          <option value="en">English</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="de">Deutsch</option>
+          <option value="fr">Français</option>
+          <option value="es">Español</option>
+        </select>
+      </label>
+      <button class="theme" type="button" data-theme>浅色</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="wrap">
+    <!-- Hero Banner -->
+    <section class="hub-hero reveal">
+      <span class="hub-hero-badge">8 款精选原生工具 · macOS 专属</span>
+      <h1>专注 macOS 原生体验，为纯粹与隐私而生。</h1>
+      <p class="hero-subtitle">精心雕琢的 8 款 Mac 实用工具。坚持本机运算、零云端依赖、无追踪无广告。</p>
+      
+      <div class="hub-stats-row">
+        <div class="stat-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+          <span>8 款独立应用</span>
+        </div>
+        <div class="stat-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          <span>100% 本地运算</span>
+        </div>
+        <div class="stat-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>零数据上传</span>
+        </div>
+        <div class="stat-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          <span>支持 8 国语言</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Toolbar: Tabs + Search -->
+    <section class="hub-toolbar reveal" id="apps">
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-cat="all">全部应用 (8)</button>
+        <button class="filter-tab" data-cat="system">系统与效能</button>
+        <button class="filter-tab" data-cat="files">文件与整理</button>
+        <button class="filter-tab" data-cat="media">媒体与传输</button>
+      </div>
+      <div class="search-wrapper">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.3-4.3"/>
+        </svg>
+        <input class="search-input" type="search" placeholder="搜索应用名称或特性..." aria-label="搜索应用">
+      </div>
+    </section>
+
+    <!-- App Showcase Bento Grid -->
+    <section class="apps-grid">
+      <!-- 1. BeautyFolder -->
+      <article class="app-card reveal" style="--card-color:#ff8e6e;--card-on-color:#2e1208;--card-glow:#ff8e6e33;--card-tint:#ff8e6e14;--card-tint-border:#ff8e6e38;">
+        <div class="app-card-top">
+          <div class="app-header">
+            <div class="app-icon-wrap">
+              <img src="beauty-folder/assets/icon.png" alt="BeautyFolder 图标">
+            </div>
+            <span class="app-category-badge">文件与整理</span>
+          </div>
+          <div class="app-title-group">
+            <h2>BeautyFolder</h2>
+            <div class="app-tagline">让常用文件夹更容易被认出来。</div>
+            <p class="app-desc">为 Finder 文件夹设计颜色与图像图标，应用前由你确认。</p>
+          </div>
+          <div class="app-chips">
+            <span class="app-chip">颜色与图像</span>
+            <span class="app-chip">只操作已选文件夹</span>
+            <span class="app-chip">Mac 本地处理</span>
+          </div>
+        </div>
+        <div class="app-card-actions">
+          <a class="app-enter-btn" href="beauty-folder/index.html">
+            <span>进入官网</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <div class="app-sub-links">
+            <a href="beauty-folder/privacy.html">隐私政策</a>
+            <a href="beauty-folder/support.html">支持与帮助</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. CaffeineAI -->
+      <article class="app-card reveal" style="--card-color:#a3e635;--card-on-color:#172a04;--card-glow:#a3e63533;--card-tint:#a3e63514;--card-tint-border:#a3e63538;">
+        <div class="app-card-top">
+          <div class="app-header">
+            <div class="app-icon-wrap">
+              <img src="caffeineai/assets/icon.png" alt="CaffeineAI 图标">
+            </div>
+            <span class="app-category-badge">系统与效能</span>
+          </div>
+          <div class="app-title-group">
+            <h2>CaffeineAI</h2>
+            <div class="app-tagline">让 Mac 在任务进行时保持唤醒</div>
+            <p class="app-desc">创建有时限的手动会话，或为选定应用配置本机条件规则。</p>
+          </div>
+          <div class="app-chips">
+            <span class="app-chip">手动与定时会话</span>
+            <span class="app-chip">本机条件规则</span>
+            <span class="app-chip">清晰电源边界</span>
+          </div>
+        </div>
+        <div class="app-card-actions">
+          <a class="app-enter-btn" href="caffeineai/index.html">
+            <span>进入官网</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <div class="app-sub-links">
+            <a href="caffeineai/privacy.html">隐私政策</a>
+            <a href="caffeineai/support.html">支持与帮助</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. Drift -->
+      <article class="app-card reveal" style="--card-color:#fbbf24;--card-on-color:#2a1b04;--card-glow:#fbbf2433;--card-tint:#fbbf2414;--card-tint-border:#fbbf2438;">
+        <div class="app-card-top">
+          <div class="app-header">
+            <div class="app-icon-wrap">
+              <img src="drift/assets/icon.png" alt="Drift 图标">
+            </div>
+            <span class="app-category-badge">系统与效能</span>
+          </div>
+          <div class="app-title-group">
+            <h2>Drift</h2>
+            <div class="app-tagline">空间去哪儿了？让存储一目了然。</div>
+            <p class="app-desc">用空间图谱、开发者清理建议、重复项检查和历史快照了解磁盘使用。</p>
+          </div>
+          <div class="app-chips">
+            <span class="app-chip">空间透视图</span>
+            <span class="app-chip">重复项与清理建议</span>
+            <span class="app-chip">历史扫描比较</span>
+          </div>
+        </div>
+        <div class="app-card-actions">
+          <a class="app-enter-btn" href="drift/index.html">
+            <span>进入官网</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <div class="app-sub-links">
+            <a href="drift/privacy.html">隐私政策</a>
+            <a href="drift/support.html">支持与帮助</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. Folderify -->
+      <article class="app-card reveal" style="--card-color:#fb923c;--card-on-color:#311504;--card-glow:#fb923c33;--card-tint:#fb923c14;--card-tint-border:#fb923c38;">
+        <div class="app-card-top">
+          <div class="app-header">
+            <div class="app-icon-wrap">
+              <img src="folderify/assets/icon.png" alt="Folderify 图标">
+            </div>
+            <span class="app-category-badge">文件与整理</span>
+          </div>
+          <div class="app-title-group">
+            <h2>Folderify</h2>
+            <div class="app-tagline">让项目文件夹，一眼成体系。</div>
+            <p class="app-desc">用颜色、材质、符号和规则整理 Finder 文件夹；批量更改前可检查并撤销。</p>
+          </div>
+          <div class="app-chips">
+            <span class="app-chip">设计图标与方案</span>
+            <span class="app-chip">规则批量整理</span>
+            <span class="app-chip">检查与撤销</span>
+          </div>
+        </div>
+        <div class="app-card-actions">
+          <a class="app-enter-btn" href="folderify/index.html">
+            <span>进入官网</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <div class="app-sub-links">
+            <a href="folderify/privacy.html">隐私政策</a>
+            <a href="folderify/support.html">支持与帮助</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. LocalDrop Server -->
+      <article class="app-card reveal" style="--card-color:#38bdf8;--card-on-color:#042033;--card-glow:#38bdf833;--card-tint:#38bdf814;--card-tint-border:#38bdf838;">
+        <div class="app-card-top">
+          <div class="app-header">
+            <div class="app-icon-wrap">
+              <img src="localdrop/assets/icon.png" alt="LocalDrop Server 图标">
+            </div>
+            <span class="app-category-badge">媒体与传输</span>
+          </div>
+          <div class="app-title-group">
+            <h2>LocalDrop Server</h2>
+            <div class="app-tagline">让设备在同一局域网内直接互传文件。</div>
+            <p class="app-desc">把 Mac 变成局域网文件服务器，通过浏览器或 FTP 客户端访问已选目录。</p>
+          </div>
+          <div class="app-chips">
+            <span class="app-chip">浏览器与 FTP 访问</span>
+            <span class="app-chip">多目录与权限控制</span>
+            <span class="app-chip">可选 HTTPS</span>
+          </div>
+        </div>
+        <div class="app-card-actions">
+          <a class="app-enter-btn" href="localdrop/index.html">
+            <span>进入官网</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <div class="app-sub-links">
+            <a href="localdrop/privacy.html">隐私政策</a>
+            <a href="localdrop/support.html">支持与帮助</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. MediaLens -->
+      <article class="app-card reveal" style="--card-color:#818cf8;--card-on-color:#111438;--card-glow:#818cf833;--card-tint:#818cf814;--card-tint-border:#818cf838;">
+        <div class="app-card-top">
+          <div class="app-header">
+            <div class="app-icon-wrap">
+              <img src="medialens/assets/icon.png" alt="MediaLens 图标">
+            </div>
+            <span class="app-category-badge">媒体与传输</span>
+          </div>
+          <div class="app-title-group">
+            <h2>MediaLens</h2>
+            <div class="app-tagline">从媒体文件，快速看到可执行的结论。</div>
+            <p class="app-desc">检查媒体技术信息、比较版本、批量 QA，并生成可脱敏的交付报告。</p>
+          </div>
+          <div class="app-chips">
+            <span class="app-chip">技术信息与结构检查</span>
+            <span class="app-chip">批量 QA 与版本比较</span>
+            <span class="app-chip">报告导出与路径脱敏</span>
+          </div>
+        </div>
+        <div class="app-card-actions">
+          <a class="app-enter-btn" href="medialens/index.html">
+            <span>进入官网</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <div class="app-sub-links">
+            <a href="medialens/privacy.html">隐私政策</a>
+            <a href="medialens/support.html">支持与帮助</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 7. WaveDeck -->
+      <article class="app-card reveal" style="--card-color:#61d2ec;--card-on-color:#08202b;--card-glow:#61d2ec33;--card-tint:#61d2ec14;--card-tint-border:#61d2ec38;">
+        <div class="app-card-top">
+          <div class="app-header">
+            <div class="app-icon-wrap">
+              <img src="wavedeck/assets/icon.png" alt="WaveDeck 图标">
+            </div>
+            <span class="app-category-badge">媒体与传输</span>
+          </div>
+          <div class="app-title-group">
+            <h2>WaveDeck</h2>
+            <div class="app-tagline">让电波表对时，更有把握。</div>
+            <p class="app-desc">六种标准时码、NTP 时间参考与本地手表方案，让兼容的电波表近场对时更有准备。</p>
+          </div>
+          <div class="app-chips">
+            <span class="app-chip">6大标准时码</span>
+            <span class="app-chip">NTP 纳秒级参考</span>
+            <span class="app-chip">设备本地运算</span>
+          </div>
+        </div>
+        <div class="app-card-actions">
+          <a class="app-enter-btn" href="wavedeck/index.html">
+            <span>进入官网</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <div class="app-sub-links">
+            <a href="wavedeck/privacy.html">隐私政策</a>
+            <a href="wavedeck/support.html">支持与帮助</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8. ZipMaster -->
+      <article class="app-card reveal" style="--card-color:#facc15;--card-on-color:#2e2303;--card-glow:#facc1533;--card-tint:#facc1514;--card-tint-border:#facc1538;">
+        <div class="app-card-top">
+          <div class="app-header">
+            <div class="app-icon-wrap">
+              <img src="zipmaster/assets/icon.png" alt="ZipMaster 图标">
+            </div>
+            <span class="app-category-badge">文件与整理</span>
+          </div>
+          <div class="app-title-group">
+            <h2>ZipMaster</h2>
+            <div class="app-tagline">解压归档，也把收件后的校验做清楚。</div>
+            <p class="app-desc">在 Mac 本地管理归档，核对 SHA-256 清单并批量测试完整性。</p>
+          </div>
+          <div class="app-chips">
+            <span class="app-chip">创建与解开归档</span>
+            <span class="app-chip">SHA-256 清单校验</span>
+            <span class="app-chip">批量完整性测试</span>
+          </div>
+        </div>
+        <div class="app-card-actions">
+          <a class="app-enter-btn" href="zipmaster/index.html">
+            <span>进入官网</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <div class="app-sub-links">
+            <a href="zipmaster/privacy.html">隐私政策</a>
+            <a href="zipmaster/support.html">支持与帮助</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Manifesto / Philosophy -->
+    <section class="manifesto-section reveal" id="manifesto">
+      <div class="manifesto-heading">
+        <h2>我们的工程与设计哲学</h2>
+        <p>拒绝臃肿，不让复杂消耗你的注意力。</p>
+      </div>
+      <div class="manifesto-grid">
+        <div class="manifesto-card reveal">
+          <div class="manifesto-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/>
+            </svg>
+          </div>
+          <h3>本地优先 (Local First)</h3>
+          <p>所有处理均在你的 Mac 本地静默完成，不依赖外部服务器，即使断网也能全力运作。</p>
+        </div>
+        <div class="manifesto-card reveal">
+          <div class="manifesto-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3>隐私即承诺 (Privacy by Design)</h3>
+          <p>无账户登录，不收集使用习惯，零第三方分析追踪 SDK，保障私人数据的绝对纯净。</p>
+        </div>
+        <div class="manifesto-card reveal">
+          <div class="manifesto-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/>
+            </svg>
+          </div>
+          <h3>原生轻盈 (Mac Native)</h3>
+          <p>遵循 macOS 原生人机交互标准，极低内存与电量占用，为 Apple Silicon 芯片深度调优。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer wrap" id="contact">
+    <div>
+      <a class="footer-brand" href="index.html">Mac 独立精选</a>
+      <p>为每一次指尖操作，赋予确定感与宁静。</p>
+      <a class="email-plain" href="mailto:zipmaster_support@126.com">zipmaster_support@126.com</a>
+      <small>© 2026 Mac 独立精选 · All Rights Reserved.</small>
+    </div>
+    <div class="footer-right">
+      <div class="footer-controls">
+        <button class="copy quiet-link" type="button" data-copy>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+          <span>复制支持邮箱</span>
+        </button>
+        <span class="copy-status" style="margin-left:8px"></span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

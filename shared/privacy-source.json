@@ -1,0 +1,1504 @@
+{
+  "beauty-folder": {
+    "zh-Hans": [
+      {
+        "type": "h1",
+        "text": "BeautyFolder（酷彩文件夹）隐私政策"
+      },
+      {
+        "type": "p",
+        "text": "BeautyFolder 是一款 macOS 文件夹图标美化工具。本政策说明应用在您使用文件夹图标、自定义图片、颜色设置、邮件反馈、社区二维码和评分功能时如何处理信息。"
+      },
+      {
+        "type": "p",
+        "text": "简要说明： 文件夹和图片处理都在您的 Mac 本地完成。应用不要求注册，也不会把所选文件夹路径、文件夹内容或导入图片上传给开发者。应用仅将您自定义的颜色值和评分提示版本标记保存在本机偏好设置中。"
+      },
+      {
+        "type": "h2",
+        "text": "1. 应用会处理哪些信息"
+      },
+      {
+        "type": "p",
+        "text": "BeautyFolder 不要求您创建账户或登录，也没有开发者运营的用户数据服务器。为实现文件夹图标功能，应用会在本机临时处理您主动拖入或通过 macOS 文件选择器选中的文件夹 URL、路径及目录状态，并读取或更新该文件夹的 Finder 图标资源和相关元数据。"
+      },
+      {
+        "type": "p",
+        "text": "如果您选择导入自定义图片，应用会在本机读取该图片并用于生成文件夹图标。图片不会上传，原始图片也不会被应用修改。应用不会递归扫描所选文件夹，不会读取其中其他文档或文件的内容，也不会把所选路径或图片发送给开发者。"
+      },
+      {
+        "type": "h2",
+        "text": "2. 文件夹图标操作与文件权限"
+      },
+      {
+        "type": "p",
+        "text": "应用使用 macOS App Sandbox。它仅在您拖入文件夹或通过系统文件选择器授权后访问相应项目，并在相关操作期间使用系统提供的受限访问权限；应用不会保存持久化的文件夹访问书签。"
+      },
+      {
+        "type": "p",
+        "text": "设置或还原图标需要修改目标文件夹自身的 Finder 图标资源和 Finder 元数据。为使 Finder 刷新显示，应用还可能更新该文件夹的修改时间，并在目录内短暂创建后删除一个刷新标记文件。这些操作针对您选中的文件夹；应用不会有意读取、修改或删除该文件夹内其他文件的内容。系统权限、文件所有权和存储设备状态仍可能影响操作结果。"
+      },
+      {
+        "type": "h2",
+        "text": "3. 本机保存的设置"
+      },
+      {
+        "type": "p",
+        "text": "如果您自定义颜色，应用会通过 macOS 的应用偏好设置在本机保存颜色的十六进制值，以便下次使用时恢复颜色选择。应用也会在本机保存一个评分提示版本标记，用于避免同一版本重复请求显示系统评分提示。应用不会将这些设置同步到云端或发送给开发者；所选文件夹路径和导入图片不会作为应用历史记录持久保存。"
+      },
+      {
+        "type": "h2",
+        "text": "4. 日志与诊断信息"
+      },
+      {
+        "type": "p",
+        "text": "应用不会向开发者发送使用分析、崩溃报告或诊断日志。不过，在图标操作失败等情况下，应用生成的本机系统日志可能包含相关文件夹路径或错误信息。这些日志由 macOS 在您的设备上管理，BeautyFolder 不会上传它们。"
+      },
+      {
+        "type": "h2",
+        "text": "5. 邮件、社区二维码与 Apple 服务"
+      },
+      {
+        "type": "li",
+        "text": "邮件反馈： 当您选择发送反馈时，应用会打开您 Mac 上可用的邮件服务，并预填反馈收件人和邮件主题。只有您在邮件服务中发送后，开发者才会收到您提供的邮箱地址、邮件内容及您选择添加的附件，以答复和处理反馈。应用不会自动附加所选文件夹、图片或诊断日志。邮件服务提供商也会按照其隐私规则处理邮件。"
+      },
+      {
+        "type": "li",
+        "text": "QQ 社群二维码： 应用设置页面展示一个可选的 QQ 群二维码。扫描并加入社群是您主动进行的应用外操作；腾讯/QQ 可能根据其隐私规则处理您的账号信息及社群互动信息。"
+      },
+      {
+        "type": "li",
+        "text": "评分与 App Store： 成功应用图标后，应用可能调用 Apple StoreKit 请求显示系统评分提示；Apple 决定是否展示提示并处理相应的 App Store 互动。您也可以主动选择评分入口，届时会打开 Mac App Store。Apple 服务适用 Apple 自己的 隐私政策 。"
+      },
+      {
+        "type": "h2",
+        "text": "6. 网络与第三方组件"
+      },
+      {
+        "type": "p",
+        "text": "BeautyFolder 的文件夹美化功能可离线使用。应用本身没有账户、云同步、广告、跟踪或分析功能，也没有用于收集个人信息的第三方 SDK。发送邮件、扫描 QQ 社群二维码或打开 Apple 评分入口时，相关信息由您选择使用的外部服务处理。"
+      },
+      {
+        "type": "h2",
+        "text": "7. 信息保留与您的选择"
+      },
+      {
+        "type": "p",
+        "text": "文件夹路径和导入图片只为当前操作在本机临时处理。自定义颜色值和评分提示版本标记保留在本机应用偏好设置中，直到您修改或清除本机应用数据。应用没有可供开发者查询的云端账户或文件副本。您可以通过应用修改自定义颜色。如果您主动发送邮件，开发者会为答复和处理反馈保留所收到的信息，并在不再需要处理该请求或履行适用法律义务后删除；您可以通过邮件联系我们，申请查阅、更正或删除我们收到的信息。您的邮件服务提供商可能根据其规则保留另一份副本。"
+      },
+      {
+        "type": "h2",
+        "text": "8. 儿童隐私"
+      },
+      {
+        "type": "p",
+        "text": "BeautyFolder 是面向一般用户的 macOS 工具，不以 13 岁以下儿童为目标用户。应用没有账户功能，也不会有意收集儿童的个人信息。"
+      },
+      {
+        "type": "h2",
+        "text": "9. 政策更新"
+      },
+      {
+        "type": "p",
+        "text": "如果应用功能或信息处理方式发生变化，我们会更新本政策并在此页面公布新的生效日期。"
+      },
+      {
+        "type": "h2",
+        "text": "10. 联系我们"
+      },
+      {
+        "type": "p",
+        "text": "如对本隐私政策或个人信息处理有疑问，请联系："
+      },
+      {
+        "type": "p",
+        "text": "电子邮件： zipmaster_support@126.com"
+      }
+    ],
+    "en": [
+      {
+        "type": "h1",
+        "text": "BeautyFolder Privacy Policy"
+      },
+      {
+        "type": "p",
+        "text": "BeautyFolder is a macOS utility for customizing Finder folder icons. This policy explains how the App handles information when you use folder styling, custom images, color settings, email feedback, the community QR code, and rating features."
+      },
+      {
+        "type": "p",
+        "text": "In brief: Folder and image processing takes place on your Mac. The App does not require an account and does not upload selected folder paths, folder contents, or imported images to the developer. It stores only your custom color values and a review-prompt version marker in local app preferences."
+      },
+      {
+        "type": "h2",
+        "text": "1. Information the App Processes"
+      },
+      {
+        "type": "p",
+        "text": "BeautyFolder does not require an account or sign-in and has no developer-operated user-data server. To provide its folder-icon features, the App temporarily processes the URLs, paths, and directory status of folders that you choose by dragging them into the App or selecting them in the macOS file picker. It reads or updates Finder icon resources and related metadata for those folders."
+      },
+      {
+        "type": "p",
+        "text": "If you choose to import a custom image, the App reads that image locally to create a folder icon. The image is not uploaded, and the original image is not modified. The App does not recursively scan selected folders, read the contents of other documents or files within them, or send selected paths or images to the developer."
+      },
+      {
+        "type": "h2",
+        "text": "2. Folder Operations and File Access"
+      },
+      {
+        "type": "p",
+        "text": "The App uses the macOS App Sandbox. It accesses only items that you drag into the App or authorize through the system file picker, using the access granted by macOS for the relevant operation. The App does not save persistent folder-access bookmarks."
+      },
+      {
+        "type": "p",
+        "text": "Applying or restoring an icon requires changing the selected folder's own Finder icon resource and Finder metadata. To help Finder refresh its display, the App may also update the folder's modification date and briefly create and remove a refresh marker file inside that directory. These operations target the folder you selected; the App does not intentionally read, modify, or delete the contents of other files in that folder. System permissions, file ownership, and storage conditions may affect the result."
+      },
+      {
+        "type": "h2",
+        "text": "3. Local Settings"
+      },
+      {
+        "type": "p",
+        "text": "If you customize colors, the App stores their hexadecimal values in macOS app preferences on your Mac so that your color choices are available later. The App also stores a local review-prompt version marker to avoid requesting the system review prompt more than once for the same version. These settings are not synced to the cloud or sent to the developer. Selected folder paths and imported images are not persistently saved as App history."
+      },
+      {
+        "type": "h2",
+        "text": "4. Logs and Diagnostics"
+      },
+      {
+        "type": "p",
+        "text": "The App does not send usage analytics, crash reports, or diagnostic logs to the developer. However, local system log entries generated during errors, such as a failed icon operation, may include the relevant folder path or error details. macOS manages these logs on your device, and BeautyFolder does not upload them."
+      },
+      {
+        "type": "h2",
+        "text": "5. Email, Community QR Code, and Apple Services"
+      },
+      {
+        "type": "li",
+        "text": "Email feedback: If you choose to send feedback, the App opens an available mail service on your Mac and pre-fills the feedback recipient and a subject line. The developer receives your email address, message, and any attachments you choose to send only after you send the email, and uses them to respond to and handle your feedback. The App does not automatically attach selected folders, images, or diagnostic logs. Your email provider also handles the message under its own privacy practices."
+      },
+      {
+        "type": "li",
+        "text": "QQ community QR code: The App displays an optional QR code for a QQ group. Scanning it and joining the group are actions you take outside the App. Tencent/QQ may process your account and community-interaction information under its own privacy practices."
+      },
+      {
+        "type": "li",
+        "text": "Ratings and the App Store: After a successful icon application, the App may ask Apple StoreKit to display the system review prompt. Apple decides whether to show the prompt and handles the related App Store interaction. You may also choose the rating link, which opens the Mac App Store. Apple services are subject to Apple's own Privacy Policy ."
+      },
+      {
+        "type": "h2",
+        "text": "6. Network and Third-Party Components"
+      },
+      {
+        "type": "p",
+        "text": "BeautyFolder's folder-styling features work offline. The App has no account, cloud-sync, advertising, tracking, or analytics features, and it does not include a third-party SDK for collecting personal information. When you send email, scan the QQ community QR code, or open an Apple rating destination, the external service you choose handles the information involved."
+      },
+      {
+        "type": "h2",
+        "text": "7. Retention and Your Choices"
+      },
+      {
+        "type": "p",
+        "text": "Folder paths and imported images are processed locally for the current operation. Custom color values and the review-prompt version marker remain in local app preferences until you change them or clear local App data. The App has no cloud account or file copy that the developer can look up. You can change custom colors in the App. If you send an email, the developer retains the information received to respond to and handle your feedback, then deletes it when it is no longer needed for that request or applicable legal obligations. You may email us to request access to, correction of, or deletion of information we received. Your email provider may retain a separate copy under its own practices."
+      },
+      {
+        "type": "h2",
+        "text": "8. Children's Privacy"
+      },
+      {
+        "type": "p",
+        "text": "BeautyFolder is a general-purpose macOS utility and is not directed to children under 13. The App has no account feature and does not knowingly collect personal information from children."
+      },
+      {
+        "type": "h2",
+        "text": "9. Changes to This Policy"
+      },
+      {
+        "type": "p",
+        "text": "If the App's features or data practices change, we will update this policy and publish the new effective date on this page."
+      },
+      {
+        "type": "h2",
+        "text": "10. Contact"
+      },
+      {
+        "type": "p",
+        "text": "If you have questions about this policy or the handling of personal information, contact:"
+      },
+      {
+        "type": "p",
+        "text": "Email: zipmaster_support@126.com"
+      }
+    ]
+  },
+  "caffeineai": {
+    "zh-Hans": [
+      {
+        "type": "p",
+        "text": "CaffeineAI · 隐私政策"
+      },
+      {
+        "type": "h1",
+        "text": "CaffeineAI 隐私政策"
+      },
+      {
+        "type": "p",
+        "text": "更新日期：2026年10月13日"
+      },
+      {
+        "type": "h2",
+        "text": "本机数据的使用"
+      },
+      {
+        "type": "p",
+        "text": "CaffeineAI 不创建账户、不显示广告、不使用分析工具，也不会向开发者服务器发送数据。"
+      },
+      {
+        "type": "p",
+        "text": "只有启用的规则需要某项信号时，CaffeineAI 才会在这台 Mac 上读取相关信息：当前前台或正在运行的应用标识、CPU 与网络流量计数、已挂载卷名称、网络隧道接口状态、音频设备是否正在使用、已连接蓝牙设备名称、所选 Wi-Fi 网络名称，以及当前是否有日历事件。电量和热状态也仅在本机用于安全规则。这些信息只用于判断规则是否匹配，不会上传。CaffeineAI 不读取位置坐标。日历规则只检查事件是否正在发生，不保存标题或详情。"
+      },
+      {
+        "type": "h2",
+        "text": "权限与控制"
+      },
+      {
+        "type": "p",
+        "text": "macOS 通过定位服务权限控制 Wi-Fi 网络名称的读取，因此 Wi-Fi 名称规则需要定位权限。日历规则需要日历访问权限。启用蓝牙规则后，应用只在规则运行时读取已连接设备名称。你可以随时在 CaffeineAI 中关闭规则，或在“系统设置”中撤销相应权限。权限被拒绝或信号不可用时，不会被视为规则匹配。"
+      },
+      {
+        "type": "h2",
+        "text": "本机保存的信息"
+      },
+      {
+        "type": "p",
+        "text": "偏好设置和规则保存在 CaffeineAI 的应用容器中。启用历史记录后，CaffeineAI 最多在本机保留 2,000 条事件，最长七天。事件可能包含时间、类别、详情及规则或会话标识；前台应用变更事件会包含该应用的名称和 Bundle ID。诊断页在内存中显示最近 100 条事件，并在应用退出时清除。启用磁盘保活后，CaffeineAI 会保存你所选文件的路径和安全书签，并按所选间隔读取一个字节；不会修改文件。应用重启后不会恢复活动会话或电源断言标识。"
+      },
+      {
+        "type": "h2",
+        "text": "保留与删除"
+      },
+      {
+        "type": "p",
+        "text": "决策历史在七天后过期；你可以在“自动化”设置中关闭或清除历史。诊断记录在应用退出时清除。在“关于”中使用“重置设置”可删除已保存的偏好和规则。关闭磁盘保活或移除所选文件可删除对应书签。导出的文件保存在你选择的位置，可在那里自行删除。"
+      },
+      {
+        "type": "h2",
+        "text": "导出"
+      },
+      {
+        "type": "p",
+        "text": "配置导出包含设置和规则，但不包含所选文件路径、安全书签或活动会话。只有在你选择“保存”并指定位置后，诊断文本才会导出。CaffeineAI 不会传输导出的文件。"
+      },
+      {
+        "type": "h2",
+        "text": "数据共享与联系"
+      },
+      {
+        "type": "p",
+        "text": "CaffeineAI 不含第三方分析或广告 SDK，也不会向开发者服务或其他第三方共享信息。如有隐私问题，请通过 CaffeineAI App Store 产品页面上的支持联系方式联系开发者。"
+      }
+    ],
+    "en": [
+      {
+        "type": "h1",
+        "text": "CaffeineAI Privacy Policy"
+      },
+      {
+        "type": "p",
+        "text": "Last updated: October 13, 2026"
+      },
+      {
+        "type": "h2",
+        "text": "Data used on this Mac"
+      },
+      {
+        "type": "p",
+        "text": "CaffeineAI does not create accounts, show ads, use analytics, or send data to a developer server."
+      },
+      {
+        "type": "p",
+        "text": "Only when an enabled rule needs a signal, CaffeineAI reads the relevant value on this Mac: the foreground or running app's bundle identifier; CPU and network counters; mounted volume names; network tunnel interface status; whether an audio device is in use; connected Bluetooth device names; the selected Wi-Fi network name; or whether a calendar event is active. Battery and thermal status are also used locally for safety rules. These values are used to evaluate your rules and are not uploaded. CaffeineAI does not read location coordinates. Calendar rules check whether an event is active; event titles and details are not saved."
+      },
+      {
+        "type": "h2",
+        "text": "Permissions and controls"
+      },
+      {
+        "type": "p",
+        "text": "Wi-Fi name rules require Location Services permission because macOS gates access to the network name. Calendar rules require Calendar access. Bluetooth rules read connected device names only while enabled. Turn off a rule in CaffeineAI or revoke its permission in System Settings at any time. A denied or unavailable signal does not count as a rule match."
+      },
+      {
+        "type": "h2",
+        "text": "Information stored locally"
+      },
+      {
+        "type": "p",
+        "text": "Your preferences and rules are stored in CaffeineAI's app container. If history is enabled, CaffeineAI stores up to 2,000 local events for no more than seven days. An event may include its timestamp, category, details, and rule or session identifiers; events about the frontmost app include its name and bundle identifier. Diagnostics show up to 100 recent events in memory and are cleared when the app quits. If you enable disk keep-alive, CaffeineAI stores the path and security-scoped bookmark for the file you select and reads one byte at your chosen interval. It never changes that file. Active sessions and power assertion identifiers are not restored after a restart."
+      },
+      {
+        "type": "h2",
+        "text": "Retention and deletion"
+      },
+      {
+        "type": "p",
+        "text": "Decision history expires after seven days; you can turn it off or clear it in Automation settings. Diagnostics are cleared when the app quits. Use Reset Settings in About to remove saved preferences and rules. Turn off disk keep-alive or remove its selected file to delete its bookmark. Files you export remain at the location you chose and can be deleted there."
+      },
+      {
+        "type": "h2",
+        "text": "Exports"
+      },
+      {
+        "type": "p",
+        "text": "Configuration exports contain settings and rules, but exclude the selected file path, its security-scoped bookmark, and active sessions. Diagnostic text is exported only after you choose Save and a destination. CaffeineAI does not transmit exported files."
+      },
+      {
+        "type": "h2",
+        "text": "Sharing and contact"
+      },
+      {
+        "type": "p",
+        "text": "CaffeineAI has no third-party analytics or advertising SDKs and does not share information with a developer service or other third parties. For privacy questions, contact the developer using the support contact on the CaffeineAI App Store product page."
+      }
+    ],
+    "zh-Hant": [
+      {
+        "type": "h1",
+        "text": "CaffeineAI 隱私權政策"
+      },
+      {
+        "type": "p",
+        "text": "更新日期：2026 年 10 月 13 日"
+      },
+      {
+        "type": "h2",
+        "text": "在此 Mac 上使用的資料"
+      },
+      {
+        "type": "p",
+        "text": "CaffeineAI 不建立帳戶、不顯示廣告、不使用分析工具，也不會將資料傳送至開發者伺服器。"
+      },
+      {
+        "type": "p",
+        "text": "只有在已啟用的規則需要某項訊號時，CaffeineAI 才會在這部 Mac 上讀取相關資訊：目前前景或正在執行的 App 識別碼、CPU 與網路流量計數、已掛載卷宗名稱、網路通道介面狀態、音訊裝置是否正在使用、已連線藍牙裝置名稱、所選 Wi-Fi 網路名稱，以及目前是否有日曆行程。電池與熱狀態也只會在本機用於安全規則。這些資訊僅用來判斷規則是否符合，不會上傳。CaffeineAI 不讀取位置座標。日曆規則只檢查行程是否正在進行，不會儲存標題或詳細資料。"
+      },
+      {
+        "type": "h2",
+        "text": "權限與控制"
+      },
+      {
+        "type": "p",
+        "text": "macOS 透過「定位服務」權限控管 Wi-Fi 網路名稱的存取，因此 Wi-Fi 名稱規則需要定位權限。日曆規則需要日曆存取權限。藍牙規則啟用時，App 只會在規則執行期間讀取已連線裝置名稱。你可以隨時在 CaffeineAI 中關閉規則，或在「系統設定」中撤銷相應權限。遭拒或無法取得的訊號不會被視為符合規則。"
+      },
+      {
+        "type": "h2",
+        "text": "儲存在本機的資訊"
+      },
+      {
+        "type": "p",
+        "text": "偏好設定與規則會儲存在 CaffeineAI 的 App 容器中。啟用歷史記錄後，CaffeineAI 最多會在本機保留 2,000 筆事件，最長七天。事件可能包含時間、類別、詳細資料及規則或工作階段識別碼；前景 App 變更事件會包含該 App 的名稱和 Bundle ID。診斷頁會在記憶體中顯示最近 100 筆事件，並於 App 結束時清除。啟用磁碟保活後，CaffeineAI 會儲存你所選檔案的路徑與安全書籤，並依照所選間隔讀取一個位元組；不會修改檔案。重新啟動後不會恢復進行中的工作階段或電源斷言識別碼。"
+      },
+      {
+        "type": "h2",
+        "text": "保留與刪除"
+      },
+      {
+        "type": "p",
+        "text": "決策歷史會在七天後過期；你可以在「自動化」設定中關閉或清除歷史。診斷記錄會在 App 結束時清除。在「關於」中使用「重置設定」可刪除已儲存的偏好與規則。關閉磁碟保活或移除所選檔案即可刪除其書籤。匯出的檔案會保留在你選擇的位置，可由你自行刪除。"
+      },
+      {
+        "type": "h2",
+        "text": "匯出"
+      },
+      {
+        "type": "p",
+        "text": "設定匯出包含偏好與規則，但不包含所選檔案路徑、安全書籤或進行中的工作階段。只有在你選擇「儲存」並指定位置後，診斷文字才會匯出。CaffeineAI 不會傳送匯出的檔案。"
+      },
+      {
+        "type": "h2",
+        "text": "資料分享與聯絡"
+      },
+      {
+        "type": "p",
+        "text": "CaffeineAI 不含第三方分析或廣告 SDK，也不會將資訊分享給開發者服務或其他第三方。如有隱私問題，請透過 CaffeineAI App Store 產品頁面上的支援聯絡方式聯絡開發者。"
+      }
+    ],
+    "ja": [
+      {
+        "type": "h1",
+        "text": "CaffeineAI プライバシーポリシー"
+      },
+      {
+        "type": "p",
+        "text": "最終更新日：2026年10月13日"
+      },
+      {
+        "type": "h2",
+        "text": "この Mac で使用するデータ"
+      },
+      {
+        "type": "p",
+        "text": "CaffeineAI はアカウントを作成せず、広告や分析機能を使用せず、開発者のサーバーにデータを送信しません。"
+      },
+      {
+        "type": "p",
+        "text": "有効なルールで信号が必要な場合に限り、この Mac 上で関連情報を読み取ります。対象は、前面または実行中のアプリのバンドル ID、CPU とネットワークのカウンター、マウント中のボリューム名、ネットワークトンネルのインターフェイス状態、オーディオデバイスの使用状態、接続中の Bluetooth デバイス名、選択した Wi-Fi ネットワーク名、カレンダーイベントが現在発生しているかどうかです。バッテリーと熱の状態もローカルの安全ルールに使用します。これらの情報はルールの判定にのみ使われ、アップロードされません。位置座標を読み取りません。カレンダールールはイベントが現在有効かどうかだけを確認し、タイトルや詳細を保存しません。"
+      },
+      {
+        "type": "h2",
+        "text": "権限と設定"
+      },
+      {
+        "type": "p",
+        "text": "macOS ではネットワーク名へのアクセスに位置情報サービスの許可が必要なため、Wi-Fi 名のルールには位置情報の許可が必要です。カレンダールールにはカレンダーへのアクセス許可が必要です。Bluetooth ルールは有効な間だけ接続中のデバイス名を読み取ります。CaffeineAI でルールを無効にするか、システム設定でいつでも許可を取り消せます。拒否された信号や取得できない信号は、ルール一致として扱いません。"
+      },
+      {
+        "type": "h2",
+        "text": "Mac に保存される情報"
+      },
+      {
+        "type": "p",
+        "text": "設定とルールは CaffeineAI のアプリコンテナに保存されます。履歴を有効にすると、CaffeineAI は最大 2,000 件のイベントを最長 7 日間ローカルに保存します。各イベントには日時、分類、詳細、ルールまたはセッション ID が含まれる場合があります。前面アプリの変更イベントにはアプリ名とバンドル ID が含まれます。診断には直近 100 件のイベントがメモリ内に表示され、アプリ終了時に消去されます。ディスクのスリープ防止を有効にすると、選択したファイルのパスとセキュリティスコープブックマークを保存し、設定した間隔で 1 バイトだけ読み取ります。ファイルは変更しません。再起動後に進行中のセッションや電源アサーション ID は復元されません。"
+      },
+      {
+        "type": "h2",
+        "text": "保存期間と削除"
+      },
+      {
+        "type": "p",
+        "text": "判断履歴は 7 日後に期限切れとなり、「自動化」設定から無効化または消去できます。診断情報はアプリ終了時に消去されます。「情報」画面の「設定をリセット」から保存済みの設定とルールを削除できます。ディスクのスリープ防止を無効にするか選択ファイルを解除すると、そのブックマークも削除されます。エクスポートしたファイルは選択した場所に残り、その場所で削除できます。"
+      },
+      {
+        "type": "h2",
+        "text": "エクスポート"
+      },
+      {
+        "type": "p",
+        "text": "設定のエクスポートには設定とルールが含まれますが、選択したファイルのパス、安全なブックマーク、進行中のセッションは含まれません。診断テキストは「保存」を選び保存先を指定した場合にのみエクスポートされます。CaffeineAI がエクスポートファイルを送信することはありません。"
+      },
+      {
+        "type": "h2",
+        "text": "共有と問い合わせ"
+      },
+      {
+        "type": "p",
+        "text": "CaffeineAI には第三者の分析・広告 SDK はなく、開発者のサービスやその他の第三者と情報を共有しません。プライバシーに関する質問は、CaffeineAI の App Store 製品ページに記載されたサポート窓口から開発者にお問い合わせください。"
+      }
+    ],
+    "ko": [
+      {
+        "type": "h1",
+        "text": "CaffeineAI 개인정보 처리방침"
+      },
+      {
+        "type": "p",
+        "text": "최종 업데이트: 2026년 10월 13일"
+      },
+      {
+        "type": "h2",
+        "text": "이 Mac에서 사용하는 데이터"
+      },
+      {
+        "type": "p",
+        "text": "CaffeineAI는 계정을 만들지 않고 광고나 분석 기능을 사용하지 않으며 개발자 서버로 데이터를 보내지 않습니다."
+      },
+      {
+        "type": "p",
+        "text": "활성화된 규칙에 신호가 필요한 경우에만 이 Mac에서 관련 정보를 읽습니다. 대상 정보는 전면 또는 실행 중인 앱의 번들 ID, CPU 및 네트워크 카운터, 마운트된 볼륨 이름, 네트워크 터널 인터페이스 상태, 오디오 기기 사용 여부, 연결된 Bluetooth 기기 이름, 선택한 Wi-Fi 네트워크 이름, 현재 캘린더 이벤트가 있는지 여부입니다. 배터리와 발열 상태도 로컬 안전 규칙에만 사용됩니다. 이 정보는 규칙을 평가하는 데만 사용되며 업로드되지 않습니다. 위치 좌표를 읽지 않습니다. 캘린더 규칙은 현재 이벤트가 있는지만 확인하고 제목이나 세부 정보는 저장하지 않습니다."
+      },
+      {
+        "type": "h2",
+        "text": "권한과 제어"
+      },
+      {
+        "type": "p",
+        "text": "macOS가 네트워크 이름 접근을 위치 서비스 권한으로 제어하므로 Wi-Fi 이름 규칙에는 위치 권한이 필요합니다. 캘린더 규칙에는 캘린더 접근 권한이 필요합니다. Bluetooth 규칙은 활성화된 동안에만 연결된 기기 이름을 읽습니다. CaffeineAI에서 규칙을 끄거나 시스템 설정에서 권한을 언제든지 철회할 수 있습니다. 거부되었거나 사용할 수 없는 신호는 규칙 일치로 처리되지 않습니다."
+      },
+      {
+        "type": "h2",
+        "text": "Mac에 저장되는 정보"
+      },
+      {
+        "type": "p",
+        "text": "환경설정과 규칙은 CaffeineAI 앱 컨테이너에 저장됩니다. 기록을 활성화하면 CaffeineAI는 최대 2,000개의 이벤트를 7일 동안 로컬에 보관합니다. 각 이벤트에는 시각, 범주, 세부 정보, 규칙 또는 세션 식별자가 포함될 수 있습니다. 전면 앱 변경 이벤트에는 앱 이름과 번들 ID가 포함됩니다. 진단 화면은 최근 이벤트 최대 100개를 메모리에 표시하며 앱을 종료하면 지워집니다. 디스크 유지 기능을 켜면 선택한 파일의 경로와 보안 범위 책갈피를 저장하고 설정한 간격마다 1바이트를 읽습니다. 파일을 변경하지 않습니다. 앱을 다시 시작한 뒤에는 진행 중인 세션이나 전원 어설션 식별자를 복원하지 않습니다."
+      },
+      {
+        "type": "h2",
+        "text": "보관 기간과 삭제"
+      },
+      {
+        "type": "p",
+        "text": "결정 기록은 7일 후 만료되며 자동화 설정에서 끄거나 지울 수 있습니다. 진단 정보는 앱 종료 시 지워집니다. 정보 화면의 설정 초기화를 사용하면 저장된 환경설정과 규칙을 삭제할 수 있습니다. 디스크 유지 기능을 끄거나 선택한 파일을 제거하면 해당 책갈피도 삭제됩니다. 내보낸 파일은 선택한 위치에 남으며 해당 위치에서 직접 삭제할 수 있습니다."
+      },
+      {
+        "type": "h2",
+        "text": "내보내기"
+      },
+      {
+        "type": "p",
+        "text": "구성 내보내기에는 환경설정과 규칙이 포함되지만 선택한 파일 경로, 보안 책갈피, 진행 중인 세션은 포함되지 않습니다. 진단 텍스트는 사용자가 저장을 선택하고 위치를 지정한 경우에만 내보냅니다. CaffeineAI는 내보낸 파일을 전송하지 않습니다."
+      },
+      {
+        "type": "h2",
+        "text": "공유 및 문의"
+      },
+      {
+        "type": "p",
+        "text": "CaffeineAI에는 타사 분석 또는 광고 SDK가 없으며 개발자 서비스나 다른 타사와 정보를 공유하지 않습니다. 개인정보 관련 문의는 CaffeineAI App Store 제품 페이지에 표시된 지원 연락처로 개발자에게 문의해 주세요."
+      }
+    ],
+    "fr": [
+      {
+        "type": "h1",
+        "text": "Politique de confidentialité de CaffeineAI"
+      },
+      {
+        "type": "p",
+        "text": "Dernière mise à jour : 13 octobre 2026"
+      },
+      {
+        "type": "h2",
+        "text": "Données utilisées sur ce Mac"
+      },
+      {
+        "type": "p",
+        "text": "CaffeineAI ne crée pas de compte, n’affiche pas de publicité, n’utilise pas d’outils d’analyse et n’envoie aucune donnée à un serveur du développeur."
+      },
+      {
+        "type": "p",
+        "text": "CaffeineAI ne lit une information sur ce Mac que lorsqu’une règle activée en a besoin : l’identifiant de bundle de l’app au premier plan ou en cours d’exécution, les compteurs du processeur et du réseau, les noms des volumes montés, l’état d’une interface de tunnel réseau, l’utilisation d’un appareil audio, le nom des appareils Bluetooth connectés, le nom du réseau Wi-Fi choisi ou la présence d’un événement de calendrier en cours. L’état de la batterie et la pression thermique servent également aux règles de sécurité locales. Ces informations servent uniquement à évaluer vos règles et ne sont pas envoyées. CaffeineAI ne lit pas les coordonnées de localisation. Les règles de calendrier vérifient uniquement si un événement est en cours ; son titre et ses détails ne sont pas enregistrés."
+      },
+      {
+        "type": "h2",
+        "text": "Autorisations et contrôles"
+      },
+      {
+        "type": "p",
+        "text": "macOS exige l’autorisation des services de localisation pour accéder au nom du réseau Wi-Fi. Les règles de calendrier nécessitent l’accès au calendrier. Les règles Bluetooth ne lisent le nom des appareils connectés que lorsqu’elles sont activées. Vous pouvez désactiver une règle dans CaffeineAI ou révoquer son autorisation dans Réglages Système. Un signal refusé ou indisponible ne déclenche pas une règle."
+      },
+      {
+        "type": "h2",
+        "text": "Informations conservées sur le Mac"
+      },
+      {
+        "type": "p",
+        "text": "Les préférences et les règles sont enregistrées dans le conteneur de l’app CaffeineAI. Si l’historique est activé, CaffeineAI conserve jusqu’à 2 000 événements locaux pendant sept jours au maximum. Chaque événement peut inclure sa date, sa catégorie, ses détails et les identifiants de règle ou de session ; les changements d’app au premier plan incluent son nom et son identifiant de bundle. Le diagnostic affiche jusqu’à 100 événements récents en mémoire et les efface lorsque l’app quitte. Si vous activez le maintien du disque, CaffeineAI conserve le chemin et le signet sécurisé du fichier choisi et en lit un octet à l’intervalle défini. Le fichier n’est jamais modifié. Les sessions actives et les identifiants d’assertion d’alimentation ne sont pas restaurés après un redémarrage."
+      },
+      {
+        "type": "h2",
+        "text": "Conservation et suppression"
+      },
+      {
+        "type": "p",
+        "text": "L’historique des décisions expire après sept jours ; vous pouvez le désactiver ou l’effacer dans les réglages Automatisation. Les diagnostics sont effacés à la fermeture de l’app. Utilisez Réinitialiser les réglages dans À propos pour supprimer les préférences et les règles enregistrées. Désactivez le maintien du disque ou retirez le fichier choisi pour supprimer son signet. Les fichiers exportés restent à l’emplacement choisi et vous pouvez les supprimer à cet endroit."
+      },
+      {
+        "type": "h2",
+        "text": "Exports"
+      },
+      {
+        "type": "p",
+        "text": "L’export de configuration contient les réglages et les règles, mais exclut le chemin du fichier choisi, son signet sécurisé et les sessions actives. Le texte de diagnostic n’est exporté qu’après votre choix d’enregistrement et de destination. CaffeineAI ne transmet pas les fichiers exportés."
+      },
+      {
+        "type": "h2",
+        "text": "Partage et contact"
+      },
+      {
+        "type": "p",
+        "text": "CaffeineAI n’intègre aucun SDK tiers d’analyse ou de publicité et ne partage pas d’informations avec un service du développeur ni avec d’autres tiers. Pour toute question relative à la confidentialité, contactez le développeur via les coordonnées d’assistance de la fiche CaffeineAI sur l’App Store."
+      }
+    ],
+    "de": [
+      {
+        "type": "h1",
+        "text": "Datenschutzerklärung von CaffeineAI"
+      },
+      {
+        "type": "p",
+        "text": "Zuletzt aktualisiert: 13. Oktober 2026"
+      },
+      {
+        "type": "h2",
+        "text": "Auf diesem Mac verwendete Daten"
+      },
+      {
+        "type": "p",
+        "text": "CaffeineAI erstellt keine Konten, zeigt keine Werbung an, verwendet keine Analysedienste und sendet keine Daten an einen Server des Entwicklers."
+      },
+      {
+        "type": "p",
+        "text": "CaffeineAI liest auf diesem Mac nur dann ein benötigtes Signal, wenn eine aktivierte Regel es erfordert: die Bundle-ID der aktiven oder laufenden App, CPU- und Netzwerkzähler, Namen eingebundener Volumes, den Status einer Netzwerktunnel-Schnittstelle, ob ein Audiogerät verwendet wird, Namen verbundener Bluetooth-Geräte, den Namen des ausgewählten WLANs oder ob gerade ein Kalenderereignis stattfindet. Batterie- und Wärmestatus werden außerdem lokal für Sicherheitsregeln verwendet. Diese Werte dienen ausschließlich der Auswertung deiner Regeln und werden nicht hochgeladen. CaffeineAI liest keine Standortkoordinaten. Kalenderregeln prüfen nur, ob gerade ein Ereignis stattfindet; Titel und Details werden nicht gespeichert."
+      },
+      {
+        "type": "h2",
+        "text": "Berechtigungen und Kontrolle"
+      },
+      {
+        "type": "p",
+        "text": "macOS verlangt die Berechtigung für Ortungsdienste, damit der WLAN-Name gelesen werden kann. Kalenderregeln benötigen Kalenderzugriff. Bluetooth-Regeln lesen Namen verbundener Geräte nur, solange sie aktiviert sind. Du kannst eine Regel jederzeit in CaffeineAI ausschalten oder die Berechtigung in den Systemeinstellungen widerrufen. Abgelehnte oder nicht verfügbare Signale gelten nicht als Treffer."
+      },
+      {
+        "type": "h2",
+        "text": "Lokal gespeicherte Informationen"
+      },
+      {
+        "type": "p",
+        "text": "Einstellungen und Regeln werden im App-Container von CaffeineAI gespeichert. Wenn der Verlauf aktiviert ist, speichert CaffeineAI bis zu 2.000 lokale Ereignisse für höchstens sieben Tage. Ein Ereignis kann Zeitpunkt, Kategorie, Details und Regel- oder Sitzungskennungen enthalten; Ereignisse zu Änderungen der aktiven App enthalten deren Namen und Bundle-ID. Die Diagnoseansicht hält bis zu 100 aktuelle Ereignisse nur im Arbeitsspeicher und löscht sie beim Beenden der App. Wenn du den Festplatten-Wachhalter aktivierst, speichert CaffeineAI den Pfad und das Sicherheitslesezeichen der ausgewählten Datei und liest im gewählten Intervall ein Byte. Die Datei wird nicht verändert. Aktive Sitzungen und Kennungen von Energiezusicherungen werden nach einem Neustart nicht wiederhergestellt."
+      },
+      {
+        "type": "h2",
+        "text": "Aufbewahrung und Löschung"
+      },
+      {
+        "type": "p",
+        "text": "Der Entscheidungsverlauf läuft nach sieben Tagen ab und kann in den Einstellungen unter Automatisierung ausgeschaltet oder gelöscht werden. Diagnosedaten werden beim Beenden der App gelöscht. Mit Einstellungen zurücksetzen unter Info entfernst du gespeicherte Einstellungen und Regeln. Schalte den Festplatten-Wachhalter aus oder entferne die ausgewählte Datei, um das Lesezeichen zu löschen. Exportierte Dateien verbleiben am gewählten Speicherort und können dort gelöscht werden."
+      },
+      {
+        "type": "h2",
+        "text": "Exporte"
+      },
+      {
+        "type": "p",
+        "text": "Ein Konfigurationsexport enthält Einstellungen und Regeln, aber weder den Pfad der ausgewählten Datei noch ihr Sicherheitslesezeichen oder aktive Sitzungen. Diagnosetext wird erst exportiert, wenn du Speichern auswählst und einen Speicherort angibst. CaffeineAI überträgt keine exportierten Dateien."
+      },
+      {
+        "type": "h2",
+        "text": "Weitergabe und Kontakt"
+      },
+      {
+        "type": "p",
+        "text": "CaffeineAI enthält keine Analyse- oder Werbe-SDKs von Drittanbietern und gibt keine Informationen an einen Entwicklerservice oder andere Dritte weiter. Bei Fragen zum Datenschutz erreichst du den Entwickler über die Support-Kontaktdaten auf der CaffeineAI-Produktseite im App Store."
+      }
+    ],
+    "es": [
+      {
+        "type": "h1",
+        "text": "Política de privacidad de CaffeineAI"
+      },
+      {
+        "type": "p",
+        "text": "Última actualización: 13 de octubre de 2026"
+      },
+      {
+        "type": "h2",
+        "text": "Datos utilizados en este Mac"
+      },
+      {
+        "type": "p",
+        "text": "CaffeineAI no crea cuentas, no muestra anuncios, no usa herramientas de análisis ni envía datos a un servidor del desarrollador."
+      },
+      {
+        "type": "p",
+        "text": "Solo cuando una regla activa necesita una señal, CaffeineAI lee el dato correspondiente en este Mac: el identificador de paquete de la app en primer plano o en ejecución; los contadores de CPU y red; los nombres de los volúmenes montados; el estado de una interfaz de túnel de red; si se está usando un dispositivo de audio; los nombres de los dispositivos Bluetooth conectados; el nombre de la red Wi-Fi seleccionada; o si hay un evento de calendario activo. El estado de batería y temperatura también se usa localmente para las reglas de seguridad. Estos datos solo sirven para evaluar tus reglas y no se envían. CaffeineAI no lee coordenadas de ubicación. Las reglas de calendario solo comprueban si hay un evento activo; no guardan su título ni sus detalles."
+      },
+      {
+        "type": "h2",
+        "text": "Permisos y controles"
+      },
+      {
+        "type": "p",
+        "text": "macOS exige permiso de Localización para acceder al nombre de la red Wi-Fi. Las reglas de calendario requieren acceso al calendario. Las reglas de Bluetooth solo leen los nombres de dispositivos conectados mientras están activas. Puedes desactivar una regla en CaffeineAI o revocar su permiso en Ajustes del Sistema cuando quieras. Una señal denegada o no disponible no cuenta como coincidencia."
+      },
+      {
+        "type": "h2",
+        "text": "Información guardada localmente"
+      },
+      {
+        "type": "p",
+        "text": "Las preferencias y reglas se guardan en el contenedor de la app CaffeineAI. Si activas el historial, CaffeineAI guarda hasta 2.000 eventos locales durante un máximo de siete días. Cada evento puede incluir fecha, categoría, detalles e identificadores de regla o sesión; los eventos sobre cambios de la app en primer plano incluyen su nombre y su identificador de paquete. Diagnósticos muestra hasta 100 eventos recientes en memoria y los borra al cerrar la app. Si activas el mantenimiento del disco, CaffeineAI guarda la ruta y el marcador de seguridad del archivo que eliges y lee un byte con el intervalo seleccionado. Nunca modifica el archivo. Las sesiones activas y los identificadores de aserción de energía no se restauran tras reiniciar."
+      },
+      {
+        "type": "h2",
+        "text": "Conservación y eliminación"
+      },
+      {
+        "type": "p",
+        "text": "El historial de decisiones caduca a los siete días; puedes desactivarlo o borrarlo en los ajustes de Automatización. Los diagnósticos se borran al cerrar la app. Usa Restablecer ajustes en Acerca de para eliminar las preferencias y reglas guardadas. Desactiva el mantenimiento del disco o quita el archivo seleccionado para borrar su marcador. Los archivos exportados permanecen en la ubicación que elijas y puedes borrarlos allí."
+      },
+      {
+        "type": "h2",
+        "text": "Exportaciones"
+      },
+      {
+        "type": "p",
+        "text": "La exportación de configuración incluye ajustes y reglas, pero excluye la ruta del archivo seleccionado, su marcador de seguridad y las sesiones activas. El texto de diagnóstico solo se exporta cuando eliges Guardar y seleccionas un destino. CaffeineAI no transmite los archivos exportados."
+      },
+      {
+        "type": "h2",
+        "text": "Compartición y contacto"
+      },
+      {
+        "type": "p",
+        "text": "CaffeineAI no incluye SDK de análisis ni publicidad de terceros y no comparte información con un servicio del desarrollador ni con terceros. Para consultas sobre privacidad, contacta con el desarrollador mediante los datos de soporte de la ficha de CaffeineAI en el App Store."
+      }
+    ]
+  },
+  "drift": {
+    "zh-Hans": [
+      {
+        "type": "h1",
+        "text": "Drift 隐私政策 (Privacy Policy)"
+      },
+      {
+        "type": "p",
+        "text": "生效日期：2026 年 10 月 1 日 | Last Updated: October 1, 2026"
+      },
+      {
+        "type": "p",
+        "text": "核心承诺： Drift 是一款本地优先的 macOS 实用工具。扫描在您的 Mac 本机进行，Drift 不会将文件内容或扫描数据上传给开发者或第三方。为提供授权目录记忆和扫描历史功能，应用会在本机保存安全范围书签和扫描摘要。"
+      },
+      {
+        "type": "h2",
+        "text": "一、概述 (Overview)"
+      },
+      {
+        "type": "p",
+        "text": "欢迎使用 Drift（以下简称“我们”或“本应用”）。我们深知您的隐私至关重要。Drift 的设计初衷是在完全不侵犯用户隐私的前提下，为 macOS 用户提供直观清晰的磁盘空间管理与清理工具。本隐私政策旨在向您说明本应用在运行期间对数据和权限的处理方式。"
+      },
+      {
+        "type": "h2",
+        "text": "二、数据收集与网络传输 (Data Collection & Transmission)"
+      },
+      {
+        "type": "li",
+        "text": "不建立账户或收集身份信息： Drift 不要求注册，也不向开发者收集姓名、电子邮箱、手机号或身份标识信息。"
+      },
+      {
+        "type": "li",
+        "text": "扫描数据仅在本机处理： 文件内容不会上传。扫描得到的路径、名称、大小、修改时间等摘要，以及重复文件比对使用的哈希值，均在 Mac 本机处理；扫描历史摘要会按下文所述保存在本机。"
+      },
+      {
+        "type": "li",
+        "text": "不含分析、广告或追踪 SDK： Drift 未集成第三方分析工具、广告 SDK 或跨应用追踪代码，不会向开发者发送使用分析或崩溃报告。"
+      },
+      {
+        "type": "li",
+        "text": "外部网页： 点击隐私政策或技术支持链接时，macOS 会在默认浏览器中打开相应网页。浏览器与网站可能按其自身政策处理常规网络请求信息；这些请求不包含 Drift 扫描的文件内容或历史记录。"
+      },
+      {
+        "type": "h2",
+        "text": "三、系统权限与数据存储 (Permissions & Storage)"
+      },
+      {
+        "type": "li",
+        "text": "macOS 沙盒机制 (App Sandbox)： Drift 使用 App Sandbox。可扫描范围受用户选择的目录、系统授权、文件权限和 macOS 安全策略共同限制；扫描遇到无法访问的项目时会跳过或报告，不保证能够读取磁盘上的所有文件。"
+      },
+      {
+        "type": "li",
+        "text": "安全范围书签 (Security-Scoped Bookmarks)： 为了记住您授权的目录，应用会将安全范围书签保存在本机应用偏好设置中。书签用于后续访问相应目录，不会上传或与外界共享。"
+      },
+      {
+        "type": "li",
+        "text": "历史快照记录 (Local Snapshots)： Drift 会在应用沙盒的 Application Support 目录保存扫描历史摘要，其中可能包含目录和文件路径、名称、大小、修改时间及计数信息。默认保留最多 20 条未固定快照；固定的快照会保留至您手动删除。您可在应用的历史记录中删除单条快照。"
+      },
+      {
+        "type": "li",
+        "text": "移入废纸篓操作 (Trash Operation)： 清理操作使用 macOS 原生 FileManager.trashItem 将目标移入系统废纸篓，不会主动执行不可逆的永久删除。文件通常可在用户清空废纸篓前恢复。"
+      },
+      {
+        "type": "h2",
+        "text": "四、完全磁盘访问权限说明 (Full Disk Access)"
+      },
+      {
+        "type": "p",
+        "text": "您可以在 macOS“隐私与安全性”设置中自行决定是否向 Drift 授予完全磁盘访问权限。该权限可能扩大可扫描范围，但不保证所有位置都可读取；App Sandbox、POSIX 权限、访问控制列表、系统完整性保护及其他 macOS 安全策略仍可能阻止访问。Drift 会按实际可访问内容生成结果，并在遇到权限限制时跳过或报告相关项目。无论授权状态如何，文件内容和扫描历史都不会上传给开发者或第三方。"
+      },
+      {
+        "type": "h2",
+        "text": "五、隐私政策的更新 (Policy Changes)"
+      },
+      {
+        "type": "p",
+        "text": "若我们对 Drift 的功能进行了更新升级，可能会对本隐私政策进行微调。任何变更均会在本页面及时公示，并在版本更新日志中提示。"
+      },
+      {
+        "type": "h2",
+        "text": "六、联系我们 (Contact Information)"
+      },
+      {
+        "type": "p",
+        "text": "如果您对 Drift 的隐私政策有任何疑问、建议或顾虑，可以访问技术支持网站或通过电子邮件联系开发者："
+      },
+      {
+        "type": "li",
+        "text": "技术支持页面： 查看 Drift 技术支持"
+      },
+      {
+        "type": "li",
+        "text": "电子邮件： zipmaster_support@126.com"
+      },
+      {
+        "type": "h2",
+        "text": "English Summary"
+      },
+      {
+        "type": "p",
+        "text": "Drift processes scans locally and does not upload file contents or scan history to the developer or third parties. The app stores authorized-folder bookmarks and scan summaries on your Mac. Access can still be limited by App Sandbox, file permissions, and macOS security protections, including when Full Disk Access is enabled. Drift includes no analytics, advertising, or cross-app tracking SDKs. For support, visit the Drift support page or email zipmaster_support@126.com ."
+      },
+      {
+        "type": "p",
+        "text": "© 2026 Drift App. All rights reserved. 返回首页"
+      }
+    ]
+  },
+  "folderify": {
+    "en": [
+      {
+        "type": "h1",
+        "text": "Folderify Privacy Policy & Disclaimer"
+      },
+      {
+        "type": "p",
+        "text": "Thank you for using Folderify (hereinafter referred to as \"the App\"). Folderify is a local macOS utility for designing and applying custom Finder folder icons. This page explains what the App processes, where that processing takes place, and what happens when you choose to contact support or request a review."
+      },
+      {
+        "type": "h2",
+        "text": "I. Privacy Policy"
+      },
+      {
+        "type": "h3",
+        "text": "1. Information Collection"
+      },
+      {
+        "type": "p",
+        "text": "The App does not collect or transmit personal information to the developer . It does not require an account, registration, or login, and it has no developer-operated server. Folderify processes the folder URLs you select or drag into the App only to validate the folders, preview a design, and apply or restore Finder folder icons. These operations are performed locally on your Mac and are not uploaded, synchronized, or shared by the App."
+      },
+      {
+        "type": "h3",
+        "text": "2. File and Data Processing"
+      },
+      {
+        "type": "li",
+        "text": "All rendering, including colors, gradients, materials, SF Symbols, emoji, monograms, badges, presets, and previews, takes place locally on your Mac;"
+      },
+      {
+        "type": "li",
+        "text": "The App checks whether selected items are directories and, when you enable the subfolder option, enumerates eligible nested directories. It does not read, copy, modify, delete, or transmit the contents of files inside those folders;"
+      },
+      {
+        "type": "li",
+        "text": "To provide its core function, the App writes or removes Finder custom-icon metadata for the folders you select. Restoring an icon removes that custom-icon metadata; it does not delete the folder or its contents;"
+      },
+      {
+        "type": "li",
+        "text": "Folderify does not persist the folder URLs you select. A temporary folder may be created in macOS temporary storage when you drag a rendered icon folder out of the App; the App schedules that temporary source for removal after the drag operation."
+      },
+      {
+        "type": "h3",
+        "text": "3. Local Design Data"
+      },
+      {
+        "type": "p",
+        "text": "If you use History or Favorites, the App stores design snapshots locally through macOS preferences. A snapshot can include colors, material choices, symbol names, monogram or badge text, emoji, layout values, and a timestamp; it does not include the contents of your folders or the folder URLs. You can clear History and Favorites in the App. This local data is not sent to the developer."
+      },
+      {
+        "type": "h3",
+        "text": "4. Logs, Support, and Reviews"
+      },
+      {
+        "type": "p",
+        "text": "Folderify does not send analytics or diagnostic reports. macOS may record local diagnostic messages generated by the App; some messages can contain the path of a folder involved in an operation. Folderify does not upload those messages. If you choose Contact Us, the App opens your mail client with a support address; any message, attachments, and technical details you decide to send are handled by your email provider and the recipient. If you request an App Store rating, Apple’s StoreKit and App Store services handle that interaction under Apple’s terms and privacy policy."
+      },
+      {
+        "type": "h3",
+        "text": "5. Network and Third-Party Services"
+      },
+      {
+        "type": "p",
+        "text": "The App does not require an internet connection for its folder-icon features and does not include advertising, third-party analytics, tracking, cloud storage, or other data-collection SDKs. The App uses Apple system frameworks such as Finder services, App Sandbox, and StoreKit to provide the features described above; those Apple services are governed by Apple’s own terms and privacy practices."
+      },
+      {
+        "type": "h3",
+        "text": "6. Data Security and Permissions"
+      },
+      {
+        "type": "p",
+        "text": "Folderify uses the macOS App Sandbox and requests read/write access only for folders that you explicitly choose in the system file picker or drag into the App. The App uses security-scoped access for the duration of the relevant operation and does not create persistent folder bookmarks. macOS permissions, file ownership, and other system controls may still limit what the App can change."
+      },
+      {
+        "type": "h3",
+        "text": "7. Children's Privacy"
+      },
+      {
+        "type": "p",
+        "text": "The App is not directed to children under 13 years of age and does not collect any information from children."
+      },
+      {
+        "type": "h3",
+        "text": "8. Policy Updates"
+      },
+      {
+        "type": "p",
+        "text": "We may update this Privacy Policy from time to time. The updated version will supersede earlier versions and be published within the App and on this webpage."
+      },
+      {
+        "type": "h3",
+        "text": "9. Contact Us"
+      },
+      {
+        "type": "p",
+        "text": "If you have any questions or suggestions regarding this Privacy Policy, please contact us via:"
+      },
+      {
+        "type": "p",
+        "text": "Email: zipmaster_support@126.com"
+      },
+      {
+        "type": "h2",
+        "text": "II. Disclaimer"
+      },
+      {
+        "type": "h3",
+        "text": "1. Scope of Use"
+      },
+      {
+        "type": "p",
+        "text": "The App is intended solely for lawful folder icon styling, customization, and desktop organization in personal or commercial environments. Users must not use the App for any unlawful activities."
+      },
+      {
+        "type": "h3",
+        "text": "2. Data Risks & Folder Integrity"
+      },
+      {
+        "type": "p",
+        "text": "Folderify writes or removes Finder custom-icon metadata and may update folder metadata to help Finder refresh its display. If you enable the subfolder option, the same operation may be applied to eligible nested folders. Folderify does not intentionally modify, delete, or re-encode the contents of files inside those folders. Please maintain backups of important data and verify the selected folders before applying changes. The developer is not responsible for data loss, unavailable files, or unexpected Finder behavior caused by hardware, operating-system, permission, storage, or user errors."
+      },
+      {
+        "type": "h3",
+        "text": "3. Compatibility and Performance"
+      },
+      {
+        "type": "p",
+        "text": "The App has been tested on officially supported macOS versions. However, due to macOS Finder icon caching mechanisms or third-party Finder extension behaviors, icon updates may occasionally require a Finder reload or cache refresh. We assume no liability for system-level Finder rendering delays or minor visual discrepancies across different macOS releases."
+      },
+      {
+        "type": "h3",
+        "text": "4. Third-Party Resources & Symbols"
+      },
+      {
+        "type": "p",
+        "text": "The App uses Apple system symbols (SF Symbols), system emoji, and other macOS-provided resources for folder customization. SF Symbols and Apple trademarks are governed by Apple’s applicable license terms. You are responsible for ensuring that any text, emoji, or other material you choose to place in a design is lawful and does not infringe third-party rights."
+      },
+      {
+        "type": "h3",
+        "text": "5. Icon Reset Functionality"
+      },
+      {
+        "type": "p",
+        "text": "The App provides options to restore default system folder icons. In rare circumstances where macOS Finder cache delays icon restoration, users can also reset folder icons via the native macOS \"Get Info\" inspector."
+      },
+      {
+        "type": "h3",
+        "text": "6. Software Updates"
+      },
+      {
+        "type": "p",
+        "text": "We may release updates periodically to enhance rendering quality, introduce new customization features, or resolve compatibility issues. Users are responsible for keeping the App updated to ensure an optimal experience."
+      },
+      {
+        "type": "h2",
+        "text": "III. Additional Notice"
+      },
+      {
+        "type": "p",
+        "text": "Folderify is an independently developed utility software with no affiliation, partnership, or endorsement by Apple Inc. macOS, Finder, SF Symbols, and Apple are registered trademarks of Apple Inc. in the United States and other countries."
+      }
+    ]
+  },
+  "localdrop": {
+    "zh-CN": [
+      {
+        "type": "h1",
+        "text": "LocalDrop Server 隐私政策"
+      },
+      {
+        "type": "p",
+        "text": "生效日期：2026 年 10 月 1 日"
+      },
+      {
+        "type": "p",
+        "text": "本政策适用于 macOS 版 LocalDrop Server。应用在 Mac 上运行 HTTP 与传统 FTP 文件服务，以下说明应用在本机保存和处理的信息。GitHub Pages 上的宣传或支持网页由 GitHub 托管，其网页请求处理适用 GitHub 的相关政策。"
+      },
+      {
+        "type": "p",
+        "text": "本政策由 LocalDrop Team（LocalDrop Server 的维护者）发布。"
+      },
+      {
+        "type": "h2",
+        "text": "1. 应用在本机处理的信息"
+      },
+      {
+        "type": "li",
+        "text": "设置和账户资料： 应用在 Mac 本机保存服务端口、Bonjour 广播名称、传输限制、账户名、权限设置、共享文件夹名称和路径，以及 macOS 安全书签。密码保存在 macOS 钥匙串中。应用没有用于收集这些资料的云端后端，不会将其发送到 LocalDrop 服务器。"
+      },
+      {
+        "type": "li",
+        "text": "文件和目录： 应用只访问用户通过 macOS 文件选择器明确选取的共享目录。用户启动服务后，局域网客户端可以根据账户权限浏览、下载或上传文件；文件由 Mac 直接提供，不经过 LocalDrop 云端中转。"
+      },
+      {
+        "type": "li",
+        "text": "活动和传输记录： 应用运行期间会在内存中显示近期活动和传输状态，其中可能出现文件名或操作错误信息。应用不会上传这些列表，退出应用后不保留。"
+      },
+      {
+        "type": "h2",
+        "text": "2. 局域网传输和剪贴板"
+      },
+      {
+        "type": "p",
+        "text": "HTTP 和传统 FTP 不加密传输内容或登录凭据。能够观察同一网络流量的人可能看到这些信息。请只在可信网络使用，不要把服务端口映射到公网。用户主动选择“复制登录信息”时，用户名、密码和连接地址会写入 macOS 剪贴板，之后由 macOS 和其他有权访问剪贴板的应用管理。"
+      },
+      {
+        "type": "p",
+        "text": "应用使用 Bonjour 在本地网络公布服务，以便设备发现；这不会把共享目录或密码发送到云端。"
+      },
+      {
+        "type": "h2",
+        "text": "3. 本地诊断、导出和备份"
+      },
+      {
+        "type": "li",
+        "text": "诊断事件： 本地事件记录默认开启，可在“设置”中关闭或清空。记录只保存在当前运行进程的内存中，最多 100 条；退出应用后会消失。事件可能包括操作类别和时间、传输协议、方向、文件大小区间，以及意外退出后检测到的 macOS 版本。应用会在本机偏好设置中保存一个服务运行标记，以便下次启动判断是否异常退出。应用不会把这些事件发送给开发者或分析服务。"
+      },
+      {
+        "type": "li",
+        "text": "诊断报告： 用户主动复制报告时，报告可能包含 macOS 版本、网络接口和状态、掩码后的本地 IPv4 地址、Bonjour 名称、共享文件夹名称及完整路径、账户名和权限、诊断结果。发送前请检查并删除不希望分享的内容。"
+      },
+      {
+        "type": "li",
+        "text": "事件导出： 用户主动导出的诊断事件 JSON 可能包含事件名称、类别、时间、协议、传输方向、文件大小区间和意外退出时的系统版本。导出文件由用户自行保存、分享和删除。"
+      },
+      {
+        "type": "li",
+        "text": "配置备份： 用户主动创建的备份包含服务器设置、共享文件夹名称和路径、账户名、权限和诊断开关状态；不包含账户密码或安全书签。备份可能透露本机目录结构，请妥善保管。"
+      },
+      {
+        "type": "p",
+        "text": "诊断开关的选择保存在本机设置中。关闭诊断记录会清除当前内存事件；用户也可使用“清空”。用户已复制或导出的资料不受应用后续清理操作影响。"
+      },
+      {
+        "type": "h2",
+        "text": "4. 购买和第三方处理"
+      },
+      {
+        "type": "p",
+        "text": "Pro 购买和恢复通过 Apple StoreKit 处理。Apple 会按其隐私政策处理购买和交易信息；LocalDrop 不接收支付卡号。除 Apple 提供的购买服务、macOS 钥匙串以及用户主动连接的局域网设备外，应用不会向开发者服务器或第三方分析服务发送上述应用数据。"
+      },
+      {
+        "type": "h2",
+        "text": "5. 保存期限和删除"
+      },
+      {
+        "type": "p",
+        "text": "本地设置、账户资料和共享目录信息会保留在 Mac 上，直到用户在应用中更改或移除它们，或删除应用相关的本机数据。密码会在用户更改或删除账户时从钥匙串中更新或移除。钥匙串项目可能在卸载应用后仍然存在；如需清除，可在“钥匙串访问”中查找服务 com.muzi.localdrop 并删除相应项目。"
+      },
+      {
+        "type": "p",
+        "text": "诊断事件和活动/传输列表只在应用运行期间保存在内存中。用户创建的备份、手动复制的报告和剪贴板内容由用户自行管理。LocalDrop 没有可供开发者检索或删除的云端用户资料。"
+      },
+      {
+        "type": "h2",
+        "text": "6. 儿童和政策变更"
+      },
+      {
+        "type": "p",
+        "text": "LocalDrop Server 不提供在线用户注册或面向儿童的服务。如果应用的数据处理方式发生变化，我们会更新公开政策并修改本页的生效日期。"
+      },
+      {
+        "type": "h2",
+        "text": "7. 联系方式"
+      },
+      {
+        "type": "p",
+        "text": "隐私问题或请求请联系 zipmaster_support@126.com 。"
+      },
+      {
+        "type": "p",
+        "text": "© 2026 LocalDrop Team. 产品首页 · 隐私政策 · 技术支持与反馈"
+      }
+    ],
+    "en": [
+      {
+        "type": "h1",
+        "text": "LocalDrop Server Privacy Policy"
+      },
+      {
+        "type": "p",
+        "text": "Effective date: October 1, 2026"
+      },
+      {
+        "type": "p",
+        "text": "This policy applies to LocalDrop Server for macOS. The app runs HTTP and traditional FTP file services on your Mac and describes information it stores and processes locally. The marketing and support pages on GitHub Pages are hosted by GitHub; GitHub's policies apply to requests made to those webpages."
+      },
+      {
+        "type": "p",
+        "text": "This policy is published by LocalDrop Team, the maintainer of LocalDrop Server."
+      },
+      {
+        "type": "h2",
+        "text": "1. Information handled on your Mac"
+      },
+      {
+        "type": "li",
+        "text": "Settings and account details: The app stores server ports, Bonjour name, transfer limits, account names and permissions, shared-folder names and paths, and macOS security-scoped bookmarks on your Mac. Passwords are stored in macOS Keychain. The app has no cloud backend for collecting this information and does not send it to a LocalDrop server."
+      },
+      {
+        "type": "li",
+        "text": "Files and folders: The app accesses folders you explicitly select using the macOS file picker. When you start the server, LAN clients can browse, download, or upload files according to the account permissions you configure. Your Mac serves the files directly; LocalDrop does not relay them through a cloud service."
+      },
+      {
+        "type": "li",
+        "text": "Activity and transfer history: While the app is running, its interface keeps recent activity and transfer status in memory. Entries may include file names or operation error details. The app does not upload these lists, and they are not retained after the app exits."
+      },
+      {
+        "type": "h2",
+        "text": "2. LAN transfers and the clipboard"
+      },
+      {
+        "type": "p",
+        "text": "HTTP and traditional FTP do not encrypt file contents or login credentials. Others able to observe the same network traffic may see them. Use these protocols only on a trusted network and do not forward the server ports to the public internet. If you choose “Copy Credentials,” usernames, passwords, and connection addresses are placed on the macOS clipboard, which is then managed by macOS and other apps with clipboard access."
+      },
+      {
+        "type": "p",
+        "text": "The app uses Bonjour to announce its services on the local network. This does not send shared-folder details or passwords to the cloud."
+      },
+      {
+        "type": "h2",
+        "text": "3. Local diagnostics, exports, and backups"
+      },
+      {
+        "type": "li",
+        "text": "Diagnostic events: Local event recording is on by default. You can turn it off or clear events in Settings. Events stay in the running process's memory, are limited to 100 entries, and disappear when the app exits. They may include action categories and times, transfer protocol and direction, file-size ranges, and the macOS version detected after an unexpected exit. A local preference flag records that the server was running so the app can detect an unexpected exit the next time it launches. The app does not send these events to the developer or an analytics service."
+      },
+      {
+        "type": "li",
+        "text": "Diagnostic report: If you choose to copy a report, it may include your macOS version, network interface and status, a masked local IPv4 address, Bonjour name, shared-folder names and full paths, account names and permissions, and diagnostic results. Review it and remove anything you do not want to share before sending it."
+      },
+      {
+        "type": "li",
+        "text": "Event export: A diagnostic events JSON file you choose to export may contain event names, categories, timestamps, protocol, transfer direction, file-size ranges, and the system version after an unexpected exit. You control where the exported file is saved, shared, and deleted."
+      },
+      {
+        "type": "li",
+        "text": "Configuration backup: A backup you choose to create contains server settings, shared-folder names and paths, account names, permissions, and the diagnostics setting. It does not contain account passwords or security-scoped bookmarks. Because it may reveal your local folder structure, store it carefully."
+      },
+      {
+        "type": "p",
+        "text": "The diagnostics preference is stored in local settings. Turning diagnostics off clears the current in-memory events; you can also use the Clear control. Copies and exports you have already made are not affected by the app's later cleanup."
+      },
+      {
+        "type": "h2",
+        "text": "4. Purchases and third-party processing"
+      },
+      {
+        "type": "p",
+        "text": "Pro purchases and restoration use Apple StoreKit. Apple processes purchase and transaction information under its privacy policy; LocalDrop does not receive payment-card numbers. Apart from Apple's purchase services, macOS Keychain, and LAN devices you choose to connect, the app does not send the app information described above to developer-operated servers or third-party analytics services."
+      },
+      {
+        "type": "h2",
+        "text": "5. Retention and deletion"
+      },
+      {
+        "type": "p",
+        "text": "Local settings, account details, and shared-folder information remain on your Mac until you change or remove them in the app or delete the app's local data. Passwords are updated or removed from Keychain when you change or delete an account. macOS Keychain items may remain after you uninstall the app; to remove them, use Keychain Access to find and delete the relevant com.muzi.localdrop items."
+      },
+      {
+        "type": "p",
+        "text": "Diagnostic events and activity/transfer lists exist only in memory while the app runs. You manage backups, copied reports, and clipboard contents that you create. LocalDrop has no cloud user records for the developer to retrieve or delete."
+      },
+      {
+        "type": "h2",
+        "text": "6. Children and policy changes"
+      },
+      {
+        "type": "p",
+        "text": "LocalDrop Server does not provide online user registration or a service directed to children. If the app's data practices change, we will update the public policy and the effective date on this page."
+      },
+      {
+        "type": "h2",
+        "text": "7. Contact"
+      },
+      {
+        "type": "p",
+        "text": "For privacy questions or requests, contact zipmaster_support@126.com ."
+      }
+    ]
+  },
+  "medialens": {
+    "en": [
+      {
+        "type": "h1",
+        "text": "MediaLens Privacy Policy"
+      },
+      {
+        "type": "p",
+        "text": "MediaLens is a macOS app for inspecting local media files and checking them against media delivery quality rules. This Privacy Policy explains what information the App processes, what it keeps on your Mac, and what happens when you export or share a report."
+      },
+      {
+        "type": "h2",
+        "text": "1. Information MediaLens Processes"
+      },
+      {
+        "type": "p",
+        "text": "MediaLens processes files and folders that you choose in the macOS file picker or drag into the App. For folder scans, it looks for supported media and manifest files within the selected folder. Analysis is performed locally on your Mac. Depending on the file and report, the App may read or derive:"
+      },
+      {
+        "type": "li",
+        "text": "File names, local paths, file sizes, and modification dates;"
+      },
+      {
+        "type": "li",
+        "text": "Container, duration, video, audio, subtitle, language, color, and other technical metadata, including metadata embedded in media files;"
+      },
+      {
+        "type": "li",
+        "text": "Quality assurance results, rule evidence, parser information, and error details;"
+      },
+      {
+        "type": "li",
+        "text": "A SHA-256 hash of a media file when available; and"
+      },
+      {
+        "type": "li",
+        "text": "Text and stream references in a local HLS or DASH manifest that you select."
+      },
+      {
+        "type": "p",
+        "text": "MediaLens does not modify your original media files. It does not upload media files, manifests, or analysis results to the developer or a developer-operated server. Manifest URLs are treated as text for local analysis; MediaLens does not fetch the referenced streams."
+      },
+      {
+        "type": "h2",
+        "text": "2. Local History, Cache, and Preferences"
+      },
+      {
+        "type": "p",
+        "text": "To make recent work easier to reopen, MediaLens keeps up to 20 recent file records and 20 recent folder records on your Mac. A record can contain a file or folder name and path, the time it was opened or scanned, selected summary fields, and a macOS security-scoped bookmark that lets the App request access again. macOS may also show opened files in its own recent-items interface."
+      },
+      {
+        "type": "p",
+        "text": "MediaLens saves local scan-cache entries in its Application Support data. A cache entry contains a file fingerprint (path, size, and modification time) and the corresponding analysis report so the App can reuse a prior result. The cache does not contain a copy of the original media file. The App also stores preferences, the selected QA preset, and any custom QA presets you import."
+      },
+      {
+        "type": "p",
+        "text": "You can clear recent file and folder records using the App's recent-history controls. The current version does not provide a separate control to clear the scan cache or imported custom presets. Those items remain in MediaLens' local app data until you remove that data from your Mac. Because MediaLens does not send these records to the developer, there is no server copy to request deletion of."
+      },
+      {
+        "type": "p",
+        "text": "To remove all MediaLens local data in a sandboxed installation, quit the App and delete its container folder at ~/Library/Containers/com.muzi.medialens . This also removes saved history, bookmarks, preferences, and custom presets. For an installation that is not sandboxed, the scan cache is in ~/Library/Application Support/MediaLens/ScanCache ."
+      },
+      {
+        "type": "h2",
+        "text": "3. Reports and Sharing"
+      },
+      {
+        "type": "p",
+        "text": "When you choose to export a report, MediaLens writes it to the location you select. Reports can include file names and paths, technical metadata, hashes, scan status, QA findings, timestamps, and preset or parser details. Batch report export offers path redaction; without redaction, a report may reveal local folder names or your macOS account name through its file paths. Review a report before sharing it."
+      },
+      {
+        "type": "p",
+        "text": "If you choose a copy command, MediaLens places the selected summary or SHA-256 value on the macOS clipboard. Other apps may be able to access clipboard contents under macOS behavior. When you drag an HTML report from the App, MediaLens creates a temporary HTML file in macOS temporary storage; it may remain there until you or macOS removes it."
+      },
+      {
+        "type": "p",
+        "text": "If you send, upload, or otherwise share an exported or dragged report, the recipient and any service you use to share it will receive the information contained in that report. That sharing is under your control."
+      },
+      {
+        "type": "h2",
+        "text": "4. Network, Analytics, and Diagnostics"
+      },
+      {
+        "type": "p",
+        "text": "MediaLens has no account, advertising, tracking, analytics, or cloud-sync feature. The App does not send usage data or diagnostic reports to the developer. macOS and Apple services may process information under Apple's own terms and privacy practices when you use system features, download the App, or use the App Store. See Apple's Privacy Policy for details."
+      },
+      {
+        "type": "p",
+        "text": "If you contact support, any information or attachments you choose to include will be sent through your email provider and received by the support address below. MediaLens does not send an email on your behalf without your action."
+      },
+      {
+        "type": "h2",
+        "text": "5. File Access and Security"
+      },
+      {
+        "type": "p",
+        "text": "MediaLens uses the macOS file picker and user-selected file access to read the media or folders you choose. The App's sandbox permissions allow it to save reports to a destination you select and to keep its own local history, preferences, and scan cache. Access to selected files remains subject to macOS permissions and your choices."
+      },
+      {
+        "type": "h2",
+        "text": "6. Children's Privacy"
+      },
+      {
+        "type": "p",
+        "text": "MediaLens is a desktop utility and does not knowingly collect personal information from children. The App has no account or online profile feature."
+      },
+      {
+        "type": "h2",
+        "text": "7. Changes to This Policy"
+      },
+      {
+        "type": "p",
+        "text": "We may update this Privacy Policy when the App or its data practices change. The updated version and effective date will be published on this page."
+      },
+      {
+        "type": "h2",
+        "text": "8. Contact"
+      },
+      {
+        "type": "p",
+        "text": "If you have questions about this Privacy Policy, contact:"
+      },
+      {
+        "type": "p",
+        "text": "Email: zipmaster_support@126.com"
+      }
+    ]
+  },
+  "zipmaster": {
+    "en": [
+      {
+        "type": "h1",
+        "text": "ZipMaster Privacy Policy & Disclaimer"
+      },
+      {
+        "type": "p",
+        "text": "Thank you for using ZipMaster (hereinafter referred to as \"the App\"). We attach great importance to your privacy and data security. This page explains how the App collects, uses, and protects your information."
+      },
+      {
+        "type": "h2",
+        "text": "I. Privacy Policy"
+      },
+      {
+        "type": "h3",
+        "text": "1. Information Collection"
+      },
+      {
+        "type": "p",
+        "text": "The App does not actively collect any personal identifiable information . During use, the App will never require you to register, log in, upload, or synchronize any personal data. The App may access your local file system solely to perform file compression, extraction, or browsing. These operations are executed exclusively on your local device and will never be uploaded to any remote servers."
+      },
+      {
+        "type": "h3",
+        "text": "2. File and Data Processing"
+      },
+      {
+        "type": "li",
+        "text": "All compression and extraction operations are executed locally on your device;"
+      },
+      {
+        "type": "li",
+        "text": "The App does not access, transmit, or store your file contents;"
+      },
+      {
+        "type": "li",
+        "text": "Temporary files required for tasks are used strictly during processing and are automatically purged upon completion."
+      },
+      {
+        "type": "h3",
+        "text": "3. Logs and Diagnostic Information"
+      },
+      {
+        "type": "p",
+        "text": "Unless you proactively choose to \"Send Feedback\" or \"Report an Issue\", the App does not collect any diagnostic logs or error reports. If you reach out to us, we may collect minimal necessary information (such as macOS version, App build number) to assist in resolving the issue."
+      },
+      {
+        "type": "h3",
+        "text": "4. Third-Party Services"
+      },
+      {
+        "type": "p",
+        "text": "The App does not embed any third-party analytics, advertising, tracking, or cloud storage SDKs. All functionalities are implemented locally on your device."
+      },
+      {
+        "type": "h3",
+        "text": "5. Data Security"
+      },
+      {
+        "type": "p",
+        "text": "The App strictly complies with the macOS App Sandbox security model, accessing files only within the scope authorized by the user. For encrypted archives, password information is used only for the current task and is never uploaded or shared."
+      },
+      {
+        "type": "h3",
+        "text": "6. Children's Privacy"
+      },
+      {
+        "type": "p",
+        "text": "The App is not directed to children under 13 years of age and does not collect any information from children."
+      },
+      {
+        "type": "h3",
+        "text": "7. Policy Updates"
+      },
+      {
+        "type": "p",
+        "text": "We may update this Privacy Policy from time to time. The updated version will supersede earlier versions and be published within the App."
+      },
+      {
+        "type": "h3",
+        "text": "8. Contact Us"
+      },
+      {
+        "type": "p",
+        "text": "If you have any questions or suggestions regarding this Privacy Policy, please contact us via:"
+      },
+      {
+        "type": "p",
+        "text": "Email: zipmaster_support@126.com"
+      },
+      {
+        "type": "h2",
+        "text": "II. Disclaimer"
+      },
+      {
+        "type": "h3",
+        "text": "1. Scope of Use"
+      },
+      {
+        "type": "p",
+        "text": "The App is intended solely for lawful file compression and extraction in personal or commercial environments. Users must not use the App for any unlawful activities."
+      },
+      {
+        "type": "h3",
+        "text": "2. Data Risks"
+      },
+      {
+        "type": "p",
+        "text": "Please ensure you have backed up important data before processing files. The developer assumes no responsibility for file damage or loss caused by hardware malfunction, operating system errors, or user mistakes."
+      },
+      {
+        "type": "h3",
+        "text": "3. Compatibility and Performance"
+      },
+      {
+        "type": "p",
+        "text": "The App has been tested on officially supported macOS versions. However, compatibility issues may still arise on specific configurations or rare file formats. We assume no liability for performance fluctuations or third-party format parsing errors."
+      },
+      {
+        "type": "h3",
+        "text": "4. Third-Party Format Support"
+      },
+      {
+        "type": "p",
+        "text": "The App supports various common compression and archive formats and may utilize open-source components. These components are governed by their respective licenses, and the developer assumes no legal liability for their internal implementations."
+      },
+      {
+        "type": "h3",
+        "text": "5. Password Protection Feature"
+      },
+      {
+        "type": "p",
+        "text": "When encrypting archives with a password, please keep your password safe. If lost, the App cannot recover encrypted files and is not responsible for any resulting data loss."
+      },
+      {
+        "type": "h3",
+        "text": "6. Software Updates"
+      },
+      {
+        "type": "p",
+        "text": "We may release updates periodically to enhance performance or resolve issues. Users are responsible for keeping the App updated to ensure optimal experience and security."
+      },
+      {
+        "type": "h2",
+        "text": "III. Additional Notice"
+      },
+      {
+        "type": "p",
+        "text": "ZipMaster is an independently developed file utility with no affiliation or partnership with Apple Inc. or other third-party software vendors. All trademarks and format names (ZIP, 7z, RAR, etc.) are the property of their respective owners and are used strictly for descriptive compatibility purposes."
+      }
+    ]
+  }
+}
