@@ -415,7 +415,7 @@
         es: 'Un espacio íntimo para compartir el día a día en pareja.'
       },
       descriptions: {
-        'zh-Hans': '把账本、愿望、纪念日与日常资料放在一起，私密陪伴两人的共同生活。',
+        'zh-Hans': '把共同账本、愿望、纪念日与日常资料放在一起，私密陪伴两人的共同生活。',
         'zh-Hant': '將共同帳本、願望、紀念日與日常資料放在一起，私密陪伴兩人的共同生活。',
         en: 'Bring shared expenses, wishes, anniversaries, moods, and household records together in privacy.',
         ja: '家計簿・願い事・記念日・暮らしの記録をひとつにまとめ、ふたりの生活に寄り添います。',
@@ -435,55 +435,7 @@
         es: ['Finanzas en pareja', 'Aniversarios y deseos', 'iCloud privado']
       }
     },
-        {
-      id: 'dropsqueeze',
-      path: 'dropsqueeze/',
-      icon: 'dropsqueeze/assets/icon.png',
-      color: '#10b981',
-      onColor: '#ffffff',
-      category: 'media',
-      names: {
-        'zh-Hans': 'DropSqueeze',
-        'zh-Hant': 'DropSqueeze',
-        en: 'DropSqueeze',
-        ja: 'DropSqueeze',
-        ko: 'DropSqueeze',
-        de: 'DropSqueeze',
-        fr: 'DropSqueeze',
-        es: 'DropSqueeze'
-      },
-      taglines: {
-        'zh-Hans': '静默压缩截图与录屏，剪贴板原地瘦身。',
-        'zh-Hant': '安靜壓縮截圖與錄影，剪貼簿原地瘦身。',
-        en: 'Silently compress screenshots, screen recordings, and clipboard media.',
-        ja: 'スクリーンショットと画面録画を静かに圧縮、クリップボードも軽量化。',
-        ko: '스크린샷과 화면 녹화를 무음 압축하고 클립보드를 가볍게 유지하세요.',
-        de: 'Screenshots und Bildschirmaufnahmen leise komprimieren, Zwischenablage optimieren.',
-        fr: 'Compressez silencieusement vos captures, enregistrements et presse-papiers.',
-        es: 'Comprime capturas y grabaciones silenciosamente y optimiza el portapapeles.'
-      },
-      descriptions: {
-        'zh-Hans': '在 Mac 本地极速无损压缩图片与视频，自动监听剪贴板与指定文件夹，保护原始文件与隐私元数据。',
-        'zh-Hant': '在 Mac 本機極速無損壓縮圖片與影片，自動監聽剪貼簿與指定資料夾，保護原始檔案與隱私中繼資料。',
-        en: 'Lightning-fast on-device compression for images and video on Mac. Automatically watches clipboard and folders while protecting source files and metadata.',
-        ja: 'Mac 上で画像と動画を高速圧縮。クリップボードと監視フォルダを自動処理し、元ファイルとメタデータを保護。',
-        ko: 'Mac에서 이미지와 동영상을 초고속 압축합니다. 클립보드와 감시 폴더를 자동 처리하며 원본과 메타데이터를 보호합니다.',
-        de: 'Blitzschnelle lokale Medienkompression auf dem Mac. Überwacht Zwischenablage und Ordner, schützt Originale und Metadaten.',
-        fr: 'Compression ultra-rapide sur Mac pour images et vidéos. Surveille le presse-papiers et vos dossiers en préservant originaux et métadonnées.',
-        es: 'Compresión ultrarrápida en el Mac para imágenes y vídeo. Supervisa el portapapeles y carpetas protegiendo los originales y metadatos.'
-      },
-      chips: {
-        'zh-Hans': ['剪贴板静默瘦身', '文件夹自动监控', '100% 本地运算'],
-        'zh-Hant': ['剪貼簿安靜瘦身', '資料夾自動監控', '100% 本地運算'],
-        en: ['Silent Clipboard', 'Folder Watcher', '100% On-Device'],
-        ja: ['クリップボード軽量化', 'フォルダ自動監視', '100% ローカル処理'],
-        ko: ['클립보드 무음 압축', '폴더 자동 감시', '100% 로컬 처리'],
-        de: ['Leise Zwischenablage', 'Ordnerüberwachung', '100% Lokal'],
-        fr: ['Presse-papiers silencieux', 'Surveillance dossiers', '100% Local'],
-        es: ['Portapapeles silencioso', 'Vigilancia de carpetas', '100% Local']
-      }
-    },
-{
+    {
       id: 'shelflife',
       path: 'shelflife/',
       icon: 'shelflife/assets/icon.png',
@@ -529,6 +481,54 @@
         de: ['Garantie & Ablaufalarme', 'Verbrauchsteile & Widgets', 'Belege & Anleitungen'],
         fr: ['Alertes garantie & échéance', 'Consommables & widgets', 'Reçus & notices'],
         es: ['Alertas de garantía y fin', 'Vida útil de consumibles', 'Recibos y manuales']
+      }
+    },
+    {
+      id: 'dropsqueeze',
+      path: 'dropsqueeze/',
+      icon: 'dropsqueeze/assets/icon.png',
+      color: '#10b981',
+      onColor: '#ffffff',
+      category: 'media',
+      names: {
+        'zh-Hans': 'DropSqueeze',
+        'zh-Hant': 'DropSqueeze',
+        en: 'DropSqueeze',
+        ja: 'DropSqueeze',
+        ko: 'DropSqueeze',
+        de: 'DropSqueeze',
+        fr: 'DropSqueeze',
+        es: 'DropSqueeze'
+      },
+      taglines: {
+        'zh-Hans': '静默压缩截图与录屏，剪贴板原地瘦身。',
+        'zh-Hant': '安靜壓縮截圖與錄影，剪貼簿原地瘦身。',
+        en: 'Silently compress screenshots, screen recordings, and clipboard media.',
+        ja: 'スクリーンショットと画面録画を静かに圧縮、クリップボードも軽量化。',
+        ko: '스크린샷과 화면 녹화를 무음 압축하고 클립보드를 가볍게 유지하세요.',
+        de: 'Screenshots und Bildschirmaufnahmen leise komprimieren, Zwischenablage optimieren.',
+        fr: 'Compressez silencieusement vos captures, enregistrements et presse-papiers.',
+        es: 'Comprime capturas y grabaciones silenciosamente y optimiza el portapapeles.'
+      },
+      descriptions: {
+        'zh-Hans': '在 Mac 本地极速无损压缩图片与视频，自动监听剪贴板与指定文件夹，保护原始文件与隐私元数据。',
+        'zh-Hant': '在 Mac 本機極速無損壓縮圖片與影片，自動監聽剪貼簿與指定資料夾，保護原始檔案與隱私中繼資料。',
+        en: 'Lightning-fast on-device compression for images and video on Mac. Automatically watches clipboard and folders while protecting source files and metadata.',
+        ja: 'Mac 上で画像と動画を高速圧縮。クリップボードと監視フォルダを自動処理し、元ファイルとメタデータを保護。',
+        ko: 'Mac에서 이미지와 동영상을 초고속 압축합니다. 클립보드와 감시 폴더를 자동 처리하며 원본과 메타데이터를 보호합니다.',
+        de: 'Blitzschnelle lokale Medienkompression auf dem Mac. Überwacht Zwischenablage und Ordner, schützt Originale und Metadaten.',
+        fr: 'Compression ultra-rapide sur Mac pour images et vidéos. Surveille le presse-papiers et vos dossiers en préservant originaux et métadonnées.',
+        es: 'Compresión ultrarrápida en el Mac para imágenes y vídeo. Supervisa el portapapeles y carpetas protegiendo los originales y metadatos.'
+      },
+      chips: {
+        'zh-Hans': ['剪贴板静默瘦身', '文件夹自动监控', '100% 本地运算'],
+        'zh-Hant': ['剪貼簿安靜瘦身', '資料夾自動監控', '100% 本地運算'],
+        en: ['Silent Clipboard', 'Folder Watcher', '100% On-Device'],
+        ja: ['クリップボード軽量化', 'フォルダ自動監視', '100% ローカル処理'],
+        ko: ['클립보드 무음 압축', '폴더 자동 감시', '100% 로컬 처리'],
+        de: ['Leise Zwischenablage', 'Ordnerüberwachung', '100% Lokal'],
+        fr: ['Presse-papiers silencieux', 'Surveillance dossiers', '100% Local'],
+        es: ['Portapapeles silencioso', 'Vigilancia de carpetas', '100% Local']
       }
     },
     {

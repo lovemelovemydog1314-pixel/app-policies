@@ -300,8 +300,8 @@ const html = (app, page) => {
     `;
   }
 
-  const assets = '<link rel="stylesheet" href="../shared/site.css?v=20261029">';
-  const scripts = '<script defer src="../shared/privacy-source.js?v=20261029"></script><script defer src="../shared/content.js?v=20261029"></script><script defer src="../shared/site.js?v=20261029"></script>';
+  const assets = '<link rel="stylesheet" href="../shared/site.css?v=20261107">';
+  const scripts = '<script defer src="../shared/privacy-source.js?v=20261107"></script><script defer src="../shared/content.js?v=20261107"></script><script defer src="../shared/site.js?v=20261107"></script>';
   return `<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090d14"><meta name="description" content="${esc(description)}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><title>${esc(title)}</title>${assets}</head><body data-app="${app}" data-page="${page}">${header}${main}${footer}${scripts}</body></html>\n`;
 };
 
