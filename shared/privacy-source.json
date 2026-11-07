@@ -1762,5 +1762,1417 @@
         "text": "We do not sell your data or use it for advertising profiles. Use the app to manage permissions, export supported records, and edit or delete data. The app offers no independent online registration service for children. We update this page and its effective date when practices change. Contact support for help, and avoid emailing full identity documents, medical records, or financial records."
       }
     ]
+  },
+  "shelflife": {
+    "zh-Hans": [
+      {
+        "type": "h1",
+        "text": "ShelfLife 隐私政策"
+      },
+      {
+        "type": "p",
+        "text": "更新日期：2026 年 10 月 28 日"
+      },
+      {
+        "type": "p",
+        "text": "本政策说明 ShelfLife 如何处理家庭器物、购买记录、凭证、说明书和更换提醒。"
+      },
+      {
+        "type": "h2",
+        "text": "ShelfLife 保存的信息"
+      },
+      {
+        "type": "p",
+        "text": "ShelfLife 保存你录入或扫描的档案，包括器物名称、购买信息、退货与保修期限、序列号、备注、维修与耗材历史、周期维护计划和附件。使用理赔跟踪时，也会保存案件状态、保险公司、金额、联系人和跟进行动。资料会保存在设备本地；开启个人 iCloud 同步且 iCloud 与 CloudKit 可用时，SwiftData 会将资料同步到与你的 Apple 帐户关联的 ShelfLife 私有数据库。你可以在设置中暂停此自动同步，变更会在完全退出并重新启动 App 后生效。暂停不会删除本机资料或 iCloud 中已有副本；家庭共享由单独设置控制。开发者不运营接收这些档案的服务器。"
+      },
+      {
+        "type": "p",
+        "text": "小票和产品铭牌识别使用设备上的 Apple Vision 框架，条码扫描和匹配也在本机完成，只查询少量已核实的离线目录。GS1 前缀表示条码分配机构所在地区，不代表商品产地。未匹配的条码会保存在档案中供你手动补全，不会发送到外部商品目录。图片、识别文字和条码不会发送到 ShelfLife 服务器。识别结果只作为草稿，你可以在保存前核对和修改。若你主动开启家庭共享，已保存的器物档案会包含在下文所述的 CloudKit 共享快照中。"
+      },
+      {
+        "type": "h2",
+        "text": "Apple 服务与可选的提醒事项同步"
+      },
+      {
+        "type": "p",
+        "text": "App Store 购买由 Apple 处理。ShelfLife 使用 StoreKit 判断 Pro 功能是否可用，不会收到银行卡或支付卡资料。"
+      },
+      {
+        "type": "p",
+        "text": "语音建档需要麦克风和语音识别权限。开启“优先在线识别”时，音频会发送到 Apple 的语音服务处理；关闭时，ShelfLife 会在所选语言支持的情况下请求本机识别；所选语言不支持本机识别时，Apple 仍可能通过在线服务处理音频。识别文字会先作为草稿展示，只有你确认后才保存到资料库。"
+      },
+      {
+        "type": "p",
+        "text": "如果你在设置中开启 Apple 提醒事项同步，ShelfLife 会申请完整提醒事项权限，以便在专属的“ShelfLife”列表中创建、更新和删除自己管理的提醒。它会同步已启用提醒的保修、耗材、维护、理赔跟进、库存保质期和借出归还任务。此权限为可选。关闭同步时，只会在权限仍可用的情况下移除 ShelfLife 管理的提醒；不会修改你的其他提醒。如果你已撤销权限，请在“提醒事项”App 中移除 ShelfLife 列表。"
+      },
+      {
+        "type": "p",
+        "text": "获得通知权限后，ShelfLife 会在设备本地安排通知：最多登记最近 30 项保修、耗材、维护、库存保质期、借出归还和理赔跟进提醒，另有一项每年重复的年度体检提醒。"
+      },
+      {
+        "type": "p",
+        "text": "家庭共享需要 ShelfLife Pro，是可选功能，仅在你主动从设置中开启后开始。它会将完整资料库（含附件、商品条码、序列号、维护计划、理赔案件和案件联系人）以快照形式存入你的 iCloud CloudKit 共享数据库。系统共享界面允许你邀请指定的 iCloud 成员，并赋予读写权限。ShelfLife 会在本机资料变更后和 App 处于前台时同步快照，并在临时网络故障后重试。不同资料按 ID 合并。如果共享快照与本机资料在上次同步后都发生了变化，ShelfLife 会询问相同 ID 的资料优先采用哪一边。删除会同步给其他成员；共享快照会保留最少的记录 ID 和删除日期，防止已删除资料再次出现。共享快照上限为 40 MB。开发者无法访问这些共享资料。"
+      },
+      {
+        "type": "h2",
+        "text": "分享与导出"
+      },
+      {
+        "type": "p",
+        "text": "ShelfLife 不包含广告追踪或开发者分析服务。新建的本地备份使用你设置的密码加密；ShelfLife 不保存或找回该密码。仍可导入旧版未加密 ZIP 备份。Excel、CSV 清单和 PDF 报告未加密，可能包含序列号、购买信息、备注和凭证。导出文件独立于 App 内资料；不再需要时请单独删除。家庭共享快照会保存在 CloudKit 并向受邀成员开放，不受本地备份密码保护。"
+      },
+      {
+        "type": "h2",
+        "text": "保存期限与删除"
+      },
+      {
+        "type": "p",
+        "text": "资料会一直保留到你删除为止。删除器物会同时删除关联耗材、历史记录和附件；CloudKit 同步可用时，删除也会同步到你的私有数据库。导出文件是独立副本，删除 ShelfLife 档案不会删除这些副本。"
+      },
+      {
+        "type": "h2",
+        "text": "你的选择"
+      },
+      {
+        "type": "p",
+        "text": "你可以离线使用 ShelfLife，在 ShelfLife 设置中暂停或恢复个人私有数据库同步，在 iOS 设置中控制通知权限，在 ShelfLife 设置中开启或关闭提醒事项同步，在 App 中删除档案，创建或恢复密码加密备份，也可以自行开启或管理家庭共享。个人同步变更会在完全退出并重新启动 App 后生效；暂停不会删除本机资料或 iCloud 中已有副本，家庭共享由单独设置控制。CloudKit 是否可用取决于 Apple 帐户、设备设置、网络和 iCloud 可用空间。如果你依赖这些资料，请保留一份最新备份。"
+      },
+      {
+        "type": "h2",
+        "text": "联系方式"
+      },
+      {
+        "type": "p",
+        "text": "如有隐私或使用问题，请联系支持团队：zipmaster_support@126.com，或通过 ShelfLife App Store 产品页面公布的支持联系方式联系。"
+      },
+      {
+        "type": "h2",
+        "text": "政策更新"
+      },
+      {
+        "type": "p",
+        "text": "如果 App 的数据处理方式发生变化，我们会在发布变更前更新本政策和日期。"
+      }
+    ],
+    "en": [
+      {
+        "type": "h1",
+        "text": "ShelfLife Privacy Policy"
+      },
+      {
+        "type": "p",
+        "text": "Last updated: October 28, 2026"
+      },
+      {
+        "type": "p",
+        "text": "This policy describes how ShelfLife handles household inventory, purchase records, receipts, manuals, and replacement reminders."
+      },
+      {
+        "type": "h2",
+        "text": "Information stored by ShelfLife"
+      },
+      {
+        "type": "p",
+        "text": "ShelfLife stores the records you enter or scan, including item names, purchase details, return and warranty deadlines, serial numbers, notes, service and consumable history, recurring maintenance plans, and attachments. If you use claim tracking, it also stores claim status, insurer, claim amounts, contact details, and follow-up actions. The app keeps a local copy on your device. When personal iCloud sync is enabled and iCloud and CloudKit are available, SwiftData syncs records to ShelfLife's CloudKit private database associated with your Apple Account. You can pause this automatic sync in Settings; the change takes effect after you fully quit and relaunch the app. Pausing does not remove the local data or existing iCloud copies. Household sharing is controlled separately. The developer does not operate a server that receives these records."
+      },
+      {
+        "type": "p",
+        "text": "Receipt and product-label recognition uses Apple's Vision frameworks on your device. Barcode scanning and lookup also run on-device against a small verified catalog. The GS1 prefix identifies the region that assigned the code, not where the product was made. Unmatched codes are saved for manual completion and are not sent to an external product catalog. Images, recognized text, and barcodes are not sent to a ShelfLife server. Recognition results are drafts; you can review and edit them before saving. If you opt into household sharing, saved item records are included in the shared CloudKit snapshot described below."
+      },
+      {
+        "type": "h2",
+        "text": "Apple services and optional Reminders sync"
+      },
+      {
+        "type": "p",
+        "text": "Apple processes in-app purchases through the App Store. ShelfLife uses StoreKit to determine whether Pro features are available; it does not receive payment-card details."
+      },
+      {
+        "type": "p",
+        "text": "Voice entry requires microphone and speech-recognition permission. When “Prefer online recognition” is enabled, audio is sent to Apple's speech service for processing. When it is disabled, ShelfLife requests on-device recognition where the selected language supports it; Apple may still process audio through its online service for languages without on-device support. The recognized text is shown as a draft and is saved to your library only after you confirm it."
+      },
+      {
+        "type": "p",
+        "text": "If you turn on Apple Reminders sync in Settings, ShelfLife requests full Reminders access so it can create, update, and remove only its own reminders in a dedicated “ShelfLife” list. It syncs enabled warranty, consumable, maintenance, claim follow-up, inventory expiry, and loan return reminders. This permission is optional. Turning sync off removes ShelfLife-managed reminders when access is still available; your other reminders are not modified. If permission has been revoked, remove the ShelfLife list in the Reminders app."
+      },
+      {
+        "type": "p",
+        "text": "Local notifications are scheduled on your device when you grant notification permission. ShelfLife schedules no more than the nearest 30 upcoming warranty, consumable, maintenance, inventory expiry, loan return, and insurance claim follow-up reminders, plus one repeating yearly home check-up reminder."
+      },
+      {
+        "type": "p",
+        "text": "Household sharing requires ShelfLife Pro, is optional, and starts only when you choose it in Settings. It stores a snapshot of your complete library in your iCloud CloudKit shared database, including attachments, product barcodes, serial numbers, maintenance plans, insurance claims, and claim contact details. The system sharing sheet lets you invite specific iCloud members with read and write access. ShelfLife syncs snapshots after local changes and while the app is in the foreground, and retries temporary network failures. Different records merge by ID. If the shared snapshot changed and the local library also changed since the last sync, ShelfLife asks which side to prioritize for matching record IDs before completing the merge. Deletions sync to other members; a small record ID and deletion date are retained in the shared snapshot so deleted records do not reappear. Household snapshots are limited to 40 MB. The developer does not receive the shared data."
+      },
+      {
+        "type": "h2",
+        "text": "Sharing and exports"
+      },
+      {
+        "type": "p",
+        "text": "ShelfLife contains no advertising tracker or developer analytics service. New local backups are encrypted with a password you choose; ShelfLife does not store or recover that password. Older plain ZIP backups can still be imported. Excel, CSV, and PDF exports are not encrypted and may contain serial numbers, purchase details, notes, and receipts. Exported files are separate from app data; delete them separately when they are no longer needed. Household snapshots are stored in CloudKit for the members you invite and are not protected by the local backup password."
+      },
+      {
+        "type": "h2",
+        "text": "Retention and deletion"
+      },
+      {
+        "type": "p",
+        "text": "Records remain in ShelfLife until you delete them. Deleting an item also deletes its associated consumables, history, and attachments; when CloudKit sync is available, the deletion syncs to your private database. Exported files are separate copies and are not deleted when a record is removed from ShelfLife."
+      },
+      {
+        "type": "h2",
+        "text": "Your choices"
+      },
+      {
+        "type": "p",
+        "text": "You can use ShelfLife offline, pause or resume personal private-database sync in ShelfLife Settings, control notification permission in iOS Settings, turn Reminders sync on or off in ShelfLife Settings, delete records in the app, create or restore a password-encrypted backup, and opt into or manage household sharing. Personal sync changes take effect after you fully quit and relaunch the app; pausing it does not delete local data or existing iCloud copies. Household sharing is controlled separately. CloudKit availability depends on your Apple Account, device settings, network, and available iCloud storage. Keep a current backup if you rely on your records."
+      },
+      {
+        "type": "h2",
+        "text": "Contact"
+      },
+      {
+        "type": "p",
+        "text": "For privacy questions or support, contact zipmaster_support@126.com or use the support contact published on ShelfLife's App Store product page."
+      },
+      {
+        "type": "h2",
+        "text": "Policy updates"
+      },
+      {
+        "type": "p",
+        "text": "If the app's data handling changes, this policy and its last-updated date will be revised before the change is released."
+      }
+    ]
+  },
+  "droidbridge": {
+    "zh-Hans": [
+      {
+        "type": "h1",
+        "text": "DroidBridge 隐私政策"
+      },
+      {
+        "type": "p",
+        "text": "生效日期：2026 年 10 月 28 日"
+      },
+      {
+        "type": "p",
+        "text": "本政策适用于 macOS 版 DroidBridge（安卓桥）及其可选的 Android 配套工具。DroidBridge 是一款原生 macOS 菜单栏应用，专注于在 Mac 与 Android 设备之间进行高速文件浏览、传输与无线挂载。本政策说明应用在本机处理的信息、数据存储位置以及您的控制权。在 GitHub Pages 上托管的宣传或支持页面适用 GitHub 的相关服务政策。"
+      },
+      {
+        "type": "p",
+        "text": "本政策由 DroidBridge Team（DroidBridge 的开发者与维护者）发布。"
+      },
+      {
+        "type": "h2",
+        "text": "1. 应用在本机与设备间处理的信息"
+      },
+      {
+        "type": "li",
+        "text": "文件与目录访问：应用仅访问您通过 macOS 文件选择器明确选取的本地目录、以及通过安全书签授权的同步文件夹。在安卓设备端，应用仅在设备解锁并授予 MTP、ADB 或 FTP/WebDAV 授权时，浏览与传输相应存储目录中的文件。所有文件均在 Mac 与设备两端直接收发，不经过任何开发者中转服务器或第三方云端存储。"
+      },
+      {
+        "type": "li",
+        "text": "相册与媒体直拖：菜单栏面板展示安卓设备相册最新的照片或截图缩略图，以便您直接拖拽至 Mac 应用中。MTP 模式下仅读取媒体缩略图，避免全量下载大文件；本地相册缓存严格限制在 300 MiB 上限以内，且可随时自动或手动清理。"
+      },
+      {
+        "type": "li",
+        "text": "传输历史与断点续传：为方便追踪传输状态与失败重试，应用在 Mac 本机保留最近完成、失败或取消的传输历史（最多 200 条），包括文件名、传输方向、文件大小、耗时与设备标识符。对于大文件传输中断，未完成数据保存在临时分片文件中，仅在校验通过后替换目标文件。您可在传输历史界面随时一键清空全部已完成记录。"
+      },
+      {
+        "type": "li",
+        "text": "剪贴板双向同步：仅在您主动启用剪贴板同步并扫描配对二维码后生效。配对使用动态 256 位会话令牌，传输内容在局域网内端对端加密。当伴侣 App 退至后台或设备断开连接时，同步会自动暂停。剪贴板数据仅驻留在设备内存中，不保存至磁盘，亦不上传云端。"
+      },
+      {
+        "type": "h2",
+        "text": "2. 传输协议与网络安全"
+      },
+      {
+        "type": "p",
+        "text": "有线 USB 传输（MTP/ADB）完全在 Mac 与手机的本地物理总线或本地回环（127.0.0.1:5037）间完成，不产生任何外部互联网网络流量。"
+      },
+      {
+        "type": "p",
+        "text": "局域网传输（FTP/WebDAV/网页快传）：应用利用 Bonjour 广播仅在当前局域网内发现本地设备。扫码快传支持带证书指纹校验的 HTTPS 伴侣二维码，以及适用于无客户端环境的 HTTP 浏览器门户。因传统 FTP 和未配置证书的 HTTP 属于明文传输，请勿将传输端口映射至公共互联网，建议仅在受信任的私人 Wi-Fi 环境中使用。"
+      },
+      {
+        "type": "h2",
+        "text": "3. 凭据、权限与本地存储"
+      },
+      {
+        "type": "li",
+        "text": "系统钥匙串（Keychain）：如果您选择保存连接 FTP 或 WebDAV 服务的密码凭据，该凭据将安全保存在 macOS 系统钥匙串中，享有系统级硬件加密保护，开发者无法接触。"
+      },
+      {
+        "type": "li",
+        "text": "沙盒与安全书签：应用遵循 macOS 严格的应用沙盒机制，仅通过系统标准安全范围书签（Security-Scoped Bookmark）持久化保存您选定的同步目录访问权限。"
+      },
+      {
+        "type": "li",
+        "text": "无广告与第三方分析：DroidBridge 不包含任何商业广告 SDK、第三方追踪器、数据统计或用户画像分析组件。"
+      },
+      {
+        "type": "h2",
+        "text": "4. 内购与 StoreKit 处理"
+      },
+      {
+        "type": "p",
+        "text": "DroidBridge Pro 的购买、订阅与恢复均通过 Apple StoreKit 2 由 Apple 官方处理。交易与账单信息由 Apple 按照其隐私政策妥善处理，DroidBridge 不收集亦不存储任何支付卡号或财务信息。"
+      },
+      {
+        "type": "h2",
+        "text": "5. 数据保留与彻底删除"
+      },
+      {
+        "type": "p",
+        "text": "连接历史、偏好设置和同步任务仅保存在您的 Mac 本地。您可以随时在应用设置与传输面板中清除传输历史与临时缓存；卸载应用并清理本地应用数据即可完全抹除。保存在钥匙串中的连接凭据可随时通过 macOS“钥匙串访问”手动移除。"
+      },
+      {
+        "type": "h2",
+        "text": "6. 儿童隐私与政策变更"
+      },
+      {
+        "type": "p",
+        "text": "本应用不面向儿童收集任何个人信息，亦不设用户注册账号体系。若应用的功能更新涉及数据处理政策的调整，我们将在本页面更新生效日期并公示最新说明。"
+      },
+      {
+        "type": "h2",
+        "text": "7. 联系支持"
+      },
+      {
+        "type": "p",
+        "text": "如果您对本隐私政策或数据处理有任何疑问，请联系我们：zipmaster_support@126.com。"
+      },
+      {
+        "type": "p",
+        "text": "© 2026 DroidBridge Team. 产品首页 · 隐私政策 · 技术支持与反馈"
+      }
+    ],
+    "en": [
+      {
+        "type": "h1",
+        "text": "DroidBridge Privacy Policy"
+      },
+      {
+        "type": "p",
+        "text": "Effective date: October 28, 2026"
+      },
+      {
+        "type": "p",
+        "text": "This privacy policy applies to DroidBridge for macOS and its optional Android companion tools. DroidBridge is a native macOS menu bar application designed for fast Android file browsing, transfer, and wireless mounting. This policy explains what information the app processes locally, where data is stored, and the controls available to you. Marketing or support webpages hosted on GitHub Pages are subject to GitHub's applicable privacy terms."
+      },
+      {
+        "type": "p",
+        "text": "This policy is published by the DroidBridge Team, the developers and maintainers of DroidBridge."
+      },
+      {
+        "type": "h2",
+        "text": "1. Information Processed Locally and Between Devices"
+      },
+      {
+        "type": "li",
+        "text": "Files and Folders: The app accesses only the local directories you explicitly select through standard macOS file pickers and security-scoped bookmarks. On connected Android devices, DroidBridge browses and transfers files only within the storage authorized via MTP, ADB, or FTP/WebDAV. All files transfer directly between your Mac and devices without routing through any developer relay servers or third-party cloud storage."
+      },
+      {
+        "type": "li",
+        "text": "Recent Photos and Media Preview: The menu bar panel displays thumbnails of the latest photos and screenshots from your Android device for instant drag-and-drop into Mac apps. Under MTP mode, only thumbnails are retrieved to avoid downloading entire media files; local thumbnail caches are capped at 300 MiB and can be cleared at any time."
+      },
+      {
+        "type": "li",
+        "text": "Transfer History and Resumable Transfers: To provide transfer status and failure recovery, DroidBridge keeps a local history of up to 200 recent completed, failed, or cancelled transfers (recording file names, direction, size, elapsed time, and device identifiers). Interrupted large transfers store incomplete parts in hidden sidecar files and replace target files only upon full verification. You can clear finished transfer logs at any time."
+      },
+      {
+        "type": "li",
+        "text": "Two-Way Clipboard Sync: Operates only when you explicitly pair via QR code. Pairing uses dynamic 256-bit session tokens with end-to-end encryption across your local network. Sync automatically pauses when the companion app goes to the background or when disconnected. Clipboard text resides in volatile memory and is never written to disk or uploaded to any cloud server."
+      },
+      {
+        "type": "h2",
+        "text": "2. Transmission Protocols and Network Safety"
+      },
+      {
+        "type": "p",
+        "text": "Wired USB transfers (MTP and ADB) run entirely across the local physical USB bus or loopback socket (127.0.0.1:5037), generating no external internet traffic."
+      },
+      {
+        "type": "p",
+        "text": "Local Network Transfers (FTP, WebDAV, QR Web Drop): The app uses Bonjour solely for local device discovery within your local network. QR Web Drop provides HTTPS companion transfer with certificate fingerprint verification, alongside an unencrypted browser portal. Because traditional FTP and unencrypted HTTP transmit in plain text, do not expose ports to the public internet, and use these transfers only on trusted private Wi-Fi networks."
+      },
+      {
+        "type": "h2",
+        "text": "3. Credentials, Permissions, and Local Storage"
+      },
+      {
+        "type": "li",
+        "text": "macOS Keychain: If you choose to save login credentials for FTP or WebDAV servers, they are stored securely in macOS Keychain with system-level hardware protection. The developer has no access to your credentials."
+      },
+      {
+        "type": "li",
+        "text": "App Sandbox and Security Bookmarks: DroidBridge adheres strictly to the macOS App Sandbox, retaining folder access permissions exclusively through user-granted security-scoped bookmarks."
+      },
+      {
+        "type": "li",
+        "text": "No Ads or Tracking SDKs: The app contains no advertising SDKs, commercial trackers, user profiling, or third-party behavioral analytics."
+      },
+      {
+        "type": "h2",
+        "text": "4. In-App Purchases and StoreKit"
+      },
+      {
+        "type": "p",
+        "text": "Purchases and subscription restorations for DroidBridge Pro are handled directly by Apple through StoreKit 2. Apple processes transactions under its own privacy policy. DroidBridge does not receive or store any credit card numbers or financial details."
+      },
+      {
+        "type": "h2",
+        "text": "5. Data Retention and Erasure"
+      },
+      {
+        "type": "p",
+        "text": "Connection history, preferences, and saved sync tasks remain on your Mac. You can clear recent transfer logs and caches inside the app. Deleting the application and its local data directories completely wipes all local files. Saved server passwords can be removed from macOS Keychain Access at any time."
+      },
+      {
+        "type": "h2",
+        "text": "6. Children's Privacy and Policy Updates"
+      },
+      {
+        "type": "p",
+        "text": "DroidBridge does not solicit or collect personal information from children and does not operate online user registration accounts. If data handling practices change, we will update the effective date on this page."
+      },
+      {
+        "type": "h2",
+        "text": "7. Contact Us"
+      },
+      {
+        "type": "p",
+        "text": "If you have questions or feedback regarding this privacy policy, please contact us at: zipmaster_support@126.com."
+      },
+      {
+        "type": "p",
+        "text": "© 2026 DroidBridge Team. Product Home · Privacy Policy · Support & Help"
+      }
+    ]
+  },
+  "dropsqueeze": {
+    "zh-Hans": [
+      {
+        "type": "h1",
+        "text": "DropSqueeze 隐私政策与数据保护声明"
+      },
+      {
+        "type": "p",
+        "text": "生效日期：2026 年 10 月 28 日"
+      },
+      {
+        "type": "h2",
+        "text": "1. 核心架构与端侧原则"
+      },
+      {
+        "type": "p",
+        "text": "DropSqueeze 是一款专为 macOS 设计的极速静默媒体压缩与格式转换工具。我们坚信用户的数据所有权与个人隐私至关重要，因此应用采用了纯端侧（On-Device）无云端零上传架构。所有图片、视频、动态 GIF 及 PDF 文件的无损/有损压缩、硬件转码、EXIF/GPS 元数据抹除及端侧 Vision 文本识别全部 100% 在你的 Mac 本地硬件完成。"
+      },
+      {
+        "type": "p",
+        "text": "开发者不设立也不运营任何用于收集、存储或分析用户媒体数据的后端服务器，应用中未集成任何第三方数据分析、统计、行为跟踪或商业广告 SDK。"
+      },
+      {
+        "type": "h2",
+        "text": "2. 剪贴板监听与数据保护"
+      },
+      {
+        "type": "p",
+        "text": "当你开启剪贴板监控功能时，应用仅在后台周期性检查 macOS 系统剪贴板计数器 NSPasteboard.changeCount。仅当检测到剪贴板中出现新的图像数据或受支持的音视频文件 URL 时，应用才会在本地执行压缩算法。"
+      },
+      {
+        "type": "p",
+        "text": "压缩完成后，仅在生成的新文件体积确实小于原始体积时，才将优化后的副本安全写回剪贴板；若压缩后体积未缩减，则保持原剪贴板内容不变。"
+      },
+      {
+        "type": "p",
+        "text": "为了防止剪贴板写入引发死循环处理，DropSqueeze 在写回时会附带自定义私有内部标记（Private Marker）。该标记仅供 DropSqueeze 自身识别且不包含任何个人身份信息。"
+      },
+      {
+        "type": "p",
+        "text": "剪贴板历史收集条（Collection Bar）最多保留最近 12 项媒体，纯驻留在易失性会话内存中，退出应用或点击清空时即刻销毁，绝不写入本地磁盘或外部存储。你可随时在设置中完全关闭剪贴板监控。"
+      },
+      {
+        "type": "h2",
+        "text": "3. 文件夹自动化监控与沙盒安全"
+      },
+      {
+        "type": "p",
+        "text": "DropSqueeze 严格遵循 macOS App Sandbox 沙盒规范。当你添加需要自动监控的截图或录屏目录（例如桌面或自定义下载目录）时，需通过 macOS 官方 NSOpenPanel 显式授权。应用仅通过系统提供的安全作用域书签（Security-Scoped Bookmarks）在本地保存授权，以便在重启后恢复监控。"
+      },
+      {
+        "type": "p",
+        "text": "在自动监控过程中，DropSqueeze 严格遵循非破坏性原则，绝不擅自覆盖、修改或删除你的原始源文件。压缩产物默认作为独立副本保存在同级目录下，或输出至你所指定的专用输出目录中。"
+      },
+      {
+        "type": "p",
+        "text": "你可以随时在设置中暂停监控、删除文件夹监控规则，或撤销已授权的目录访问书签。"
+      },
+      {
+        "type": "h2",
+        "text": "4. 隐私元数据剥离与脱敏"
+      },
+      {
+        "type": "p",
+        "text": "数码照片与截图中常常包含拍摄设备型号、镜头参数、拍摄时间、地理位置经纬度（GPS）及私人注释。DropSqueeze 提供主动隐私脱敏保护，在压缩 JPEG、HEIC、WebP 等图片时，可配置为自动彻底抹除所有 EXIF、GPS 拍摄地点及隐私元数据，避免在社交平台、即时通讯或公共网络共享时泄露真实物理位置与设备信息。"
+      },
+      {
+        "type": "h2",
+        "text": "5. 本地数据存储与管理"
+      },
+      {
+        "type": "p",
+        "text": "应用在本机仅通过 macOS UserDefaults 存储必要的使用偏好与统计信息，包括："
+      },
+      {
+        "type": "li",
+        "text": "用户自定义的压缩参数、分辨率缩放规则、自动化食谱及监控文件夹书签；"
+      },
+      {
+        "type": "li",
+        "text": "每日免费额度计数器（每天在本地自动重置）；"
+      },
+      {
+        "type": "li",
+        "text": "累计节省磁盘空间与最近压缩历史记录（仅记录文件名、处理时间、压缩前后体积及比率）。"
+      },
+      {
+        "type": "p",
+        "text": "上述所有数据均保留在你的 Mac 本地，不会向任何网络云端同步。你随时可以在“设置”中点击“清空历史记录”，彻底删除所有本地压缩活动记录与累计统计。"
+      },
+      {
+        "type": "h2",
+        "text": "6. 应用内购买与 Apple StoreKit"
+      },
+      {
+        "type": "p",
+        "text": "DropSqueeze 提供的 Pro 年度订阅与终身买断制功能通过 Apple StoreKit 2 官方系统框架完成。"
+      },
+      {
+        "type": "p",
+        "text": "所有付款处理、交易验证及订阅管理均由 Apple 官方服务器直接执行。开发者不收集、不访问且不存储任何信用卡号、银行账户或 Apple ID 凭据。"
+      },
+      {
+        "type": "h2",
+        "text": "7. 系统权限与扩展功能"
+      },
+      {
+        "type": "p",
+        "text": "系统通知（可选）：仅用于在后台静默压缩完成时展示节省空间提示与快捷撤销操作，用户可随时在系统设置中关闭通知。"
+      },
+      {
+        "type": "p",
+        "text": "快捷指令与 App Intents（可选）：提供“压缩媒体文件”快捷指令动作，供用户在系统快捷指令或 Finder 快速操作中调用，执行过程同样受限于系统沙盒保护，不会上传数据。"
+      },
+      {
+        "type": "h2",
+        "text": "8. 数据保留、删除与用户权利"
+      },
+      {
+        "type": "p",
+        "text": "本地数据完全由你控制。卸载 DropSqueeze 并清除其沙盒容器即可彻底删除所有本地关联数据。"
+      },
+      {
+        "type": "h2",
+        "text": "9. 联系我们"
+      },
+      {
+        "type": "p",
+        "text": "如对本隐私政策、数据处理或应用功能有任何疑问，请联系技术支持团队："
+      },
+      {
+        "type": "p",
+        "text": "支持邮箱：zipmaster_support@126.com"
+      }
+    ],
+    "en": [
+      {
+        "type": "h1",
+        "text": "DropSqueeze Privacy Policy & Data Protection Declaration"
+      },
+      {
+        "type": "p",
+        "text": "Effective Date: October 28, 2026"
+      },
+      {
+        "type": "h2",
+        "text": "1. Core Architecture & Local-First Principle"
+      },
+      {
+        "type": "p",
+        "text": "DropSqueeze is a macOS utility engineered for silent media compression, image/video optimization, and format transcoding. We firmly believe that user privacy and data ownership are fundamental. The application is built entirely on an on-device, local-first architecture. All lossy and lossless compression, hardware-accelerated video encoding, EXIF/GPS metadata stripping, and on-device Vision OCR take place 100% locally on your Mac."
+      },
+      {
+        "type": "p",
+        "text": "We do not operate developer servers to collect, upload, or analyze your media files. DropSqueeze contains zero third-party telemetry, behavioral analytics, ad networks, or tracking SDKs."
+      },
+      {
+        "type": "h2",
+        "text": "2. Clipboard Monitoring & Safety Guards"
+      },
+      {
+        "type": "p",
+        "text": "When clipboard monitoring is enabled, DropSqueeze periodically inspects the system clipboard counter (NSPasteboard.changeCount). The app processes content only when new image data or supported media file URLs are detected."
+      },
+      {
+        "type": "p",
+        "text": "Once compression completes, the optimized copy is safely written back to the clipboard only if a genuine reduction in file size was achieved. If the compressed result is not smaller, the original clipboard content remains unchanged."
+      },
+      {
+        "type": "p",
+        "text": "To prevent recursive infinite processing loops, DropSqueeze tags processed clipboard items with a private marker that is recognized solely by DropSqueeze and contains no personal identity data."
+      },
+      {
+        "type": "p",
+        "text": "The clipboard collection bar retains up to 12 recent items purely within volatile session memory. It is cleared upon quitting the application or manual reset, and is never written to persistent disk storage. You may disable clipboard monitoring at any time in Settings."
+      },
+      {
+        "type": "h2",
+        "text": "3. Folder Automation & App Sandbox"
+      },
+      {
+        "type": "p",
+        "text": "DropSqueeze strictly adheres to macOS App Sandbox security guidelines. When you configure watched directories (such as your Desktop or custom screenshot folders), access is granted explicitly via the macOS native NSOpenPanel. The app retains access permissions using security-scoped bookmarks stored locally on your device."
+      },
+      {
+        "type": "p",
+        "text": "All compression workflows are strictly non-destructive. DropSqueeze never overwrites, alters, or deletes your source files. Output files are placed alongside the source or in your chosen destination folder as independent copies."
+      },
+      {
+        "type": "p",
+        "text": "You can pause folder watching, update automation recipes, or revoke folder permissions at any time within the application settings."
+      },
+      {
+        "type": "h2",
+        "text": "4. Metadata Scrubbing & Privacy Protection"
+      },
+      {
+        "type": "p",
+        "text": "Digital photos and screenshots often contain sensitive metadata, including camera models, shooting timestamps, exposure parameters, and precise GPS location coordinates. DropSqueeze provides automated metadata scrubbing for JPEG, HEIC, and WebP outputs, allowing you to completely strip EXIF and location data before sharing media across networks or workplace channels."
+      },
+      {
+        "type": "h2",
+        "text": "5. Local Data Storage & Preferences"
+      },
+      {
+        "type": "p",
+        "text": "The application stores only essential user preferences and operational counters locally in macOS UserDefaults:"
+      },
+      {
+        "type": "li",
+        "text": "User-configured compression profiles, dimension scaling preferences, automation recipes, and security-scoped folder bookmarks;"
+      },
+      {
+        "type": "li",
+        "text": "Daily free compression quotas (reset locally every day);"
+      },
+      {
+        "type": "li",
+        "text": "Cumulative disk space savings and recent compression history (limited to file names, timestamps, before/after sizes, and savings ratios)."
+      },
+      {
+        "type": "p",
+        "text": "None of this information is transmitted off your Mac. You can permanently erase all local activity history and statistics at any time via Settings -> History & Statistics -> Clear History."
+      },
+      {
+        "type": "h2",
+        "text": "6. In-App Purchases & Apple StoreKit"
+      },
+      {
+        "type": "p",
+        "text": "DropSqueeze Pro subscriptions and lifetime licenses are handled through Apple StoreKit 2."
+      },
+      {
+        "type": "p",
+        "text": "All payment processing, entitlement verification, and subscription renewals are conducted directly between your device and Apple servers. The developer never receives, stores, or accesses your credit card information, billing details, or Apple ID credentials."
+      },
+      {
+        "type": "h2",
+        "text": "7. System Permissions & App Intents"
+      },
+      {
+        "type": "p",
+        "text": "System Notifications (Optional): Used solely to deliver local completion alerts with space savings figures and an undo action. Notifications can be configured or disabled in System Settings."
+      },
+      {
+        "type": "p",
+        "text": "Shortcuts & App Intents (Optional): Provides the \"Compress Media Files\" action for macOS Shortcuts and Finder Quick Actions, operating under the same local sandbox boundaries without network transmission."
+      },
+      {
+        "type": "h2",
+        "text": "8. Data Retention, Deletion & User Rights"
+      },
+      {
+        "type": "p",
+        "text": "You maintain full control over your data. All records remain local to your Mac. Deleting the application and its application support container will completely erase all local data."
+      },
+      {
+        "type": "h2",
+        "text": "9. Contact Us"
+      },
+      {
+        "type": "p",
+        "text": "If you have any questions, feedback, or support inquiries regarding this Privacy Policy, please reach out to our team:"
+      },
+      {
+        "type": "p",
+        "text": "Support Email: zipmaster_support@126.com"
+      }
+    ]
+  },
+  "netpulse": {
+    "zh-Hans": [
+      {
+        "type": "h1",
+        "text": "NetPulse 隐私政策"
+      },
+      {
+        "type": "p",
+        "text": "生效日期：2026 年 11 月 7 日"
+      },
+      {
+        "type": "h2",
+        "text": "1. 适用范围与基本原则"
+      },
+      {
+        "type": "p",
+        "text": "本政策适用于 iOS 与 iPadOS 版本的 NetPulse（包括随附的小组件），由 NetPulse 开发者发布。我们深知网络与硬件工程师在现场调试时对数据隐私与内网拓扑安全的极高要求。我们坚持“本地优先、零云端依赖、数据最小化”的原则。"
+      },
+      {
+        "type": "p",
+        "text": "应用不提供独立的云端账户注册体系，不运营用于收集、存储或分析用户调试数据的自建服务器，未接入任何广告联盟、跨应用追踪（IDFA）或第三方统计 SDK。隐私与技术支持咨询请通过邮件联系：zipmaster_support@126.com。"
+      },
+      {
+        "type": "h2",
+        "text": "2. 处理的数据与具体功能说明"
+      },
+      {
+        "type": "p",
+        "text": "低功耗蓝牙（BLE & GATT）调试：应用扫描周边的低功耗蓝牙广播信号，解析广播名称、服务 UUID、厂商自定义数据（Manufacturer Data）、实时 RSSI 信号强度及发射功率。连接设备后，应用可按你的指令读取、写入或订阅 GATT 特征值与描述符。所有外设标识符均为 iOS CoreBluetooth 生成的本地随机 UUID，不暴露硬件原始 MAC 地址。蓝牙调试数据与交互历史仅保存在设备内存与受保护的本地存储中。"
+      },
+      {
+        "type": "p",
+        "text": "固件更新与 DFU：在执行 Nordic OTA DFU 或 MCUboot/MCUmgr 升级时，应用仅在用户主动从系统文件选择器选取本地固件包（.bin, .zip, .suit）并在确认后，通过蓝牙直接推流到所选外设。固件文件在升级流程关闭后从受保护临时沙盒中自动销毁。"
+      },
+      {
+        "type": "p",
+        "text": "局域网设备发现与网络诊断：应用利用 mDNS/Bonjour、SSDP (UPnP) 及局域网广播发现本地活跃的物联网设备、NAS、打印机及摄像头；提供 ICMP Ping 延迟监测、UDP 路由追踪（Traceroute）及针对用户指定目标的常用端口开放性探测（如 80、443、554 等）。所有网络扫描仅在当前连入的本地 Wi-Fi 或有线网络子网中进行，绝不向任何外部服务器上传局域网资产清单或网络拓扑。"
+      },
+      {
+        "type": "p",
+        "text": "路由器邻居表（IP-MAC 映射）：仅当你手动输入最多 4 台本地/私有数字 IP 地址的路由器时，应用通过只读 SNMP 查询路由器的标准接口邻居表。路由器登录凭据（Community 或 SNMPv3 凭据）仅临时保存在设备内存中，停止监测或离开页面时立即清空，不进行磁盘持久化。"
+      },
+      {
+        "type": "p",
+        "text": "ONVIF 摄像头与 RTSP 视频流：应用通过 WS-Discovery 协议自动发现局域网摄像头。在用户输入凭据后，通过标准 ONVIF 接口拉取媒体配置与 RTSP 流地址。实时音视频流通过设备内置播放器直接与局域网摄像头建立 RTSP/RTSPS 点对点传输解码播放，视频流绝不经过任何第三方云端服务器中转。摄像头访问凭据保存在本地钥匙串或受保护沙盒中。"
+      },
+      {
+        "type": "p",
+        "text": "摄像头双向对讲（Talkback）：仅在你主动开启双向音频对讲时，应用才会请求麦克风权限采集实时人声，并以标准音频流格式推流至本地摄像头扬声器。音频数据实时推流，不录音、不保存、不上传云端，对讲停止后即刻释放麦克风。"
+      },
+      {
+        "type": "p",
+        "text": "网络带宽与延迟测速：应用内置官方测速模块，直接向 Cloudflare 全球公用测速节点发送标准测试流量，计算下行/上行带宽、空闲延迟及抖动。测速仅在用户主动点击“开始测速”时进行，应用不向测速服务器附带任何 Wi-Fi 密码、内网 IP、设备唯一标识等隐私信息。"
+      },
+      {
+        "type": "p",
+        "text": "DNS 查询与局域网唤醒：系统 DNS 与 DNS-over-HTTPS (DoH) 查询仅在用户发起时向相应解析服务器发送域名查询；Wake-on-LAN 仅向本地广播域发送 Magic Packet。"
+      },
+      {
+        "type": "h2",
+        "text": "3. 系统权限申请与使用目的"
+      },
+      {
+        "type": "p",
+        "text": "蓝牙权限（NSBluetoothAlwaysUsageDescription）：用于扫描低功耗蓝牙外设、读取广播数据、连接外设调试 GATT 特征值以及在前台模拟外设广播。不用于推测地理位置。"
+      },
+      {
+        "type": "p",
+        "text": "本地网络权限（NSLocalNetworkUsageDescription）：iOS 系统要求访问本地局域网（Bonjour、SSDP、ONVIF 多播、端口探测、RTSP 视频取流、前台 SNMP 接收）必须获得该权限。NetPulse 不会滥用该权限扫描与应用功能无关的内网隐私。"
+      },
+      {
+        "type": "p",
+        "text": "麦克风权限（NSMicrophoneUsageDescription）：仅在主动触发摄像头双向对讲功能时实时采集语音，直接推流给局域网摄像头，不进行录制或上传。"
+      },
+      {
+        "type": "p",
+        "text": "本地通知权限：可选开启。仅在前台运行时针对用户设置的阈值（如连续 Ping 超时、ONVIF 移动侦测事件）弹出本地通知。应用不注册 APNs 远程推送服务。"
+      },
+      {
+        "type": "h2",
+        "text": "4. 数据存储、安全保护与导出边界"
+      },
+      {
+        "type": "p",
+        "text": "本地安全存储：收藏的设备别名、调试宏、测速历史、Ping 历史等保存在应用专属的沙盒容器中，并设置排除在系统 iCloud 云端常规备份之外（isExcludedFromBackup），确保内网敏感数据不被自动上传到云端备份。"
+      },
+      {
+        "type": "p",
+        "text": "安全导出机制：当用户主动分享或导出 CSV 报表或 JSON 快照时，应用在受系统高保护等级（NSFileProtectionComplete）的临时目录生成文件，并在分享面板关闭后自动彻底删除。所有 CSV 均实施严格的公式注入防护，对可能被电子表格软件执行的特殊前缀字符进行转义。"
+      },
+      {
+        "type": "p",
+        "text": "凭据安全：敏感凭据（如摄像头密码、SNMP 访问凭据）均安全存储于设备本地钥匙串或仅保存在运行时内存中；在导出任何报表或日志时，所有凭据字段均会被自动剥离，防止意外泄露。"
+      },
+      {
+        "type": "h2",
+        "text": "5. 网络通信与第三方服务边界"
+      },
+      {
+        "type": "p",
+        "text": "除了用户主动发起的“Cloudflare 网络测速”、公共 DoH 域名解析以及 Apple App Store 应用内购买校验外，NetPulse 不会向任何外部公网服务器发起静默网络请求。"
+      },
+      {
+        "type": "p",
+        "text": "应用不含任何第三方广告联盟 SDK、行为统计分析 SDK 或社交分享组件。"
+      },
+      {
+        "type": "h2",
+        "text": "6. 数据的保留、清除与用户权利"
+      },
+      {
+        "type": "p",
+        "text": "历史记录清理：你可以在应用内的各个功能页面（测速历史、Ping 历史、BLE 扫描记录、SNMP 记录、摄像头列表）随时主动清除单条或全部记录与缓存。"
+      },
+      {
+        "type": "p",
+        "text": "完全清除：删除（卸载）NetPulse 应用将立即彻底清除设备沙盒与钥匙串中由本应用存储的所有配置文件、历史记录及凭据。"
+      },
+      {
+        "type": "h2",
+        "text": "7. 儿童隐私与政策更新"
+      },
+      {
+        "type": "p",
+        "text": "本应用面向硬件与网络专业技术人员，不针对 13 岁（或你所在司法辖区规定的儿童年龄）以下儿童。我们不会故意收集儿童的任何个人信息。"
+      },
+      {
+        "type": "p",
+        "text": "随着应用功能的迭代或相关法律法规的变化，我们可能会适时更新本隐私政策。更新后的政策将发布于本网页，并在政策开头注明最新生效日期。"
+      },
+      {
+        "type": "h2",
+        "text": "8. 联系支持团队"
+      },
+      {
+        "type": "p",
+        "text": "如果你对 NetPulse 的隐私实践、权限使用或技术支持有任何疑问，请联系我们：zipmaster_support@126.com。来信时请提供 iOS 系统版本、应用版本及问题描述，切勿在邮件中附带你的密码、私钥或内网敏感凭据。"
+      }
+    ],
+    "en": [
+      {
+        "type": "h1",
+        "text": "NetPulse Privacy Policy"
+      },
+      {
+        "type": "p",
+        "text": "Effective Date: November 7, 2026"
+      },
+      {
+        "type": "h2",
+        "text": "1. Scope and Core Principles"
+      },
+      {
+        "type": "p",
+        "text": "This Privacy Policy applies to the iOS and iPadOS versions of NetPulse (including accompanying widgets), published by the NetPulse developer. We understand the paramount importance of data confidentiality and network topology safety for field engineers, IoT developers, and network administrators. We strictly adhere to an On-Device First, Zero Cloud Dependency, and Data Minimization architecture."
+      },
+      {
+        "type": "p",
+        "text": "NetPulse does not require account registration, does not operate proprietary backend servers to capture diagnostic data, and contains no advertising, cross-app tracking (IDFA), or commercial analytics SDKs. For privacy inquiries or support, contact zipmaster_support@126.com."
+      },
+      {
+        "type": "h2",
+        "text": "2. Handled Data and Functionality Details"
+      },
+      {
+        "type": "p",
+        "text": "Bluetooth Low Energy (BLE & GATT) Debugging: NetPulse scans nearby BLE advertisements, parsing advertised names, Service UUIDs, Manufacturer Data, live RSSI signal curves, and Tx Power. Upon connecting to a peripheral, the app reads, writes, and subscribes to GATT characteristics and descriptors according to your instructions. Peripheral identifiers are device-local random UUIDs generated by iOS CoreBluetooth, avoiding exposure of raw hardware MAC addresses. Debug logs and signal samples reside solely in memory and protected local storage."
+      },
+      {
+        "type": "p",
+        "text": "Firmware Updates and DFU: During Nordic Legacy/Secure DFU or MCUboot/MCUmgr SMP updates, firmware packages (.bin, .zip, .suit) are accessed strictly through explicit system document selection and user confirmation. Package data is transmitted directly to the peripheral over BLE, and temporary staging files are purged upon closing the update interface."
+      },
+      {
+        "type": "p",
+        "text": "LAN Discovery and Network Diagnostics: The app utilizes mDNS/Bonjour, SSDP (UPnP), and local subnet sweeps to discover active IoT devices, printers, NAS, and cameras. It provides ICMP Ping latency monitoring, UDP traceroute, and targeted TCP port checks (such as 80, 443, 554, 8080). All discovery takes place strictly within your connected local Wi-Fi or wired network; device inventories and network topologies are never transmitted to external servers."
+      },
+      {
+        "type": "p",
+        "text": "Router Neighbor Discovery (SNMP): When you explicitly specify up to 4 local/private router IP addresses, the app queries standard IP-MIB and legacy interface neighbor tables via read-only SNMP. Router credentials (SNMP Community or v3 credentials) remain exclusively in volatile memory and are cleared immediately upon exiting the tool or terminating monitoring."
+      },
+      {
+        "type": "p",
+        "text": "ONVIF Cameras and RTSP Live Feeds: NetPulse auto-discovers network cameras via WS-Discovery. Upon credential entry, it retrieves media profiles and RTSP stream URIs via standard ONVIF APIs. Live video streams directly from the camera to the on-device player over point-to-point RTSP/RTSPS. Camera streams are never proxied or forwarded through third-party servers. Credentials are stored securely in local Keychain or protected app storage."
+      },
+      {
+        "type": "p",
+        "text": "Two-Way Talkback Audio: Microphone access is requested only when you actively trigger camera talkback. Audio is captured in real time and pushed directly to the local camera over RTSP using standard codecs. Audio is never recorded, never stored on disk, and never routed to cloud infrastructure."
+      },
+      {
+        "type": "p",
+        "text": "Speed Tests and Latency Checks: The app integrates the official Cloudflare speed-test module to measure download/upload bandwidth, idle latency, and jitter. Network test traffic is sent directly to Cloudflare edge nodes only when you tap Start Test. NetPulse never includes local network names, internal IP addresses, or device identifiers in test requests."
+      },
+      {
+        "type": "p",
+        "text": "DNS Queries and Wake-on-LAN: System DNS and DNS-over-HTTPS (DoH) lookups query specified public resolvers only on request. Wake-on-LAN transmits standard Magic Packets only across the local broadcast domain."
+      },
+      {
+        "type": "h2",
+        "text": "3. System Permissions and Usage Justifications"
+      },
+      {
+        "type": "p",
+        "text": "Bluetooth Permission (NSBluetoothAlwaysUsageDescription): Required to scan for BLE peripherals, read advertising data, connect to GATT services, and optionally broadcast simulated peripheral profiles in the foreground. Never used for geographic location tracking."
+      },
+      {
+        "type": "p",
+        "text": "Local Network Permission (NSLocalNetworkUsageDescription): Required by iOS to discover local Bonjour/mDNS, SSDP, and ONVIF devices, perform port probes and Ping checks, stream RTSP video, and listen for foreground SNMP notifications. NetPulse never abuses this permission to harvest private network metadata."
+      },
+      {
+        "type": "p",
+        "text": "Microphone Permission (NSMicrophoneUsageDescription): Used strictly during active camera talkback sessions to transmit live voice to the local camera. Audio is never stored or recorded."
+      },
+      {
+        "type": "p",
+        "text": "Local Notifications: Optional. Used solely in the foreground to notify you of user-configured thresholds (such as consecutive Ping packet loss or camera motion alerts). No remote APNs tokens are registered or collected."
+      },
+      {
+        "type": "h2",
+        "text": "4. Data Storage, Security and Safe Export"
+      },
+      {
+        "type": "p",
+        "text": "Protected Local Storage: Saved device aliases, macros, speed-test logs, and Ping histories reside in the app sandboxed container and are explicitly marked as excluded from iCloud backup (isExcludedFromBackup), ensuring local network data is never pushed to cloud backups."
+      },
+      {
+        "type": "p",
+        "text": "Secure Export Mechanisms: User-initiated CSV or JSON report exports are generated inside complete file protection (NSFileProtectionComplete) temporary directories and permanently wiped once the system share sheet is dismissed. Exported CSV files include strict spreadsheet formula injection mitigation."
+      },
+      {
+        "type": "p",
+        "text": "Credential Separation: Camera passwords and SNMP community strings are stored in the device Keychain or volatile memory only, and are stripped from all exported diagnostic files to prevent accidental disclosure."
+      },
+      {
+        "type": "h2",
+        "text": "5. Network Communication and Third-Party Services"
+      },
+      {
+        "type": "p",
+        "text": "Except for user-initiated Cloudflare speed tests, public DoH queries, and standard Apple App Store receipt validation, NetPulse makes no network requests outside your local network."
+      },
+      {
+        "type": "p",
+        "text": "The application contains no commercial ad networks, third-party user analytics SDKs, or social sharing components."
+      },
+      {
+        "type": "h2",
+        "text": "6. Data Retention, Deletion and User Rights"
+      },
+      {
+        "type": "p",
+        "text": "Selective Deletion: You can clear individual or all history entries, logs, and saved camera profiles at any time directly within the respective tool screens."
+      },
+      {
+        "type": "p",
+        "text": "Complete Removal: Deleting NetPulse from your device immediately and permanently deletes all sandboxed databases, Keychain credentials, and local cache."
+      },
+      {
+        "type": "h2",
+        "text": "7. Children's Privacy and Policy Updates"
+      },
+      {
+        "type": "p",
+        "text": "NetPulse is designed for engineering and network professionals and is not directed at children under 13. We do not knowingly collect personal data from children."
+      },
+      {
+        "type": "p",
+        "text": "We may update this Privacy Policy periodically to reflect app enhancements or legal requirements. Updated policies will be posted on this page with a revised effective date."
+      },
+      {
+        "type": "h2",
+        "text": "8. Contact Us"
+      },
+      {
+        "type": "p",
+        "text": "If you have questions regarding this Privacy Policy or NetPulse technical support, contact us at zipmaster_support@126.com. Please include your iOS version, app version, and question details; do not include passwords or confidential network credentials in your correspondence."
+      }
+    ]
+  },
+  "luxframe": {
+    "zh-Hans": [
+      {
+        "type": "h1",
+        "text": "LuxFrame 隐私政策"
+      },
+      {
+        "type": "p",
+        "text": "更新日期：2026 年 11 月 7 日"
+      },
+      {
+        "type": "p",
+        "text": "本政策说明 LuxFrame（光影暗盒）及其配套小组件与 Apple Watch 应用如何处理测光数据、胶卷暗盒记录、冲扫元数据、设备传感器与系统权限。"
+      },
+      {
+        "type": "h2",
+        "text": "1. 核心原则与联系方式"
+      },
+      {
+        "type": "p",
+        "text": "LuxFrame 专为胶片摄影师、大画幅玩家与暗房创作者设计。我们坚守本地优先（Local-First）与零跟踪原则：应用不提供独立用户注册系统，不运营任何用于收集用户资料的自建服务器，也未集成任何第三方分析、广告营销或跨应用追踪 SDK。任何疑问请联系技术支持邮箱：zipmaster_support@126.com。"
+      },
+      {
+        "type": "h2",
+        "text": "2. LuxFrame 处理的数据与用途"
+      },
+      {
+        "type": "p",
+        "text": "测光与曝光参数：实时 EV100、光圈、快门速度、ISO 感光度、近似色温（Kelvin）估算、滤镜补偿倍率以及区域曝光法（Zone System）阶调锚定数据均在设备端实时计算并临时呈现，仅当你点击“记录一帧”时才会固化到当前胶卷暗盒中。"
+      },
+      {
+        "type": "p",
+        "text": "胶卷暗盒记录本：包含你创建的胶卷型号（如 Kodak Portra、Ilford HP5 Plus 等片基预设）、相机机身与镜头档案、单帧曝光参数、现场快照参考图与可选的语音备忘录。全部数据使用 SwiftData 安全保存在设备本地沙盒中。"
+      },
+      {
+        "type": "p",
+        "text": "底片冲扫与 EXIF 注入：导入冲扫店的数字扫描件（JPG/TIFF）后，LuxFrame 利用系统原生 ImageIO 框架完全在本地批量将拍摄时的机身、镜头、光圈、快门与 GPS 坐标写入图像 EXIF/TIFF 元数据中；负片反转实验室的色彩与正像预览仅在本地图形着色器内存中渲染，不修改原始文件。"
+      },
+      {
+        "type": "p",
+        "text": "机械快门测速音频：启动机械快门声音测试时，应用通过麦克风拾取快门释放的机械声响，仅在当前测试界面的活跃内存（RAM）中进行最多 8 秒的瞬时 RMS 波形包络分析并估算开闭时长。测试完成后内存音频数据立即释放，原始录音绝不写入磁盘，更不会向网络传输。"
+      },
+      {
+        "type": "p",
+        "text": "外拍光学与天文工具：景深、超焦距、针孔等效曝光、大画幅沙姆定律视场、日升日落与黄金时刻等计算均基于经典光学公式与离线天文星历在本地运算。"
+      },
+      {
+        "type": "h2",
+        "text": "3. 系统权限与设备传感器使用边界"
+      },
+      {
+        "type": "p",
+        "text": "相机（NSCameraUsageDescription）：用于实时反射光测光、入射光校准估算、AR 日照路径叠加、底片正像透看，以及手动拍摄单帧数码参考图。日照实景路径只处理相机实时预览画面，不录像也不自动拍照；拍摄的底片参考图仅保存在 App 内部容器中，不自动同步到系统照片图库。"
+      },
+      {
+        "type": "p",
+        "text": "麦克风（NSMicrophoneUsageDescription）：仅当你主动录制胶卷单帧现场语音备忘或启动机械快门测速工具时请求麦克风。快门检测音频仅在内存中瞬时分析，测试记录仅保存测得的时间毫秒数与相机机身标识，原始录音绝不落盘。"
+      },
+      {
+        "type": "p",
+        "text": "位置权限（NSLocationWhenInUseUsageDescription）：仅在应用处于前台且你主动使用相关功能时按需读取。用途包括：搜索附近胶片冲洗店与暗房工坊、计算当前坐标的日出日落与黄金时刻、AR 日照实景路径对齐真北，以及记录胶片单帧时可选附带 GPS 经纬度。应用绝不进行后台位置追踪。"
+      },
+      {
+        "type": "p",
+        "text": "照片图库（NSPhotoLibraryUsageDescription 与 NSPhotoLibraryAddUsageDescription）：仅当你主动选择从相册导入扫描件注入 EXIF，或将处理后的 EXIF 扫描件与校正正片保存至系统相册（例如专属的“LuxFrame EXIF”或“LuxFrame 正片”相册）时请求权限。"
+      },
+      {
+        "type": "p",
+        "text": "设备动作与姿态（NSMotionUsageDescription）：仅在取景器开启时读取设备水平陀螺仪姿态，以在画面中绘制水平仪与俯仰辅助线。"
+      },
+      {
+        "type": "h2",
+        "text": "4. 数据存储、备份与 Apple iCloud 私有同步"
+      },
+      {
+        "type": "p",
+        "text": "数据默认仅保存在本机。当你开启 iCloud 备份与多设备同步时，LuxFrame 利用 Apple CloudKit 私有数据库在你的同账号 iPhone、iPad 与 Apple Watch 之间安全同步，传输与存储均由 Apple 加密保障，开发者无法解密或查看任何内容。"
+      },
+      {
+        "type": "p",
+        "text": "应用支持导出完整的未加密或带密码的高强度 AES-GCM 加密备份文件（.luxframebackup），支持导出胶卷 CSV 清单、GPX 轨迹文件与 HTML 接触印相样张。导出的文件完全由你自由支配与管理。"
+      },
+      {
+        "type": "h2",
+        "text": "5. App 内购买与支付"
+      },
+      {
+        "type": "p",
+        "text": "LuxFrame Pro 的购买与订阅通过 Apple 官方 StoreKit 框架处理。所有付款流程均在 Apple App Store 安全沙盒内完成，开发者不会收集、处理或存储你的信用卡号、账单地址或 Apple ID 密码。"
+      },
+      {
+        "type": "h2",
+        "text": "6. 保存期限、数据清除与权限撤销"
+      },
+      {
+        "type": "p",
+        "text": "你的胶卷暗盒历史与相机配置将持续保留在设备上，直到你手动删除特定单帧、整卷胶卷，或在“设置 → 隐私与安全”中选择“彻底清空所有数据”。卸载 App 将同时删除本地沙盒中的所有数据与临时缓存。"
+      },
+      {
+        "type": "p",
+        "text": "你可以随时在 iOS“设置 → LuxFrame”中随时关闭相机、麦克风、位置或照片图库权限，关闭后仅影响对应功能，核心计算与离线工具不受影响。"
+      },
+      {
+        "type": "h2",
+        "text": "7. 政策更新与技术支持"
+      },
+      {
+        "type": "p",
+        "text": "如应用功能或相关法律要求发生变更，我们会在本页面公布最新政策与生效日期。如有任何隐私疑虑或改进建议，请联系：zipmaster_support@126.com。"
+      }
+    ],
+    "en": [
+      {
+        "type": "h1",
+        "text": "LuxFrame Privacy Policy"
+      },
+      {
+        "type": "p",
+        "text": "Effective Date: November 7, 2026"
+      },
+      {
+        "type": "p",
+        "text": "This policy explains how LuxFrame, its widgets, and its Apple Watch companion handle exposure metering, film roll journals, lab scan metadata, hardware sensors, and system permissions."
+      },
+      {
+        "type": "h2",
+        "text": "1. Core Principles and Contact"
+      },
+      {
+        "type": "p",
+        "text": "LuxFrame is designed for film photographers, large-format artists, and darkroom practitioners. We adhere strictly to an offline-first and zero-tracking philosophy: LuxFrame operates no user accounts, runs no proprietary cloud servers to collect user assets, and integrates no third-party telemetry, advertising, or cross-app tracking SDKs. For questions or support, email zipmaster_support@126.com."
+      },
+      {
+        "type": "h2",
+        "text": "2. Data Handled by LuxFrame and Purposes"
+      },
+      {
+        "type": "p",
+        "text": "Light Metering and Exposure: Real-time EV100, aperture, shutter speed, ISO, approximate Kelvin white-balance references, filter compensation factors, and Zone System tonal anchors are computed locally on-device and rendered in real time. They are only saved when you explicitly record an exposure frame into your active film roll."
+      },
+      {
+        "type": "p",
+        "text": "Film Roll Journal: Stores film stocks (Kodak Portra, Ilford HP5 Plus, etc.), camera and lens profiles, per-frame exposure settings, digital reference photos, and optional voice memos. All records are stored securely in your device sandbox using SwiftData."
+      },
+      {
+        "type": "p",
+        "text": "Scans and Batch EXIF Injection: When importing digital scans (JPG/TIFF) from your lab, LuxFrame uses Apple’s native ImageIO framework to write shooting parameters (camera, lens, focal length, aperture, shutter, ISO, GPS coordinates) directly into EXIF/TIFF metadata on-device. Negative lab inversion previews run in local GPU shader memory without altering original files."
+      },
+      {
+        "type": "p",
+        "text": "Mechanical Shutter Audio Tester: When running the shutter speed tester, the app samples audio of the mechanical shutter click via the microphone. An RMS waveform envelope is analyzed purely in volatile memory (RAM) for up to 8 seconds to measure curtain opening and closing intervals. The raw audio buffer is immediately freed upon completion and is never written to disk or transmitted over the network."
+      },
+      {
+        "type": "p",
+        "text": "Optical and Celestial Tools: Depth of field, hyperfocal distance, pinhole equivalent exposure, large-format Scheimpflug view camera movements, and solar/lunar ephemeris calculate locally using offline astronomical formulas and optical algorithms."
+      },
+      {
+        "type": "h2",
+        "text": "3. System Permissions and Sensor Boundaries"
+      },
+      {
+        "type": "p",
+        "text": "Camera (NSCameraUsageDescription): Used for real-time reflective metering, incident calibration estimates, AR solar path overlays, live negative inversion preview, and capturing digital reference photos. AR solar path only processes live viewfinder frames without capturing still photos or video. Reference photos stay within the app container and are not automatically saved to the system Photos library."
+      },
+      {
+        "type": "p",
+        "text": "Microphone (NSMicrophoneUsageDescription): Only requested when you explicitly record a voice memo for a frame or launch the audio shutter speed tester. Shutter audio is analyzed strictly in memory; only the resulting speed in milliseconds is logged."
+      },
+      {
+        "type": "p",
+        "text": "Location Services (NSLocationWhenInUseUsageDescription): Requested on-demand only while the app is active in the foreground to: search nearby film processing labs, calculate sunrise/sunset/golden hour ephemeris, align AR sun path with true north, and optionally geotag recorded film frames. Background location tracking is never performed."
+      },
+      {
+        "type": "p",
+        "text": "Photo Library (NSPhotoLibraryUsageDescription & NSPhotoLibraryAddUsageDescription): Requested only when you explicitly select lab scans to import for EXIF tagging, or save tagged scans and inverted negatives into dedicated Photos library albums (e.g. \"LuxFrame EXIF\" or \"LuxFrame Positives\")."
+      },
+      {
+        "type": "p",
+        "text": "Device Motion (NSMotionUsageDescription): Used solely while the viewfinder is active to display real-time level and pitch guidelines."
+      },
+      {
+        "type": "h2",
+        "text": "4. Storage, Backups, and Apple iCloud Sync"
+      },
+      {
+        "type": "p",
+        "text": "Data is stored locally by default. When you choose to enable iCloud backup and sync, records synchronize across your devices via Apple CloudKit private databases associated with your personal Apple Account. Data is encrypted in transit and at rest by Apple; the developer has no access to your iCloud containers."
+      },
+      {
+        "type": "p",
+        "text": "LuxFrame supports exporting complete unencrypted or password-protected AES-GCM encrypted backup files (.luxframebackup), CSV roll journals, GPX tracks, and HTML contact sheets. You have full ownership and control over exported files."
+      },
+      {
+        "type": "h2",
+        "text": "5. In-App Purchases and Billing"
+      },
+      {
+        "type": "p",
+        "text": "LuxFrame Pro purchases and subscriptions are handled via Apple’s official StoreKit framework. Transactions occur securely between your device and the App Store. The developer never receives or stores payment card information, billing addresses, or Apple ID credentials."
+      },
+      {
+        "type": "h2",
+        "text": "6. Retention, Data Erasure, and Revocation"
+      },
+      {
+        "type": "p",
+        "text": "Your film rolls and gear profiles remain on your device until you manually delete specific frames, entire rolls, or select \"Erase All Data\" in Settings. Deleting the app removes all data and caches stored in the local sandbox."
+      },
+      {
+        "type": "p",
+        "text": "You can revoke camera, microphone, location, or photo permissions anytime in iOS Settings > LuxFrame. Revoking permissions only disables the corresponding tool, while offline calculations and roll notes remain fully functional."
+      },
+      {
+        "type": "h2",
+        "text": "7. Policy Updates and Inquiries"
+      },
+      {
+        "type": "p",
+        "text": "Any updates to our privacy practices will be reflected on this page with an updated effective date. For privacy inquiries or feature requests, contact: zipmaster_support@126.com."
+      }
+    ]
+  },
+  "pastepipe": {
+    "zh-Hans": [
+      {
+        "type": "h1",
+        "text": "PastePipe 隐私政策"
+      },
+      {
+        "type": "p",
+        "text": "生效日期：2026 年 10 月 28 日"
+      },
+      {
+        "type": "p",
+        "text": "PastePipe 是一款专为 Mac 设计的剪贴板历史管理、文本清洗管道与屏幕文字识别工具。本隐私政策说明 PastePipe 在您使用剪贴板记录、快捷短语、文本管道、屏幕 OCR、iCloud 同步以及技术支持时，如何收集、使用与保护您的信息。"
+      },
+      {
+        "type": "p",
+        "text": "简要原则：PastePipe 坚持端侧运算与本地优先（Local-First）。应用无需注册账户，不设开发者运营的数据收集服务器，不包含任何第三方数据分析或广告追踪 SDK。您的剪贴板数据与个人隐私始终由您完全掌控。"
+      },
+      {
+        "type": "h2",
+        "text": "1. 剪贴板历史与数据存储"
+      },
+      {
+        "type": "p",
+        "text": "在您复制文本、富文本（RTF/HTML）、图像、色彩或文件路径时，PastePipe 会在您的 Mac 本机捕获并建立索引，以便您通过快捷键（如 ⌘⇧V）快速回溯与搜索。"
+      },
+      {
+        "type": "p",
+        "text": "本地强加密：所有本地保存的历史记录、收藏片段、分类标签和自定义工作流均使用 AES-GCM 高强度加密算法存储在本地沙盒数据库中，其加密密钥由 macOS 钥匙串（Keychain）安全生成并保管。除您授权的系统服务外，其他应用无法读取该密钥。"
+      },
+      {
+        "type": "h2",
+        "text": "2. 密码管理器与敏感机密过滤"
+      },
+      {
+        "type": "p",
+        "text": "为保障账户凭据安全，PastePipe 开箱即对已知密码管理器（包括 1Password、Bitwarden、KeePassXC 以及 Apple 官方密码与钥匙串访问）采取默认过滤机制，不记录这些应用复制的临时凭据。"
+      },
+      {
+        "type": "p",
+        "text": "端侧机密内容过滤：应用内置启发式安全检测器，在保存剪贴板内容前于端侧扫描文本。若检测到疑似 API 密钥、私钥、OAuth 令牌或强随机密码模式，将自动跳过保存。此检测纯在端侧完成，且可于偏好设置中灵活调整。"
+      },
+      {
+        "type": "h2",
+        "text": "3. 屏幕与图片文字识别（OCR）"
+      },
+      {
+        "type": "p",
+        "text": "当您使用屏幕识字快捷键（默认 ⌘⇧2）框选屏幕区域，或对复制的图片执行文字提取时，PastePipe 调用 macOS 原生 Apple Vision 框架在设备芯片上离线进行文字识别与二维码解析。"
+      },
+      {
+        "type": "p",
+        "text": "整个识别流程 100% 在 Mac 本机运算完成，图像像素与识别出的文字绝不会上传至任何远程服务器或云端 API。"
+      },
+      {
+        "type": "h2",
+        "text": "4. macOS 系统权限说明"
+      },
+      {
+        "type": "p",
+        "text": "PastePipe 严格遵循最小权限原则，核心剪贴板复制取用与文本管道转换无需任何特殊系统权限："
+      },
+      {
+        "type": "li",
+        "text": "屏幕录制权限（Screen Recording）：仅在您主动按下 ⌘⇧2 触发屏幕框选取词时，由系统请求该权限用于捕获您框选的局部矩形图像。PastePipe 从不进行后台持续录屏或音频监听。"
+      },
+      {
+        "type": "li",
+        "text": "辅助功能权限（Accessibility）：此权限完全为可选。仅当您在设置中明确启用了“直接粘贴到上一个应用”时需要，以便在您选择历史项后模拟 ⌘V 击键完成直接插入。若不开启此权限，按回车仅复制到系统剪贴板，核心体验不受影响。"
+      },
+      {
+        "type": "h2",
+        "text": "5. 可选的私有 iCloud 同步（Pro 功能）"
+      },
+      {
+        "type": "p",
+        "text": "iCloud 同步默认为关闭状态。若您主动开启，PastePipe 通过 Apple CloudKit 框架仅将文本历史记录和代码片段同步到与您 Apple 账户绑定的私有数据库中。"
+      },
+      {
+        "type": "p",
+        "text": "同步通道由 Apple 负责全程传输加密与身份验证，开发者无权访问您的 iCloud 容器。为节省带宽并确保私密性，大尺寸图片、富文本附件、文件引用和 OCR 识别结果始终保留在当前 Mac 本地，不执行云端同步。您可随时在设置中一键暂停或停止同步。"
+      },
+      {
+        "type": "h2",
+        "text": "6. 开发者工具集成（MCP 与快捷指令）"
+      },
+      {
+        "type": "p",
+        "text": "PastePipe 提供只读的 Model Context Protocol (MCP) 接口及 macOS 快捷指令（Shortcuts）操作，方便您在本地构建 AI 工作流或自动化脚本。这些接口仅在本地按需调用，不会对外监听或修改您的系统剪贴板，且输出时默认对敏感特征进行脱敏处理。"
+      },
+      {
+        "type": "h2",
+        "text": "7. App Store 购买与订阅"
+      },
+      {
+        "type": "p",
+        "text": "PastePipe Pro 的年订阅或终身买断购买完全通过 Apple StoreKit 官方框架与 App Store 通信。开发者不收集、处理或存储任何银行卡号、账单地址或 Apple 账户密码。"
+      },
+      {
+        "type": "h2",
+        "text": "8. 数据保留、导出与彻底删除"
+      },
+      {
+        "type": "p",
+        "text": "您对自己的数据拥有最高控制权：您可以在应用中逐条删除历史、批量清空列表、清除特定标签或重置全部设置。若您卸载 PastePipe 并移除其沙盒容器，所有本地加密数据和偏好设置将被彻底销毁。若开启了 iCloud 同步，在应用内清空项目也会同步从私有 CloudKit 中删除对应记录。"
+      },
+      {
+        "type": "h2",
+        "text": "9. 儿童隐私与政策变更"
+      },
+      {
+        "type": "p",
+        "text": "PastePipe 是面向大众的 macOS 效率工具，不针对 13 岁以下儿童收集个人信息。若我们的数据处理方式发生调整，我们将更新此页面并注明更新日期。"
+      },
+      {
+        "type": "h2",
+        "text": "10. 联系我们"
+      },
+      {
+        "type": "p",
+        "text": "若您对本隐私政策或 PastePipe 的数据处理有任何疑问、意见或反馈，请通过以下方式联系技术支持团队："
+      },
+      {
+        "type": "p",
+        "text": "支持邮箱：zipmaster_support@126.com"
+      }
+    ],
+    "en": [
+      {
+        "type": "h1",
+        "text": "PastePipe Privacy Policy"
+      },
+      {
+        "type": "p",
+        "text": "Effective Date: October 28, 2026"
+      },
+      {
+        "type": "p",
+        "text": "PastePipe is a macOS clipboard history manager, text transformation pipe, and screen OCR tool. This Privacy Policy explains how PastePipe handles your data when you use clipboard capture, snippet templates, text pipes, screen OCR, optional iCloud sync, and customer support."
+      },
+      {
+        "type": "p",
+        "text": "Core Principles: PastePipe is local-first by design. The app requires no user accounts, operates no developer cloud database, and includes no third-party analytics or advertising tracking SDKs. You retain full control over your clipboard data."
+      },
+      {
+        "type": "h2",
+        "text": "1. Clipboard History and Local Storage"
+      },
+      {
+        "type": "p",
+        "text": "When you copy text, rich text (RTF/HTML), images, colors, or file paths, PastePipe indexes them locally on your Mac so you can search and access them via global shortcuts (such as ⌘⇧V)."
+      },
+      {
+        "type": "p",
+        "text": "Strong Local Encryption: All locally stored history, saved snippets, tags, and custom workflows are encrypted at rest using AES-GCM. The encryption key is securely generated and kept in the macOS Keychain, inaccessible to unauthorized applications."
+      },
+      {
+        "type": "h2",
+        "text": "2. Password Managers & Secrets Filtering"
+      },
+      {
+        "type": "p",
+        "text": "To protect sensitive credentials, PastePipe ignores items copied from recognized password managers (such as 1Password, Bitwarden, KeePassXC, and Apple Passwords/Keychain) out of the box."
+      },
+      {
+        "type": "p",
+        "text": "On-Device Secrets Filter: An integrated heuristic filter scans text before saving. If patterns matching API keys, private keys, access tokens, or high-entropy passwords are detected, PastePipe automatically skips recording them. This analysis runs strictly on your Mac."
+      },
+      {
+        "type": "h2",
+        "text": "3. Screen & Image OCR"
+      },
+      {
+        "type": "p",
+        "text": "When you invoke Screen OCR (⌘⇧2) to select a screen area, or extract text from a copied image, PastePipe utilizes Apple native Vision framework on-device to recognize text and QR codes."
+      },
+      {
+        "type": "p",
+        "text": "The entire OCR process runs 100% locally on your Mac hardware. Pixels and recognized text are never transmitted to any external server or cloud API."
+      },
+      {
+        "type": "h2",
+        "text": "4. macOS System Permissions"
+      },
+      {
+        "type": "p",
+        "text": "PastePipe adheres to the principle of least privilege. Core clipboard access and text transformation pipes require no special system permissions:"
+      },
+      {
+        "type": "li",
+        "text": "Screen Recording Permission: Requested only when you press ⌘⇧2 to perform screen OCR. It is used solely to capture the specific rectangle you select. PastePipe never records your screen continuously or monitors audio."
+      },
+      {
+        "type": "li",
+        "text": "Accessibility Permission: Completely optional. Required only if you enable Direct Paste in Settings to simulate keystrokes into the target app. Without this permission, pressing Return copies the clip to the clipboard for manual pasting (⌘V), keeping all core functions intact."
+      },
+      {
+        "type": "h2",
+        "text": "5. Optional Private iCloud Sync (Pro)"
+      },
+      {
+        "type": "p",
+        "text": "iCloud sync is off by default. When explicitly enabled, PastePipe synchronizes text history and snippet boards via Apple CloudKit directly to your personal, private iCloud container."
+      },
+      {
+        "type": "p",
+        "text": "Data in transit is encrypted by Apple; developers cannot access your iCloud database. Large images, RTF payloads, file references, and OCR outputs remain on your local Mac. You can disable sync at any time in Settings."
+      },
+      {
+        "type": "h2",
+        "text": "6. Developer Integrations (MCP & Shortcuts)"
+      },
+      {
+        "type": "p",
+        "text": "PastePipe offers a read-only Model Context Protocol (MCP) server and Apple Shortcuts actions. These integrations run on-demand locally, do not alter your clipboard, and automatically redact common sensitive patterns."
+      },
+      {
+        "type": "h2",
+        "text": "7. In-App Purchases & Subscriptions"
+      },
+      {
+        "type": "p",
+        "text": "Purchases for PastePipe Pro (annual subscription or lifetime unlock) are processed through Apple StoreKit and the Mac App Store. The developer does not receive or store any payment information or Apple account credentials."
+      },
+      {
+        "type": "h2",
+        "text": "8. Data Retention, Export, and Deletion"
+      },
+      {
+        "type": "p",
+        "text": "You can delete individual clips, clear search history, or wipe all records within the app at any time. Uninstalling PastePipe and removing its container directory permanently deletes all local encrypted files. If iCloud sync was active, deleting clips locally propagates deletion to your private CloudKit records."
+      },
+      {
+        "type": "h2",
+        "text": "9. Children Privacy & Policy Updates"
+      },
+      {
+        "type": "p",
+        "text": "PastePipe does not knowingly collect information from children under 13. If our privacy practices change, updates will be reflected on this page alongside a revised effective date."
+      },
+      {
+        "type": "h2",
+        "text": "10. Contact Us"
+      },
+      {
+        "type": "p",
+        "text": "If you have questions, suggestions, or concerns regarding this Privacy Policy, please reach out to our team at:"
+      },
+      {
+        "type": "p",
+        "text": "Email: zipmaster_support@126.com"
+      }
+    ]
   }
 }

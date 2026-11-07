@@ -434,6 +434,294 @@
         fr: ['Comptabilité à deux', 'Anniversaires & Vœux', 'iCloud privé'],
         es: ['Finanzas en pareja', 'Aniversarios y deseos', 'iCloud privado']
       }
+    },
+        {
+      id: 'dropsqueeze',
+      path: 'dropsqueeze/',
+      icon: 'dropsqueeze/assets/icon.png',
+      color: '#10b981',
+      onColor: '#ffffff',
+      category: 'media',
+      names: {
+        'zh-Hans': 'DropSqueeze',
+        'zh-Hant': 'DropSqueeze',
+        en: 'DropSqueeze',
+        ja: 'DropSqueeze',
+        ko: 'DropSqueeze',
+        de: 'DropSqueeze',
+        fr: 'DropSqueeze',
+        es: 'DropSqueeze'
+      },
+      taglines: {
+        'zh-Hans': '静默压缩截图与录屏，剪贴板原地瘦身。',
+        'zh-Hant': '安靜壓縮截圖與錄影，剪貼簿原地瘦身。',
+        en: 'Silently compress screenshots, screen recordings, and clipboard media.',
+        ja: 'スクリーンショットと画面録画を静かに圧縮、クリップボードも軽量化。',
+        ko: '스크린샷과 화면 녹화를 무음 압축하고 클립보드를 가볍게 유지하세요.',
+        de: 'Screenshots und Bildschirmaufnahmen leise komprimieren, Zwischenablage optimieren.',
+        fr: 'Compressez silencieusement vos captures, enregistrements et presse-papiers.',
+        es: 'Comprime capturas y grabaciones silenciosamente y optimiza el portapapeles.'
+      },
+      descriptions: {
+        'zh-Hans': '在 Mac 本地极速无损压缩图片与视频，自动监听剪贴板与指定文件夹，保护原始文件与隐私元数据。',
+        'zh-Hant': '在 Mac 本機極速無損壓縮圖片與影片，自動監聽剪貼簿與指定資料夾，保護原始檔案與隱私中繼資料。',
+        en: 'Lightning-fast on-device compression for images and video on Mac. Automatically watches clipboard and folders while protecting source files and metadata.',
+        ja: 'Mac 上で画像と動画を高速圧縮。クリップボードと監視フォルダを自動処理し、元ファイルとメタデータを保護。',
+        ko: 'Mac에서 이미지와 동영상을 초고속 압축합니다. 클립보드와 감시 폴더를 자동 처리하며 원본과 메타데이터를 보호합니다.',
+        de: 'Blitzschnelle lokale Medienkompression auf dem Mac. Überwacht Zwischenablage und Ordner, schützt Originale und Metadaten.',
+        fr: 'Compression ultra-rapide sur Mac pour images et vidéos. Surveille le presse-papiers et vos dossiers en préservant originaux et métadonnées.',
+        es: 'Compresión ultrarrápida en el Mac para imágenes y vídeo. Supervisa el portapapeles y carpetas protegiendo los originales y metadatos.'
+      },
+      chips: {
+        'zh-Hans': ['剪贴板静默瘦身', '文件夹自动监控', '100% 本地运算'],
+        'zh-Hant': ['剪貼簿安靜瘦身', '資料夾自動監控', '100% 本地運算'],
+        en: ['Silent Clipboard', 'Folder Watcher', '100% On-Device'],
+        ja: ['クリップボード軽量化', 'フォルダ自動監視', '100% ローカル処理'],
+        ko: ['클립보드 무음 압축', '폴더 자동 감시', '100% 로컬 처리'],
+        de: ['Leise Zwischenablage', 'Ordnerüberwachung', '100% Lokal'],
+        fr: ['Presse-papiers silencieux', 'Surveillance dossiers', '100% Local'],
+        es: ['Portapapeles silencioso', 'Vigilancia de carpetas', '100% Local']
+      }
+    },
+{
+      id: 'shelflife',
+      path: 'shelflife/',
+      icon: 'shelflife/assets/icon.png',
+      color: '#10b981',
+      onColor: '#ffffff',
+      category: 'life',
+      names: {
+        'zh-Hans': 'ShelfLife 器物志',
+        'zh-Hant': 'ShelfLife 器物誌',
+        en: 'ShelfLife',
+        ja: 'ShelfLife',
+        ko: 'ShelfLife',
+        de: 'ShelfLife',
+        fr: 'ShelfLife',
+        es: 'ShelfLife'
+      },
+      taglines: {
+        'zh-Hans': '家庭器物与保修耗材管家',
+        'zh-Hant': '家庭器物與保固耗材管家',
+        en: 'Smart Tracker for Warranties, Consumables & Manuals',
+        ja: '家電の保証期限・消耗品寿命・説明書をスマート管理',
+        ko: '가전제품 보증기간, 소모품 수명 및 설명서 스마트 관리',
+        de: 'Garantiefristen, Verbrauchsmaterialien und Anleitungen im Griff',
+        fr: 'Suivi des garanties, pièces d’usure et notices d’appareils',
+        es: 'Control inteligente de garantías, consumibles y manuales'
+      },
+      descriptions: {
+        'zh-Hans': '离线识别发票小票与电器铭牌，追踪保修到期、滤芯更换周期，整理说明书与维保记录。',
+        'zh-Hant': '離線識別發票收據與電器銘牌，追蹤保固到期、濾網更換週期，整理說明書與維修紀錄。',
+        en: 'Scan receipts and appliance labels on-device. Track warranty dates, filter replacement intervals, and manuals.',
+        ja: 'レシートや銘板を端末内でスキャン。保証期限やフィルター交換時期、説明書を一元管理。',
+        ko: '영수증과 라벨을 기기 내에서 스캔하여 보증 만료일, 필터 교체 주기, 설명서를 관리하세요.',
+        de: 'Belege und Typenschilder lokal scannen. Garantiefristen, Filterwechsel und Handbücher verwalten.',
+        fr: 'Scannez vos reçus et étiquettes en local. Suivez garanties, pièces d’usure et notices.',
+        es: 'Escanea recibos y etiquetas en local. Controla garantías, cambio de filtros y manuales.'
+      },
+      chips: {
+        'zh-Hans': ['保修与到期提醒', '耗材寿命与小组件', '发票与说明书归档'],
+        'zh-Hant': ['保固與到期提醒', '耗材壽命與小工具', '發票與說明書歸檔'],
+        en: ['Warranty & Expiry Alerts', 'Consumable Lifespans', 'Receipts & Manuals'],
+        ja: ['保証・期限アラート', '消耗品寿命・ウィジェット', 'レシート・説明書保管'],
+        ko: ['보증 및 만료 알림', '소모품 수명 및 위젯', '영수증 및 설명서 보관'],
+        de: ['Garantie & Ablaufalarme', 'Verbrauchsteile & Widgets', 'Belege & Anleitungen'],
+        fr: ['Alertes garantie & échéance', 'Consommables & widgets', 'Reçus & notices'],
+        es: ['Alertas de garantía y fin', 'Vida útil de consumibles', 'Recibos y manuales']
+      }
+    },
+    {
+      id: 'droidbridge',
+      path: 'droidbridge/',
+      icon: 'droidbridge/assets/icon.png',
+      color: '#22c55e',
+      onColor: '#ffffff',
+      category: 'media',
+      names: {
+        'zh-Hans': 'DroidBridge 安卓桥',
+        'zh-Hant': 'DroidBridge 安卓橋',
+        en: 'DroidBridge',
+        ja: 'DroidBridge',
+        ko: 'DroidBridge',
+        de: 'DroidBridge',
+        fr: 'DroidBridge',
+        es: 'DroidBridge'
+      },
+      taglines: {
+        'zh-Hans': 'Mac 与安卓设备极速互传与无线挂载。',
+        'zh-Hant': 'Mac 與安卓裝置極速互傳與無線掛載。',
+        en: 'High-speed transfer & wireless mount between Mac and Android.',
+        ja: 'Mac と Android の高速ファイル転送・ワイヤレス接続。',
+        ko: 'Mac과 Android 간의 초고속 파일 전송 및 무선 마운트.',
+        de: 'Dateitransfer und drahtlose Einbindung zwischen Mac und Android.',
+        fr: 'Transfert rapide et montage sans fil entre Mac et Android.',
+        es: 'Transferencia rápida y montaje inalámbrico entre Mac y Android.'
+      },
+      descriptions: {
+        'zh-Hans': '在 Mac 菜单栏直接浏览与传输安卓文件，支持 USB MTP、ADB、局域网 FTP/WebDAV 与扫码快传。',
+        'zh-Hant': '在 Mac 選單列直接瀏覽與傳輸安卓檔案，支援 USB MTP、ADB、區域網路 FTP/WebDAV 與掃碼快傳。',
+        en: 'Browse and move Android files from your Mac menu bar over USB MTP, ADB, LAN FTP/WebDAV, or instant QR transfer.',
+        ja: 'Mac のメニューバーから Android ファイルを閲覧・転送。USB MTP、ADB、LAN FTP/WebDAV、QRコード転送に対応。',
+        ko: 'Mac 메뉴 막대에서 Android 파일을 탐색하고 전송하세요. USB MTP, ADB, LAN FTP/WebDAV 및 QR 빠른 전송을 지원합니다.',
+        de: 'Android-Dateien direkt aus der Mac-Menüleiste verwalten – über USB MTP, ADB, LAN FTP/WebDAV oder QR-Direktübertragung.',
+        fr: 'Parcourez et transférez des fichiers Android depuis la barre des menus Mac via USB MTP, ADB, FTP/WebDAV local ou code QR.',
+        es: 'Explora y transfiere archivos de Android desde la barra de menús de tu Mac mediante USB MTP, ADB, FTP/WebDAV local o código QR.'
+      },
+      chips: {
+        'zh-Hans': ['USB MTP 与 ADB', '无线挂载与扫码快传', '相册直拖与增量备份'],
+        'zh-Hant': ['USB MTP 與 ADB', '無線掛載與掃碼快傳', '相簿直拖與增量備份'],
+        en: ['USB MTP & ADB', 'Wireless Mount & QR', 'Photos & Incremental Sync'],
+        ja: ['USB MTP・ADB 高速転送', 'ワイヤレス・QR転送', '写真ドラッグ＆増分同期'],
+        ko: ['USB MTP 및 ADB', '무선 마운트 및 QR 전송', '사진 드래그 및 증분 백업'],
+        de: ['USB MTP & ADB', 'Drahtlos-Mount & QR', 'Fotos & Zuwachssync'],
+        fr: ['USB MTP & ADB', 'Montage sans fil & QR', 'Photos & sync incrémentale'],
+        es: ['USB MTP y ADB', 'Montaje inalámbrico y QR', 'Fotos y sync incremental']
+      }
+    },
+    {
+      id: 'luxframe',
+      path: 'luxframe/',
+      icon: 'luxframe/assets/icon.png',
+      color: '#f59e0b',
+      onColor: '#ffffff',
+      category: 'media',
+      names: {
+        'zh-Hans': 'LuxFrame 光影暗盒',
+        'zh-Hant': 'LuxFrame 光影暗盒',
+        en: 'LuxFrame',
+        ja: 'LuxFrame',
+        ko: 'LuxFrame',
+        de: 'LuxFrame',
+        fr: 'LuxFrame',
+        es: 'LuxFrame'
+      },
+      taglines: {
+        'zh-Hans': '测光、场记与冲扫，认真记录每一格胶片。',
+        'zh-Hant': '測光、場記與沖掃，認真記錄每一格底片。',
+        en: 'Precision light metering, film roll logs, and scan EXIF injection.',
+        ja: '露出計・フィルム記録・スキャン EXIF 埋め込みをひとつに。',
+        ko: '노출계, 필름 롤 로그, 스캔 EXIF 주입을 한 번에.',
+        de: 'Präzisions-Belichtungsmesser, Filmprotokolle und EXIF-Scan-Werkzeuge.',
+        fr: 'Posemètre de précision, carnet de pellicules et injection EXIF.',
+        es: 'Fotómetro de precisión, registro de carretes e inyección EXIF.'
+      },
+      descriptions: {
+        'zh-Hans': '集点测光、倒易律长曝、胶卷暗盒场记本与扫描件 EXIF 写回于一体的胶片摄影工具箱。',
+        'zh-Hant': '集點測光、倒易律長曝、底片暗盒場記本與掃描件 EXIF 寫回於一體的底片攝影工具箱。',
+        en: 'A complete film photography toolkit: spot metering, reciprocity timers, roll logs, and scan EXIF injection.',
+        ja: 'スポット測光、相反則不軌タイマー、撮影ノート、スキャン EXIF 埋め込みを備えたフィルムカメラ用ツール。',
+        ko: '스팟 측광, 상반칙 불궤 타이머, 필름 롤 일지 및 스캔 EXIF 주입을 지원하는 필름 사진 툴킷.',
+        de: 'Umfassendes Filmfotografie-Toolkit: Spotmessung, Schwarzschildeffekt-Timer, Filmtagebuch und EXIF-Injektor.',
+        fr: 'La boîte à outils complète de l’argentique : mesure spot, réciprocité, carnet de bobines et injection EXIF.',
+        es: 'El kit completo para fotografía analógica: medición puntual, reciprocidad, diario de carretes e inyección EXIF.'
+      },
+      chips: {
+        'zh-Hans': ['专业点测光与倒易律', '胶卷暗盒与场记本', '扫描件 EXIF 批量写回'],
+        'zh-Hant': ['專業點測光與倒易律', '底片暗盒與場記本', '掃描件 EXIF 批次寫回'],
+        en: ['Spot Meter & Reciprocity', 'Film Roll Journal', 'Batch EXIF Injector'],
+        ja: ['スポット測光 & 相反則不軌', 'フィルム暗箱・撮影メモ', 'スキャン EXIF 一括書き込み'],
+        ko: ['스팟 측광 & 상반칙 불궤', '필름 롤 일지 & 장비', '스캔 EXIF 일괄 주입'],
+        de: ['Spotmessung & Schwarzschildeffekt', 'Filmtagebuch & Notizen', 'Stapel-EXIF-Injektor'],
+        fr: ['Mesure spot & réciprocité', 'Carnet de pellicules', 'Injection EXIF par lots'],
+        es: ['Medición puntual y reciprocidad', 'Diario de carretes', 'Inyección EXIF por lotes']
+      }
+    },
+    {
+      id: 'pastepipe',
+      path: 'pastepipe/',
+      icon: 'pastepipe/assets/icon.png',
+      color: '#06b6d4',
+      onColor: '#04242d',
+      category: 'system',
+      names: {
+        'zh-Hans': 'PastePipe',
+        'zh-Hant': 'PastePipe',
+        en: 'PastePipe',
+        ja: 'PastePipe',
+        ko: 'PastePipe',
+        de: 'PastePipe',
+        fr: 'PastePipe',
+        es: 'PastePipe'
+      },
+      taglines: {
+        'zh-Hans': '剪贴板历史、文本清洗与屏幕识字。',
+        'zh-Hant': '剪貼板歷史、文字清洗與螢幕辨識。',
+        en: 'Clipboard history, text pipe, and on-device OCR.',
+        ja: 'クリップボード履歴、テキスト整形、そして OCR。',
+        ko: '클립보드 기록, 텍스트 파이프라인 및 화면 OCR.',
+        de: 'Zwischenablage-Verlauf, Text-Pipes und On-Device-OCR.',
+        fr: 'Historique du presse-papiers, filtres de texte et OCR.',
+        es: 'Historial del portapapeles, filtros de texto y OCR.'
+      },
+      descriptions: {
+        'zh-Hans': '按 ⌘⇧V 随处调出剪贴板，按 Tab 清洗转换杂乱文本，框选屏幕直接识字。全程本地处理，保护隐私。',
+        'zh-Hant': '按 ⌘⇧V 隨處叫出剪貼板，按 Tab 清洗轉換雜亂文字，框選螢幕直接辨識。全程本機處理，保護隱私。',
+        en: 'Press ⌘⇧V for clipboard history, Tab to transform messy text, and ⌘⇧2 for on-device screen OCR. Local-first and private by design.',
+        ja: '⌘⇧V で履歴を呼び出し、Tab でテキストを整形、⌘⇧2 で画面上の文字を直接認識。安心のローカル処理。',
+        ko: '⌘⇧V로 클립보드 기록을 열고, Tab으로 텍스트를 정리하며, ⌘⇧2로 화면을 인식합니다. 안전한 로컬 처리.',
+        de: '⌘⇧V für die Zwischenablage, Tab zum Bereinigen von Text und ⌘⇧2 für Bildschirm-OCR. Vollständig lokal und sicher.',
+        fr: '⌘⇧V pour l’historique, Tab pour transformer le texte et ⌘⇧2 pour l’OCR d’écran. Traitement local et respect de la vie privée.',
+        es: '⌘⇧V para el historial, Tab para transformar texto y ⌘⇧2 para OCR en pantalla. Procesamiento local y privado.'
+      },
+      chips: {
+        'zh-Hans': ['剪贴板历史', 'Tab 文本管道', '端侧屏幕 OCR'],
+        'zh-Hant': ['剪貼板歷史', 'Tab 文字管道', '端側螢幕 OCR'],
+        en: ['Clipboard History', 'Tab Text Pipes', 'On-Device OCR'],
+        ja: ['クリップボード履歴', 'Tab テキスト整形', '端末内画面 OCR'],
+        ko: ['클립보드 기록', 'Tab 텍스트 파이프', '기기 내 화면 OCR'],
+        de: ['Zwischenablage-Verlauf', 'Tab-Text-Pipes', 'Lokales Bildschirm-OCR'],
+        fr: ['Historique presse-papiers', 'Filtres de texte Tab', 'OCR d’écran local'],
+        es: ['Historial de portapapeles', 'Filtros de texto Tab', 'OCR local en pantalla']
+      }
+    },
+    {
+      id: 'netpulse',
+      path: 'netpulse/',
+      icon: 'netpulse/assets/icon.png',
+      color: '#0ea5e9',
+      onColor: '#ffffff',
+      category: 'system',
+      names: {
+        'zh-Hans': 'NetPulse 极客网测',
+        'zh-Hant': 'NetPulse 極客網測',
+        en: 'NetPulse',
+        ja: 'NetPulse',
+        ko: 'NetPulse',
+        de: 'NetPulse',
+        fr: 'NetPulse',
+        es: 'NetPulse'
+      },
+      taglines: {
+        'zh-Hans': '硬件与网络工程师的随身调试工具箱。',
+        'zh-Hant': '硬體與網路工程師的隨身除錯工具箱。',
+        en: 'The portable field toolkit for hardware & network engineers.',
+        ja: 'ハードウェア・ネットワーク技術者のためのポータブル診断ツール。',
+        ko: '하드웨어 및 네트워크 엔지니어를 위한 모바일 툴킷.',
+        de: 'Das mobile Diagnose-Toolkit für Hardware- und Netzwerk-Ingenieure.',
+        fr: 'La boîte à outils mobile pour ingénieurs réseau et matériel.',
+        es: 'El kit de herramientas móvil para ingenieros de hardware y redes.'
+      },
+      descriptions: {
+        'zh-Hans': '集成 BLE/GATT 调试、局域网设备扫描、ONVIF 摄像头管理、RTSP 极速预览及网络链路诊断。全本地运行，零云端依赖。',
+        'zh-Hant': '整合 BLE/GATT 除錯、區域網路裝置掃描、ONVIF 攝影機管理、RTSP 極速預覽及網路鏈路診斷。全本機執行，零雲端依賴。',
+        en: 'An on-device field toolkit for iPhone & iPad, combining BLE/GATT debugging, LAN discovery, ONVIF camera management, RTSP live preview, and network link diagnostics.',
+        ja: 'iPhone & iPad 向けポータブル診断ツール。BLE/GATT デバッグ、LAN 機器検出、ONVIF カメラ管理、RTSP プレビュー、ネットワーク診断を完全ローカルで提供。',
+        ko: 'iPhone 및 iPad를 위한 모바일 툴킷으로 BLE/GATT 디버깅, 로컬 네트워크 장치 검색, ONVIF 카메라 관리, RTSP 실시간 프리뷰 및 네트워크 진단을 로컬에서 지원합니다.',
+        de: 'Mobiles Toolkit für iPhone & iPad: BLE/GATT-Debugging, LAN-Erkennung, ONVIF-Kamerasteuerung, RTSP-Live-Vorschau und Netzwerkdiagnose ohne Cloud.',
+        fr: 'Boîte à outils mobile pour iPhone et iPad : débogage BLE/GATT, découverte réseau local, caméras ONVIF, aperçu RTSP et diagnostic réseau sans cloud.',
+        es: 'Kit de herramientas para iPhone y iPad: depuración BLE/GATT, escaneo de red local, cámaras ONVIF, vista previa RTSP y diagnóstico de red sin nube.'
+      },
+      chips: {
+        'zh-Hans': ['BLE & GATT 调试', 'ONVIF 监控与 RTSP', '局域网发现与测速'],
+        'zh-Hant': ['BLE & GATT 除錯', 'ONVIF 監控與 RTSP', '區域網路搜尋與測速'],
+        en: ['BLE & GATT Console', 'ONVIF & RTSP Live', 'LAN Discovery & Speed'],
+        ja: ['BLE & GATT デバッグ', 'ONVIF & RTSP プレビュー', 'LAN 検索 & 速度測定'],
+        ko: ['BLE & GATT 디버깅', 'ONVIF & RTSP 스트리밍', 'LAN 검색 및 속도 측정'],
+        de: ['BLE & GATT-Debugging', 'ONVIF & RTSP-Live', 'LAN-Erkennung & Speedtest'],
+        fr: ['Débogage BLE & GATT', 'ONVIF & RTSP en direct', 'Découverte LAN & Débit'],
+        es: ['Depuración BLE y GATT', 'ONVIF y RTSP directo', 'Detección LAN y Velocidad']
+      }
     }
   ];
 
@@ -441,10 +729,10 @@
   const UI = {
     'zh-Hans': {
       brand: 'Mac & iOS 独立精选',
-      heroBadge: '9 款精选原生应用 · Apple 生态专属',
+      heroBadge: '15 款精选原生应用 · Apple 生态专属',
       heroTitle: '专注原生体验，为纯粹与隐私而生。',
-      heroSubtitle: '精心雕琢的 9 款实用工具。坚持本机运算、零云端依赖、无追踪无广告。',
-      stat1: '9 款独立应用',
+      heroSubtitle: '精心雕琢的 15 款实用工具。坚持本机运算、零云端依赖、无追踪无广告。',
+      stat1: '15 款独立应用',
       stat2: '100% 本地运算',
       stat3: '零数据上传',
       stat4: '支持 8 国语言',
@@ -474,10 +762,10 @@
     },
     'zh-Hant': {
       brand: 'Mac & iOS 獨立精選',
-      heroBadge: '9 款精選原生應用 · Apple 生態專屬',
+      heroBadge: '15 款精選原生應用 · Apple 生態專屬',
       heroTitle: '專注原生體驗，為純粹與隱私而生。',
-      heroSubtitle: '精心雕琢的 9 款實用工具。堅持本機運算、零雲端依賴、無追蹤無廣告。',
-      stat1: '9 款獨立 App',
+      heroSubtitle: '精心雕琢的 15 款實用工具。堅持本機運算、零雲端依賴、無追蹤無廣告。',
+      stat1: '15 款獨立 App',
       stat2: '100% 本機運算',
       stat3: '零資料上傳',
       stat4: '支援 8 種語言',
@@ -507,10 +795,10 @@
     },
     en: {
       brand: 'Apple Crafted Apps',
-      heroBadge: '9 Native Apps · macOS & iOS',
+      heroBadge: '15 Native Apps · macOS & iOS',
       heroTitle: 'Pure Apple Experience. Built for Speed and Privacy.',
-      heroSubtitle: 'A curated suite of 9 utilities for power users. 100% on-device processing, no cloud accounts, and zero telemetry.',
-      stat1: '9 Standalone Apps',
+      heroSubtitle: 'A curated suite of 15 utilities for power users. 100% on-device processing, no cloud accounts, and zero telemetry.',
+      stat1: '15 Standalone Apps',
       stat2: '100% On-Device',
       stat3: 'Zero Cloud Storage',
       stat4: '8 Languages Ready',
@@ -540,10 +828,10 @@
     },
     ja: {
       brand: 'Apple 厳選ツール',
-      heroBadge: '9つの厳選ネイティブアプリ · macOS & iOS',
+      heroBadge: '15の厳選ネイティブアプリ · macOS & iOS',
       heroTitle: '心地よさと安心。純粋さとプライバシーのために。',
-      heroSubtitle: '日々の暮らしと仕事のために設計された9つの実用ツール。端末内処理、クラウド不要、広告・追跡ゼロ。',
-      stat1: '9つの独立アプリ',
+      heroSubtitle: '日々の暮らしと仕事のために設計された15の実用ツール。端末内処理、クラウド不要、広告・追跡ゼロ。',
+      stat1: '15の独立アプリ',
       stat2: '100% 端末内処理',
       stat3: 'データ送信なし',
       stat4: '8言語対応',
@@ -573,10 +861,10 @@
     },
     ko: {
       brand: 'Apple 엄선 앱',
-      heroBadge: '9가지 엄선 도구 · macOS & iOS',
+      heroBadge: '15가지 엄선 도구 · macOS & iOS',
       heroTitle: '순수한 네이티브 경험. 효율성과 프라이버시를 위해.',
-      heroSubtitle: '사용자를 위해 정성껏 다듬은 9가지 유틸리티. 100% 기기 내 처리, 클라우드 불필요, 광고 및 추적 없음.',
-      stat1: '9개의 독립 앱',
+      heroSubtitle: '사용자를 위해 정성껏 다듬은 15가지 유틸리티. 100% 기기 내 처리, 클라우드 불필요, 광고 및 추적 없음.',
+      stat1: '15개의 독립 앱',
       stat2: '100% 로컬 연산',
       stat3: '클라우드 전송 없음',
       stat4: '8개 언어 지원',
@@ -606,10 +894,10 @@
     },
     de: {
       brand: 'Apple Crafted Apps',
-      heroBadge: '9 Native Werkzeuge · Für macOS & iOS',
+      heroBadge: '15 Native Werkzeuge · Für macOS & iOS',
       heroTitle: 'Reines Apple-Erlebnis. Entwickelt für Geschwindigkeit und Datenschutz.',
-      heroSubtitle: '9 sorgfältig entwickelte Tools. Lokale Verarbeitung, kein Cloud-Zwang, keine Werbung oder Tracking.',
-      stat1: '9 Apps',
+      heroSubtitle: '15 sorgfältig entwickelte Tools. Lokale Verarbeitung, kein Cloud-Zwang, keine Werbung oder Tracking.',
+      stat1: '15 Apps',
       stat2: '100% Lokal',
       stat3: 'Kein Upload',
       stat4: '8 Sprachen',
@@ -639,10 +927,10 @@
     },
     fr: {
       brand: 'Apple Crafted Apps',
-      heroBadge: '9 Outils Natifs · Pour macOS & iOS',
+      heroBadge: '15 Outils Natifs · Pour macOS & iOS',
       heroTitle: 'L’expérience Apple épurée. Conçu pour la vitesse et la confidentialité.',
-      heroSubtitle: 'Une collection de 9 outils pensés pour vos appareils. Traitement local, sans compte cloud, sans publicité ni pistage.',
-      stat1: '9 Applications',
+      heroSubtitle: 'Une collection de 15 outils pensés pour vos appareils. Traitement local, sans compte cloud, sans publicité ni pistage.',
+      stat1: '15 Applications',
       stat2: '100% Local',
       stat3: 'Zéro Cloud',
       stat4: '8 Langues',
@@ -672,10 +960,10 @@
     },
     es: {
       brand: 'Apple Crafted Apps',
-      heroBadge: '9 Herramientas Nativas · Para macOS & iOS',
+      heroBadge: '15 Herramientas Nativas · Para macOS & iOS',
       heroTitle: 'Experiencia nativa de Apple. Creada para la velocidad y privacidad.',
-      heroSubtitle: '9 utilidades diseñadas con precisión. Procesamiento en el dispositivo, sin cuentas en la nube ni rastreo.',
-      stat1: '9 Apps',
+      heroSubtitle: '15 utilidades diseñadas con precisión. Procesamiento en el dispositivo, sin cuentas en la nube ni rastreo.',
+      stat1: '15 Apps',
       stat2: '100% Local',
       stat3: 'Cero Nube',
       stat4: '8 Idiomas',

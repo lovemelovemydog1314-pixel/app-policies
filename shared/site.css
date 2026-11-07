@@ -207,6 +207,108 @@ body[data-app="couple"] {
   --tint-border: rgba(225, 29, 72, 0.18);
 }
 
+body[data-app="shelflife"] {
+  --accent: #34d399;
+  --accent-glow: rgba(52, 211, 153, 0.32);
+  --accent-subtle: rgba(52, 211, 153, 0.12);
+  --on-accent: #022c19;
+  --tint: rgba(52, 211, 153, 0.08);
+  --tint-border: rgba(52, 211, 153, 0.24);
+}
+:root[data-theme="light"] body[data-app="shelflife"] {
+  --accent: #059669;
+  --accent-glow: rgba(5, 150, 105, 0.18);
+  --accent-subtle: rgba(5, 150, 105, 0.08);
+  --on-accent: #ffffff;
+  --tint: rgba(5, 150, 105, 0.06);
+  --tint-border: rgba(5, 150, 105, 0.18);
+}
+
+body[data-app="dropsqueeze"] {
+  --accent: #10b981;
+  --accent-glow: rgba(16, 185, 129, 0.32);
+  --accent-subtle: rgba(16, 185, 129, 0.12);
+  --on-accent: #022c22;
+  --tint: rgba(16, 185, 129, 0.08);
+  --tint-border: rgba(16, 185, 129, 0.24);
+}
+:root[data-theme="light"] body[data-app="dropsqueeze"] {
+  --accent: #059669;
+  --accent-glow: rgba(5, 150, 105, 0.18);
+  --accent-subtle: rgba(5, 150, 105, 0.08);
+  --on-accent: #ffffff;
+  --tint: rgba(5, 150, 105, 0.06);
+  --tint-border: rgba(5, 150, 105, 0.18);
+}
+
+body[data-app="luxframe"] {
+  --accent: #f59e0b;
+  --accent-glow: rgba(245, 158, 11, 0.32);
+  --accent-subtle: rgba(245, 158, 11, 0.12);
+  --on-accent: #2e1c03;
+  --tint: rgba(245, 158, 11, 0.08);
+  --tint-border: rgba(245, 158, 11, 0.24);
+}
+:root[data-theme="light"] body[data-app="luxframe"] {
+  --accent: #d97706;
+  --accent-glow: rgba(217, 119, 6, 0.18);
+  --accent-subtle: rgba(217, 119, 6, 0.08);
+  --on-accent: #ffffff;
+  --tint: rgba(217, 119, 6, 0.06);
+  --tint-border: rgba(217, 119, 6, 0.18);
+}
+
+body[data-app="droidbridge"] {
+  --accent: #22c55e;
+  --accent-glow: rgba(34, 197, 94, 0.32);
+  --accent-subtle: rgba(34, 197, 94, 0.12);
+  --on-accent: #052e16;
+  --tint: rgba(34, 197, 94, 0.08);
+  --tint-border: rgba(34, 197, 94, 0.24);
+}
+:root[data-theme="light"] body[data-app="droidbridge"] {
+  --accent: #16a34a;
+  --accent-glow: rgba(22, 163, 74, 0.18);
+  --accent-subtle: rgba(22, 163, 74, 0.08);
+  --on-accent: #ffffff;
+  --tint: rgba(22, 163, 74, 0.06);
+  --tint-border: rgba(22, 163, 74, 0.18);
+}
+
+body[data-app="pastepipe"] {
+  --accent: #06b6d4;
+  --accent-glow: rgba(6, 182, 212, 0.32);
+  --accent-subtle: rgba(6, 182, 212, 0.12);
+  --on-accent: #04242d;
+  --tint: rgba(6, 182, 212, 0.08);
+  --tint-border: rgba(6, 182, 212, 0.24);
+}
+:root[data-theme="light"] body[data-app="pastepipe"] {
+  --accent: #0891b2;
+  --accent-glow: rgba(8, 145, 178, 0.18);
+  --accent-subtle: rgba(8, 145, 178, 0.08);
+  --on-accent: #ffffff;
+  --tint: rgba(8, 145, 178, 0.06);
+  --tint-border: rgba(8, 145, 178, 0.18);
+}
+
+body[data-app="netpulse"] {
+  --accent: #38bdf8;
+  --accent-glow: rgba(56, 189, 248, 0.32);
+  --accent-subtle: rgba(56, 189, 248, 0.12);
+  --on-accent: #032b42;
+  --tint: rgba(56, 189, 248, 0.08);
+  --tint-border: rgba(56, 189, 248, 0.24);
+}
+:root[data-theme="light"] body[data-app="netpulse"] {
+  --accent: #0284c7;
+  --accent-glow: rgba(2, 132, 199, 0.18);
+  --accent-subtle: rgba(2, 132, 199, 0.08);
+  --on-accent: #ffffff;
+  --tint: rgba(2, 132, 199, 0.06);
+  --tint-border: rgba(2, 132, 199, 0.18);
+}
+
 /* ==========================================================================
    Base & Resets
    ========================================================================== */

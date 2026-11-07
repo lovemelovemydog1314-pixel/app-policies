@@ -54,7 +54,9 @@ const html = (app, page) => {
     </header>
   `;
 
-  const footerNote = p.platform === 'iOS' ? '让两个人的小家，更有温度与安全感。' : '为 Mac 用户打造的实用工具。';
+  const footerNote = p.footerNote ? (p.footerNote['zh-Hans'] || p.footerNote.en) : (p.platform === 'iOS' 
+    ? (app === 'shelflife' ? '管好全家器物与保修，井井有条、安心长久。' : app === 'luxframe' ? '为胶片摄影与暗房创作者打造的专业工具。' : app === 'netpulse' ? '为硬件与网络工程师打造的专业移动工具箱。' : '让两个人的小家，更有温度与安全感。')
+    : '为 Mac 用户打造的实用工具。');
   const footer = `
     <footer class="footer wrap">
       <div>
@@ -71,7 +73,7 @@ const html = (app, page) => {
 
   let main;
   if (page === 'index') {
-    const platformTag = p.platform === 'iOS' ? 'iPhone · iOS 18+' : 'macOS';
+    const platformTag = p.platformTag ? (p.platformTag['zh-Hans'] || p.platformTag.en) : (p.platform === 'iOS' ? 'iPhone · iOS 18+' : 'macOS');
     const chips = p.factStrip ? p.factStrip['zh-Hans'] : ['在本机处理', '无开发者云账户', '无广告与跟踪'];
     const privacySummaryZh = p.privacySummary ? p.privacySummary['zh-Hans'] : '应用主要在你的 Mac 上运行。除非你主动使用邮件、系统功能或网络共享功能，应用不会把文件内容发送给开发者。';
     const contactPrompt = p.platform === 'iOS' ? '请把问题、应用版本和 iOS 版本发给我们。' : '请把问题、应用版本和 macOS 版本发给我们。';
@@ -173,6 +175,18 @@ const html = (app, page) => {
       ? 'LocalDrop 会按你的设置向局域网客户端提供共享内容。HTTP 和 FTP 不加密；仅在证书配置后使用 HTTPS。不要向公网开放服务。'
       : app === 'couple'
       ? '小家通过 Apple CloudKit 共享空间在两台设备间私密同步。无自建服务器、无第三方统计或广告追踪 SDK。位置共享默认关闭，仅在主动开启后向伴侣展示最近位置。'
+      : app === 'shelflife'
+      ? 'ShelfLife 纯离线优先运行。开启个人 iCloud 同步或家庭共享时，通过 Apple CloudKit 在私有数据库或受邀家庭成员间加密传输。无自建服务器、无第三方统计或广告追踪 SDK。'
+      : app === 'luxframe'
+      ? 'LuxFrame 不设自建服务器与用户体系，无第三方统计或广告追踪 SDK。云备份与配置通过 Apple CloudKit 私密同步；位置与相机仅在测光、场记或日照计算时于端侧调用。'
+      : app === 'droidbridge'
+      ? 'DroidBridge 通过 USB（MTP/ADB）或本地局域网（FTP/WebDAV/网页快传）直接在 Mac 与安卓设备间传输。无开发者中转服务器，不经第三方云端。'
+      : app === 'dropsqueeze'
+      ? 'DropSqueeze 纯端侧本地运行，不含任何统计分析或广告追踪 SDK。购买与订阅由 Apple StoreKit 官方框架与 App Store 通信，开发者不收集或存储任何付款信息或 Apple ID。'
+      : app === 'pastepipe'
+      ? 'PastePipe 默认纯本地离线处理，无开发者运营的云端账户或追踪服务器。若主动开启可选的私有 iCloud 同步，文本历史与片段通过 Apple CloudKit 同步至你个人的私有数据库，可随时关闭。'
+      : app === 'netpulse'
+      ? 'NetPulse 仅在本地网络与蓝牙范围内执行扫描、GATT 调试与 RTSP 监控。应用无自建云端服务器、无第三方追踪或广告 SDK。测速功能使用官方测速端点，仅在用户主动测速时交互。'
       : '应用不提供开发者运营的云同步或广告跟踪服务。系统功能及第三方服务仅在你主动使用时参与。';
     const sections = [
       ['应用处理的信息', t.body[idx]],
