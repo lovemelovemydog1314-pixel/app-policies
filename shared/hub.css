@@ -30,17 +30,11 @@
 
 .hub-hero-badge::before {
   content: "";
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 10px var(--accent);
-  animation: badgeBlink 2.5s infinite ease-in-out;
-}
-
-@keyframes badgeBlink {
-  0%, 100% { opacity: 0.6; transform: scale(0.9); }
-  50% { opacity: 1; transform: scale(1.2); }
+  opacity: 0.85;
 }
 
 .hub-hero h1 {
@@ -48,15 +42,7 @@
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1.15;
-  background: linear-gradient(180deg, var(--text-primary) 0%, var(--muted) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-:root[data-theme="light"] .hub-hero h1 {
-  background: linear-gradient(180deg, #0f172a 0%, #334155 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-primary);
 }
 
 .hub-hero .hero-subtitle {
@@ -143,15 +129,15 @@
 .filter-tab.active {
   background: var(--accent);
   color: var(--on-accent);
-  box-shadow: 0 2px 10px var(--accent-glow);
+  box-shadow: var(--shadow-subtle);
 }
 
 .search-wrapper {
   position: relative;
-  min-width: 260px;
+  min-width: 270px;
 }
 
-.search-wrapper svg {
+.search-wrapper svg.search-icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -164,7 +150,7 @@
 
 .search-input {
   width: 100%;
-  padding: 9px 14px 9px 38px;
+  padding: 9px 62px 9px 38px;
   border-radius: var(--radius-full);
   background: var(--surface-solid);
   border: 1px solid var(--line);
@@ -180,7 +166,64 @@
 }
 
 .search-input::placeholder {
-  color: var(--muted-light);
+  color: #94a3b8;
+}
+
+:root[data-theme="light"] .search-input::placeholder {
+  color: #64748b;
+}
+
+.search-shortcut-hint {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-hover);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-family: inherit;
+  font-weight: 600;
+  pointer-events: none;
+  transition: opacity var(--transition-fast);
+}
+
+.search-clear-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: var(--surface-hover);
+  color: var(--muted);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.search-clear-btn:hover {
+  color: var(--text-primary);
+  background: var(--line-highlight);
+}
+
+.search-wrapper.has-query .search-clear-btn {
+  display: inline-flex;
+}
+
+.search-wrapper.has-query .search-shortcut-hint {
+  display: none;
 }
 
 /* ==========================================================================
@@ -209,16 +252,16 @@
   transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
 }
 
-/* Spotlight glow layer */
+/* Spotlight subtle specular layer */
 .app-card::before {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: radial-gradient(400px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), var(--card-glow, rgba(255, 255, 255, 0.08)), transparent 80%);
+  background: radial-gradient(400px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 255, 255, 0.05), transparent 80%);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.3s ease;
   z-index: 0;
 }
 
@@ -227,9 +270,9 @@
 }
 
 .app-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--card-border, var(--accent));
-  box-shadow: var(--shadow-float), 0 0 35px var(--card-glow, var(--accent-glow));
+  transform: translateY(-4px);
+  border-color: var(--card-border, var(--line-highlight));
+  box-shadow: var(--shadow-float);
 }
 
 .app-card-top {
@@ -261,7 +304,34 @@
 }
 
 .app-card:hover .app-icon-wrap img {
-  transform: scale(1.08) translateY(-2px);
+  transform: scale(1.06) translateY(-2px);
+}
+
+.app-badges-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.app-platform-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  background: var(--surface-hover);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.app-platform-pill svg {
+  width: 11px;
+  height: 11px;
 }
 
 .app-category-badge {
@@ -278,6 +348,12 @@
   text-transform: uppercase;
 }
 
+:root[data-theme="light"] .app-category-badge {
+  background: rgba(15, 23, 42, 0.05);
+  border-color: rgba(15, 23, 42, 0.12);
+  color: var(--card-color-light, var(--text-primary));
+}
+
 .app-title-group h2 {
   font-size: 1.55rem;
   font-weight: 750;
@@ -291,6 +367,10 @@
   color: var(--card-color, var(--accent));
   line-height: 1.45;
   margin-bottom: 12px;
+}
+
+:root[data-theme="light"] .app-tagline {
+  color: var(--card-color-light, var(--text-primary));
 }
 
 .app-desc {
@@ -335,26 +415,37 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  min-height: 42px;
+  min-height: 40px;
   padding: 8px 18px;
   border-radius: var(--radius-md);
   background: var(--card-color, var(--accent));
   color: var(--card-on-color, var(--on-accent));
   font-size: 0.88rem;
-  font-weight: 680;
+  font-weight: 650;
   text-decoration: none;
-  box-shadow: 0 4px 14px var(--card-glow, var(--accent-glow));
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transition: all var(--transition-fast);
 }
 
 .app-enter-btn:hover {
   transform: translateY(-2px);
-  filter: brightness(1.1);
-  box-shadow: 0 6px 20px var(--card-glow, var(--accent-glow));
+  filter: brightness(1.08);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28);
 }
 
 .app-enter-btn:active {
   transform: translateY(0) scale(0.98);
+}
+
+:root[data-theme="light"] .app-enter-btn {
+  background: var(--card-color-light, var(--card-color));
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+:root[data-theme="light"] .app-enter-btn:hover {
+  filter: brightness(0.94);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
 }
 
 .app-sub-links {
@@ -374,6 +465,10 @@
   color: var(--card-color, var(--accent));
 }
 
+:root[data-theme="light"] .app-sub-links a:hover {
+  color: var(--card-color-light, var(--text-primary));
+}
+
 /* ==========================================================================
    Manifesto Section
    ========================================================================== */
@@ -391,11 +486,13 @@
 .manifesto-heading h2 {
   font-size: clamp(2rem, 3.5vw, 2.8rem);
   font-weight: 750;
+  color: var(--text-primary);
 }
 
 .manifesto-heading p {
   margin-top: 14px;
   font-size: 1.08rem;
+  color: var(--muted);
 }
 
 .manifesto-grid {
@@ -405,7 +502,7 @@
 }
 
 .manifesto-card {
-  padding: 36px 32px;
+  padding: 32px 28px;
   border-radius: var(--radius-lg);
   background: var(--surface);
   border: 1px solid var(--line);
@@ -414,36 +511,43 @@
 }
 
 .manifesto-card:hover {
-  border-color: var(--tint-border);
+  border-color: var(--line-highlight);
   transform: translateY(-3px);
   box-shadow: var(--shadow-float);
 }
 
+.manifesto-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
 .manifesto-icon {
-  display: grid;
-  place-items: center;
-  width: 48px;
-  height: 48px;
-  border-radius: var(--radius-md);
-  background: var(--tint);
-  border: 1px solid var(--tint-border);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: var(--accent);
-  margin-bottom: 22px;
+  flex-shrink: 0;
+  margin-bottom: 0;
 }
 
 .manifesto-icon svg {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
 }
 
 .manifesto-card h3 {
-  font-size: 1.25rem;
-  margin-bottom: 12px;
+  font-size: 1.18rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: var(--text-primary);
 }
 
 .manifesto-card p {
-  font-size: 0.95rem;
+  font-size: 0.94rem;
   line-height: 1.75;
+  color: var(--muted);
 }
 
 /* Empty search state */

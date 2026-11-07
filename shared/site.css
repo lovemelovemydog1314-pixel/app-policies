@@ -14,7 +14,7 @@
   --text: #f6f8fa;
   --text-primary: #ffffff;
   --muted: #94a3b8;
-  --muted-light: #64748b;
+  --muted-light: #94a3b8;
   --line: rgba(255, 255, 255, 0.08);
   --line-highlight: rgba(255, 255, 255, 0.16);
   --accent: #71d7bf;
@@ -28,14 +28,14 @@
   --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.25);
   --shadow-card: 0 16px 40px -12px rgba(0, 0, 0, 0.5);
   --shadow-float: 0 24px 60px -15px rgba(0, 0, 0, 0.65);
-  --shadow-glow: 0 0 50px var(--accent-glow);
+  --shadow-glow: none;
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-lg: 20px;
   --radius-full: 9999px;
   --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-smooth: 0.32s cubic-bezier(0.16, 1, 0.3, 1);
-  --transition-bounce: 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-bounce: 0.28s cubic-bezier(0.16, 1, 0.3, 1);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -53,7 +53,7 @@
   --text: #0f172a;
   --text-primary: #020617;
   --muted: #475569;
-  --muted-light: #94a3b8;
+  --muted-light: #64748b;
   --line: rgba(0, 0, 0, 0.08);
   --line-highlight: rgba(0, 0, 0, 0.14);
   --accent: #08735d;
@@ -67,7 +67,7 @@
   --shadow-subtle: 0 4px 16px rgba(0, 0, 0, 0.04);
   --shadow-card: 0 16px 36px -10px rgba(15, 23, 42, 0.07);
   --shadow-float: 0 24px 50px -12px rgba(15, 23, 42, 0.1);
-  --shadow-glow: 0 0 40px var(--accent-glow);
+  --shadow-glow: none;
 }
 
 /* App Accent Theme Customizations */
@@ -374,7 +374,7 @@ button {
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
-  border-radius: var(--radius-sm);
+  border-radius: inherit;
 }
 
 ::selection {
@@ -658,14 +658,14 @@ p {
   font-size: 0.94rem;
   font-weight: 680;
   text-decoration: none;
-  box-shadow: 0 4px 18px var(--accent-glow);
+  box-shadow: var(--shadow-subtle);
   transition: all var(--transition-fast);
 }
 
 .button:hover {
   transform: translateY(-2px);
   filter: brightness(1.08);
-  box-shadow: 0 8px 26px var(--accent-glow);
+  box-shadow: var(--shadow-card);
 }
 
 .button:active {
@@ -737,7 +737,6 @@ p {
   height: 6px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 8px var(--accent);
 }
 
 .intro {
@@ -773,7 +772,7 @@ p {
 
 .hero-art:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-float), var(--shadow-glow);
+  box-shadow: var(--shadow-float);
   border-color: var(--tint-border);
 }
 
@@ -895,7 +894,6 @@ p {
   flex: none;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 10px var(--accent);
 }
 
 /* ==========================================================================
@@ -997,7 +995,7 @@ p {
 
 .privacy-callout:hover {
   border-color: var(--accent);
-  box-shadow: var(--shadow-float), 0 0 32px var(--accent-glow);
+  box-shadow: var(--shadow-float);
 }
 
 .callout-symbol {
@@ -1103,7 +1101,7 @@ p {
   background: var(--accent);
   color: var(--on-accent);
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px var(--accent-glow);
+  box-shadow: var(--shadow-subtle);
 }
 
 /* ==========================================================================

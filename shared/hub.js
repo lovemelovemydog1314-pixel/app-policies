@@ -9,6 +9,8 @@
       icon: 'beauty-folder/assets/icon.png',
       color: '#ff8e6e',
       onColor: '#2e1208',
+      colorLight: '#c2410c',
+      platform: 'macOS',
       category: 'files',
       names: {
         'zh-Hans': 'BeautyFolder',
@@ -49,7 +51,14 @@
         de: ['Farben & Bilder', 'Nur ausgewählte Ordner', 'Lokale Verarbeitung'],
         fr: ['Couleurs et images', 'Dossiers sélectionnés', 'Traitement local'],
         es: ['Colores e imágenes', 'Solo carpetas elegidas', 'Procesamiento local']
-      }
+      },
+      themeLight: "Claro",
+      themeDark: "Oscuro",
+      navSupport: "Soporte",
+      searchClear: "Borrar",
+      searchAriaLabel: "Buscar apps",
+      searchStatusFound: "{count} apps encontradas",
+      m1Desc: "Todo se procesa en tu Mac o dispositivo iOS, sin enviar tus archivos a servidores externos."
     },
     {
       id: 'caffeineai',
@@ -57,6 +66,8 @@
       icon: 'caffeineai/assets/icon.png',
       color: '#a3e635',
       onColor: '#172a04',
+      colorLight: '#3f6212',
+      platform: 'macOS',
       category: 'system',
       names: {
         'zh-Hans': 'CaffeineAI',
@@ -105,6 +116,8 @@
       icon: 'drift/assets/icon.png',
       color: '#fbbf24',
       onColor: '#2a1b04',
+      colorLight: '#854d0e',
+      platform: 'macOS',
       category: 'system',
       names: {
         'zh-Hans': 'Drift',
@@ -153,6 +166,8 @@
       icon: 'folderify/assets/icon.png',
       color: '#fb923c',
       onColor: '#311504',
+      colorLight: '#9a3412',
+      platform: 'macOS',
       category: 'files',
       names: {
         'zh-Hans': 'Folderify',
@@ -201,6 +216,8 @@
       icon: 'localdrop/assets/icon.png',
       color: '#38bdf8',
       onColor: '#042033',
+      colorLight: '#0369a1',
+      platform: 'macOS',
       category: 'media',
       names: {
         'zh-Hans': 'LocalDrop Server',
@@ -249,6 +266,8 @@
       icon: 'medialens/assets/icon.png',
       color: '#818cf8',
       onColor: '#111438',
+      colorLight: '#4338ca',
+      platform: 'macOS',
       category: 'media',
       names: {
         'zh-Hans': 'MediaLens',
@@ -297,6 +316,8 @@
       icon: 'wavedeck/assets/icon.png',
       color: '#61d2ec',
       onColor: '#08202b',
+      colorLight: '#0e7490',
+      platform: 'macOS',
       category: 'media',
       names: {
         'zh-Hans': 'WaveDeck',
@@ -345,6 +366,8 @@
       icon: 'zipmaster/assets/icon.png',
       color: '#facc15',
       onColor: '#2e2303',
+      colorLight: '#78350f',
+      platform: 'macOS',
       category: 'files',
       names: {
         'zh-Hans': 'ZipMaster',
@@ -392,7 +415,9 @@
       path: 'couple/',
       icon: 'couple/assets/icon.png',
       color: '#f43f5e',
-      onColor: '#ffffff',
+      onColor: '#2b040e',
+      colorLight: '#be123c',
+      platform: 'iOS',
       category: 'life',
       names: {
         'zh-Hans': 'Couple 小家',
@@ -440,7 +465,9 @@
       path: 'shelflife/',
       icon: 'shelflife/assets/icon.png',
       color: '#10b981',
-      onColor: '#ffffff',
+      onColor: '#022518',
+      colorLight: '#047857',
+      platform: 'iOS',
       category: 'life',
       names: {
         'zh-Hans': 'ShelfLife 器物志',
@@ -488,7 +515,9 @@
       path: 'dropsqueeze/',
       icon: 'dropsqueeze/assets/icon.png',
       color: '#10b981',
-      onColor: '#ffffff',
+      onColor: '#022518',
+      colorLight: '#047857',
+      platform: 'macOS',
       category: 'media',
       names: {
         'zh-Hans': 'DropSqueeze',
@@ -536,7 +565,9 @@
       path: 'droidbridge/',
       icon: 'droidbridge/assets/icon.png',
       color: '#22c55e',
-      onColor: '#ffffff',
+      onColor: '#05230c',
+      colorLight: '#15803d',
+      platform: 'macOS',
       category: 'media',
       names: {
         'zh-Hans': 'DroidBridge 安卓桥',
@@ -584,7 +615,9 @@
       path: 'luxframe/',
       icon: 'luxframe/assets/icon.png',
       color: '#f59e0b',
-      onColor: '#ffffff',
+      onColor: '#261502',
+      colorLight: '#b45309',
+      platform: 'iOS',
       category: 'media',
       names: {
         'zh-Hans': 'LuxFrame 光影暗盒',
@@ -633,6 +666,8 @@
       icon: 'pastepipe/assets/icon.png',
       color: '#06b6d4',
       onColor: '#04242d',
+      colorLight: '#0e7490',
+      platform: 'macOS',
       category: 'system',
       names: {
         'zh-Hans': 'PastePipe',
@@ -680,7 +715,9 @@
       path: 'netpulse/',
       icon: 'netpulse/assets/icon.png',
       color: '#0ea5e9',
-      onColor: '#ffffff',
+      onColor: '#032030',
+      colorLight: '#0284c7',
+      platform: 'iOS',
       category: 'system',
       names: {
         'zh-Hans': 'NetPulse 极客网测',
@@ -730,7 +767,7 @@
     'zh-Hans': {
       brand: 'Mac & iOS 独立精选',
       heroBadge: '15 款精选原生应用 · Apple 生态专属',
-      heroTitle: '专注原生体验，为纯粹与隐私而生。',
+      heroTitle: "专注 Apple 原生体验，为纯粹与隐私而生。",
       heroSubtitle: '精心雕琢的 15 款实用工具。坚持本机运算、零云端依赖、无追踪无广告。',
       stat1: '15 款独立应用',
       stat2: '100% 本地运算',
@@ -750,7 +787,7 @@
       manifestoTitle: '我们的工程与设计哲学',
       manifestoDesc: '拒绝臃肿，不让复杂消耗你的注意力。',
       m1Title: '本地优先 (Local First)',
-      m1Desc: '所有处理均在你的设备本地静默完成，不依赖外部服务器，即使断网也能全力运作。',
+      m1Desc: "所有处理均在你的 Mac 与 iOS 设备本地静默完成，不依赖外部服务器，即使断网也能全力运作。",
       m2Title: '隐私即承诺 (Privacy by Design)',
       m2Desc: '无账户登录，不收集使用习惯，零第三方分析追踪 SDK，保障私人数据的绝对纯净。',
       m3Title: '原生轻盈 (Apple Native)',
@@ -758,7 +795,13 @@
       footerLead: '为每一次指尖操作，赋予确定感与宁静。',
       email: 'zipmaster_support@126.com',
       copyEmail: '复制支持邮箱',
-      copied: '已复制邮箱'
+      copied: '已复制邮箱',
+      themeLight: "浅色",
+      themeDark: "深色",
+      navSupport: "支持",
+      searchClear: "清除",
+      searchAriaLabel: "搜索应用",
+      searchStatusFound: "找到 {count} 款应用"
     },
     'zh-Hant': {
       brand: 'Mac & iOS 獨立精選',
@@ -783,7 +826,7 @@
       manifestoTitle: '我們的工程與設計哲學',
       manifestoDesc: '拒絕臃腫，不讓繁複消耗你的注意力。',
       m1Title: '本機優先 (Local First)',
-      m1Desc: '所有處理皆在你的裝置本機完成，不依賴外部伺服器，斷網亦可全速運作。',
+      m1Desc: "所有處理皆在你的 Mac 與 iOS 裝置本機完成，不依賴外部伺服器，斷網亦可全速運作。",
       m2Title: '隱私即承諾 (Privacy by Design)',
       m2Desc: '無帳號登入，不收集操作習慣，零第三方追蹤 SDK，保障私人資料的絕對安全。',
       m3Title: '原生輕巧 (Apple Native)',
@@ -791,7 +834,13 @@
       footerLead: '為每一次指尖操作，賦予確定感與寧靜。',
       email: 'zipmaster_support@126.com',
       copyEmail: '複製支援信箱',
-      copied: '已複製信箱'
+      copied: '已複製信箱',
+      themeLight: "淺色",
+      themeDark: "深色",
+      navSupport: "技術支援",
+      searchClear: "清除",
+      searchAriaLabel: "搜尋 App",
+      searchStatusFound: "找到 {count} 款 App"
     },
     en: {
       brand: 'Apple Crafted Apps',
@@ -816,7 +865,7 @@
       manifestoTitle: 'Our Engineering Philosophy',
       manifestoDesc: 'Clean, reliable, and respectful of your attention and system resources.',
       m1Title: 'Local First Architecture',
-      m1Desc: 'All processing occurs directly on your device. No developer servers, fully functional offline.',
+      m1Desc: "All processing occurs directly on your Mac or iOS device. No developer servers, fully functional offline.",
       m2Title: 'Privacy by Design',
       m2Desc: 'No accounts, no user telemetry, and zero tracking SDKs. Your files remain exclusively yours.',
       m3Title: 'Apple Native Craftsmanship',
@@ -824,7 +873,13 @@
       footerLead: 'Bringing calm, focus, and precision to your daily Apple workflow.',
       email: 'zipmaster_support@126.com',
       copyEmail: 'Copy Support Email',
-      copied: 'Email copied'
+      copied: 'Email copied',
+      themeLight: "Light",
+      themeDark: "Dark",
+      navSupport: "Support",
+      searchClear: "Clear",
+      searchAriaLabel: "Search apps",
+      searchStatusFound: "Found {count} apps"
     },
     ja: {
       brand: 'Apple 厳選ツール',
@@ -849,7 +904,7 @@
       manifestoTitle: '設計とエンジニアリングの哲学',
       manifestoDesc: '過剰な装飾を排し、本質的な快適さを追求します。',
       m1Title: 'ローカルファースト',
-      m1Desc: 'すべての処理がお使いのデバイス上で完結します。オフラインでも制限なく機能します。',
+      m1Desc: "すべての処理がお使いの Mac や iOS デバイス上で完結します。オフラインでも制限なく機能します。",
       m2Title: 'プライバシー最優先',
       m2Desc: 'アカウント登録不要、行動ログや外部追跡 SDK は一切含まれていません。',
       m3Title: 'Apple ネイティブの軽快さ',
@@ -857,7 +912,13 @@
       footerLead: '毎日の操作に、確かな安心と静けさを。',
       email: 'zipmaster_support@126.com',
       copyEmail: 'メールアドレスをコピー',
-      copied: 'コピーしました'
+      copied: 'コピーしました',
+      themeLight: "ライト",
+      themeDark: "ダーク",
+      navSupport: "サポート",
+      searchClear: "クリア",
+      searchAriaLabel: "アプリを検索",
+      searchStatusFound: "{count}件のアプリが見つかりました"
     },
     ko: {
       brand: 'Apple 엄선 앱',
@@ -882,7 +943,7 @@
       manifestoTitle: '우리의 개발 및 디자인 철학',
       manifestoDesc: '불필요한 복잡함을 없애고 사용자의 집중에 기여합니다.',
       m1Title: '로컬 퍼스트 (Local First)',
-      m1Desc: '모든 작업이 기기 내에서 안전하게 실행되며 오프라인에서도 작동합니다.',
+      m1Desc: "모든 작업이 Mac 및 iOS 기기 내에서 안전하게 실행되며 오프라인에서도 작동합니다.",
       m2Title: '철저한 프라이버시',
       m2Desc: '계정 가입이 필요 없고 외부 추적 SDK가 포함되지 않아 데이터가 안전합니다.',
       m3Title: 'Apple 네이티브의 완성도',
@@ -890,7 +951,13 @@
       footerLead: '모든 작업에 확신과 명쾌함을 전합니다.',
       email: 'zipmaster_support@126.com',
       copyEmail: '지원 이메일 복사',
-      copied: '복사 완료'
+      copied: '복사 완료',
+      themeLight: "라이트",
+      themeDark: "다크",
+      navSupport: "고객 지원",
+      searchClear: "지우기",
+      searchAriaLabel: "앱 검색",
+      searchStatusFound: "{count}개의 앱을 찾았습니다"
     },
     de: {
       brand: 'Apple Crafted Apps',
@@ -915,7 +982,7 @@
       manifestoTitle: 'Unsere Entwicklungsphilosophie',
       manifestoDesc: 'Einfach, stabil und respektvoll gegenüber deinen Daten.',
       m1Title: 'Local First',
-      m1Desc: 'Alles wird lokal auf deinem Gerät verarbeitet – zuverlässig auch ohne Internetverbindung.',
+      m1Desc: "Alles wird lokal auf deinem Mac oder iOS-Gerät verarbeitet – zuverlässig auch ohne Internetverbindung.",
       m2Title: 'Datenschutz by Design',
       m2Desc: 'Kein Nutzerkonto erforderlich, keine Tracking-SDKs, vollkommene Privatsphäre.',
       m3Title: 'Apple-Native Qualität',
@@ -923,7 +990,13 @@
       footerLead: 'Ruhe, Fokus und Präzision für deine tägliche Arbeit.',
       email: 'zipmaster_support@126.com',
       copyEmail: 'E-Mail kopieren',
-      copied: 'Kopiert'
+      copied: 'Kopiert',
+      themeLight: "Hell",
+      themeDark: "Dunkel",
+      navSupport: "Support",
+      searchClear: "Löschen",
+      searchAriaLabel: "Apps durchsuchen",
+      searchStatusFound: "{count} Apps gefunden"
     },
     fr: {
       brand: 'Apple Crafted Apps',
@@ -948,7 +1021,7 @@
       manifestoTitle: 'Notre Philosophie de Conception',
       manifestoDesc: 'La clarté et l’efficacité au service de votre productivité.',
       m1Title: 'Priorité au Local',
-      m1Desc: 'Tout est traité directement sur votre appareil, fonctionnel même sans connexion.',
+      m1Desc: "Tout est traité directement sur votre Mac ou appareil iOS, fonctionnel même sans connexion.",
       m2Title: 'Confidentialité Totale',
       m2Desc: 'Aucun compte requis, aucune collecte de données, aucun traceur publicitaire.',
       m3Title: 'Finition Native Apple',
@@ -956,7 +1029,13 @@
       footerLead: 'Simplicité, précision et sérénité pour vos tâches quotidiennes.',
       email: 'zipmaster_support@126.com',
       copyEmail: 'Copier l’adresse e-mail',
-      copied: 'Copié'
+      copied: 'Copié',
+      themeLight: "Clair",
+      themeDark: "Sombre",
+      navSupport: "Assistance",
+      searchClear: "Effacer",
+      searchAriaLabel: "Rechercher des apps",
+      searchStatusFound: "{count} apps trouvées"
     },
     es: {
       brand: 'Apple Crafted Apps',
@@ -1048,7 +1127,7 @@
       headerEl.innerHTML = `
         <div class="brand-group">
           <a class="brand" href="index.html${langParam}">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent)">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent)" aria-hidden="true">
               <rect width="18" height="18" x="3" y="3" rx="4"/>
               <path d="M3 9h18"/>
               <path d="M9 21V9"/>
@@ -1058,16 +1137,16 @@
         </div>
         <nav class="main-nav" aria-label="快捷跳转">
           <a href="#apps">${escape(t.filterAll)}</a>
-          <a href="#manifesto">${escape(t.manifestoTitle)}</a>
-          <a href="#contact">支持</a>
+          <a href="#manifesto">${escape(t.navManifesto || t.manifestoTitle)}</a>
+          <a href="#contact">${escape(t.navSupport || "支持")}</a>
         </nav>
         <div class="tools">
           <label class="language">
             <span class="sr-only">语言</span>
             <select aria-label="语言" id="top-lang-select">
               ${Object.entries(LANGUAGES).map(([code, name]) => `
-                <option value="${code}" ${code === currentLang ? 'selected' : ''}>${escape(name)}</option>
-              `).join('')}
+                <option value="${code}" ${code === currentLang ? "selected" : ""}>${escape(name)}</option>
+              `).join("")}
             </select>
           </label>
           <button class="theme" type="button" data-theme></button>
@@ -1084,46 +1163,56 @@
         <p class="hero-subtitle">${escape(t.heroSubtitle)}</p>
         <div class="hub-stats-row">
           <div class="stat-chip">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
             <span>${escape(t.stat1)}</span>
           </div>
           <div class="stat-chip">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
             <span>${escape(t.stat2)}</span>
           </div>
           <div class="stat-chip">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             <span>${escape(t.stat3)}</span>
           </div>
           <div class="stat-chip">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
             <span>${escape(t.stat4)}</span>
           </div>
         </div>
       `;
     }
 
-    // Toolbar Tabs
+    // Toolbar Tabs & Search
     const tabsEl = document.querySelector('.filter-tabs');
     if (tabsEl) {
       tabsEl.innerHTML = `
-        <button class="filter-tab ${currentCategory === 'all' ? 'active' : ''}" data-cat="all">${escape(t.filterAll)} (${APPS.length})</button>
-        <button class="filter-tab ${currentCategory === 'system' ? 'active' : ''}" data-cat="system">${escape(t.filterSystem)}</button>
-        <button class="filter-tab ${currentCategory === 'files' ? 'active' : ''}" data-cat="files">${escape(t.filterFiles)}</button>
-        <button class="filter-tab ${currentCategory === 'media' ? 'active' : ''}" data-cat="media">${escape(t.filterMedia)}</button>
-        <button class="filter-tab ${currentCategory === 'life' ? 'active' : ''}" data-cat="life">${escape(t.filterLife || '生活与记录')}</button>
+        <button class="filter-tab ${currentCategory === "all" ? "active" : ""}" data-cat="all">${escape(t.filterAll)} (${APPS.length})</button>
+        <button class="filter-tab ${currentCategory === "system" ? "active" : ""}" data-cat="system">${escape(t.filterSystem)}</button>
+        <button class="filter-tab ${currentCategory === "files" ? "active" : ""}" data-cat="files">${escape(t.filterFiles)}</button>
+        <button class="filter-tab ${currentCategory === "media" ? "active" : ""}" data-cat="media">${escape(t.filterMedia)}</button>
+        <button class="filter-tab ${currentCategory === "life" ? "active" : ""}" data-cat="life">${escape(t.filterLife || "生活与记录")}</button>
       `;
     }
 
-    const searchInput = document.querySelector('.search-input');
-    if (searchInput) {
-      searchInput.placeholder = t.searchPlaceholder;
+    const searchWrapperEl = document.querySelector('.search-wrapper');
+    if (searchWrapperEl) {
+      searchWrapperEl.innerHTML = `
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.3-4.3"/>
+        </svg>
+        <input class="search-input" type="search" placeholder="${escape(t.searchPlaceholder)}" aria-label="${escape(t.searchAriaLabel || "搜索应用")}" value="${escape(currentSearch)}" autocomplete="off" spellcheck="false">
+        <kbd class="search-shortcut-hint" aria-hidden="true">⌘K</kbd>
+        <button class="search-clear-btn" type="button" aria-label="${escape(t.searchClear || "清除")}" title="${escape(t.searchClear || "清除")}">✕</button>
+        <div id="search-status" class="sr-only" aria-live="polite" role="status"></div>
+      `;
+      searchWrapperEl.classList.toggle('has-query', currentSearch.length > 0);
     }
 
     // Render Cards
     renderCards();
 
-    // Manifesto Section
+    // Manifesto Section (Horizontal icon-heading layout)
     const manEl = document.querySelector('.manifesto-section');
     if (manEl) {
       manEl.innerHTML = `
@@ -1133,30 +1222,36 @@
         </div>
         <div class="manifesto-grid">
           <div class="manifesto-card reveal">
-            <div class="manifesto-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/>
-              </svg>
+            <div class="manifesto-card-header">
+              <div class="manifesto-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/>
+                </svg>
+              </div>
+              <h3>${escape(t.m1Title)}</h3>
             </div>
-            <h3>${escape(t.m1Title)}</h3>
             <p>${escape(t.m1Desc)}</p>
           </div>
           <div class="manifesto-card reveal">
-            <div class="manifesto-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
+            <div class="manifesto-card-header">
+              <div class="manifesto-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <h3>${escape(t.m2Title)}</h3>
             </div>
-            <h3>${escape(t.m2Title)}</h3>
             <p>${escape(t.m2Desc)}</p>
           </div>
           <div class="manifesto-card reveal">
-            <div class="manifesto-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/>
-              </svg>
+            <div class="manifesto-card-header">
+              <div class="manifesto-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/>
+                </svg>
+              </div>
+              <h3>${escape(t.m3Title)}</h3>
             </div>
-            <h3>${escape(t.m3Title)}</h3>
             <p>${escape(t.m3Desc)}</p>
           </div>
         </div>
@@ -1176,7 +1271,7 @@
         <div class="footer-right">
           <div class="footer-controls">
             <button class="copy quiet-link" type="button" data-copy>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
               <span>${escape(t.copyEmail)}</span>
             </button>
             <span class="copy-status" style="margin-left:8px"></span>
@@ -1208,6 +1303,13 @@
       return name.includes(term) || tagline.includes(term) || desc.includes(term);
     });
 
+    const statusEl = document.getElementById('search-status');
+    if (statusEl) {
+      statusEl.textContent = filtered.length > 0
+        ? (t.searchStatusFound ? t.searchStatusFound.replace('{count}', filtered.length) : `${filtered.length} 款应用`)
+        : (t.emptyTitle || '未找到符合的应用');
+    }
+
     if (filtered.length === 0) {
       grid.innerHTML = `
         <div class="empty-state reveal">
@@ -1232,14 +1334,24 @@
         life: t.filterLife || '生活与记录'
       }[app.category] || 'Utility';
 
+      const platformSvg = app.platform === 'iOS'
+        ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="3"/><line x1="11" x2="13" y1="18" y2="18"/></svg>'
+        : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>';
+
       return `
-        <article class="app-card reveal" style="--card-color:${app.color};--card-on-color:${app.onColor};--card-glow:${app.color}33;--card-tint:${app.color}14;--card-tint-border:${app.color}38;">
+        <article class="app-card reveal" style="--card-color:${app.color};--card-color-light:${app.colorLight || app.color};--card-on-color:${app.onColor};--card-glow:${app.color}33;--card-tint:${app.color}14;--card-tint-border:${app.color}38;">
           <div class="app-card-top">
             <div class="app-header">
               <div class="app-icon-wrap">
-                <img src="${app.icon}" alt="${escape(name)}" loading="lazy">
+                <img src="${app.icon}" alt="${escape(name)} 图标" loading="lazy">
               </div>
-              <span class="app-category-badge">${escape(categoryLabel)}</span>
+              <div class="app-badges-wrap">
+                <span class="app-platform-pill">
+                  ${platformSvg}
+                  <span>${escape(app.platform)}</span>
+                </span>
+                <span class="app-category-badge">${escape(categoryLabel)}</span>
+              </div>
             </div>
             <div class="app-title-group">
               <h2>${escape(name)}</h2>
@@ -1253,7 +1365,7 @@
           <div class="app-card-actions">
             <a class="app-enter-btn" href="${app.path}index.html${langParam}">
               <span>${escape(t.enterApp)}</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </a>
             <div class="app-sub-links">
               <a href="${app.path}privacy.html${langParam}">${escape(t.privacyLink)}</a>
@@ -1300,11 +1412,16 @@
 
   function syncThemeButtons() {
     const isDark = document.documentElement.dataset.theme !== 'light';
-    const label = isDark ? '浅色' : '深色';
+    const t = UI[currentLang] || UI.en;
+    const label = isDark ? (t.themeLight || '浅色') : (t.themeDark || '深色');
     document.querySelectorAll('button[data-theme]').forEach(b => {
       b.textContent = label;
       b.setAttribute('aria-label', label);
     });
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    if (metaTheme) {
+      metaTheme.setAttribute('content', isDark ? '#090d14' : '#f8fafc');
+    }
   }
 
   // Initialize theme
@@ -1334,13 +1451,27 @@
       return;
     }
 
+    const clearBtn = e.target.closest('.search-clear-btn');
+    if (clearBtn) {
+      currentSearch = '';
+      const searchInput = document.querySelector('.search-input');
+      if (searchInput) {
+        searchInput.value = '';
+        searchInput.focus();
+      }
+      const wrap = document.querySelector('.search-wrapper');
+      if (wrap) wrap.classList.remove('has-query');
+      renderCards();
+      return;
+    }
+
     const copyBtn = e.target.closest('[data-copy]');
     if (copyBtn) {
       const status = document.querySelector('.copy-status');
       const email = UI[currentLang]?.email || 'zipmaster_support@126.com';
       try {
         navigator.clipboard.writeText(email);
-        status.textContent = `✓ ${UI[currentLang]?.copied || 'Copied'}`;
+        status.textContent = `✓ ${UI[currentLang]?.copied || "Copied"}`;
         setTimeout(() => { status.textContent = ''; }, 3000);
       } catch {
         status.textContent = email;
@@ -1364,7 +1495,36 @@
   document.addEventListener('input', e => {
     if (e.target.matches('.search-input')) {
       currentSearch = e.target.value.trim();
+      const wrap = e.target.closest('.search-wrapper');
+      if (wrap) {
+        wrap.classList.toggle('has-query', e.target.value.length > 0);
+      }
       renderCards();
+    }
+  });
+
+  // Global Keyboard shortcuts: ⌘K or / to search; Esc to clear
+  document.addEventListener('keydown', e => {
+    const activeEl = document.activeElement;
+    const isInputActive = activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA' || activeEl.isContentEditable);
+
+    if ((e.key === '/' && !isInputActive) || ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k')) {
+      e.preventDefault();
+      const searchInput = document.querySelector('.search-input');
+      if (searchInput) {
+        searchInput.focus();
+        searchInput.select();
+      }
+      return;
+    }
+
+    if (e.key === 'Escape' && isInputActive && activeEl.matches('.search-input')) {
+      currentSearch = '';
+      activeEl.value = '';
+      const wrap = activeEl.closest('.search-wrapper');
+      if (wrap) wrap.classList.remove('has-query');
+      renderCards();
+      activeEl.blur();
     }
   });
 })();

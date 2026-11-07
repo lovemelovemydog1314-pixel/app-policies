@@ -88,24 +88,33 @@
         <button class="filter-tab" data-cat="life">生活与记录</button>
       </div>
       <div class="search-wrapper">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <circle cx="11" cy="11" r="8"/>
           <path d="m21 21-4.3-4.3"/>
         </svg>
-        <input class="search-input" type="search" placeholder="搜索应用名称或特性..." aria-label="搜索应用">
+        <input class="search-input" type="search" placeholder="搜索应用名称或特性..." aria-label="搜索应用" autocomplete="off" spellcheck="false">
+        <kbd class="search-shortcut-hint" aria-hidden="true">⌘K</kbd>
+        <button class="search-clear-btn" type="button" aria-label="清除" title="清除">✕</button>
+        <div id="search-status" class="sr-only" aria-live="polite" role="status"></div>
       </div>
     </section>
 
     <!-- App Showcase Bento Grid -->
     <section class="apps-grid">
       <!-- 1. BeautyFolder -->
-      <article class="app-card reveal" style="--card-color:#ff8e6e;--card-on-color:#2e1208;--card-glow:#ff8e6e33;--card-tint:#ff8e6e14;--card-tint-border:#ff8e6e38;">
+      <article class="app-card reveal" style="--card-color:#ff8e6e;--card-on-color:#2e1208;--card-color-light:#c2410c;--card-glow:#ff8e6e33;--card-tint:#ff8e6e14;--card-tint-border:#ff8e6e38;">
         <div class="app-card-top">
           <div class="app-header">
             <div class="app-icon-wrap">
               <img src="beauty-folder/assets/icon.png" alt="BeautyFolder 图标">
             </div>
-            <span class="app-category-badge">文件与整理</span>
+            <div class="app-badges-wrap">
+              <span class="app-platform-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+                <span>macOS</span>
+              </span>
+              <span class="app-category-badge">文件与整理</span>
+            </div>
           </div>
           <div class="app-title-group">
             <h2>BeautyFolder</h2>
@@ -131,13 +140,19 @@
       </article>
 
       <!-- 2. CaffeineAI -->
-      <article class="app-card reveal" style="--card-color:#a3e635;--card-on-color:#172a04;--card-glow:#a3e63533;--card-tint:#a3e63514;--card-tint-border:#a3e63538;">
+      <article class="app-card reveal" style="--card-color:#a3e635;--card-on-color:#172a04;--card-color-light:#3f6212;--card-glow:#a3e63533;--card-tint:#a3e63514;--card-tint-border:#a3e63538;">
         <div class="app-card-top">
           <div class="app-header">
             <div class="app-icon-wrap">
               <img src="caffeineai/assets/icon.png" alt="CaffeineAI 图标">
             </div>
-            <span class="app-category-badge">系统与效能</span>
+            <div class="app-badges-wrap">
+              <span class="app-platform-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+                <span>macOS</span>
+              </span>
+              <span class="app-category-badge">系统与效能</span>
+            </div>
           </div>
           <div class="app-title-group">
             <h2>CaffeineAI</h2>
@@ -163,13 +178,19 @@
       </article>
 
       <!-- 3. Drift -->
-      <article class="app-card reveal" style="--card-color:#fbbf24;--card-on-color:#2a1b04;--card-glow:#fbbf2433;--card-tint:#fbbf2414;--card-tint-border:#fbbf2438;">
+      <article class="app-card reveal" style="--card-color:#fbbf24;--card-on-color:#2a1b04;--card-color-light:#854d0e;--card-glow:#fbbf2433;--card-tint:#fbbf2414;--card-tint-border:#fbbf2438;">
         <div class="app-card-top">
           <div class="app-header">
             <div class="app-icon-wrap">
               <img src="drift/assets/icon.png" alt="Drift 图标">
             </div>
-            <span class="app-category-badge">系统与效能</span>
+            <div class="app-badges-wrap">
+              <span class="app-platform-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+                <span>macOS</span>
+              </span>
+              <span class="app-category-badge">系统与效能</span>
+            </div>
           </div>
           <div class="app-title-group">
             <h2>Drift</h2>
@@ -195,13 +216,19 @@
       </article>
 
       <!-- 4. Folderify -->
-      <article class="app-card reveal" style="--card-color:#fb923c;--card-on-color:#311504;--card-glow:#fb923c33;--card-tint:#fb923c14;--card-tint-border:#fb923c38;">
+      <article class="app-card reveal" style="--card-color:#fb923c;--card-on-color:#311504;--card-color-light:#9a3412;--card-glow:#fb923c33;--card-tint:#fb923c14;--card-tint-border:#fb923c38;">
         <div class="app-card-top">
           <div class="app-header">
             <div class="app-icon-wrap">
               <img src="folderify/assets/icon.png" alt="Folderify 图标">
             </div>
-            <span class="app-category-badge">文件与整理</span>
+            <div class="app-badges-wrap">
+              <span class="app-platform-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+                <span>macOS</span>
+              </span>
+              <span class="app-category-badge">文件与整理</span>
+            </div>
           </div>
           <div class="app-title-group">
             <h2>Folderify</h2>
@@ -227,13 +254,19 @@
       </article>
 
       <!-- 5. LocalDrop Server -->
-      <article class="app-card reveal" style="--card-color:#38bdf8;--card-on-color:#042033;--card-glow:#38bdf833;--card-tint:#38bdf814;--card-tint-border:#38bdf838;">
+      <article class="app-card reveal" style="--card-color:#38bdf8;--card-on-color:#042033;--card-color-light:#0369a1;--card-glow:#38bdf833;--card-tint:#38bdf814;--card-tint-border:#38bdf838;">
         <div class="app-card-top">
           <div class="app-header">
             <div class="app-icon-wrap">
               <img src="localdrop/assets/icon.png" alt="LocalDrop Server 图标">
             </div>
-            <span class="app-category-badge">媒体与传输</span>
+            <div class="app-badges-wrap">
+              <span class="app-platform-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+                <span>macOS</span>
+              </span>
+              <span class="app-category-badge">媒体与传输</span>
+            </div>
           </div>
           <div class="app-title-group">
             <h2>LocalDrop Server</h2>
@@ -259,13 +292,19 @@
       </article>
 
       <!-- 6. MediaLens -->
-      <article class="app-card reveal" style="--card-color:#818cf8;--card-on-color:#111438;--card-glow:#818cf833;--card-tint:#818cf814;--card-tint-border:#818cf838;">
+      <article class="app-card reveal" style="--card-color:#818cf8;--card-on-color:#111438;--card-color-light:#4338ca;--card-glow:#818cf833;--card-tint:#818cf814;--card-tint-border:#818cf838;">
         <div class="app-card-top">
           <div class="app-header">
             <div class="app-icon-wrap">
               <img src="medialens/assets/icon.png" alt="MediaLens 图标">
             </div>
-            <span class="app-category-badge">媒体与传输</span>
+            <div class="app-badges-wrap">
+              <span class="app-platform-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+                <span>macOS</span>
+              </span>
+              <span class="app-category-badge">媒体与传输</span>
+            </div>
           </div>
           <div class="app-title-group">
             <h2>MediaLens</h2>
@@ -291,13 +330,19 @@
       </article>
 
       <!-- 7. WaveDeck -->
-      <article class="app-card reveal" style="--card-color:#61d2ec;--card-on-color:#08202b;--card-glow:#61d2ec33;--card-tint:#61d2ec14;--card-tint-border:#61d2ec38;">
+      <article class="app-card reveal" style="--card-color:#61d2ec;--card-on-color:#08202b;--card-color-light:#0e7490;--card-glow:#61d2ec33;--card-tint:#61d2ec14;--card-tint-border:#61d2ec38;">
         <div class="app-card-top">
           <div class="app-header">
             <div class="app-icon-wrap">
               <img src="wavedeck/assets/icon.png" alt="WaveDeck 图标">
             </div>
-            <span class="app-category-badge">媒体与传输</span>
+            <div class="app-badges-wrap">
+              <span class="app-platform-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+                <span>macOS</span>
+              </span>
+              <span class="app-category-badge">媒体与传输</span>
+            </div>
           </div>
           <div class="app-title-group">
             <h2>WaveDeck</h2>
@@ -323,13 +368,19 @@
       </article>
 
       <!-- 8. ZipMaster -->
-      <article class="app-card reveal" style="--card-color:#facc15;--card-on-color:#2e2303;--card-glow:#facc1533;--card-tint:#facc1514;--card-tint-border:#facc1538;">
+      <article class="app-card reveal" style="--card-color:#facc15;--card-on-color:#2e2303;--card-color-light:#78350f;--card-glow:#facc1533;--card-tint:#facc1514;--card-tint-border:#facc1538;">
         <div class="app-card-top">
           <div class="app-header">
             <div class="app-icon-wrap">
               <img src="zipmaster/assets/icon.png" alt="ZipMaster 图标">
             </div>
-            <span class="app-category-badge">文件与整理</span>
+            <div class="app-badges-wrap">
+              <span class="app-platform-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+                <span>macOS</span>
+              </span>
+              <span class="app-category-badge">文件与整理</span>
+            </div>
           </div>
           <div class="app-title-group">
             <h2>ZipMaster</h2>
@@ -355,13 +406,19 @@
       </article>
 
       <!-- 9. Couple 小家 -->
-      <article class="app-card reveal" style="--card-color:#f43f5e;--card-on-color:#ffffff;--card-glow:#f43f5e33;--card-tint:#f43f5e14;--card-tint-border:#f43f5e38;">
+      <article class="app-card reveal" style="--card-color:#f43f5e;--card-on-color:#2b040e;--card-color-light:#be123c;--card-glow:#f43f5e33;--card-tint:#f43f5e14;--card-tint-border:#f43f5e38;">
         <div class="app-card-top">
           <div class="app-header">
             <div class="app-icon-wrap">
               <img src="couple/assets/icon.png" alt="Couple 小家 图标">
             </div>
-            <span class="app-category-badge">生活与记录</span>
+            <div class="app-badges-wrap">
+              <span class="app-platform-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="3"/><line x1="11" x2="13" y1="18" y2="18"/></svg>
+                <span>iOS</span>
+              </span>
+              <span class="app-category-badge">生活与记录</span>
+            </div>
           </div>
           <div class="app-title-group">
             <h2>Couple 小家</h2>
@@ -387,13 +444,19 @@
       </article>
 
       <!-- 10. ShelfLife 器物志 -->
-      <article class="app-card reveal" style="--card-color:#10b981;--card-on-color:#ffffff;--card-glow:#10b98133;--card-tint:#10b98114;--card-tint-border:#10b98138;">
+      <article class="app-card reveal" style="--card-color:#10b981;--card-on-color:#022518;--card-color-light:#047857;--card-glow:#10b98133;--card-tint:#10b98114;--card-tint-border:#10b98138;">
         <div class="app-card-top">
           <div class="app-header">
             <div class="app-icon-wrap">
               <img src="shelflife/assets/icon.png" alt="ShelfLife 器物志 图标">
             </div>
-            <span class="app-category-badge">生活与记录</span>
+            <div class="app-badges-wrap">
+              <span class="app-platform-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="3"/><line x1="11" x2="13" y1="18" y2="18"/></svg>
+                <span>iOS</span>
+              </span>
+              <span class="app-category-badge">生活与记录</span>
+            </div>
           </div>
           <div class="app-title-group">
             <h2>ShelfLife 器物志</h2>
@@ -419,13 +482,19 @@
       </article>
 
       <!-- 11. DropSqueeze -->
-      <article class="app-card reveal" style="--card-color:#10b981;--card-on-color:#ffffff;--card-glow:#10b98133;--card-tint:#10b98114;--card-tint-border:#10b98138;">
+      <article class="app-card reveal" style="--card-color:#10b981;--card-on-color:#022518;--card-color-light:#047857;--card-glow:#10b98133;--card-tint:#10b98114;--card-tint-border:#10b98138;">
         <div class="app-card-top">
           <div class="app-header">
             <div class="app-icon-wrap">
               <img src="dropsqueeze/assets/icon.png" alt="DropSqueeze 图标">
             </div>
-            <span class="app-category-badge">媒体与传输</span>
+            <div class="app-badges-wrap">
+              <span class="app-platform-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+                <span>macOS</span>
+              </span>
+              <span class="app-category-badge">媒体与传输</span>
+            </div>
           </div>
           <div class="app-title-group">
             <h2>DropSqueeze</h2>
@@ -451,13 +520,19 @@
       </article>
 
       <!-- 12. DroidBridge 安卓桥 -->
-      <article class="app-card reveal" style="--card-color:#22c55e;--card-on-color:#ffffff;--card-glow:#22c55e33;--card-tint:#22c55e14;--card-tint-border:#22c55e38;">
+      <article class="app-card reveal" style="--card-color:#22c55e;--card-on-color:#05230c;--card-color-light:#15803d;--card-glow:#22c55e33;--card-tint:#22c55e14;--card-tint-border:#22c55e38;">
         <div class="app-card-top">
           <div class="app-header">
             <div class="app-icon-wrap">
               <img src="droidbridge/assets/icon.png" alt="DroidBridge 安卓桥 图标">
             </div>
-            <span class="app-category-badge">媒体与传输</span>
+            <div class="app-badges-wrap">
+              <span class="app-platform-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+                <span>macOS</span>
+              </span>
+              <span class="app-category-badge">媒体与传输</span>
+            </div>
           </div>
           <div class="app-title-group">
             <h2>DroidBridge 安卓桥</h2>
@@ -483,13 +558,19 @@
       </article>
 
       <!-- 13. LuxFrame 光影暗盒 -->
-      <article class="app-card reveal" style="--card-color:#f59e0b;--card-on-color:#ffffff;--card-glow:#f59e0b33;--card-tint:#f59e0b14;--card-tint-border:#f59e0b38;">
+      <article class="app-card reveal" style="--card-color:#f59e0b;--card-on-color:#261502;--card-color-light:#b45309;--card-glow:#f59e0b33;--card-tint:#f59e0b14;--card-tint-border:#f59e0b38;">
         <div class="app-card-top">
           <div class="app-header">
             <div class="app-icon-wrap">
               <img src="luxframe/assets/icon.png" alt="LuxFrame 光影暗盒 图标">
             </div>
-            <span class="app-category-badge">媒体与传输</span>
+            <div class="app-badges-wrap">
+              <span class="app-platform-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="3"/><line x1="11" x2="13" y1="18" y2="18"/></svg>
+                <span>iOS</span>
+              </span>
+              <span class="app-category-badge">媒体与传输</span>
+            </div>
           </div>
           <div class="app-title-group">
             <h2>LuxFrame 光影暗盒</h2>
@@ -515,13 +596,19 @@
       </article>
 
       <!-- 14. PastePipe -->
-      <article class="app-card reveal" style="--card-color:#06b6d4;--card-on-color:#04242d;--card-glow:#06b6d433;--card-tint:#06b6d414;--card-tint-border:#06b6d438;">
+      <article class="app-card reveal" style="--card-color:#06b6d4;--card-on-color:#04242d;--card-color-light:#0e7490;--card-glow:#06b6d433;--card-tint:#06b6d414;--card-tint-border:#06b6d438;">
         <div class="app-card-top">
           <div class="app-header">
             <div class="app-icon-wrap">
               <img src="pastepipe/assets/icon.png" alt="PastePipe 图标">
             </div>
-            <span class="app-category-badge">系统与效能</span>
+            <div class="app-badges-wrap">
+              <span class="app-platform-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+                <span>macOS</span>
+              </span>
+              <span class="app-category-badge">系统与效能</span>
+            </div>
           </div>
           <div class="app-title-group">
             <h2>PastePipe</h2>
@@ -547,13 +634,19 @@
       </article>
 
       <!-- 15. NetPulse 极客网测 -->
-      <article class="app-card reveal" style="--card-color:#0ea5e9;--card-on-color:#ffffff;--card-glow:#0ea5e933;--card-tint:#0ea5e914;--card-tint-border:#0ea5e938;">
+      <article class="app-card reveal" style="--card-color:#0ea5e9;--card-on-color:#032030;--card-color-light:#0284c7;--card-glow:#0ea5e933;--card-tint:#0ea5e914;--card-tint-border:#0ea5e938;">
         <div class="app-card-top">
           <div class="app-header">
             <div class="app-icon-wrap">
               <img src="netpulse/assets/icon.png" alt="NetPulse 极客网测 图标">
             </div>
-            <span class="app-category-badge">系统与效能</span>
+            <div class="app-badges-wrap">
+              <span class="app-platform-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="3"/><line x1="11" x2="13" y1="18" y2="18"/></svg>
+                <span>iOS</span>
+              </span>
+              <span class="app-category-badge">系统与效能</span>
+            </div>
           </div>
           <div class="app-title-group">
             <h2>NetPulse 极客网测</h2>
@@ -587,31 +680,37 @@
       </div>
       <div class="manifesto-grid">
         <div class="manifesto-card reveal">
-          <div class="manifesto-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/>
-            </svg>
+          <div class="manifesto-card-header">
+            <div class="manifesto-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/>
+              </svg>
+            </div>
+            <h3>本地优先 (Local First)</h3>
           </div>
-          <h3>本地优先 (Local First)</h3>
-          <p>所有处理均在你的 Mac 本地静默完成，不依赖外部服务器，即使断网也能全力运作。</p>
+          <p>所有处理均在你的 Mac 与 iOS 设备本地静默完成，不依赖外部服务器，即使断网也能全力运作。</p>
         </div>
         <div class="manifesto-card reveal">
-          <div class="manifesto-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            </svg>
+          <div class="manifesto-card-header">
+            <div class="manifesto-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>隐私即承诺 (Privacy by Design)</h3>
           </div>
-          <h3>隐私即承诺 (Privacy by Design)</h3>
           <p>无账户登录，不收集使用习惯，零第三方分析追踪 SDK，保障私人数据的绝对纯净。</p>
         </div>
         <div class="manifesto-card reveal">
-          <div class="manifesto-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/>
-            </svg>
+          <div class="manifesto-card-header">
+            <div class="manifesto-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/>
+              </svg>
+            </div>
+            <h3>原生轻盈 (Apple Native)</h3>
           </div>
-          <h3>原生轻盈 (Mac Native)</h3>
-          <p>遵循 macOS 原生人机交互标准，极低内存与电量占用，为 Apple Silicon 芯片深度调优。</p>
+          <p>遵循 Apple 原生人机交互标准，极低内存与电量占用，为设备硬件深度调优。</p>
         </div>
       </div>
     </section>
