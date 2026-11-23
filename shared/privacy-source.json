@@ -3174,5 +3174,179 @@
         "text": "Email: zipmaster_support@126.com"
       }
     ]
+  },
+  "vertiplay": {
+    "zh-Hans": [
+      {
+        "type": "h1",
+        "text": "VertiPlay（爱播）隐私政策"
+      },
+      {
+        "type": "p",
+        "text": "生效日期：2026 年 11 月 23 日"
+      },
+      {
+        "type": "h2",
+        "text": "1. 适用范围与核心承诺"
+      },
+      {
+        "type": "p",
+        "text": "本隐私政策适用于 iOS 与 iPadOS 平台的 VertiPlay（简体中文名称：爱播）。VertiPlay 是一款面向私有媒体库用户的竖屏流媒体播放器。我们坚持“端侧直连、凭据隔离、零追踪分析”的隐私原则。"
+      },
+      {
+        "type": "p",
+        "text": "应用不设开发者账号系统，不运营任何用于采集、中转或分析用户观影数据的云端服务器，未集成任何第三方广告联盟、行为统计 SDK 或跨应用追踪（IDFA）。如有任何疑问，请通过邮件联系：zipmaster_support@126.com。"
+      },
+      {
+        "type": "h2",
+        "text": "2. 处理的数据与功能边界"
+      },
+      {
+        "type": "p",
+        "text": "私有媒体服务器直连：仅在你主动添加服务器地址与凭据后，应用直接向你配置的 Jellyfin、Emby、Plex 或 WebDAV / OpenList 服务器发起请求，以拉取媒体目录、封面海报、视频流、音轨字幕、章节及片头片尾标记（MediaSegments），并在你操作点赞收藏、标为已看、添加播放列表或恢复播放进度时与你的自有服务器同步。"
+      },
+      {
+        "type": "p",
+        "text": "远程会话投放与 AirPlay：当你在局域网或当前服务器下选择投放至其他活跃客户端（/Sessions）或使用系统 AirPlay / 画中画（PiP）时，播放指令直接发送至目标播放设备或经由 Apple 系统框架处理，不经过开发者服务器中转。"
+      },
+      {
+        "type": "p",
+        "text": "内置离线演示模式：应用内置四段原创演示视频与海报（DemoAurora、DemoNeonCity、DemoEmber、DemoCinema）。在未配置任何服务器或处于断网状态时，演示模式完全读取应用安装包内本地资源运行，不产生任何网络流量。"
+      },
+      {
+        "type": "h2",
+        "text": "3. 本机存储与凭据安全"
+      },
+      {
+        "type": "p",
+        "text": "iOS 钥匙串（Keychain）保护：你的媒体服务器密码与访问令牌（Token）仅保存于 iOS 系统钥匙串中，使用 kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly 保护属性，不会跨设备明文暴露或上传至开发者。"
+      },
+      {
+        "type": "p",
+        "text": "沙盒与偏好存储：服务器配置摘要、按服务器隔离的搜索历史、画质与字幕样式偏好、旋转记忆、本地播放列表与断点续播位置保存于设备本地 UserDefaults 与应用沙盒目录。离线下载缓存的视频文件保存在应用专属沙盒目录（VertiPlayOffline/），便于在无网环境下实现零流量播放。"
+      },
+      {
+        "type": "h2",
+        "text": "4. 系统权限使用说明"
+      },
+      {
+        "type": "p",
+        "text": "本地网络权限（NSLocalNetworkUsageDescription）：用于连接同一局域网内搭建的 Jellyfin、Emby、Plex 或 WebDAV / OpenList 服务器，以及探索本地投放目标与 AirPlay 设备。"
+      },
+      {
+        "type": "p",
+        "text": "面容 ID 权限（NSFaceIDUsageDescription）：完全可选。仅当你在设置中主动开启“应用锁”时，应用调用 Apple LocalAuthentication 框架进行端侧身份解锁，并在切换至后台多任务视图时覆盖隐私遮罩。生物特征数据由系统安全隔区（Secure Enclave）处理，应用无法获取任何面容或指纹信息。"
+      },
+      {
+        "type": "p",
+        "text": "后台音频权限（UIBackgroundModes: audio）：用于在锁屏状态、画中画模式或切换应用时保持媒体音频播放，并配合系统 MediaPlayer 锁屏控制中心展示当前播放信息。"
+      },
+      {
+        "type": "h2",
+        "text": "5. 数据保留、清理与用户控制"
+      },
+      {
+        "type": "p",
+        "text": "你可以随时在应用“设置 → 缓存管理”中查看离线缓存占用空间、配置缓存大小与保留天数上限、删除单个或全部离线缓存视频，或在搜索栏清理近期搜索历史。移除服务器配置或直接卸载 VertiPlay 应用将清除所有本地沙盒数据及对应的钥匙串凭据。"
+      },
+      {
+        "type": "h2",
+        "text": "6. 儿童隐私、政策更新与联系我们"
+      },
+      {
+        "type": "p",
+        "text": "VertiPlay 不会故意收集 13 岁（或当地适用法律规定年龄）以下儿童的个人信息。若本隐私政策发生修订，我们将在本页面更新内容与生效日期。"
+      },
+      {
+        "type": "p",
+        "text": "支持邮箱：zipmaster_support@126.com（来信时请附带应用版本、iOS 版本与问题说明，切勿发送你的服务器密码或访问令牌）。"
+      }
+    ],
+    "en": [
+      {
+        "type": "h1",
+        "text": "VertiPlay Privacy Policy"
+      },
+      {
+        "type": "p",
+        "text": "Effective Date: November 23, 2026"
+      },
+      {
+        "type": "h2",
+        "text": "1. Scope and Core Commitments"
+      },
+      {
+        "type": "p",
+        "text": "This Privacy Policy applies to VertiPlay for iOS and iPadOS. VertiPlay is a vertical streaming player built for personal media libraries. We adhere strictly to Direct Connection, Keychain Isolation, and Zero Telemetry."
+      },
+      {
+        "type": "p",
+        "text": "VertiPlay operates no developer user accounts, maintains no developer backend servers to collect or relay your viewing habits, and contains zero third-party advertising networks, analytics SDKs, or cross-app tracking (IDFA). For questions, contact zipmaster_support@126.com."
+      },
+      {
+        "type": "h2",
+        "text": "2. Handled Data and Functional Boundaries"
+      },
+      {
+        "type": "p",
+        "text": "Direct Personal Media Server Connections: Only after you explicitly configure a server URL and credentials does VertiPlay communicate directly with your Jellyfin, Emby, Plex, or WebDAV / OpenList server to retrieve catalogs, posters, media streams, audio/subtitle tracks, chapters, and MediaSegments, and to sync favorites, watched flags, playlists, or playback progress back to your own server."
+      },
+      {
+        "type": "p",
+        "text": "Remote Session Casting and AirPlay: When you cast playback to an active client on your media server (/Sessions) or stream via Apple AirPlay or Picture-in-Picture (PiP), control commands go directly to your target server or Apple system frameworks without passing through any developer server."
+      },
+      {
+        "type": "p",
+        "text": "Offline Demo Mode: VertiPlay bundles four original sample clips and posters (DemoAurora, DemoNeonCity, DemoEmber, DemoCinema). Demo Mode operates entirely offline from bundled app assets with zero network traffic."
+      },
+      {
+        "type": "h2",
+        "text": "3. Local Storage and Credential Security"
+      },
+      {
+        "type": "p",
+        "text": "iOS Keychain Protection: Server passwords and authentication tokens are stored exclusively in the iOS Keychain using kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly and are never exposed to or collected by the developer."
+      },
+      {
+        "type": "p",
+        "text": "App Sandbox and Preferences: Server profiles, per-server search history, quality and subtitle preferences, video rotation overrides, local playlists, and resume timestamps are stored locally in UserDefaults and the app sandbox. Offline cached videos reside in the sandbox directory (VertiPlayOffline/) for zero-data playback."
+      },
+      {
+        "type": "h2",
+        "text": "4. System Permissions"
+      },
+      {
+        "type": "p",
+        "text": "Local Network Permission (NSLocalNetworkUsageDescription): Used to connect to Jellyfin, Emby, Plex, or WebDAV / OpenList servers hosted on your local Wi-Fi/LAN and to discover AirPlay or local cast targets."
+      },
+      {
+        "type": "p",
+        "text": "Face ID Permission (NSFaceIDUsageDescription): Optional. Only when you enable App Lock in Settings does VertiPlay invoke Apple LocalAuthentication for on-device biometric unlock and display a privacy shield in the app switcher. Biometric data remains exclusively inside Apple’s Secure Enclave."
+      },
+      {
+        "type": "p",
+        "text": "Background Audio (UIBackgroundModes: audio): Supports uninterrupted audio playback during screen lock, Picture-in-Picture, or backgrounding, along with system MediaPlayer Lock Screen controls."
+      },
+      {
+        "type": "h2",
+        "text": "5. Retention, Clearing, and User Control"
+      },
+      {
+        "type": "p",
+        "text": "You can inspect storage usage, set cache size and retention limits, delete cached videos, or clear search history at any time from Settings → Cache Management. Removing a server profile or deleting VertiPlay permanently removes local sandbox files and Keychain entries."
+      },
+      {
+        "type": "h2",
+        "text": "6. Children's Privacy, Updates, and Contact"
+      },
+      {
+        "type": "p",
+        "text": "VertiPlay does not knowingly collect personal information from children under 13. Any updates to this policy will be published on this page with an updated effective date."
+      },
+      {
+        "type": "p",
+        "text": "Support Email: zipmaster_support@126.com (please include your app version, iOS version, and issue details; never send server passwords or access tokens)."
+      }
+    ]
   }
 }

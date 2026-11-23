@@ -33,5 +33,6 @@ Projects:
 - netpulse
 - pastepipe
 - shelflife
+- vertiplay
 - wavedeck
 - zipmaster

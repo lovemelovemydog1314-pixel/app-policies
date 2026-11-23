@@ -759,6 +759,56 @@
         fr: ['Débogage BLE & GATT', 'ONVIF & RTSP en direct', 'Découverte LAN & Débit'],
         es: ['Depuración BLE y GATT', 'ONVIF y RTSP directo', 'Detección LAN y Velocidad']
       }
+    },
+    {
+      id: 'vertiplay',
+      path: 'vertiplay/',
+      icon: 'vertiplay/assets/icon.png',
+      color: '#ff4d6d',
+      onColor: '#2b030c',
+      colorLight: '#e11d48',
+      platform: 'iOS',
+      category: 'media',
+      names: {
+        'zh-Hans': 'VertiPlay 爱播',
+        'zh-Hant': 'VertiPlay 愛播',
+        en: 'VertiPlay',
+        ja: 'VertiPlay',
+        ko: 'VertiPlay',
+        de: 'VertiPlay',
+        fr: 'VertiPlay',
+        es: 'VertiPlay'
+      },
+      taglines: {
+        'zh-Hans': '私密云端媒体库，刷剧看片如丝般顺滑。',
+        'zh-Hant': '私密雲端媒體庫，刷劇看片如絲般順滑。',
+        en: 'Your private media servers, streamed in a fluid vertical feed.',
+        ja: '自宅サーバーの映像を、心地よい縦スワイプで自在に再生。',
+        ko: '개인 미디어 서버의 영상을 매끄러운 세로 피드로 감상하세요.',
+        de: 'Deine privaten Medienserver im flüssigen Hochformat-Feed.',
+        fr: 'Vos serveurs média privés dans un flux vertical ultra-fluide.',
+        es: 'Tus servidores multimedia privados en un feed vertical fluido.'
+      },
+      descriptions: {
+        'zh-Hans': '直连 Jellyfin、Emby、Plex 与 WebDAV / OpenList 服务器，支持单手竖刷、实时拖拽预览、跳过片头片尾与离线缓存。',
+        'zh-Hant': '直連 Jellyfin、Emby、Plex 與 WebDAV / OpenList 伺服器，支援單手豎刷、即時拖曳預覽、跳過片頭片尾與離線快取。',
+        en: 'Connect directly to Jellyfin, Emby, Plex, and WebDAV / OpenList servers with fluid vertical swiping, live scrub previews, intro skip, and offline caching.',
+        ja: 'Jellyfin・Emby・Plex・WebDAV / OpenList に直接接続。縦スワイプ、ライブシークプレビュー、イントロスキップ、オフライン保存に対応。',
+        ko: 'Jellyfin, Emby, Plex 및 WebDAV / OpenList 서버에 직접 연결하여 세로 스와이프, 실시간 탐색, 오프닝 건너뛰기 및 오프라인 저장을 지원합니다.',
+        de: 'Direktverbindung zu Jellyfin, Emby, Plex & WebDAV / OpenList mit flüssigem Wischen, Live-Vorschau, Intro-Skip und Offline-Cache.',
+        fr: 'Connexion directe à Jellyfin, Emby, Plex & WebDAV / OpenList avec flux vertical fluide, aperçu en direct, saut d’intro et cache hors ligne.',
+        es: 'Conexión directa a Jellyfin, Emby, Plex y WebDAV / OpenList con deslizamiento vertical fluido, vista previa, salto de intro y caché offline.'
+      },
+      chips: {
+        'zh-Hans': ['Jellyfin / Emby / Plex', '竖屏预热 & 跳过片头', '离线缓存 & A-B 复读'],
+        'zh-Hant': ['Jellyfin / Emby / Plex', '豎屏預載 & 跳過片頭', '離線快取 & A-B 複讀'],
+        en: ['Jellyfin / Emby / Plex', 'Fluid Feed & Intro Skip', 'Offline Cache & A-B Loop'],
+        ja: ['Jellyfin / Emby / Plex', '縦型フィード & OPスキップ', 'オフライン & A-B リピート'],
+        ko: ['Jellyfin / Emby / Plex', '세로 피드 & 오프닝 스킵', '오프라인 저장 & A-B 반복'],
+        de: ['Jellyfin / Emby / Plex', 'Vertikal-Feed & Intro-Skip', 'Offline-Cache & A-B-Loop'],
+        fr: ['Jellyfin / Emby / Plex', 'Flux vertical & Saut d’intro', 'Cache offline & Boucle A-B'],
+        es: ['Jellyfin / Emby / Plex', 'Feed vertical y Intro Skip', 'Caché offline y Bucle A-B']
+      }
     }
   ];
 
@@ -766,10 +816,10 @@
   const UI = {
     'zh-Hans': {
       brand: 'Mac & iOS 独立精选',
-      heroBadge: '15 款精选原生应用 · Apple 生态专属',
+      heroBadge: '16 款精选原生应用 · Apple 生态专属',
       heroTitle: "专注 Apple 原生体验，为纯粹与隐私而生。",
-      heroSubtitle: '精心雕琢的 15 款实用工具。坚持本机运算、零云端依赖、无追踪无广告。',
-      stat1: '15 款独立应用',
+      heroSubtitle: '精心雕琢的 16 款实用工具。坚持本机运算、零云端依赖、无追踪无广告。',
+      stat1: '16 款独立应用',
       stat2: '100% 本地运算',
       stat3: '零数据上传',
       stat4: '支持 8 国语言',
@@ -805,10 +855,10 @@
     },
     'zh-Hant': {
       brand: 'Mac & iOS 獨立精選',
-      heroBadge: '15 款精選原生應用 · Apple 生態專屬',
+      heroBadge: '16 款精選原生應用 · Apple 生態專屬',
       heroTitle: '專注原生體驗，為純粹與隱私而生。',
-      heroSubtitle: '精心雕琢的 15 款實用工具。堅持本機運算、零雲端依賴、無追蹤無廣告。',
-      stat1: '15 款獨立 App',
+      heroSubtitle: '精心雕琢的 16 款實用工具。堅持本機運算、零雲端依賴、無追蹤無廣告。',
+      stat1: '16 款獨立 App',
       stat2: '100% 本機運算',
       stat3: '零資料上傳',
       stat4: '支援 8 種語言',
@@ -844,10 +894,10 @@
     },
     en: {
       brand: 'Apple Crafted Apps',
-      heroBadge: '15 Native Apps · macOS & iOS',
+      heroBadge: '16 Native Apps · macOS & iOS',
       heroTitle: 'Pure Apple Experience. Built for Speed and Privacy.',
-      heroSubtitle: 'A curated suite of 15 utilities for power users. 100% on-device processing, no cloud accounts, and zero telemetry.',
-      stat1: '15 Standalone Apps',
+      heroSubtitle: 'A curated suite of 16 utilities for power users. 100% on-device processing, no cloud accounts, and zero telemetry.',
+      stat1: '16 Standalone Apps',
       stat2: '100% On-Device',
       stat3: 'Zero Cloud Storage',
       stat4: '8 Languages Ready',
@@ -883,10 +933,10 @@
     },
     ja: {
       brand: 'Apple 厳選ツール',
-      heroBadge: '15の厳選ネイティブアプリ · macOS & iOS',
+      heroBadge: '16の厳選ネイティブアプリ · macOS & iOS',
       heroTitle: '心地よさと安心。純粋さとプライバシーのために。',
-      heroSubtitle: '日々の暮らしと仕事のために設計された15の実用ツール。端末内処理、クラウド不要、広告・追跡ゼロ。',
-      stat1: '15の独立アプリ',
+      heroSubtitle: '日々の暮らしと仕事のために設計された16の実用ツール。端末内処理、クラウド不要、広告・追跡ゼロ。',
+      stat1: '16の独立アプリ',
       stat2: '100% 端末内処理',
       stat3: 'データ送信なし',
       stat4: '8言語対応',
@@ -922,10 +972,10 @@
     },
     ko: {
       brand: 'Apple 엄선 앱',
-      heroBadge: '15가지 엄선 도구 · macOS & iOS',
+      heroBadge: '16가지 엄선 도구 · macOS & iOS',
       heroTitle: '순수한 네이티브 경험. 효율성과 프라이버시를 위해.',
-      heroSubtitle: '사용자를 위해 정성껏 다듬은 15가지 유틸리티. 100% 기기 내 처리, 클라우드 불필요, 광고 및 추적 없음.',
-      stat1: '15개의 독립 앱',
+      heroSubtitle: '사용자를 위해 정성껏 다듬은 16가지 유틸리티. 100% 기기 내 처리, 클라우드 불필요, 광고 및 추적 없음.',
+      stat1: '16개의 독립 앱',
       stat2: '100% 로컬 연산',
       stat3: '클라우드 전송 없음',
       stat4: '8개 언어 지원',
@@ -961,10 +1011,10 @@
     },
     de: {
       brand: 'Apple Crafted Apps',
-      heroBadge: '15 Native Werkzeuge · Für macOS & iOS',
+      heroBadge: '16 Native Werkzeuge · Für macOS & iOS',
       heroTitle: 'Reines Apple-Erlebnis. Entwickelt für Geschwindigkeit und Datenschutz.',
-      heroSubtitle: '15 sorgfältig entwickelte Tools. Lokale Verarbeitung, kein Cloud-Zwang, keine Werbung oder Tracking.',
-      stat1: '15 Apps',
+      heroSubtitle: '16 sorgfältig entwickelte Tools. Lokale Verarbeitung, kein Cloud-Zwang, keine Werbung oder Tracking.',
+      stat1: '16 Apps',
       stat2: '100% Lokal',
       stat3: 'Kein Upload',
       stat4: '8 Sprachen',
@@ -1000,10 +1050,10 @@
     },
     fr: {
       brand: 'Apple Crafted Apps',
-      heroBadge: '15 Outils Natifs · Pour macOS & iOS',
+      heroBadge: '16 Outils Natifs · Pour macOS & iOS',
       heroTitle: 'L’expérience Apple épurée. Conçu pour la vitesse et la confidentialité.',
-      heroSubtitle: 'Une collection de 15 outils pensés pour vos appareils. Traitement local, sans compte cloud, sans publicité ni pistage.',
-      stat1: '15 Applications',
+      heroSubtitle: 'Une collection de 16 outils pensés pour vos appareils. Traitement local, sans compte cloud, sans publicité ni pistage.',
+      stat1: '16 Applications',
       stat2: '100% Local',
       stat3: 'Zéro Cloud',
       stat4: '8 Langues',
@@ -1039,10 +1089,10 @@
     },
     es: {
       brand: 'Apple Crafted Apps',
-      heroBadge: '15 Herramientas Nativas · Para macOS & iOS',
+      heroBadge: '16 Herramientas Nativas · Para macOS & iOS',
       heroTitle: 'Experiencia nativa de Apple. Creada para la velocidad y privacidad.',
-      heroSubtitle: '15 utilidades diseñadas con precisión. Procesamiento en el dispositivo, sin cuentas en la nube ni rastreo.',
-      stat1: '15 Apps',
+      heroSubtitle: '16 utilidades diseñadas con precisión. Procesamiento en el dispositivo, sin cuentas en la nube ni rastreo.',
+      stat1: '16 Apps',
       stat2: '100% Local',
       stat3: 'Cero Nube',
       stat4: '8 Idiomas',

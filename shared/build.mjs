@@ -187,6 +187,8 @@ const html = (app, page) => {
       ? 'PastePipe 默认纯本地离线处理，无开发者运营的云端账户或追踪服务器。若主动开启可选的私有 iCloud 同步，文本历史与片段通过 Apple CloudKit 同步至你个人的私有数据库，可随时关闭。'
       : app === 'netpulse'
       ? 'NetPulse 仅在本地网络与蓝牙范围内执行扫描、GATT 调试与 RTSP 监控。应用无自建云端服务器、无第三方追踪或广告 SDK。测速功能使用官方测速端点，仅在用户主动测速时交互。'
+      : app === 'vertiplay'
+      ? 'VertiPlay 仅在你添加服务器后直接连接你配置的 Jellyfin、Emby、Plex 或 WebDAV / OpenList 服务器。无自建中转云端、无开发者账号体系，不含任何第三方统计或广告追踪 SDK。'
       : '应用不提供开发者运营的云同步或广告跟踪服务。系统功能及第三方服务仅在你主动使用时参与。';
     const sections = [
       ['应用处理的信息', t.body[idx]],

@@ -309,6 +309,23 @@ body[data-app="netpulse"] {
   --tint-border: rgba(2, 132, 199, 0.18);
 }
 
+body[data-app="vertiplay"] {
+  --accent: #ff4d6d;
+  --accent-glow: rgba(255, 45, 85, 0.34);
+  --accent-subtle: rgba(255, 45, 85, 0.14);
+  --on-accent: #2b030c;
+  --tint: rgba(255, 45, 85, 0.09);
+  --tint-border: rgba(255, 45, 85, 0.26);
+}
+:root[data-theme="light"] body[data-app="vertiplay"] {
+  --accent: #e11d48;
+  --accent-glow: rgba(225, 29, 72, 0.18);
+  --accent-subtle: rgba(225, 29, 72, 0.08);
+  --on-accent: #ffffff;
+  --tint: rgba(225, 29, 72, 0.06);
+  --tint-border: rgba(225, 29, 72, 0.18);
+}
+
 /* ==========================================================================
    Base & Resets
    ========================================================================== */

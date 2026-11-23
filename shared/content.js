@@ -926,6 +926,109 @@
         ['直接粘贴为什么需要辅助功能权限？', '直接粘贴到上一个应用需要辅助功能权限来模拟按键。未授权时仍可正常使用回车复制到剪贴板。']
       ]
     },
+    'vertiplay': {
+      name: 'VertiPlay', platform: 'iOS',
+      platformTag: { 'zh-Hans': 'iPhone & iPad · iOS 17+', 'zh-Hant': 'iPhone & iPad · iOS 17+', en: 'iPhone & iPad · iOS 17+', ja: 'iPhone & iPad · iOS 17+', ko: 'iPhone & iPad · iOS 17+', de: 'iPhone & iPad · iOS 17+', fr: 'iPhone & iPad · iOS 17+', es: 'iPhone & iPad · iOS 17+' },
+      footerNote: {
+        'zh-Hans': '为私有媒体库打造的极致竖屏影院与短剧播放器。',
+        'zh-Hant': '為私有媒體庫打造的極致豎屏影院與短劇播放器。',
+        en: 'Private-cloud vertical cinema for Jellyfin, Emby, Plex & WebDAV.',
+        ja: 'プライベートメディアサーバー向けの縦型シネマ＆ショート動画プレーヤー。',
+        ko: '개인 미디어 서버를 위한 세로형 시네마 및 숏폼 플레이어.',
+        de: 'Vertikales Privatkino für Jellyfin, Emby, Plex & WebDAV.',
+        fr: 'Cinéma vertical privé pour Jellyfin, Emby, Plex & WebDAV.',
+        es: 'Cine vertical privado para Jellyfin, Emby, Plex y WebDAV.'
+      },
+      tagline: {
+        'zh-Hans': '私密云端媒体库，刷剧看片如丝般顺滑。',
+        'zh-Hant': '私密雲端媒體庫，刷劇看片如絲般順滑。',
+        en: 'Your private media servers, streamed in a fluid vertical feed.',
+        ja: '自宅サーバーの映像を、心地よい縦スワイプで自在に再生。',
+        ko: '개인 미디어 서버의 영상을 매끄러운 세로 피드로 감상하세요.',
+        de: 'Deine privaten Medienserver im flüssigen Hochformat-Feed.',
+        fr: 'Vos serveurs média privés dans un flux vertical ultra-fluide.',
+        es: 'Tus servidores multimedia privados en un feed vertical fluido.'
+      },
+      description: {
+        'zh-Hans': 'VertiPlay 直连你的 Jellyfin、Emby、Plex 与 WebDAV / OpenList 服务器，带来单手极速竖刷、实时帧预览拖拽、跳过片头片尾、A-B 复读、离线缓存与面容 ID 隐私锁。',
+        'zh-Hant': 'VertiPlay 直連你的 Jellyfin、Emby、Plex 與 WebDAV / OpenList 伺服器，帶來單手極速豎刷、即時幀預覽拖曳、跳過片頭片尾、A-B 複讀、離線快取與 Face ID 隱私鎖。',
+        en: 'VertiPlay connects directly to your Jellyfin, Emby, Plex, and WebDAV / OpenList servers with one-handed vertical swiping, live scrub previews, intro/credits skipping, A-B looping, offline caching, and Face ID lock.',
+        ja: 'VertiPlay は Jellyfin、Emby、Plex、WebDAV / OpenList に直接接続。片手操作の縦スワイプ、ライブシークプレビュー、イントロスキップ、A-B リピート、オフライン保存、Face ID ロックに対応。',
+        ko: 'VertiPlay는 Jellyfin, Emby, Plex 및 WebDAV / OpenList 서버에 직접 연결하여 한 손 세로 스와이프, 실시간 프리뷰 탐색, 오프닝 건너뛰기, A-B 구간 반복, 오프라인 저장 및 Face ID 잠금을 제공합니다.',
+        de: 'VertiPlay verbindet sich direkt mit Jellyfin, Emby, Plex und WebDAV / OpenList – mit einhändigem Wischen, Live-Vorschau-Scrubbing, Intro-Skip, A-B-Loop, Offline-Cache und Face ID-Sperre.',
+        fr: 'VertiPlay se connecte directement à Jellyfin, Emby, Plex et WebDAV / OpenList avec navigation verticale fluide, aperçu en direct, saut d’intro, boucle A-B, cache hors ligne et verrouillage Face ID.',
+        es: 'VertiPlay se conecta directamente a Jellyfin, Emby, Plex y WebDAV / OpenList con deslizamiento vertical fluido, vista previa en vivo, salto de intro, bucle A-B, caché sin conexión y bloqueo Face ID.'
+      },
+      features: [
+        ['丝滑竖屏瀑布流与预热切集', 'Fluid Vertical Feed & Scrubbing', 'Flux vertical fluide & Aperçu direct', 'Flüssiger Feed & Live-Scrubbing', 'Feed vertical fluido y vista previa', '매끄러운 세로 피드 및 탐색', '滑らかな縦スワイプ & プレビュー', '絲滑豎屏瀑布流與預熱切集'],
+        ['多协议私有媒体库直连', 'Jellyfin, Emby, Plex & WebDAV', 'Jellyfin, Emby, Plex & WebDAV', 'Jellyfin, Emby, Plex & WebDAV', 'Jellyfin, Emby, Plex y WebDAV', 'Jellyfin, Emby, Plex & WebDAV 직결', 'Jellyfin・Emby・Plex・WebDAV 直結', '多協定私有媒體庫直連'],
+        ['跳过片头片尾与 A-B 复读', 'Intro Skip & A-B Segment Loop', 'Saut d’intro & Boucle A-B', 'Intro-Skip & A-B-Schleife', 'Salto de intro y bucle A-B', '오프닝 건너뛰기 및 A-B 반복', 'イントロスキップ & A-B リピート', '跳過片頭片尾與 A-B 複讀'],
+        ['离线缓存、投屏与面容锁', 'Offline Cache, Cast & Face ID', 'Hors ligne, Cast & Face ID', 'Offline-Cache, Cast & Face ID', 'Caché offline, Cast y Face ID', '오프라인 저장, 전송 및 Face ID', 'オフライン保存・キャスト・Face ID', '離線快取、投屏與面容鎖']
+      ],
+      featuresDetail: [
+        {
+          title: { 'zh-Hans': '丝滑竖屏瀑布流与实时拖拽预览', 'zh-Hant': '絲滑豎屏瀑布流與即時拖曳預覽', en: 'Fluid Vertical Feed & Live Scrubbing', ja: '滑らかな縦スワイプ＆ライブシーク', ko: '매끄러운 세로 피드 및 실시간 탐색', de: 'Flüssiger Feed & Live-Scrubbing', fr: 'Flux vertical fluide & Aperçu en direct', es: 'Feed vertical fluido y vista previa' },
+          desc: { 'zh-Hans': '1:1 跟手竖滑与双向播放器预加载消除黑屏卡顿；支持单指长按三档倍速、双指自由缩放平移及底部缩略图实时拖拽。', 'zh-Hant': '1:1 跟手豎滑與雙向播放器預載消除黑屏卡頓；支援單指長按三檔倍速、雙指自由縮放平移及底部縮圖即時拖曳。', en: '1:1 paging physics with pre-warmed adjacent players eliminate black flashes; includes 1.5×–3.0× press-hold speed, pinch-zoom pan, and thumbnail scrubbing.', ja: '1:1 スワイプと先読みプレーヤーで黒画面を解消。長押し倍速（1.5×〜3.0×）、ピンチズーム移動、サムネイルプレビューに対応。', ko: '1:1 스와이프와 사전 로딩 플레이어로 화면 끊김을 없앴으며, 길게 눌러 배속 조절, 핀치 줌 이동 및 썸네일 탐색을 지원합니다.', de: '1:1-Wischphysik und vorgeladene Player verhindern schwarze Frames – inklusive Mehrfach-Speed, Pinch-Zoom und Thumbnail-Scrubbing.', fr: 'Défilement 1:1 avec préchargement anti-écran noir, vitesse par appui long (1,5×–3×), zoom libre et aperçu sur la barre.', es: 'Deslizamiento 1:1 con precarga sin pantallas en negro, velocidad por pulsación larga (1.5×–3.0×), zoom con pinza y vista previa.' }
+        },
+        {
+          title: { 'zh-Hans': '多协议私有媒体库直连', 'zh-Hant': '多協定私有媒體庫直連', en: 'Jellyfin, Emby, Plex & WebDAV Direct Play', ja: 'Jellyfin・Emby・Plex・WebDAV 直結', ko: 'Jellyfin, Emby, Plex & WebDAV 직결', de: 'Jellyfin, Emby, Plex & WebDAV Direkt', fr: 'Lecture directe Jellyfin, Emby, Plex & WebDAV', es: 'Conexión directa Jellyfin, Emby, Plex y WebDAV' },
+          desc: { 'zh-Hans': '无需中转服务器，直连家庭 NAS 与远程节点；清晰展示硬件直放/转码路径，支持多服务端配置自动合并与媒体库隐藏控制。', 'zh-Hant': '無需中轉伺服器，直連家庭 NAS 與遠端節點；清晰展示硬體直放/轉碼路徑，支援多伺服器設定自動合併與媒體庫隱藏控制。', en: 'Connect directly to your NAS or remote server with no relay; clearly shows Direct Play vs. HLS fallback routes, local/remote URL merge, and library filters.', ja: '中継サーバー不要で自宅 NAS や外部ノードへ直結。Direct Play / HLS 経路表示、ローカル・リモート自動切替、ライブラリ表示制御に対応。', ko: '중계 서버 없이 개인 NAS에 직접 연결합니다. Direct Play/HLS 경로 표시, 로컬·원격 주소 병합 및 라이브러리 숨기기를 지원합니다.', de: 'Direkte Verbindung ohne Relay-Server – zeigt Direct-Play- vs. HLS-Routen, automatische URL-Zusammenführung und Bibliotheksfilter.', fr: 'Connexion directe sans serveur relais – affiche Direct Play vs HLS, fusion d’adresses locale/distante et masquage de bibliothèques.', es: 'Conexión directa sin intermediarios – muestra rutas Direct Play vs HLS, fusión de URL local/remota y ocultación de bibliotecas.' }
+        },
+        {
+          title: { 'zh-Hans': '跳过片头片尾与 A-B 区间复读', 'zh-Hant': '跳過片頭片尾與 A-B 區間複讀', en: 'Smart Intro Skip & A-B Segment Loop', ja: 'イントロスキップ＆A-B 区間リピート', ko: '오프닝 건너뛰기 및 A-B 구간 반복', de: 'Intro-Skip & A-B-Schleife', fr: 'Saut d’intro & Boucle A-B', es: 'Salto de intro y bucle A-B' },
+          desc: { 'zh-Hans': '读取服务器 MediaSegments 与章节标记实现自动跳过片头片尾；支持精确 A-B 片段循环、画面旋转校正及外挂字幕样式调节。', 'zh-Hant': '讀取伺服器 MediaSegments 與章節標記實現自動跳過片頭片尾；支援精確 A-B 片段循環、畫面旋轉校正及外掛字幕樣式調節。', en: 'Uses server MediaSegments and chapters for one-tap or auto Intro/Credits skip, plus precision A-B looping, rotation fixes, and subtitle scaling.', ja: 'MediaSegments とチャプターから OP/ED を自動スキップ。精密な A-B リピート、回転補正、字幕サイズ・位置調整も搭載。', ko: 'MediaSegments와 챕터를 활용해 오프닝·엔딩을 자동 건너뛰며, 정밀 A-B 반복, 화면 회전 보정 및 자막 크기 조절을 지원합니다.', de: 'Nutzt MediaSegments und Kapitel für automatisches Intro-Skip, präzise A-B-Wiederholung, Drehkorrektur und Untertitel-Skalierung.', fr: 'Exploite MediaSegments et chapitres pour sauter génériques, avec boucle A-B précise, correction de rotation et taille des sous-titres.', es: 'Usa MediaSegments y capítulos para saltar intros y créditos, con bucle A-B preciso, ajuste de rotación y escala de subtítulos.' }
+        },
+        {
+          title: { 'zh-Hans': '离线缓存、投屏与面容 ID 隐私锁', 'zh-Hant': '離線快取、投屏與 Face ID 隱私鎖', en: 'Offline Cache, Cast & Face ID Shield', ja: 'オフライン保存・キャスト・Face ID 保護', ko: '오프라인 저장, 전송 및 Face ID 보호', de: 'Offline-Cache, Cast & Face ID-Schutz', fr: 'Cache hors ligne, Cast & Bouclier Face ID', es: 'Caché sin conexión, Cast y bloqueo Face ID' },
+          desc: { 'zh-Hans': '支持离线下载至本机沙盒零流量观看、PiP 画中画、AirPlay 与服务器远程投放、16:9 全屏影院手势，以及 Face ID 后台隐私遮罩。', 'zh-Hant': '支援離線下載至本機沙盒零流量觀看、PiP 畫中畫、AirPlay 與伺服器遠端投放、16:9 全螢幕影院手勢，以及 Face ID 背景隱私遮罩。', en: 'Cache videos locally for zero-data playback, use PiP, AirPlay, or remote session casting, swipe brightness/volume in cinema mode, and lock with Face ID.', ja: '端末サンドボックスへのオフライン保存、PiP、AirPlay・リモート再生、シネマモードの輝度・音量ジェスチャー、Face ID ロックに対応。', ko: '로컬 샌드박스 오프라인 저장, PiP, AirPlay 및 원격 세션 전송, 시네마 모드 밝기/음량 제스처, Face ID 잠금을 제공합니다.', de: 'Lokaler Offline-Cache, PiP, AirPlay und Remote-Cast, Kino-Gesten für Helligkeit/Lautstärke sowie Face ID-Schutz im App-Switcher.', fr: 'Cache local hors ligne, PiP, AirPlay et diffusion de session, gestes luminosité/volume en plein écran et verrouillage Face ID.', es: 'Caché local sin consumo, PiP, AirPlay y envío remoto, gestos de brillo/volumen en cine y bloqueo biométrico Face ID.' }
+        }
+      ],
+      factStrip: {
+        'zh-Hans': ['凭据存 iOS 钥匙串', '直连自建服务器', '零追踪与广告 SDK'],
+        'zh-Hant': ['憑證存 iOS 鑰匙圈', '直連自建伺服器', '零追蹤與廣告 SDK'],
+        en: ['Keychain Credentials', 'Direct Server Connection', 'Zero Tracking or Ads'],
+        ja: ['Keychain 認証保護', 'サーバー直接接続', '追跡・広告ゼロ'],
+        ko: ['Keychain 자격 증명 보호', '서버 직접 연결', '추적 및 광고 없음'],
+        de: ['Keychain-Schutz', 'Direkte Serververbindung', 'Kein Tracking/Werbung'],
+        fr: ['Identifiants Keychain', 'Connexion directe', 'Zéro suivi ni pub'],
+        es: ['Credenciales en Keychain', 'Conexión directa', 'Sin rastreo ni anuncios']
+      },
+      privacySummary: {
+        'zh-Hans': 'VertiPlay 仅在你主动添加服务器后直连你的个人媒体库；密码与令牌保存在 iOS 系统钥匙串，无任何开发者后端服务器、账号体系或第三方统计追踪 SDK。',
+        'zh-Hant': 'VertiPlay 僅在你主動新增伺服器後直連你的個人媒體庫；密碼與權杖保存在 iOS 系統鑰匙圈，無任何開發者後端伺服器、帳號體系或第三方統計追蹤 SDK。',
+        en: 'VertiPlay connects solely to the personal media servers you configure. Tokens and passwords stay in the iOS Keychain, with no developer backend, accounts, or tracking SDKs.',
+        ja: 'VertiPlay は設定された個人メディアサーバーに直接接続します。パスワードとトークンは iOS Keychain に保管され、開発者サーバーや追跡 SDK は一切ありません。',
+        ko: 'VertiPlay는 사용자가 추가한 개인 미디어 서버에만 직접 연결합니다. 비밀번호와 토큰은 iOS Keychain에 안전하게 저장되며 개발자 서버나 추적 SDK가 없습니다.',
+        de: 'VertiPlay verbindet sich ausschließlich mit deinen konfigurierten Medienservern. Passwörter bleiben im iOS-Schlüsselbund – ohne Entwickler-Server oder Tracking-SDKs.',
+        fr: 'VertiPlay se connecte uniquement aux serveurs média que vous configurez. Les identifiants restent dans le Trousseau iOS, sans serveur développeur ni traqueur.',
+        es: 'VertiPlay se conecta únicamente a los servidores multimedia que configures. Contraseñas y tokens se guardan en el Llavero de iOS, sin servidores propios ni rastreadores.'
+      },
+      customFaq: {
+        'zh-Hans': [
+          { q: 'VertiPlay 会收集我的服务器地址、密码或观影记录吗？', a: '不会。应用没有开发者运营的后端服务器或统计追踪 SDK。你填写的服务器地址与观看设置仅保存在本机沙盒及 UserDefaults，密码和访问令牌安全存储于 iOS 钥匙串（Keychain），绝不发送给开发者或任何第三方。' },
+          { q: '为什么首次连接需要“本地网络”权限？', a: '当你的 Jellyfin、Emby、Plex 或 WebDAV / OpenList 服务器位于家庭局域网（如 NAS 或局域网 IP）时，iOS 系统要求授权“本地网络”权限才能发起连接、发现本地投屏设备或使用 AirPlay。若仅使用演示模式或纯公网 HTTPS 地址，可按需决定是否开启。' },
+          { q: '面容 ID（Face ID）隐私锁如何保护数据？', a: '启用应用锁后，VertiPlay 通过 Apple LocalAuthentication 框架在端侧完成生物识别验证，切换到系统多任务后台时也会自动覆盖黑色隐私遮罩，应用无法也绝不会读取你的面容特征数据。' },
+          { q: '如何管理或彻底清除离线缓存与搜索历史？', a: '你可以在应用“设置 → 缓存管理”中查看总占用空间、设置容量与保留天数上限，或一键清理离线视频与搜索记录。删除应用也会同步清除沙盒文件与本机数据。' }
+        ],
+        'zh-Hant': [
+          { q: 'VertiPlay 會收集我的伺服器位址、密碼或觀影紀錄嗎？', a: '不會。App 沒有開發者營運的後端伺服器或統計追蹤 SDK。你填寫的伺服器位址與觀看設定僅保存在本機沙盒及 UserDefaults，密碼與存取權杖安全儲存於 iOS 鑰匙圈（Keychain），絕不傳送給開發者或任何第三方。' },
+          { q: '為什麼首次連線需要「區域網路」權限？', a: '當你的 Jellyfin、Emby、Plex 或 WebDAV / OpenList 伺服器位於家庭區域網路（如 NAS 或區網 IP）時，iOS 系統要求授權「區域網路」權限才能發起連線、探索區網投放裝置或使用 AirPlay。' },
+          { q: 'Face ID 隱私鎖如何保護資料？', a: '啟用 App 鎖定後，VertiPlay 透過 Apple LocalAuthentication 框架在端側完成生物辨識驗證，切換到多工後台時也會自動覆蓋黑色隱私遮罩，App 絕不會讀取你的面容特徵資料。' },
+          { q: '如何管理或徹底清除離線快取與搜尋歷史？', a: '你可在「設定 → 快取管理」中檢視佔用空間、設定上限與保留天數，或一鍵清理離線影片與搜尋紀錄。解除安裝 App 也會清除沙盒檔案與本機資料。' }
+        ],
+        en: [
+          { q: 'Does VertiPlay collect my server URLs, passwords, or watch history?', a: 'No. VertiPlay has no developer backend and includes zero analytics or tracking SDKs. Server profiles and playback preferences stay in your local sandbox and UserDefaults, while passwords and tokens are stored exclusively in the iOS Keychain.' },
+          { q: 'Why does VertiPlay request Local Network permission?', a: 'iOS requires Local Network access whenever you connect to Jellyfin, Emby, Plex, or WebDAV / OpenList servers hosted on your home Wi-Fi / LAN (such as a NAS) or use AirPlay and local session casting. Offline Demo Mode works with zero network access.' },
+          { q: 'How does the Face ID privacy shield work?', a: 'When enabled in Settings, VertiPlay uses Apple’s LocalAuthentication framework for on-device biometric unlock and automatically masks the screen in the iOS app switcher. Biometric data never leaves the Secure Enclave.' },
+          { q: 'How can I manage or erase offline caches and search history?', a: 'Open Settings → Cache Management inside the app to inspect storage usage, set retention/size limits, or clear cached videos and search history at any time. Deleting the app removes all local sandbox data.' }
+        ]
+      },
+      faq: [
+        ['VertiPlay 会收集我的服务器地址、密码或观影记录吗？', '不会。应用无自建后台与追踪 SDK。服务器凭据保存于 iOS 钥匙串，播放偏好与缓存均留在本机沙盒。'],
+        ['为什么需要本地网络权限？', 'iOS 系统要求授权本地网络权限，才能连接局域网内的 Jellyfin、Emby、Plex 或 WebDAV/OpenList 服务器及投屏设备。'],
+        ['如何清除离线缓存与历史？', '可在应用设置中随时清理离线下载视频、搜索历史与继续观看记录。']
+      ]
+    },
 };
   const cloudAccountLabel = {
     'zh-Hans':'无需开发者云账户','zh-Hant':'無需開發者雲端帳戶',en:'No developer cloud account',
@@ -1183,6 +1286,38 @@
         '환경설정, 맞춤 워크플로 및 암호화된 기록은 로컬 앱 컨테이너에 보관됩니다. 선택적 손쉬운 사용 권한은 직접 붙여넣기 활성화 시에만 쓰이며, 화면 기록 권한은 ⌘⇧2 화면 OCR을 실행할 때만 지정 영역 캡처에 사용됩니다.',
         '設定、カスタムワークフロー、暗号化履歴はローカルアプリコンテナに保持されます。任意のアクセシビリティ権限は直接ペースト有効時のみ、画面収録権限は ⌘⇧2 画面 OCR を実行した時のみ指定領域の取得に使用されます。',
         '偏好設定、自訂管道工作流、置頂項與加密歷史均保存在 App 本機沙盒中。可選的輔助使用權限僅在啟用自動直接貼上時使用；螢幕錄製權限僅在觸發 ⌘⇧2 框選 OCR 時由 macOS 授權用於截取指定區域。'
+      ]
+    },
+    'vertiplay': {
+      title: [
+        '私有媒体服务器连接、离线缓存与钥匙串凭据',
+        'Media server connections, offline cache, and Keychain credentials',
+        'Connexions aux serveurs média, cache hors ligne et Trousseau',
+        'Medienserver-Verbindungen, Offline-Cache und Schlüsselbund',
+        'Conexiones a servidores, caché sin conexión y Llavero',
+        '미디어 서버 연결, 오프라인 캐시 및 키체인 자격 증명',
+        'メディアサーバー接続・オフラインキャッシュ・Keychain 認証',
+        '私有媒體伺服器連線、離線快取與鑰匙圈憑證'
+      ],
+      body: [
+        'VertiPlay 仅在你主动添加服务器配置后，直接与你指定的 Jellyfin、Emby、Plex 或 WebDAV / OpenList 服务器通信以获取片源、海报、字幕与章节标记，并按你的操作同步收藏或播放进度。内置演示模式完全使用安装包内素材离线运行，不产生任何外部网络请求。',
+        'VertiPlay communicates solely with the Jellyfin, Emby, Plex, or WebDAV / OpenList servers you configure to load media streams, artwork, subtitles, and chapters, and to sync favorites or watch progress per your actions. Built-in Demo Mode runs completely offline using bundled assets.',
+        'VertiPlay communique uniquement avec les serveurs Jellyfin, Emby, Plex ou WebDAV / OpenList que vous configurez pour lire flux, affiches, sous-titres et chapitres, et synchroniser vos favoris ou lectures. Le mode démo intégré fonctionne entièrement hors ligne.',
+        'VertiPlay kommuniziert ausschließlich mit den von dir konfigurierten Jellyfin-, Emby-, Plex- oder WebDAV-/OpenList-Servern, um Streams, Cover, Untertitel und Kapitel abzurufen sowie Favoriten und Wiedergabefortschritt zu synchronisieren. Der Demo-Modus läuft komplett offline.',
+        'VertiPlay se comunica únicamente con los servidores Jellyfin, Emby, Plex o WebDAV / OpenList que configures para cargar vídeos, carátulas, subtítulos y capítulos, y sincronizar favoritos o progreso. El modo demo integrado funciona totalmente sin conexión.',
+        'VertiPlay는 사용자가 직접 설정한 Jellyfin, Emby, Plex 또는 WebDAV / OpenList 서버와만 통신하여 영상 스트림, 포스터, 자막 및 챕터를 불러오고 즐겨찾기와 재생 위치를 동기화합니다. 내장 데모 모드는 완전히 오프라인으로 작동합니다.',
+        'VertiPlay は設定された Jellyfin、Emby、Plex、WebDAV / OpenList サーバーとのみ直接通信し、映像・ポスター・字幕・チャプターの取得やお気に入り・再生位置の同期を行います。内蔵デモモードは完全にオフラインで動作します。',
+        'VertiPlay 僅在你主動新增伺服器設定後，直接與你指定的 Jellyfin、Emby、Plex 或 WebDAV / OpenList 伺服器通訊以取得片源、海報、字幕與章節標記，並依你的操作同步收藏或播放進度。內建演示模式完全離線執行，不產生任何外部網路請求。'
+      ],
+      local: [
+        '服务器访问令牌与密码安全保存于 iOS 钥匙串（Keychain）；服务器列表、搜索历史、画质与字幕偏好、离线下载视频及本地断点续播记录均保存在设备本地沙盒与 UserDefaults 中。本地网络权限用于连接局域网服务器与投屏；可选面容 ID 权限通过 Apple LocalAuthentication 保护应用隐私，生物特征数据绝不离开设备安全隔区。',
+        'Server tokens and passwords are stored securely in the iOS Keychain. Server profiles, search history, playback preferences, offline video files, and resume positions remain in the local app sandbox and UserDefaults. Local Network access connects to LAN servers and casting targets; optional Face ID uses Apple LocalAuthentication on-device without accessing biometric data.',
+        'Les jetons et mots de passe résident dans le Trousseau iOS. Profils de serveurs, historique de recherche, réglages, vidéos hors ligne et positions de lecture restent dans le bac à sable local. L’accès Réseau local sert aux serveurs LAN et au cast ; Face ID facultatif utilise Apple LocalAuthentication sur l’appareil.',
+        'Server-Tokens und Passwörter liegen sicher im iOS-Schlüsselbund. Serverprofile, Suchverlauf, Einstellungen, Offline-Videos und Wiedergabepositionen bleiben in der lokalen App-Sandbox. Lokaler Netzwerkzugriff verbindet LAN-Server und Cast-Ziele; optionales Face ID nutzt Apple LocalAuthentication lokal.',
+        'Los tokens y contraseñas se guardan en el Llavero de iOS. Perfiles de servidor, historial de búsqueda, preferencias, vídeos sin conexión y puntos de reanudación permanecen en el contenedor local. Red local conecta servidores LAN y envío remoto; Face ID opcional usa LocalAuthentication en el dispositivo.',
+        '서버 토큰과 비밀번호는 iOS 키체인에 안전하게 저장됩니다. 서버 프로필, 검색 기록, 재생 설정, 오프라인 비디오 및 이어보기 위치는 로컬 샌드박스와 UserDefaults에 유지됩니다. 로컬 네트워크 권한은 LAN 서버 및 캐스트 연결에 사용되며, 선택적 Face ID는 기기 내 LocalAuthentication으로 동작합니다.',
+        'サーバートークンとパスワードは iOS Keychain に安全に保管されます。サーバー設定、検索履歴、再生設定、オフライン動画、レジューム位置は端末のサンドボックスと UserDefaults に保存されます。ローカルネットワーク権限は LAN サーバー接続やキャストに、任意の Face ID は端末内認証のみに使用されます。',
+        '伺服器存取權杖與密碼安全保存於 iOS 鑰匙圈（Keychain）；伺服器清單、搜尋歷史、畫質與字幕偏好、離線下載影片及本機斷點續播紀錄均保存在裝置本機沙盒與 UserDefaults 中。區域網路權限用於連線區網伺服器與投屏；可選 Face ID 權限透過 Apple LocalAuthentication 保護隱私，生物特徵絕不離開安全隔區。'
       ]
     },
 };
