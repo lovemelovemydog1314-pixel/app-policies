@@ -176,7 +176,7 @@ const html = (app, page) => {
       : app === 'couple'
       ? '小家通过 Apple CloudKit 共享空间在两台设备间私密同步。无自建服务器、无第三方统计或广告追踪 SDK。位置共享默认关闭，仅在主动开启后向伴侣展示最近位置。'
       : app === 'shelflife'
-      ? 'ShelfLife 纯离线优先运行。开启个人 iCloud 同步或家庭共享时，通过 Apple CloudKit 在私有数据库或受邀家庭成员间加密传输。无自建服务器、无第三方统计或广告追踪 SDK。'
+      ? 'ShelfLife 纯离线优先运行。开启个人 iCloud 同步或 Pro 家庭共享时，通过 Apple CloudKit 在私有数据库或受邀家庭成员的共享数据库（上限 40 MB）中传输；开启语音在线识别或所选语言不支持本机识别时，音频经 Apple 语音服务处理；Pro 购买通过 Apple StoreKit 2 通信。无自建数据服务器，无第三方统计或广告追踪 SDK。'
       : app === 'luxframe'
       ? 'LuxFrame 不设自建服务器与用户体系，无第三方统计或广告追踪 SDK。云备份与配置通过 Apple CloudKit 私密同步；位置与相机仅在测光、场记或日照计算时于端侧调用。'
       : app === 'droidbridge'

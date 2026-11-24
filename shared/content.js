@@ -352,95 +352,145 @@
     },
 'shelflife': {
       name:'ShelfLife', platform:'iOS',
+      platformTag:{'zh-Hans':'iPhone & iPad · iOS 17+','zh-Hant':'iPhone & iPad · iOS 17+',en:'iPhone & iPad · iOS 17+',ja:'iPhone & iPad · iOS 17+',ko:'iPhone & iPad · iOS 17+',de:'iPhone & iPad · iOS 17+',fr:'iPhone & iPad · iOS 17+',es:'iPhone & iPad · iOS 17+'},
+      footerNote:{
+        'zh-Hans':'让家里的每件好物都算得清日均、找得到地方、不错过保修。',
+        'zh-Hant':'讓家裡的每件好物都算得清日均、找得到地方、不錯過保固。',
+        en:'Keep every household belonging organized, protected, and cared for.',
+        ja:'暮らしの持ち物を、日割り・保管場所・保証まで心地よく管理。',
+        ko:'집 안의 모든 물건을 일일 비용부터 보관 위치, 보증까지 깔끔하게 관리하세요.',
+        de:'Jedes Gerät im Haushalt klar im Blick – von den Tageskosten bis zur Garantie.',
+        fr:'Gardez chaque bien du foyer organisé, protégé et suivi au quotidien.',
+        es:'Mantén cada objeto del hogar organizado, protegido y siempre al día.'
+      },
       tagline:{
-        'zh-Hans':'家庭器物与保修耗材管家',
-        'zh-Hant':'家庭器物與保固耗材管家',
-        en:'Smart Tracker for Warranties, Consumables & Manuals',
-        ja:'家電の保証期限・消耗品寿命・説明書をスマート管理',
-        ko:'가전제품 보증기간, 소모품 수명 및 설명서 스마트 관리',
-        de:'Garantiefristen, Verbrauchsmaterialien und Anleitungen im Griff',
-        fr:'Suivi des garanties, pièces d’usure et notices d’appareils',
-        es:'Control de garantías, consumibles y manuales del hogar'
+        'zh-Hans':'家庭器物、保修耗材与日均成本管家',
+        'zh-Hant':'家庭器物、保固耗材與日均成本管家',
+        en:'Household Warranties, Consumables & Manuals',
+        ja:'家電の保証・消耗品・説明書をスマート管理',
+        ko:'가전 보증기간·소모품·설명서 스마트 관리',
+        de:'Garantiefristen, Verbrauchsteile & Handbücher',
+        fr:'Suivi des garanties, consommables et notices',
+        es:'Garantías, consumibles y manuales del hogar'
       },
       description:{
-        'zh-Hans':'离线识别发票小票与电器铭牌，追踪保修到期、滤芯更换周期，整理说明书与维保记录。',
-        'zh-Hant':'離線識別發票收據與電器銘牌，追蹤保固到期、濾網更換週期，整理說明書與維修紀錄。',
-        en:'Scan receipts and appliance labels on-device. Track warranty dates, filter replacement intervals, and manuals.',
-        ja:'レシートや銘板を端末内でスキャン。保証期限やフィルター交換時期、説明書を一元管理。',
-        ko:'영수증과 라벨을 기기 내에서 스캔하여 보증 만료일, 필터 교체 주기, 설명서를 관리하세요.',
-        de:'Belege und Typenschilder lokal scannen. Garantiefristen, Filterwechsel und Handbücher verwalten.',
-        fr:'Scannez vos reçus et étiquettes en local. Suivez garanties, pièces d’usure et notices.',
-        es:'Escanea recibos y etiquetas en local. Controla garantías, cambio de filtros y manuales.'
+        'zh-Hans':'离线识别小票铭牌、一句话语音建档与扫码估值，追踪保修退货期、日均使用成本、滤芯周期、收纳箱二维码及 PDF 说明书，支持私有 iCloud 与家庭共享。',
+        'zh-Hant':'離線識別收據銘牌、一句話語音建檔與掃碼估值，追蹤保固退貨期、日均使用成本、濾網週期、收納箱 QR 碼及 PDF 說明書，支援私有 iCloud 與家庭共享。',
+        en:'Scan receipts and labels offline, add items by voice or barcode, track warranties, daily cost, filter cycles, QR storage boxes, and PDF manuals with private iCloud and family sync.',
+        ja:'レシートや銘板の端末内OCR・音声登録・バーコード照合に対応。保証期限、日割りコスト、フィルター周期、収納ボックスQR、PDF説明書検索まで非公開iCloudで管理。',
+        ko:'영수증·라벨 온디바이스 OCR, 음성 등록 및 바코드 조회 지원. 보증기간, 일일 비용, 필터 주기, 수납함 QR, PDF 설명서 검색과 비공개 iCloud 가족 공유를 제공합니다.',
+        de:'Belege und Typenschilder lokal scannen, per Sprache oder Barcode erfassen. Garantien, Tageskosten, Filterzyklen, QR-Boxen und PDF-Handbücher mit privater iCloud verwalten.',
+        fr:'Scannez reçus et plaques en local, ajoutez par voix ou code-barres. Suivez garanties, coût par jour, filtres, boîtes QR et notices PDF avec iCloud privé et partage familial.',
+        es:'Escanea recibos y etiquetas en local, añade por voz o código de barras. Controla garantías, costo diario, filtros, cajas QR y manuales PDF con iCloud privado.'
       },
       features:[
-        ['拍照与条码极速建档','Instant Scan & Barcode Entry','Saisie rapide par photo','Schnellerfassung per Foto','Registro instantáneo con fotos','사진 및 바코드 즉시 등록','写真・バーコードで瞬時登録','拍照與條碼極速建檔'],
-        ['保修追踪与日均成本','Warranty & Daily Cost','Garantie et coût d’usage','Garantie-Countdown & Tageskosten','Garantía y coste por día','보증 카운트다운 및 일일 비용','保証追跡と日割りコスト','保固追蹤與日均成本'],
-        ['滤芯耗材与一键重置','Consumable Lifespans & Reset','Consommables et reset express','Verbrauchsteile & Widget-Reset','Consumibles y reinicio rápido','소모품 수명 및 원탭 리셋','消耗品寿命とワンタップリセット','濾網耗材與一鍵重設'],
-        ['说明书搜索与家庭共享','Manual Search & Family Sync','Notices PDF et partage privé','Handbuchsuche & Freigabe','Manuales y sincronización familiar','설명서 검색 및 가족 공유','説明書検索 & ファミリー共有','說明書檢索與家庭共享']
+        ['3秒建档：小票语音与条码','3s Scan, Voice & Barcode Entry','Saisie 3s : OCR, voix et code','3s-Erfassung: OCR, Sprache & Code','Registro en 3s: OCR, voz y código','3초 등록: 영수증·음성·바코드','3秒登録：OCR・音声・バーコード','3秒建檔：收據語音與條碼'],
+        ['保修日均、回血与修换助手','Warranties, Daily Cost & Advisor','Garanties, coût/jour et conseil','Garantie, Tageskosten & Ratgeber','Garantías, costo diario y asesor','보증·일일 비용·수리/교체 분석','保証・日割り・修理交換診断','保固日均、回血與修換助手'],
+        ['滤芯周期、囤货与借出追踪','Filter Cycles, Supplies & Loans','Filtres, réserves et prêts','Filterzyklen, Vorrat & Verleih','Filtros, reservas y préstamos','필터 주기·생필품 재고·대여 관리','消耗品周期・備蓄・貸出管理','濾網週期、囤貨與借出追蹤'],
+        ['扫码透视箱、PDF检索与共享','QR Boxes, PDF Search & Sync','Boîtes QR, recherche PDF & sync','QR-Boxen, PDF-Suche & Sync','Cajas QR, búsqueda PDF y sync','QR 수납함·PDF 검색·가족 공유','QR収納箱・PDF検索・家族共有','掃碼透視箱、PDF檢索與共享']
       ],
       featuresDetail:[
         {
-          title:{'zh-Hans':'拍照与条码极速建档','zh-Hant':'拍照與條碼極速建檔',en:'Instant Scan & Barcode Entry',ja:'写真・バーコードで瞬時登録',ko:'사진 및 바코드 즉시 등록',de:'Schnellerfassung per Foto & Barcode',fr:'Saisie rapide par photo et code-barres',es:'Registro instantáneo con fotos y códigos'},
-          desc:{'zh-Hans':'Apple Vision 离线识别小票、订单与铭牌，自动提取购买日、金额与序列号；条码本地比对。','zh-Hant':'Apple Vision 離線識別收據、訂單與銘牌，自動擷取購買日、金額與序號；條碼本機比對。',en:'On-device Apple Vision OCR recognizes receipts and serial numbers. Barcodes match against a verified local catalog.',ja:'Apple Vision でレシートや銘板を端末内認識し、購入日やシリアル番号を抽出。バーコードもローカル照合。',ko:'Apple Vision 기반 온디바이스 OCR로 영수증과 시리얼 번호를 자동 인식하고 바코드를 로컬 조회합니다.',de:'Lokale Apple Vision OCR erkennt Belege und Seriennummern. Barcodes werden mit einem lokalen Katalog abgeglichen.',fr:'Apple Vision reconnaît reçus et numéros de série en local. Codes-barres vérifiés sans requête externe.',es:'Apple Vision OCR procesa recibos y números de serie localmente. Códigos de barras validados sin conexión.'}
+          title:{'zh-Hans':'3 秒极速建档：小票、语音与扫码','zh-Hant':'3 秒極速建檔：收據、語音與掃碼',en:'3s Entry: Receipt OCR, Voice & Barcode',ja:'3秒登録：レシートOCR・音声・バーコード',ko:'3초 등록: 영수증 OCR·음성·바코드',de:'3s-Erfassung: Beleg-OCR, Sprache & Barcode',fr:'Saisie 3s : OCR de reçus, voix et code-barres',es:'Registro en 3s: OCR, voz y código de barras'},
+          desc:{'zh-Hans':'Apple Vision 离线批量识别（最多 12 张）小票订单与铭牌；支持一句话语音建档、本地核实条码目录比对及端侧拍照估价。','zh-Hant':'Apple Vision 離線批次識別（最多 12 張）收據訂單與銘牌；支援一句話語音建檔、本機核實條碼目錄比對及端側拍照估價。',en:'Batch-scan up to 12 receipts or labels offline via Apple Vision, dictate items by voice, match a verified local barcode catalog, and estimate value on-device.',ja:'Apple Visionで最大12枚のレシートや銘板を一括ローカル認識。音声入力、検証済みローカルバーコード照合、端末内査定に対応。',ko:'Apple Vision으로 최대 12장의 영수증·라벨을 오프라인 일괄 인식하고, 음성 입력, 검증된 로컬 바코드 조회 및 기기 내 가치 산정을 지원합니다.',de:'Bis zu 12 Belege oder Typenschilder lokal per Apple Vision scannen, per Sprache erfassen, lokalen Barcode-Katalog nutzen und Werte vor Ort schätzen.',fr:'Numérisez jusqu’à 12 reçus hors ligne via Apple Vision, dictez vos biens, consultez le catalogue local de codes-barres et estimez la valeur sur l’appareil.',es:'Escanea hasta 12 recibos sin conexión con Apple Vision, dicta artículos por voz, consulta el catálogo local de códigos y estima su valor en el dispositivo.'}
         },
         {
-          title:{'zh-Hans':'保修追踪与日均成本','zh-Hant':'保固追蹤與日均成本',en:'Warranty Countdown & Daily Cost',ja:'保証カウントダウンと日割りコスト',ko:'보증 카운트다운 및 일일 사용 비용',de:'Garantie-Countdown & Tageskosten',fr:'Compte à rebours et coût quotidien',es:'Cuenta atrás de garantía y coste diario'},
-          desc:{'zh-Hans':'清晰掌握退货期与保修剩余天数，实时计算器物日均使用成本与折旧估值。','zh-Hant':'清楚掌握退貨期與保固剩餘天數，即時計算器物日均使用成本與折舊估值。',en:'Track return windows and warranty expiration, with dynamic daily cost-of-use and depreciation calculations.',ja:'返品期限と保証満了日を把握し、日割り使用コストや減価償却を自動算出。',ko:'반품 기한과 보증 만료일을 추적하고 하루 평균 사용 비용과 감가상각을 계산합니다.',de:'Rückgabefristen und Garantieablauf verfolgen, inklusive täglicher Nutzungskosten und Abschreibung.',fr:'Suivez fenêtres de retour et garanties, avec calcul dynamique du coût d’usage par jour.',es:'Controla plazos de devolución y fin de garantía, calculando el coste de uso diario y amortización.'}
+          title:{'zh-Hans':'保修退货、日均成本与修换决策','zh-Hant':'保固退貨、日均成本與修換決策',en:'Warranties, Daily Cost & Repair Advisor',ja:'保証追跡・日割りコスト・修理交換診断',ko:'보증·일일 비용·수리/교체 의사결정',de:'Garantie, Tageskosten & Reparatur-Ratgeber',fr:'Garanties, coût par jour & conseil réparation',es:'Garantías, costo diario y asesor de reparación'},
+          desc:{'zh-Hans':'追踪退货期、原厂与延保到期及锁屏灵动岛倒计时；自动算清日均成本、目标进度环、二手回血率、数字资产凭证与修换建议。','zh-Hant':'追蹤退貨期、原廠與延保到期及鎖定畫面動態島倒數；自動算清日均成本、目標進度環、二手回血率、數位資產憑證與修換建議。',en:'Track return windows, warranties, and Live Activity countdowns alongside daily cost rings, resale recovery rates, digital Asset Certificates, and Repair-or-Replace advice.',ja:'返品期限や保証期限をライブアクティビティで追跡。日割りコスト目標リング、売却回収率、デジタル資産証明書、修理か買替かの診断を提供。',ko:'반품 기한과 보증 만료 및 실시간 현황 카운트다운을 추적하고 일일 비용 링, 중고 회수율, 디지털 자산 증명서, 수리·교체 가이드를 제공합니다.',de:'Rückgabefristen, Garantien und Live-Aktivitäten im Blick behalten – samt Tageskosten-Ringen, Wiederverkaufsquote, Asset-Zertifikaten und Reparatur-Check.',fr:'Suivez retours, garanties et Activités en direct, avec anneaux de coût quotidien, taux de revente, certificats d’actif et aide à la décision réparer/remplacer.',es:'Controla devoluciones, garantías y Actividades en directo junto a anillos de costo diario, tasa de reventa, certificados digitales y guía reparar o cambiar.'}
         },
         {
-          title:{'zh-Hans':'滤芯耗材与一键重置','zh-Hant':'濾網耗材與一鍵重設',en:'Consumable Lifespans & One-Tap Reset',ja:'消耗品寿命とワンタップリセット',ko:'소모품 수명 및 원탭 리셋',de:'Verbrauchsteile & Widget-Reset',fr:'Durée des consommables et reset express',es:'Vida útil de consumibles y reinicio rápido'},
-          desc:{'zh-Hans':'滤芯、刷头、猫砂、机油周期环形进度条显示，支持桌面小组件一键重置并记录开销。','zh-Hant':'濾網、刷頭、貓砂、機油週期環形進度條顯示，支援桌面小工具一鍵重設並記錄開銷。',en:'Circular lifespans for water filters, brush heads, pet care, and maintenance with interactive home-screen resets.',ja:'浄水器フィルターや歯ブラシ等の交換周期を円形ゲージで可視化。ウィジェットから即座にリセット。',ko:'정수기 필터, 칫솔모 등의 교체 주기를 원형 게이지로 표시하고 위젯에서 즉시 리셋하세요.',de:'Kreisanzeigen für Wasserfilter, Bürsten und Wartung mit direktem Reset über interaktive Widgets.',fr:'Jauges circulaires pour filtres et brosses, réinitialisables en un geste via widget interactif.',es:'Indicadores para filtros de agua, cepillos y recambios con reinicio directo desde el widget de inicio.'}
+          title:{'zh-Hans':'滤芯周期、日用囤货与借出追踪','zh-Hant':'濾網週期、日用囤貨與借出追蹤',en:'Filter Cycles, Household Supplies & Loans',ja:'フィルター周期・日用品在庫・貸出管理',ko:'필터 주기·생필품 재고·대여 관리',de:'Filterzyklen, Haushaltsvorrat & Verleih',fr:'Filtres, stocks du foyer & suivi des prêts',es:'Filtros, despensa del hogar y préstamos'},
+          desc:{'zh-Hans':'滤芯、刷头、除垢与维护周期环形展示并支持桌面小组件一键打卡；独立日用囤货区预警低库存与临期，清晰记录外借与归还期限。','zh-Hant':'濾網、刷頭、除垢與維護週期環形顯示並支援桌面小工具一鍵打卡；獨立日用囤貨區預警低庫存與即期，清晰記錄外借與歸還期限。',en:'Track filter, brush-head, and maintenance cycles with interactive widget resets; monitor household supply stock and expiry dates, plus lent items and return dates.',ja:'浄水フィルターや定期メンテを円形ゲージとウィジェットでワンタップ記録。日用品の在庫・消費期限アラートや貸出・返却期日も管理。',ko:'정수 필터와 정기 관리 주기를 위젯 원탭으로 기록하고, 생필품 재고·유통기한 알림과 대여 물품 반납 기한까지 한곳에서 관리합니다.',de:'Filter- und Wartungszyklen per interaktivem Widget zurücksetzen, Haushaltsvorräte samt Ablaufdatum überwachen und verliehene Dinge nachverfolgen.',fr:'Suivez filtres et entretiens avec réinitialisation par widget interactif, surveillez les stocks et dates limites du foyer, ainsi que vos prêts et retours.',es:'Controla filtros y mantenimientos con reinicio desde widgets interactivos, supervisa existencias y caducidades del hogar y registra préstamos.'}
         },
         {
-          title:{'zh-Hans':'说明书检索与家庭共享','zh-Hant':'說明書檢索與家庭共享',en:'Manual Search & Private Family Sync',ja:'説明書全文検索 & ファミリー共有',ko:'설명서 검색 및 가족 프라이빗 공유',de:'Handbuchsuche & Private Familienfreigabe',fr:'Recherche de notices et partage privé',es:'Búsqueda de manuales y sincronización familiar'},
-          desc:{'zh-Hans':'PDF 说明书全文故障码速查；支持私有 iCloud 同步与基于 CloudKit 的受邀家庭共享。','zh-Hant':'PDF 說明書全文故障代碼速查；支援私有 iCloud 同步與基於 CloudKit 的受邀家庭共享。',en:'Search PDF manuals for error codes. Sync securely across personal devices and invite family members via CloudKit.',ja:'PDF 取扱説明書のエラーコードを瞬時に検索。プライベート iCloud と安全なファミリー共有に対応。',ko:'PDF 설명서에서 에러 코드를 빠르게 검색하세요. 개인 iCloud 및 안전한 CloudKit 가족 공유 지원.',de:'PDF-Handbücher nach Fehlercodes durchsuchen. Sichere Synchronisierung via iCloud und CloudKit-Freigabe.',fr:'Trouvez les codes d’erreur dans vos manuels PDF. Synchronisation sécurisée via iCloud et CloudKit.',es:'Busca códigos de error en manuales PDF. Sincronización segura mediante iCloud y CloudKit.'}
+          title:{'zh-Hans':'收纳箱二维码、PDF 检索与家庭共享','zh-Hant':'收納箱 QR 碼、PDF 檢索與家庭共享',en:'QR Boxes, PDF Manuals & Family Sharing',ja:'QR収納ボックス・PDF検索・ファミリー共有',ko:'QR 수납함·PDF 설명서 검색·가족 공유',de:'QR-Boxen, PDF-Handbücher & Familienfreigabe',fr:'Boîtes QR, notices PDF & partage familial',es:'Cajas QR, manuales PDF y uso compartido'},
+          desc:{'zh-Hans':'箱内实拍配可打印 AirPrint 二维码贴纸；PDF 说明书全文检索故障码；一键导出理赔包、全屋保额与年度体检报告，支持私密家庭共享。','zh-Hant':'箱內實拍配可列印 AirPrint QR 碼貼紙；PDF 說明書全文檢索故障碼；一鍵匯出理賠包、全屋保額與年度體檢報告，支援私密家庭共享。',en:'Pair inside-box photos with printable AirPrint QR labels, search PDF manuals for error codes offline, export claim/coverage/annual PDFs & Excel, and share via CloudKit.',ja:'収納箱の中身写真とAirPrint対応QRラベルを紐付け。PDF説明書のエラーコード全文検索、保険請求・年間点検PDF/Excel出力、CloudKit家族共有に対応。',ko:'수납함 내부 사진과 AirPrint QR 라벨을 연결하고, PDF 설명서 오류 코드를 오프라인 검색하며, 청구·보장·연간 보고서 내보내기 및 CloudKit 가족 공유를 지원합니다.',de:'Box-Innenfotos mit druckbaren AirPrint-QR-Etiketten verbinden, PDF-Handbücher offline durchsuchen, Schadens-/Deckungs-PDFs & Excel exportieren und per CloudKit teilen.',fr:'Associez photos de boîtes et étiquettes QR AirPrint, cherchez les codes d’erreur dans les PDF hors ligne, exportez dossiers PDF/Excel et partagez via CloudKit.',es:'Combina fotos de cajas con etiquetas QR AirPrint, busca códigos de error en PDF sin conexión, exporta informes PDF/Excel y comparte por CloudKit.'}
         }
       ],
       factStrip:{
-        'zh-Hans':['离线识别与条码','私有 iCloud 同步','无广告与跟踪'],
-        'zh-Hant':['離線識別與條碼','私有 iCloud 同步','無廣告與追蹤'],
-        en:['On-Device OCR & Vision','Private iCloud Sync','No Ads or Tracking'],
-        ja:['端末内 OCR & バーコード','プライベート iCloud 同期','広告・追跡なし'],
-        ko:['온디바이스 OCR & 바코드','개인 iCloud 동기화','광고 및 추적 없음'],
-        de:['Lokale OCR & Barcode','Private iCloud-Synchronisation','Keine Werbung/Tracking'],
-        fr:['OCR & vision en local','iCloud privé','Sans pub ni suivi'],
-        es:['OCR y códigos en local','iCloud privado','Sin anuncios ni rastreo']
+        'zh-Hans':['端侧OCR·条码与估价','私有iCloud·加密备份','无广告与第三方追踪'],
+        'zh-Hant':['端側OCR·條碼與估價','私有iCloud·加密備份','無廣告與第三方追蹤'],
+        en:['On-Device OCR & Valuation','Private iCloud & .slbackup','Zero Ads or Tracking'],
+        ja:['端末内OCR・バーコード査定','非公開iCloud・暗号化保存','広告・追跡SDKなし'],
+        ko:['기기 내 OCR·바코드·가치 산정','비공개 iCloud·암호화 백업','광고 및 추적 없음'],
+        de:['Lokales OCR & Bewertung','Private iCloud & .slbackup','Keine Werbung/Tracking'],
+        fr:['OCR & évaluation en local','iCloud privé & .slbackup','Zéro pub ni traqueur'],
+        es:['OCR y tasación en local','iCloud privado y .slbackup','Sin anuncios ni rastreo']
       },
       privacySummary:{
-        'zh-Hans':'ShelfLife 纯离线优先运行，不运营自建数据服务器。小票识别与条码查询均在设备本地完成，资料与附件仅保存在本机及你的个人私有 iCloud / CloudKit 共享空间中。',
-        'zh-Hant':'ShelfLife 純離線優先運作，不營運自建資料伺服器。收據識別與條碼查詢均在裝置本機完成，資料與附件僅儲存在本機及你的個人私有 iCloud / CloudKit 共享空間中。',
-        en:'ShelfLife works offline-first with no developer server. Receipt recognition and barcode lookups stay on-device; records and attachments sync only via your private Apple iCloud and optional CloudKit sharing.',
-        ja:'ShelfLife はオフライン優先で動作し、独自サーバーを持ちません。レシート認識やバーコード照合は端末内で行われ、データは端末内およびプライベート iCloud / CloudKit にのみ保管されます。',
-        ko:'ShelfLife는 오프라인 우선으로 작동하며 개발자 서버를 운영하지 않습니다. 영수증 인식 및 바코드 조회는 기기 내에서 처리되며, 데이터는 기기 및 개인 iCloud / CloudKit에만 보관됩니다.',
-        de:'ShelfLife arbeitet offline-first ohne Entwickler-Server. Beleg- und Barcode-Erkennung erfolgen lokal; Daten und Anhänge verbleiben auf dem Gerät oder in Ihrer privaten iCloud / CloudKit.',
-        fr:'ShelfLife fonctionne en priorité hors ligne sans serveur dédié. Reconnaissance des reçus et codes-barres en local ; données et pièces jointes restent sur l’appareil et votre iCloud privé.',
-        es:'ShelfLife funciona sin conexión y sin servidores externos. El escaneo de recibos y códigos se realiza en local; tus datos y adjuntos solo se guardan en el dispositivo y en tu iCloud privado.'
+        'zh-Hans':'ShelfLife 纯离线优先运行，不设开发者数据服务器，无广告或第三方追踪。小票 OCR、条码比对与照片估值均在本机完成；数据保存在本机与你个人私有 iCloud，可选 CloudKit 家庭共享与密码加密备份；语音建档仅在你开启在线识别或语言不支持本机时经由 Apple 语音服务处理。',
+        'zh-Hant':'ShelfLife 純離線優先運作，不設開發者資料伺服器，無廣告或第三方追蹤。收據 OCR、條碼比對與照片估價均在本機完成；資料儲存在本機與你的個人私有 iCloud，可選 CloudKit 家庭共享與密碼加密備份；語音建檔僅在你開啟線上識別或語言不支援本機時經由 Apple 語音服務處理。',
+        en:'ShelfLife runs offline-first with no developer server, ads, or tracking SDKs. Receipt OCR, barcode lookup, and photo valuation stay on-device; data stays locally or in your private iCloud and optional CloudKit family sharing, while voice entry uses Apple Speech only when online preference is enabled or required by language.',
+        ja:'ShelfLife はオフライン優先で動作し、開発者サーバー・広告・追跡SDKはありません。レシートOCR、バーコード照合、写真査定は端末内で完結し、データは端末内および個人のiCloud / 任意のCloudKitファミリー共有に保管されます（音声入力は設定や言語に応じてApple音声サービスを利用する場合があります）。',
+        ko:'ShelfLife는 오프라인 우선으로 작동하며 개발자 서버, 광고 및 추적 SDK가 없습니다. 영수증 OCR, 바코드 조회, 사진 가치 산정은 기기 내에서 처리되며, 데이터는 기기 및 개인 iCloud·선택적 CloudKit 가족 공유에만 저장됩니다(음성 입력은 설정 또는 지원 언어에 따라 Apple 음성 서비스를 사용할 수 있습니다).',
+        de:'ShelfLife arbeitet offline-first ohne Entwickler-Server, Werbung oder Tracking-SDKs. Beleg-OCR, Barcode-Abgleich und Fotoschätzung laufen lokal; Daten bleiben auf dem Gerät sowie in privater iCloud oder optionaler CloudKit-Freigabe (Spracheingabe nutzt Apple Speech je nach Einstellung und Sprache).',
+        fr:'ShelfLife fonctionne hors ligne par défaut sans serveur développeur, publicité ni traqueur. L’OCR, les codes-barres et l’estimation photo restent locaux ; vos données restent sur l’appareil, votre iCloud privé ou le partage CloudKit optionnel (la dictée utilise Apple Speech selon le réglage et la langue).',
+        es:'ShelfLife funciona sin conexión por defecto, sin servidores propios, anuncios ni rastreadores. El OCR, los códigos de barras y la tasación por foto se procesan en local; los datos permanecen en el dispositivo, tu iCloud privado o el uso compartido de CloudKit opcional (la voz usa Apple Speech según ajuste e idioma).'
       },
       customFaq:{
         'zh-Hans':[
-          {q:'小票识别和条码查询会上传我的文件吗？',a:'不会。ShelfLife 使用 Apple Vision 框架完全在你的 iPhone 本地进行文本与铭牌识别，条码也仅在本地内置已核实的小型离线库中比对，未匹配的条码仅保存在你的本地档案中供手动补全，不会上传到任何外部商品目录或开发者服务器。'},
-          {q:'个人 iCloud 同步与家庭共享是如何运作的？',a:'个人同步使用 Apple CloudKit 私有数据库，仅与你的 Apple 账户关联；家庭共享通过系统的共享面板邀请家人，资料以端到端方式在成员间同步，开发者不运营任何中转服务器，也无法查看你的物品与发票内容。'},
-          {q:'如何备份和彻底删除我的数据？',a:'你可以在设置中随时创建带密码加密的完整本地备份文件（.zip）。需要删除时，在 App 内删除物品会同步清除本地附件与云端记录；若要彻底清空，删除 App 即可清除本机容器内所有数据。'},
-          {q:'提醒事项与通知是如何工作的？',a:'ShelfLife 在获得权限后，仅在你的设备本地安排最多最近 30 项临期保修、耗材更换或维护提醒；若开启 Apple 提醒事项同步，会在专属的“ShelfLife”列表中同步，绝不会修改你的其他日常事项。'}
+          {q:'小票识别、条码查询、拍照估价与语音建档会上传数据吗？',a:'小票与铭牌识别、拍照品类估价均使用 Apple Vision 在 iPhone/iPad 本机完成，条码仅比对内置已核实的 11 种小型离线目录，未匹配条码不会上传。语音建档时，若关闭“优先在线识别”且所选语言支持本机识别，将请求本机处理；开启在线识别或语言不支持本机时，音频会由 Apple 语音服务处理，所有识别结果都会先展示为草稿供你确认。'},
+          {q:'个人 iCloud 同步与家庭共享是如何运作的？',a:'个人同步通过 SwiftData 将档案同步到与你的 Apple 账户关联的 CloudKit 私有数据库；你可以在设置中暂停自动同步（完全退出并重开 App 后生效），本机与云端已有副本都会保留。开启 Pro 家庭共享后，系统共享面板会邀请读写成员访问你存储在 CloudKit 共享数据库中的完整库快照（上限 40 MB，含附件与理赔信息），冲突时询问保留哪一边，开发者无法访问这些数据。'},
+          {q:'如何备份、导出以及彻底删除我的数据？',a:'可在设置中创建带至少 12 位密码的 AES-256-GCM 加密本地备份（.slbackup），密码不保存也无法找回，同时兼容导入旧版未加密 ZIP；导出的 Excel、CSV 与 PDF 报告未加密且独立于 App，需自行妥善管理。在 App 内删除器物会同步清理附件与私有 iCloud 记录；卸载 App 即可删除本机容器全部数据。'},
+          {q:'本地通知、灵动岛与 Apple 提醒事项同步是如何工作的？',a:'获得通知权限后，ShelfLife 仅在本机排程最多最近 30 项临期保修、耗材、维护、库存保质期、借出归还及理赔跟进通知，以及每年 1 月 1 日重复的年度体检提醒，并支持锁屏灵动岛倒计时。可选开启 Apple 提醒事项同步时，仅在专属“ShelfLife”列表中创建与更新提醒，绝不修改你的其他列表。'},
+          {q:'免费版有哪些额度？ShelfLife Pro 包含什么？',a:'免费版支持最多 8 件器物、3 份凭证附件、3 个启用中的耗材提醒、3 笔在借记录及每月 5 次语音建档（超出后可暂存草稿）。升级 ShelfLife Pro（按年订阅或一次买断终身版）可解锁无限器物与凭证、PDF 说明书检索、保额/理赔/年度 PDF 与 Excel 导出、资产转让凭证及 iCloud 家庭共享；购买由 Apple StoreKit 2 处理，开发者不接触任何支付卡信息。'}
         ],
         'zh-Hant':[
-          {q:'收據識別與條碼查詢會上傳我的檔案嗎？',a:'不會。ShelfLife 使用 Apple Vision 框架完全在你的 iPhone 本機進行文字與銘牌識別，條碼也僅在本地內建已核實的小型離線庫中比對，未比對的條碼僅儲存在你的本機檔案中供手動補全，不會上傳到任何外部商品目錄或開發者伺服器。'},
-          {q:'個人 iCloud 同步與家庭共享是如何運作的？',a:'個人同步使用 Apple CloudKit 私有資料庫，僅與你的 Apple 帳號關聯；家庭共享透過系統的共享面板邀請家人，資料以端對端方式在成員間同步，開發者不營運任何中轉伺服器，也無法查看你的物品與發票內容。'},
-          {q:'如何備份與徹底刪除我的資料？',a:'你可以在設定中隨時建立帶密碼加密的完整本機備份檔（.zip）。需要刪除時，在 App 內刪除物品會同步清除本機附件與雲端紀錄；若要徹底清空，刪除 App 即可清除本機容器內所有資料。'},
-          {q:'提醒事項與通知是如何運作的？',a:'ShelfLife 在獲得權限後，僅在你的裝置本機安排最多最近 30 項臨期保固、耗材更換或維護提醒；若開啟 Apple 提醒事項同步，會在專屬的「ShelfLife」列表中同步，絕不會修改你的其他日常事項。'}
+          {q:'收據識別、條碼查詢、拍照估價與語音建檔會上傳資料嗎？',a:'收據與銘牌識別、拍照品類估價均使用 Apple Vision 在 iPhone/iPad 本機完成，條碼僅比對內建已核實的小型離線目錄，未比對條碼不會上傳。語音建檔時，若關閉「優先線上識別」且所選語言支援本機識別，將請求本機處理；開啟線上識別或語言不支援本機時，音訊會由 Apple 語音服務處理，識別結果先展示為草稿供你確認。'},
+          {q:'個人 iCloud 同步與家庭共享是如何運作的？',a:'個人同步透過 SwiftData 將檔案同步到與你的 Apple 帳號關聯的 CloudKit 私有資料庫；可在設定中暫停自動同步（完全結束並重開 App 後生效），本機與雲端已有副本都會保留。開啟 Pro 家庭共享後，系統共享面板可邀請讀寫成員存取儲存於 CloudKit 共享資料庫的完整庫快照（上限 40 MB），衝突時詢問優先採用哪一邊，開發者無法存取這些資料。'},
+          {q:'如何備份、匯出以及徹底刪除我的資料？',a:'可在設定中建立帶至少 12 位密碼的 AES-256-GCM 加密本機備份（.slbackup），密碼不儲存也無法找回，仍支援匯入舊版未加密 ZIP；匯出的 Excel、CSV 與 PDF 報告未加密且獨立於 App。在 App 內刪除器物會同步清除附件與私有 iCloud 紀錄；移除 App 即可刪除本機容器全部資料。'},
+          {q:'本機通知、動態島與 Apple 提醒事項同步是如何運作的？',a:'取得通知權限後，ShelfLife 僅在本機排程最多最近 30 項臨期保固、耗材、維護、庫存效期、借出歸還及理賠跟進通知，以及每年 1 月 1 日重複的年度體檢提醒，並支援鎖定畫面動態島倒數。可選開啟 Apple 提醒事項同步時，僅在專屬「ShelfLife」列表中管理提醒，不會修改你的其他列表。'},
+          {q:'免費版有哪些額度？ShelfLife Pro 包含什麼？',a:'免費版支援最多 8 件器物、3 份憑證附件、3 個啟用中的耗材提醒、3 筆在借紀錄及每月 5 次語音建檔。升級 ShelfLife Pro（年訂閱或一次買斷終身版）可解鎖無限器物與憑證、PDF 說明書檢索、保額／理賠／年度報告匯出、資產轉讓憑證及 iCloud 家庭共享；購買透過 Apple StoreKit 2 處理，開發者不會收到付款卡資訊。'}
         ],
         en:[
-          {q:'Are scanned receipts or barcodes uploaded?',a:'No. ShelfLife uses on-device Apple Vision frameworks to recognize receipts and serial numbers. Barcodes are checked against a verified offline catalog. Unmatched barcodes and images are never uploaded to any external server.'},
-          {q:'How do personal iCloud sync and household sharing work?',a:'Personal records sync to your private CloudKit container tied to your Apple Account. Household sharing lets you invite family members via the iOS share sheet over CloudKit. The developer operates no servers and cannot see your records or files.'},
-          {q:'How can I back up or permanently delete my data?',a:'You can export password-encrypted ZIP backups anytime in Settings. Deleting an item removes its details and attachments locally and from iCloud. Deleting the app removes all local container data.'},
-          {q:'How do Reminders and notifications work?',a:'ShelfLife schedules up to the nearest 30 upcoming deadlines locally on your iPhone. Optional Reminders sync manages a dedicated "ShelfLife" list without touching your personal lists.'}
+          {q:'Are receipt scans, barcodes, photo valuations, or voice entries uploaded?',a:'Receipt/label OCR and photo valuation run locally on your device using Apple Vision, and barcode scanning only checks a small verified offline catalog—unmatched codes are never uploaded. For voice entry, ShelfLife requests on-device speech recognition when supported and “Prefer online recognition” is off; when online mode is enabled or your language lacks on-device support, audio is processed by Apple’s speech service. All recognized text appears as a draft for your review.'},
+          {q:'How do personal iCloud sync and CloudKit household sharing work?',a:'Personal records sync via SwiftData to ShelfLife’s CloudKit private database tied to your Apple Account. You can pause personal sync in Settings (takes effect after fully quitting and relaunching) without deleting local or iCloud copies. Optional Pro household sharing stores a complete library snapshot (up to 40 MB) in CloudKit’s shared database for invited read/write members, asks which side to prioritize on conflicts, and propagates deletions. The developer cannot access your records.'},
+          {q:'How do encrypted backups, exports, and permanent deletion work?',a:'Settings lets you create AES-256-GCM encrypted local backups (.slbackup) protected by a password of at least 12 characters that ShelfLife never stores or recovers (legacy plain ZIP backups can still be imported). Excel, CSV, and PDF exports are unencrypted standalone files you should delete separately when no longer needed. Deleting an item removes its attachments locally and in iCloud, and uninstalling the app erases all local container data.'},
+          {q:'How do notifications, Live Activities, and Apple Reminders sync work?',a:'With notification permission, ShelfLife schedules up to the nearest 30 upcoming warranty, consumable, maintenance, supply expiry, loan return, and claim alerts locally on your device, plus one repeating January 1 yearly check-up reminder, and supports Lock Screen/Dynamic Island countdowns. Optional Reminders sync manages only a dedicated “ShelfLife” list without modifying your other reminders.'},
+          {q:'What is included in the free tier vs. ShelfLife Pro?',a:'The free tier covers up to 8 active assets, 3 receipt attachments, 3 enabled consumable reminders, 3 active loans, and 5 voice entries per month. ShelfLife Pro (Yearly subscription or One-Time Lifetime via App Store / StoreKit 2) unlocks unlimited items and attachments, offline PDF manual search, insurance/claim/annual PDF & Excel exports, Asset Certificates, and CloudKit household sharing. The developer never receives payment card details.'}
+        ],
+        ja:[
+          {q:'レシートOCR、バーコード照合、写真査定、音声入力は外部送信されますか？',a:'レシート・銘板OCRと写真査定は端末内のApple Visionで完結し、バーコードも検証済みの小さなローカルカタログのみを参照します（未一致コードは送信されません）。音声入力は「オンライン認識を優先」がオフで対応言語なら端末内処理を要求し、オンライン優先時や非対応言語時はAppleの音声サービスで処理されます。認識結果はすべて確認用の下書きとして表示されます。'},
+          {q:'個人iCloud同期とファミリー共有はどのように機能しますか？',a:'個人同期はSwiftData経由でAppleアカウントに紐づくCloudKitプライベートデータベースへ同期されます。設定で一時停止（アプリ完全終了後の再起動で反映）してもローカルやiCloudのデータは消えません。任意のProファミリー共有では、招待した読み書きメンバー向けに最大40MBのライブラリ共有スナップショットをCloudKit共有DBに保存し、競合時は優先側を確認します。開発者は閲覧できません。'},
+          {q:'バックアップ、書き出し、データの完全削除はどうすればよいですか？',a:'設定から12文字以上のパスワードでAES-256-GCM暗号化されたローカルバックアップ（.slbackup）を作成できます（パスワードは保存・復元されません。旧ZIPも読込可）。Excel・CSV・PDF出力は暗号化されない独立ファイルです。アプリ内で品目を削除すると添付ファイルとiCloud上の記録も削除され、アプリ削除で端末内データがすべて消去されます。'},
+          {q:'通知、ライブアクティビティ、Appleリマインダー同期の仕組みは？',a:'通知許可時、期限が近い保証・消耗品・メンテ・在庫期限・貸出・請求フォローの直近30件と、毎年1月1日の年次点検リマインダー1件を端末内でのみスケジュールし、ライブアクティビティにも対応します。任意のリマインダー同期は専用の「ShelfLife」リストのみを管理し、他のリストには一切触れません。'},
+          {q:'無料版の上限とShelfLife Proの内容を教えてください。',a:'無料版では登録品目8件、領収書添付3件、有効な消耗品通知3件、貸出中3件、月5回の音声登録まで利用できます。ShelfLife Pro（年額サブスクリプションまたは買い切りライフタイム）では無制限登録、PDF説明書検索、保険・請求・年次PDF/Excel出力、資産証明書、CloudKitファミリー共有が解放されます。決済はApple StoreKit 2が処理します。'}
+        ],
+        ko:[
+          {q:'영수증 스캔, 바코드 조회, 사진 가치 산정, 음성 입력이 서버로 전송되나요?',a:'영수증·라벨 OCR과 사진 가치 산정은 기기 내 Apple Vision으로 처리되며, 바코드는 검증된 소형 오프라인 목록만 조회합니다(미일치 코드는 전송되지 않음). 음성 입력은 온라인 우선 옵션이 꺼져 있고 지원 언어인 경우 기기 내 처리를 요청하며, 온라인 우선 또는 미지원 언어 시 Apple 음성 서비스가 처리합니다. 모든 결과는 저장 전 초안으로 표시됩니다.'},
+          {q:'개인 iCloud 동기화와 CloudKit 가족 공유는 어떻게 작동하나요?',a:'개인 기록은 SwiftData를 통해 Apple 계정에 연결된 CloudKit 비공개 데이터베이스에 동기화됩니다. 설정에서 동기화를 일시 중지(앱 완전 종료 후 재실행 시 적용)해도 기기 및 iCloud 사본은 유지됩니다. 선택적 Pro 가족 공유는 초대한 멤버에게 최대 40MB 공유 스냅샷을 CloudKit 공유 DB로 제공하며, 충돌 시 우선 적용할 쪽을 묻습니다. 개발자는 열람할 수 없습니다.'},
+          {q:'암호화 백업, 내보내기 및 영구 삭제는 어떻게 하나요?',a:'설정에서 12자 이상 비밀번호로 AES-256-GCM 암호화된 로컬 백업(.slbackup)을 만들 수 있으며 비밀번호는 저장되거나 복구되지 않습니다(구형 일반 ZIP 가져오기도 지원). Excel·CSV·PDF 내보내기는 비암호화 별도 파일입니다. 앱에서 물품을 삭제하면 첨부 파일과 iCloud 기록이 함께 삭제되며, 앱을 지우면 기기 내 모든 데이터가 제거됩니다.'},
+          {q:'알림, 실시간 현황 및 Apple 미리 알림 동기화는 어떻게 동작하나요?',a:'알림 권한을 허용하면 기기 내에서 가장 가까운 보증·소모품·관리·재고 만료·대여·청구 알림 최대 30개와 매년 1월 1일 연간 점검 알림 1개를 로컬 예약하며 잠금 화면 실시간 현황을 지원합니다. 선택적 미리 알림 동기화는 전용 “ShelfLife” 목록만 관리하며 기존 목록은 건드리지 않습니다.'},
+          {q:'무료 버전 제한과 ShelfLife Pro 혜택은 무엇인가요?',a:'무료 버전은 활성 물품 8개, 영수증 첨부 3개, 소모품 알림 3개, 진행 중인 대여 3건, 월 5회 음성 등록을 지원합니다. ShelfLife Pro(연간 구독 또는 일회성 평생 소장)는 무제한 등록, PDF 설명서 검색, 보험·청구·연간 PDF/Excel 내보내기, 자산 증명서 및 CloudKit 가족 공유를 제공합니다. 결제는 Apple StoreKit 2로 처리됩니다.'}
+        ],
+        de:[
+          {q:'Werden Beleg-Scans, Barcodes, Fotoschätzungen oder Spracheingaben hochgeladen?',a:'Beleg-OCR und Fotoschätzung laufen über Apple Vision lokal auf dem Gerät; Barcodes werden nur gegen einen kleinen geprüften Offline-Katalog geprüft (unbekannte Codes werden nie hochgeladen). Bei Spracheingabe wird – sofern „Online-Erkennung bevorzugen“ aus ist und die Sprache unterstützt wird – On-Device-Erkennung angefordert; andernfalls verarbeitet Apple Speech das Audio. Ergebnisse erscheinen stets zuerst als Entwurf.'},
+          {q:'Wie funktionieren persönliche iCloud-Synchronisation und Familienfreigabe?',a:'Persönliche Daten synchronisiert SwiftData über deine private CloudKit-Datenbank. Du kannst dies in den Einstellungen pausieren (wirksam nach vollständigem Beenden und Neustart), ohne lokale oder iCloud-Kopien zu löschen. Optionale Pro-Familienfreigabe speichert einen bis zu 40 MB großen Bibliotheks-Snapshot in deiner geteilten CloudKit-Datenbank für eingeladene Lese-/Schreib-Mitglieder und fragt bei Konflikten nach. Der Entwickler hat keinen Zugriff.'},
+          {q:'Wie funktionieren verschlüsselte Backups, Exporte und endgültiges Löschen?',a:'In den Einstellungen erstellst du mit mindestens 12 Zeichen Passwort ein AES-256-GCM-verschlüsseltes Backup (.slbackup); das Passwort wird nicht gespeichert oder wiederhergestellt (ältere ZIP-Backups bleiben importierbar). Excel-, CSV- und PDF-Exporte sind unverschlüsselte Einzeldateien. Das Löschen eines Artikels entfernt Anhänge lokal und in iCloud; das Deinstallieren löscht alle lokalen App-Daten.'},
+          {q:'Wie arbeiten Mitteilungen, Live-Aktivitäten und Apple Erinnerungen?',a:'Bei erteilter Erlaubnis plant ShelfLife bis zu 30 nächstfällige Garantie-, Verbrauchsteil-, Wartungs-, Vorrats-, Leih- und Schadens-Mitteilungen sowie eine jährliche Prüfung am 1. Januar lokal auf dem Gerät, ergänzt um Live-Aktivitäten. Optionale Erinnerungen-Synchronisation verwaltet ausschließlich eine eigene „ShelfLife“-Liste und verändert keine anderen Listen.'},
+          {q:'Was umfasst die kostenlose Version und was ShelfLife Pro?',a:'Kostenlos sind bis zu 8 aktive Artikel, 3 Beleg-Anhänge, 3 aktive Verbrauchsteil-Erinnerungen, 3 laufende Verleihe und 5 Spracheingaben pro Monat. ShelfLife Pro (Jahresabo oder einmaliger Lifetime-Kauf über App Store / StoreKit 2) schaltet unbegrenzte Einträge, Offline-PDF-Suche, Versicherungs-/Schadens-/Jahres-PDFs & Excel, Asset-Zertifikate und Familienfreigabe frei. Zahlungsdaten erhalten wir nie.'}
+        ],
+        fr:[
+          {q:'Les reçus scannés, codes-barres, estimations photo ou dictées sont-ils envoyés ?',a:'L’OCR des reçus et l’estimation photo fonctionnent en local via Apple Vision, et la lecture de codes-barres ne consulte qu’un petit catalogue hors ligne vérifié : aucun code inconnu n’est envoyé. Pour la dictée vocale, si « Préférer la reconnaissance en ligne » est désactivé et la langue prise en charge, le traitement reste local ; sinon Apple Speech traite l’audio. Tout résultat s’affiche d’abord en brouillon.'},
+          {q:'Comment fonctionnent iCloud personnel et le partage familial CloudKit ?',a:'Vos fiches se synchronisent via SwiftData dans votre base privée CloudKit liée à votre compte Apple. Vous pouvez mettre cette sync en pause dans les Réglages (effectif après fermeture complète et relance) sans effacer vos copies locales ou iCloud. Le partage familial Pro optionnel stocke un instantané partagé (40 Mo max) dans CloudKit pour les membres invités, demande quel côté prioriser en cas de conflit et synchronise les suppressions. Le développeur n’y a pas accès.'},
+          {q:'Comment sauvegarder, exporter ou supprimer définitivement mes données ?',a:'Les Réglages permettent de créer une sauvegarde locale chiffrée AES-256-GCM (.slbackup) protégée par un mot de passe d’au moins 12 caractères jamais stocké ni récupérable (anciens ZIP toujours importables). Les exports Excel, CSV et PDF ne sont pas chiffrés et restent indépendants. Supprimer un article efface ses pièces jointes localement et sur iCloud ; désinstaller l’app supprime toutes les données locales.'},
+          {q:'Comment fonctionnent notifications, Activités en direct et Rappels Apple ?',a:'Avec votre accord, ShelfLife programme en local jusqu’aux 30 prochaines échéances (garanties, consommables, entretiens, stocks, prêts, sinistres) plus un bilan annuel chaque 1er janvier, avec décompte Live Activity. La synchronisation optionnelle avec Rappels gère uniquement une liste dédiée « ShelfLife » sans toucher à vos autres listes.'},
+          {q:'Quelles sont les limites gratuites et les avantages de ShelfLife Pro ?',a:'La version gratuite inclut jusqu’à 8 biens actifs, 3 justificatifs, 3 rappels de consommables actifs, 3 prêts en cours et 5 dictées vocales par mois. ShelfLife Pro (abonnement annuel ou achat unique à vie via Apple StoreKit 2) débloque les entrées illimitées, la recherche PDF hors ligne, les exports PDF/Excel assurance et bilan, les certificats d’actif et le partage familial CloudKit.'}
+        ],
+        es:[
+          {q:'¿Se suben los recibos, códigos, tasaciones por foto o entradas de voz?',a:'El OCR de recibos y la tasación por foto funcionan en local mediante Apple Vision, y el lector de códigos solo consulta un pequeño catálogo verificado sin conexión; los códigos sin coincidencia nunca se suben. En la entrada por voz, si desactivas “Preferir reconocimiento en línea” y el idioma es compatible, se solicita proceso local; en caso contrario, el audio pasa por Apple Speech. Todo aparece antes como borrador para tu revisión.'},
+          {q:'¿Cómo funcionan iCloud personal y el uso compartido familiar por CloudKit?',a:'Los registros personales se sincronizan con SwiftData en tu base privada de CloudKit asociada a tu cuenta de Apple. Puedes pausarlo en Ajustes (tras cerrar por completo y reabrir la app) sin borrar datos locales ni de iCloud. El uso compartido familiar Pro opcional guarda una instantánea de hasta 40 MB en CloudKit compartido para miembros invitados con lectura y escritura, y pregunta qué versión priorizar ante conflictos. El desarrollador no tiene acceso.'},
+          {q:'¿Cómo realizo copias cifradas, exportaciones o un borrado definitivo?',a:'En Ajustes puedes crear copias locales cifradas con AES-256-GCM (.slbackup) usando una contraseña de al menos 12 caracteres que la app no guarda ni recupera (se siguen importando ZIP antiguos). Los archivos Excel, CSV y PDF exportados no van cifrados y son independientes. Al borrar un artículo se eliminan sus adjuntos y su registro en iCloud; al desinstalar la app se borra todo el contenedor local.'},
+          {q:'¿Cómo funcionan las notificaciones, Actividades en directo y Recordatorios?',a:'Con tu permiso, ShelfLife programa en local hasta los 30 avisos más próximos de garantías, consumibles, mantenimiento, caducidad, préstamos y reclamaciones, más una revisión anual cada 1 de enero, con cuentas atrás en Actividades en directo. La sincronización opcional con Recordatorios solo gestiona la lista dedicada “ShelfLife” sin alterar tus demás listas.'},
+          {q:'¿Qué incluye la versión gratuita frente a ShelfLife Pro?',a:'La versión gratuita incluye hasta 8 bienes activos, 3 recibos adjuntos, 3 avisos de consumibles activos, 3 préstamos activos y 5 entradas de voz al mes. ShelfLife Pro (suscripción anual o compra única vitalicia mediante Apple StoreKit 2) desbloquea artículos y adjuntos ilimitados, búsqueda en manuales PDF sin conexión, exportación PDF/Excel, certificados de activos y uso compartido familiar por CloudKit.'}
         ]
       },
       faq:[
-        ['小票识别和条码查询会上传我的文件吗？','不会。ShelfLife 使用 Apple Vision 框架完全在你的 iPhone 本地进行文本与铭牌识别，条码也仅在本地内置已核实的小型离线库中比对，未匹配的条码仅保存在你的本地档案中供手动补全，不会上传到任何外部商品目录或开发者服务器。'],
-        ['个人 iCloud 同步与家庭共享是如何运作的？','个人同步使用 Apple CloudKit 私有数据库，仅与你的 Apple 账户关联；家庭共享通过系统的共享面板邀请家人，资料以端到端方式在成员间同步，开发者不运营任何中转服务器，也无法查看你的物品与发票内容。'],
-        ['如何备份和彻底删除我的数据？','你可以在设置中随时创建带密码加密的完整本地备份文件（.zip）。需要删除时，在 App 内删除物品会同步清除本地附件与云端记录；若要彻底清空，删除 App 即可清除本机容器内所有数据。'],
-        ['提醒事项与通知是如何工作的？','ShelfLife 在获得权限后，仅在你的设备本地安排最多最近 30 项临期保修、耗材更换或维护提醒；若开启 Apple 提醒事项同步，会在专属的“ShelfLife”列表中同步，绝不会修改你的其他日常事项。']
+        ['小票识别、条码查询、拍照估价与语音建档会上传数据吗？','小票与铭牌识别、拍照品类估价均使用 Apple Vision 在 iPhone/iPad 本机完成，条码仅比对内置已核实的 11 种小型离线目录，未匹配条码不会上传。语音建档时，若关闭“优先在线识别”且所选语言支持本机识别，将请求本机处理；开启在线识别或语言不支持本机时，音频会由 Apple 语音服务处理，所有识别结果都会先展示为草稿供你确认。'],
+        ['个人 iCloud 同步与家庭共享是如何运作的？','个人同步通过 SwiftData 将档案同步到与你的 Apple 账户关联的 CloudKit 私有数据库；你可以在设置中暂停自动同步（完全退出并重开 App 后生效），本机与云端已有副本都会保留。开启 Pro 家庭共享后，系统共享面板会邀请读写成员访问你存储在 CloudKit 共享数据库中的完整库快照（上限 40 MB，含附件与理赔信息），冲突时询问保留哪一边，开发者无法访问这些数据。'],
+        ['如何备份、导出以及彻底删除我的数据？','可在设置中创建带至少 12 位密码的 AES-256-GCM 加密本地备份（.slbackup），密码不保存也无法找回，同时兼容导入旧版未加密 ZIP；导出的 Excel、CSV 与 PDF 报告未加密且独立于 App，需自行妥善管理。在 App 内删除器物会同步清理附件与私有 iCloud 记录；卸载 App 即可删除本机容器全部数据。'],
+        ['本地通知、灵动岛与 Apple 提醒事项同步是如何工作的？','获得通知权限后，ShelfLife 仅在本机排程最多最近 30 项临期保修、耗材、维护、库存保质期、借出归还及理赔跟进通知，以及每年 1 月 1 日重复的年度体检提醒，并支持锁屏灵动岛倒计时。可选开启 Apple 提醒事项同步时，仅在专属“ShelfLife”列表中创建与更新提醒，绝不修改你的其他列表。'],
+        ['免费版有哪些额度？ShelfLife Pro 包含什么？','免费版支持最多 8 件器物、3 份凭证附件、3 个启用中的耗材提醒、3 笔在借记录及每月 5 次语音建档（超出后可暂存草稿）。升级 ShelfLife Pro（按年订阅或一次买断终身版）可解锁无限器物与凭证、PDF 说明书检索、保额/理赔/年度 PDF 与 Excel 导出、资产转让凭证及 iCloud 家庭共享；购买由 Apple StoreKit 2 处理，开发者不接触任何支付卡信息。']
       ]
     },
     'droidbridge': {
@@ -1130,34 +1180,34 @@
     },
 'shelflife': {
       title:[
-        '器物档案与凭证附件',
-        'Inventory and Attachments',
-        'Inventaire et pièces jointes',
-        'Inventar und Anhänge',
-        'Inventario y adjuntos',
-        '물품 목록 및 첨부 파일',
-        '持ち物リストと添付書類',
-        '器物檔案與憑證附件'
+        '器物档案、识别输入与凭证附件',
+        'Inventory, on-device capture & attachments',
+        'Inventaire, saisie locale et pièces jointes',
+        'Inventar, lokale Erfassung und Anhänge',
+        'Inventario, captura local y adjuntos',
+        '물품 기록, 온디바이스 인식 및 첨부 파일',
+        '持ち物記録・端末内認識・添付書類',
+        '器物檔案、識別輸入與憑證附件'
       ],
       body:[
-        '录入的器物、购买记录、保修期、耗材周期、维修与理赔资料保存在本机。小票识别与条码查询在本机完成，未匹配条码不会上传至外部目录。',
-        'Items, purchase records, warranty deadlines, consumable lifespans, maintenance, and claims are stored locally. Receipt OCR and barcode checks run on-device without uploading unmatched codes.',
-        'Articles, achats, garanties, consommables, entretiens et sinistres sont stockés en local. L’OCR et les codes-barres restent sur l’appareil sans téléversement.',
-        'Artikel, Einkäufe, Garantien, Verbrauchsteile, Wartungen und Schadensfälle bleiben lokal. OCR und Barcode-Abfragen laufen auf dem Gerät ohne Uploads.',
-        'Artículos, compras, garantías, consumibles y siniestros se guardan en local. El OCR y la consulta de códigos se procesan en el dispositivo sin subidas.',
-        '입력한 물품, 구매 내역, 보증 기한, 소모품 수명 및 수리 내역은 로컬에 저장됩니다. 영수증 OCR과 바코드 검색은 기기 내에서만 처리됩니다.',
-        '登録した品目、購入記録、保証期限、消耗品サイクル、修理履歴は端末内に保存されます。レシート OCR とバーコード照合は端末内で処理されます。',
-        '輸入的器物、購買紀錄、保固期、耗材週期、維修與理賠資料儲存在本機。收據識別與條碼查詢在本機完成，未比對條碼不會上傳至外部目錄。'
+        '录入的器物、购买记录、退货与保修期、耗材周期、维护计划、维修与理赔资料、收纳箱、日用囤货与借出记录保存在本机。小票铭牌识别与拍照估价通过 Apple Vision 在本机完成，条码仅比对内置已核实的 11 种小型离线目录，未匹配条码不上传；语音建档默认在支持时请求本机语音识别，开启在线识别或语言不支持本机时经由 Apple 语音服务处理，所有草稿均由你确认后保存。',
+        'Assets, purchase records, return and warranty deadlines, consumable cycles, maintenance plans, repairs, insurance claims, storage boxes, household supplies, and loans are stored locally. Receipt/label OCR and photo valuation run on-device via Apple Vision, and barcodes check a verified 11-item local catalog without uploading unmatched codes. Voice entry requests on-device recognition where supported, or uses Apple Speech when online mode is enabled or required by language; drafts are saved only after you confirm.',
+        'Biens, achats, délais de retour et garanties, consommables, entretiens, réparations, sinistres, boîtes, stocks du foyer et prêts restent en local. L’OCR et l’estimation photo utilisent Apple Vision sur l’appareil, et les codes-barres consultent un catalogue local vérifié sans envoi externe. La dictée vocale privilégie le traitement local si disponible, ou passe par Apple Speech si le mode en ligne est activé ou requis par la langue.',
+        'Artikel, Einkäufe, Rückgabe- und Garantiefristen, Verbrauchsteile, Wartungen, Reparaturen, Schadensfälle, Boxen, Vorräte und Verleihe bleiben lokal. Beleg-OCR und Fotoschätzung laufen über Apple Vision auf dem Gerät; Barcodes prüfen nur einen geprüften lokalen Katalog ohne Uploads. Spracheingabe nutzt bei Unterstützung On-Device-Erkennung oder Apple Speech bei Online-Präferenz bzw. nicht unterstützter Sprache.',
+        'Artículos, compras, plazos de devolución y garantías, consumibles, mantenimientos, reparaciones, siniestros, cajas, reservas y préstamos se guardan en local. El OCR y la tasación por foto usan Apple Vision en el dispositivo y los códigos consultan un catálogo local verificado sin subidas. La voz solicita proceso local cuando es compatible o usa Apple Speech si activas el modo en línea o el idioma lo requiere.',
+        '물품, 구매 내역, 반품 및 보증 기한, 소모품 주기, 관리 계획, 수리·청구 자료, 수납함, 생필품 재고 및 대여 기록은 기기에 저장됩니다. 영수증 OCR과 사진 가치 산정은 기기 내 Apple Vision으로 처리되며 바코드는 검증된 11종 로컬 목록만 조회합니다. 음성 입력은 지원 시 기기 내 인식을 요청하고 온라인 우선이나 미지원 언어 시 Apple 음성 서비스를 통해 처리됩니다.',
+        '登録品目、購入記録、返品・保証期限、消耗品周期、メンテナンス、修理・保険請求、収納箱、日用品在庫、貸出記録は端末内に保存されます。レシートOCRと写真査定は端末内のApple Visionで完結し、バーコードも検証済みローカル目録のみを参照します。音声入力は対応言語で端末内処理を要求し、オンライン優先時や非対応言語時はApple音声サービスを利用します。',
+        '輸入的器物、購買紀錄、退貨與保固期、耗材週期、維護計畫、維修與理賠資料、收納箱、日用囤貨與借出紀錄保存在本機。收據銘牌識別與拍照估價透過 Apple Vision 在本機完成，條碼僅比對內建已核實的小型離線目錄，未比對條碼不上傳；語音建檔預設於支援時請求本機語音識別，開啟線上識別或語言不支援本機時經由 Apple 語音服務處理，所有草稿均由你確認後儲存。'
       ],
       local:[
-        '数据保存在本机及个人私有 iCloud。可选开启家庭共享时通过 Apple CloudKit 同步；支持设置密码加密导出本地备份。系统提醒事项与通知均在本地排程。',
-        'Data is stored on-device and in private iCloud, with optional CloudKit family sharing. Local backups support password encryption. Reminders and notifications are scheduled locally.',
-        'Données conservées en local et sur votre iCloud privé, avec partage familial CloudKit optionnel. Sauvegardes chiffrées par mot de passe. Rappels et notifications planifiés en local.',
-        'Daten verbleiben lokal und in der privaten iCloud, mit optionaler CloudKit-Familienfreigabe. Lokale Backups mit Passwortschutz. Erinnerungen und Mitteilungen werden lokal geplant.',
-        'Los datos se guardan en el dispositivo y en iCloud privado, con uso compartido familiar opcional por CloudKit. Copias locales con contraseña. Recordatorios y notificaciones locales.',
-        '데이터는 기기 및 개인 iCloud에 저장되며 CloudKit 가족 공유를 지원합니다. 비밀번호 암호화 로컬 백업을 제공하며 미리 알림 및 알림은 로컬에서 예약됩니다.',
-        'データは端末内およびプライベート iCloud に保存され、任意の CloudKit ファミリー共有にも対応。パスワード保護バックアップや端末内通知スケジューリングを備えています。',
-        '資料儲存在本機及個人私有 iCloud。可選開啟家庭共享時透過 Apple CloudKit 同步；支援設定密碼加密匯出本機備份。系統提醒事項與通知均在本機排程。'
+        '数据保存在本机 SwiftData 与个人私有 iCloud（可在设置中暂停个人同步，完全退出重开后生效）。Pro 家庭共享将完整库快照（上限 40 MB）存入 CloudKit 共享数据库；本机备份支持 AES-256-GCM 密码加密（.slbackup），Excel/CSV/PDF 导出不加密。App Group 偏好仅在本机统计无标识使用次数，不上传；本地通知排程最近 30 项临期提醒与每年 1 月 1 日年度体检提醒，并可选同步专属“ShelfLife”提醒事项列表。',
+        'Data is stored locally in SwiftData and your private iCloud (personal sync can be paused in Settings, taking effect after full quit and relaunch). Optional Pro household sharing stores a full library snapshot (up to 40 MB) in CloudKit’s shared database. Local .slbackup archives use AES-256-GCM password encryption, while Excel/CSV/PDF exports are unencrypted. Local usage counts in App Group preferences contain no identifiers and are never uploaded. Notifications schedule up to 30 nearest deadlines plus an annual January 1 check-up locally, with optional sync to a dedicated “ShelfLife” Reminders list.',
+        'Les données résident localement dans SwiftData et votre iCloud privé (pause possible dans les Réglages après fermeture complète et relance). Le partage familial Pro optionnel stocke un instantané complet (40 Mo max) dans CloudKit partagé. Les sauvegardes locales .slbackup sont chiffrées en AES-256-GCM ; les exports Excel/CSV/PDF ne sont pas chiffrés. Les compteurs d’usage locaux (App Group) ne contiennent aucun identifiant et ne sont jamais envoyés. Les notifications locales planifient les 30 prochaines échéances plus le bilan du 1er janvier, avec synchronisation optionnelle vers une liste Rappels « ShelfLife ».',
+        'Daten liegen lokal in SwiftData und deiner privaten iCloud (pausierbar nach vollständigem Beenden und Neustart). Optionale Pro-Familienfreigabe speichert einen Bibliotheks-Snapshot (max. 40 MB) in CloudKit. Lokale .slbackup-Archive sind mit AES-256-GCM passwortverschlüsselt; Excel-, CSV- und PDF-Exporte sind unverschlüsselt. Lokale Nutzungszähler in App-Group-Einstellungen enthalten keine Kennungen und verlassen das Gerät nie. Mitteilungen planen lokal bis zu 30 nächste Fristen plus einen jährlichen Check am 1. Januar; optionale Synchronisation nutzt nur die Liste „ShelfLife“.',
+        'Los datos se guardan localmente en SwiftData y en tu iCloud privado (pausable en Ajustes tras cerrar y reabrir la app). El uso compartido familiar Pro opcional guarda una instantánea (máx. 40 MB) en CloudKit compartido. Las copias .slbackup usan cifrado AES-256-GCM con contraseña; los archivos Excel/CSV/PDF no van cifrados. Los contadores locales en App Group carecen de identificadores y nunca se envían. Las notificaciones locales programan hasta 30 vencimientos cercanos y la revisión del 1 de enero, con sincronización opcional en la lista “ShelfLife” de Recordatorios.',
+        '데이터는 기기 SwiftData와 개인 iCloud에 저장됩니다(설정에서 일시 중지 후 앱 완전 종료·재실행 시 적용). 선택적 Pro 가족 공유는 최대 40 MB 전체 스냅샷을 CloudKit 공유 DB에 저장합니다. 로컬 .slbackup 백업은 AES-256-GCM 암호화를 사용하며 Excel·CSV·PDF 내보내기는 비암호화됩니다. App Group의 로컬 사용 횟수 집계는 식별자가 없으며 업로드되지 않습니다. 알림은 가까운 30개 일정과 매년 1월 1일 점검 알림을 기기 내에서 예약하며 전용 “ShelfLife” 미리 알림 목록과 선택 동기화할 수 있습니다.',
+        'データは端末内のSwiftDataと個人iCloudに保存されます（個人同期の一時停止はアプリ完全終了後の再起動で反映）。任意のProファミリー共有は最大40MBのスナップショットをCloudKit共有DBに保存します。ローカルの.slbackupはAES-256-GCMでパスワード暗号化され、Excel・CSV・PDF書き出しは非暗号化です。App Group内の利用回数カウントは識別子を含まず外部送信されません。通知は直近30件の期限と毎年1月1日の年次点検1件を端末内で予定し、専用の「ShelfLife」リマインダーリストと任意同期できます。',
+        '資料儲存在本機 SwiftData 與個人私有 iCloud（可在設定中暫停個人同步，完全結束重開後生效）。Pro 家庭共享將完整庫快照（上限 40 MB）存入 CloudKit 共享資料庫；本機備份支援 AES-256-GCM 密碼加密（.slbackup），Excel/CSV/PDF 匯出不加密。App Group 偏好僅在本機統計無識別使用次數，不上傳；本機通知排程最近 30 項臨期提醒與每年 1 月 1 日年度體檢提醒，並可選同步專屬「ShelfLife」提醒事項列表。'
       ]
     },
     'droidbridge': {

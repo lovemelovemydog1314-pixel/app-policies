@@ -480,34 +480,34 @@
         es: 'ShelfLife'
       },
       taglines: {
-        'zh-Hans': '家庭器物与保修耗材管家',
-        'zh-Hant': '家庭器物與保固耗材管家',
-        en: 'Smart Tracker for Warranties, Consumables & Manuals',
-        ja: '家電の保証期限・消耗品寿命・説明書をスマート管理',
-        ko: '가전제품 보증기간, 소모품 수명 및 설명서 스마트 관리',
-        de: 'Garantiefristen, Verbrauchsmaterialien und Anleitungen im Griff',
-        fr: 'Suivi des garanties, pièces d’usure et notices d’appareils',
-        es: 'Control inteligente de garantías, consumibles y manuales'
+        'zh-Hans': '家庭器物、保修耗材与日均成本管家',
+        'zh-Hant': '家庭器物、保固耗材與日均成本管家',
+        en: 'Household Warranties, Consumables & Manuals',
+        ja: '家電の保証・消耗品・説明書をスマート管理',
+        ko: '가전 보증기간·소모품·설명서 스마트 관리',
+        de: 'Garantiefristen, Verbrauchsteile & Handbücher',
+        fr: 'Suivi des garanties, consommables et notices',
+        es: 'Garantías, consumibles y manuales del hogar'
       },
       descriptions: {
-        'zh-Hans': '离线识别发票小票与电器铭牌，追踪保修到期、滤芯更换周期，整理说明书与维保记录。',
-        'zh-Hant': '離線識別發票收據與電器銘牌，追蹤保固到期、濾網更換週期，整理說明書與維修紀錄。',
-        en: 'Scan receipts and appliance labels on-device. Track warranty dates, filter replacement intervals, and manuals.',
-        ja: 'レシートや銘板を端末内でスキャン。保証期限やフィルター交換時期、説明書を一元管理。',
-        ko: '영수증과 라벨을 기기 내에서 스캔하여 보증 만료일, 필터 교체 주기, 설명서를 관리하세요.',
-        de: 'Belege und Typenschilder lokal scannen. Garantiefristen, Filterwechsel und Handbücher verwalten.',
-        fr: 'Scannez vos reçus et étiquettes en local. Suivez garanties, pièces d’usure et notices.',
-        es: 'Escanea recibos y etiquetas en local. Controla garantías, cambio de filtros y manuales.'
+        'zh-Hans': '离线识别小票铭牌、一句话语音建档与扫码估值，追踪保修退货期、日均使用成本、滤芯周期、收纳箱二维码及 PDF 说明书，支持私有 iCloud 与家庭共享。',
+        'zh-Hant': '離線識別收據銘牌、一句話語音建檔與掃碼估值，追蹤保固退貨期、日均使用成本、濾網週期、收納箱 QR 碼及 PDF 說明書，支援私有 iCloud 與家庭共享。',
+        en: 'Scan receipts and labels offline, add items by voice or barcode, track warranties, daily cost, filter cycles, QR storage boxes, and PDF manuals with private iCloud and family sync.',
+        ja: 'レシートや銘板の端末内OCR・音声登録・バーコード照合に対応。保証期限、日割りコスト、フィルター周期、収納ボックスQR、PDF説明書検索まで非公開iCloudで管理。',
+        ko: '영수증·라벨 온디바이스 OCR, 음성 등록 및 바코드 조회 지원. 보증기간, 일일 비용, 필터 주기, 수납함 QR, PDF 설명서 검색과 비공개 iCloud 가족 공유를 제공합니다.',
+        de: 'Belege und Typenschilder lokal scannen, per Sprache oder Barcode erfassen. Garantien, Tageskosten, Filterzyklen, QR-Boxen und PDF-Handbücher mit privater iCloud verwalten.',
+        fr: 'Scannez reçus et plaques en local, ajoutez par voix ou code-barres. Suivez garanties, coût par jour, filtres, boîtes QR et notices PDF avec iCloud privé et partage familial.',
+        es: 'Escanea recibos y etiquetas en local, añade por voz o código de barras. Controla garantías, costo diario, filtros, cajas QR y manuales PDF con iCloud privado.'
       },
       chips: {
-        'zh-Hans': ['保修与到期提醒', '耗材寿命与小组件', '发票与说明书归档'],
-        'zh-Hant': ['保固與到期提醒', '耗材壽命與小工具', '發票與說明書歸檔'],
-        en: ['Warranty & Expiry Alerts', 'Consumable Lifespans', 'Receipts & Manuals'],
-        ja: ['保証・期限アラート', '消耗品寿命・ウィジェット', 'レシート・説明書保管'],
-        ko: ['보증 및 만료 알림', '소모품 수명 및 위젯', '영수증 및 설명서 보관'],
-        de: ['Garantie & Ablaufalarme', 'Verbrauchsteile & Widgets', 'Belege & Anleitungen'],
-        fr: ['Alertes garantie & échéance', 'Consommables & widgets', 'Reçus & notices'],
-        es: ['Alertas de garantía y fin', 'Vida útil de consumibles', 'Recibos y manuales']
+        'zh-Hans': ['小票语音极速建档', '保修日均与滤芯提醒', '扫码透视与家庭共享'],
+        'zh-Hant': ['收據語音極速建檔', '保固日均與濾網提醒', '掃碼透視與家庭共享'],
+        en: ['OCR, Voice & Barcodes', 'Warranties & Daily Cost', 'QR Boxes & Family Sync'],
+        ja: ['OCR・音声・バーコード', '保証・日割り・フィルター', 'QR収納箱と家族共有'],
+        ko: ['OCR·음성·바코드 등록', '보증·일일 비용·필터 알림', 'QR 수납함 및 가족 공유'],
+        de: ['OCR, Sprache & Barcode', 'Garantie & Tageskosten', 'QR-Boxen & Freigabe'],
+        fr: ['OCR, voix & codes-barres', 'Garanties & coût/jour', 'Boîtes QR & partage'],
+        es: ['OCR, voz y códigos', 'Garantías y costo diario', 'Cajas QR y familia']
       }
     },
     {
